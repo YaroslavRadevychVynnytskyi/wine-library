@@ -1,0 +1,59 @@
+databaseChangeLog:
+  - changeSet:
+      id: insert-into-foods-table
+      author: Yaroslav Radevych-Vynnytskyi
+      changes:
+        - insert:
+            tableName: foods
+            columns:
+              - column:
+                  name: id
+                  value: 1
+              - column:
+                  name: name
+                  value: MEAT
+        - insert:
+            tableName: foods
+            columns:
+              - column:
+                  name: id
+                  value: 2
+              - column:
+                  name: name
+                  value: CHEESE
+        - insert:
+            tableName: foods
+            columns:
+              - column:
+                  name: id
+                  value: 3
+              - column:
+                  name: name
+                  value: COLD_SNACKS
+        - insert:
+            tableName: foods
+            columns:
+              - column:
+                  name: id
+                  value: 4
+              - column:
+                  name: name
+                  value: FISH
+        - insert:
+            tableName: foods
+            columns:
+              - column:
+                  name: id
+                  value: 5
+              - column:
+                  name: name
+                  value: POULTRY
+        - insert:
+            tableName: foods
+            columns:
+              - column:
+                  name: id
+                  value: 6
+              - column:
+                  name: name
+                  value: SEAFOOD

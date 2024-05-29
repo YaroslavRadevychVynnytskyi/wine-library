@@ -1,0 +1,24 @@
+databaseChangeLog:
+  - changeSet:
+      id: create-wines_foods-table
+      author: Yaroslav Radevych-Vynnytskyi
+      changes:
+        - createTable:
+            tableName: wines_foods
+            columns:
+              - column:
+                  name: wine_id
+                  type: BIGINT
+                  constraints:
+                    primaryKey: true
+                    nullable: false
+                    foreignKeyName: fk_wine
+                    references: wines(id)
+              - column:
+                  name: food_id
+                  type: BIGINT
+                  constraints:
+                    primaryKey: true
+                    nullable: false
+                    foreignKeyName: fk_foods
+                    references: foods(id)
