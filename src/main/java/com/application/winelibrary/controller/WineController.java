@@ -9,6 +9,7 @@ import jakarta.validation.Valid;
 import java.util.List;
 import lombok.RequiredArgsConstructor;
 import org.springframework.data.domain.Pageable;
+import org.springframework.security.access.prepost.PreAuthorize;
 import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -25,6 +26,7 @@ import org.springframework.web.bind.annotation.RestController;
 public class WineController {
     private final WineService wineService;
 
+    @PreAuthorize("hasRole('ROLE_ADMIN')")
     @PostMapping
     @Operation(summary = "Add a new wine", description = "Saves new wine into db")
     public WineDetailedResponseDto save(@RequestBody @Valid CreateWineRequestDto requestDto) {
@@ -49,6 +51,7 @@ public class WineController {
         return wineService.findById(id);
     }
 
+    @PreAuthorize("hasRole('ROLE_ADMIN')")
     @PutMapping("/{id}")
     @Operation(summary = "Update wine", description = "Updates a wine by ID")
     public WineDetailedResponseDto updateById(
@@ -58,6 +61,7 @@ public class WineController {
         return wineService.updateById(id, requestDto);
     }
 
+    @PreAuthorize("hasRole('ROLE_ADMIN')")
     @DeleteMapping("/{id}")
     @Operation(summary = "Remove wine", description = "Removes a wine from db by ID")
     public void deleteById(@PathVariable Long id) {

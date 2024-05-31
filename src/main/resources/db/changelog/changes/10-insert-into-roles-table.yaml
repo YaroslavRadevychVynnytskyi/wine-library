@@ -1,0 +1,17 @@
+databaseChangeLog:
+  - changeSet:
+      id: insert-into-roles-table
+      author: Yaroslav Radevych-Vynnytskyi
+      changes:
+        - insert:
+            tableName: roles
+            columns:
+              - column:
+                  name: name
+                  value: ADMIN
+        - insert:
+            tableName: roles
+            columns:
+              - column:
+                  name: name
+                  value: USER

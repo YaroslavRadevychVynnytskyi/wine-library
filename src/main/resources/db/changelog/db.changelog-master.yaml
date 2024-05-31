@@ -11,3 +11,15 @@ databaseChangeLog:
       file: db/changelog/changes/05-insert-into-wines-table.yaml
   - include:
       file: db/changelog/changes/06-insert-into-wines_foods-table.yaml
+  - include:
+      file: db/changelog/changes/07-create-users-table.yaml
+  - include:
+      file: db/changelog/changes/08-create-roles-table.yaml
+  - include:
+      file: db/changelog/changes/09-create-users_roles-table.yaml
+  - include:
+      file: db/changelog/changes/10-insert-into-roles-table.yaml
+  - include:
+      file: db/changelog/changes/11-insert-into-users-table.yaml
+  - include:
+      file: db/changelog/changes/12-insert-into-users_roles-table.yaml

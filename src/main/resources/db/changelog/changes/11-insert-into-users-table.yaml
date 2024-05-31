@@ -1,0 +1,35 @@
+databaseChangeLog:
+  - changeSet:
+      id: insert-into-users-table
+      author: Yaroslav Radevych-Vynnytskyi
+      changes:
+        - insert:
+            tableName: users
+            columns:
+              - column:
+                  name: first_name
+                  value: John
+              - column:
+                  name: last_name
+                  value: Peters
+              - column:
+                  name: email
+                  value: peter@email.com
+              - column:
+                  name: password
+                  value: $2a$10$vEjGON2nXfnHAlxWEH4bKunFzAPNNj80A2XPpQsenfF8MicVa9vH6 # 1234yaroslav56
+        - insert:
+            tableName: users
+            columns:
+              - column:
+                  name: first_name
+                  value: Alice
+              - column:
+                  name: last_name
+                  value: Smith
+              - column:
+                  name: email
+                  value: alice@email.com
+              - column:
+                  name: password
+                  value: $2a$10$vEjGON2nXfnHAlxWEH4bKunFzAPNNj80A2XPpQsenfF8MicVa9vH6 # 1234yaroslav56
