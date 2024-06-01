@@ -1,0 +1,31 @@
+INSERT INTO wines (
+    id,
+    name,
+    trademark,
+    country,
+    year,
+    liquid_volume,
+    alcohol_content,
+    wine_type,
+    sweetness,
+    acidity,
+    description,
+    inventory,
+    price,
+    image_url
+) VALUES (
+             41,
+             'Bolgrad Costa Sur',
+             'Bolgrad',
+             'Ukraine',
+             2024,
+             1000,
+             14,
+             'RED',
+             'DRY',
+             'MEDIUM',
+             'Good cheep wine',
+             340,
+             200.00,
+             'https://content1.rozetka.com.ua/goods/images/big/174123270.jpg'
+         );
