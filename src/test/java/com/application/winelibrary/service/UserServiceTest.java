@@ -9,9 +9,11 @@ import com.application.winelibrary.dto.user.management.UpdateUserRoleRequestDto;
 import com.application.winelibrary.dto.user.registration.UserRegistrationRequestDto;
 import com.application.winelibrary.dto.user.registration.UserResponseDto;
 import com.application.winelibrary.entity.Role;
+import com.application.winelibrary.entity.ShoppingCart;
 import com.application.winelibrary.entity.User;
 import com.application.winelibrary.exception.RegistrationException;
 import com.application.winelibrary.mapper.UserMapper;
+import com.application.winelibrary.repository.cart.ShoppingCartRepository;
 import com.application.winelibrary.repository.role.RoleRepository;
 import com.application.winelibrary.repository.user.UserRepository;
 import com.application.winelibrary.service.user.impl.UserServiceImpl;
@@ -34,6 +36,8 @@ public class UserServiceTest {
     @Mock
     private UserRepository userRepository;
     @Mock
+    private ShoppingCartRepository cartRepository;
+    @Mock
     private UserMapper userMapper;
     @InjectMocks
     private UserServiceImpl userService;
@@ -42,12 +46,16 @@ public class UserServiceTest {
     @DisplayName("Verify correct UserResponseDto is returned by register() when all ok")
     void register_AllOk_ShouldReturnCorrectUserResponseDto() throws RegistrationException {
         //Given
-        UserRegistrationRequestDto requestDto = getUserRegistrationRequestDto();
         User user = getUserMock();
 
         Role role = new Role();
         role.setId(1L);
         role.setName(Role.RoleName.USER);
+
+        ShoppingCart cart = new ShoppingCart();
+        cart.setUser(user);
+
+        UserRegistrationRequestDto requestDto = getUserRegistrationRequestDto();
 
         when(userMapper.toModel(requestDto)).thenReturn(user);
         when(passwordEncoder.encode(requestDto.getPassword()))
@@ -55,6 +63,7 @@ public class UserServiceTest {
         when(roleRepository.getByName(Role.RoleName.USER)).thenReturn(role);
         user.setId(1L);
         when(userRepository.save(user)).thenReturn(user);
+        when(cartRepository.save(cart)).thenReturn(cart);
         when(userMapper.toDto(user)).thenReturn(getUserResponseDtoMock());
 
         UserResponseDto expected = getUserResponseDtoMock();
@@ -69,6 +78,7 @@ public class UserServiceTest {
         verify(passwordEncoder, times(1)).encode(requestDto.getPassword());
         verify(roleRepository, times(1)).getByName(Role.RoleName.USER);
         verify(userRepository, times(1)).save(user);
+        verify(cartRepository, times(1)).save(cart);
         verify(userMapper, times(1)).toDto(user);
     }
 

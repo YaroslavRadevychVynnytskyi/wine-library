@@ -23,3 +23,9 @@ databaseChangeLog:
 #      file: db/changelog/changes/11-insert-into-users-table.yaml
 #  - include:
 #      file: db/changelog/changes/12-insert-into-users_roles-table.yaml
+  - include:
+      file: db/changelog/changes/13-create-shopping_carts-table.yaml
+  - include:
+      file: db/changelog/changes/14-create-cart_items-table.yaml
+#  - include:
+#      file: db/changelog/changes/15-insert-into-shopping_carts-table.yaml
