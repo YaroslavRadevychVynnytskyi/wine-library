@@ -1,0 +1,14 @@
+databaseChangeLog:
+  - changeSet:
+      id: insert-into-shopping_cars-table
+      author: Yaroslav Radevych-Vynnytskyi
+      changes:
+        - insert:
+            tableName: shopping_carts
+            columns:
+              - column:
+                  name: id
+                  value: 2
+              - column:
+                  name: user_id
+                  value: 2

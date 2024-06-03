@@ -1,0 +1,40 @@
+databaseChangeLog:
+  - changeSet:
+      id: create-cart_items-table.yaml
+      author: Yaroslav Radevych-Vynnytskyi
+      changes:
+        - createTable:
+            tableName: cart_items
+            columns:
+              - column:
+                  name: id
+                  type: BIGINT
+                  autoIncrement: true
+                  constraints:
+                    primaryKey: true
+                    nullable: false
+              - column:
+                  name: shopping_cart_id
+                  type: BIGINT
+                  constraints:
+                    foreignKeyName: fk_cart_items_carts
+                    references: shopping_carts(id)
+                    nullable: false
+              - column:
+                  name: wine_id
+                  type: BIGINT
+                  constraints:
+                    foreignKeyName: fk_cart_items_wines
+                    references: wines(id)
+                    nullable: false
+              - column:
+                  name: quantity
+                  type: INTEGER
+                  constraints:
+                    nullable: false
+              - column:
+                  name: deleted
+                  type: BOOLEAN
+                  defaultValueBoolean: false
+                  constraints:
+                    nullable: false

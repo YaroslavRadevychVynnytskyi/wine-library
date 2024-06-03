@@ -4,9 +4,11 @@ import com.application.winelibrary.dto.user.management.UpdateUserRoleRequestDto;
 import com.application.winelibrary.dto.user.registration.UserRegistrationRequestDto;
 import com.application.winelibrary.dto.user.registration.UserResponseDto;
 import com.application.winelibrary.entity.Role;
+import com.application.winelibrary.entity.ShoppingCart;
 import com.application.winelibrary.entity.User;
 import com.application.winelibrary.exception.RegistrationException;
 import com.application.winelibrary.mapper.UserMapper;
+import com.application.winelibrary.repository.cart.ShoppingCartRepository;
 import com.application.winelibrary.repository.role.RoleRepository;
 import com.application.winelibrary.repository.user.UserRepository;
 import com.application.winelibrary.service.user.UserService;
@@ -15,6 +17,7 @@ import java.util.Set;
 import lombok.RequiredArgsConstructor;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 
 @Service
 @RequiredArgsConstructor
@@ -22,9 +25,11 @@ public class UserServiceImpl implements UserService {
     private final PasswordEncoder passwordEncoder;
     private final RoleRepository roleRepository;
     private final UserRepository userRepository;
+    private final ShoppingCartRepository cartRepository;
     private final UserMapper userMapper;
 
     @Override
+    @Transactional
     public UserResponseDto register(UserRegistrationRequestDto requestDto)
             throws RegistrationException {
         checkUserExistence(requestDto.getEmail());
@@ -32,6 +37,7 @@ public class UserServiceImpl implements UserService {
         user.setPassword(passwordEncoder.encode(requestDto.getPassword()));
         user.setRoles(Set.of(roleRepository.getByName(Role.RoleName.USER)));
         User savedUser = userRepository.save(user);
+        createShoppingCart(savedUser);
         return userMapper.toDto(savedUser);
     }
 
@@ -62,6 +68,12 @@ public class UserServiceImpl implements UserService {
         if (userRepository.findByEmail(email).isPresent()) {
             throw new RegistrationException("User with email: " + email + " already exists!");
         }
+    }
+
+    private void createShoppingCart(User user) {
+        ShoppingCart cart = new ShoppingCart();
+        cart.setUser(user);
+        cartRepository.save(cart);
     }
 
     private User getUserById(Long userId) {
