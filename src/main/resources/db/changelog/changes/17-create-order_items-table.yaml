@@ -1,0 +1,45 @@
+databaseChangeLog:
+  - changeSet:
+      id: create-order_items-table.yaml
+      author: Yaroslav Radevych-Vynnytskyi
+      changes:
+        - createTable:
+            tableName: order_items
+            columns:
+              - column:
+                  name: id
+                  type: BIGINT
+                  autoIncrement: true
+                  constraints:
+                    primaryKey: true
+                    nullable: false
+              - column:
+                  name: order_id
+                  type: BIGINT
+                  constraints:
+                    foreignKeyName: fk_order_items_orders
+                    references: orders(id)
+                    nullable: false
+              - column:
+                  name: wine_id
+                  type: BIGINT
+                  constraints:
+                    foreignKeyName: fk_order_items_wines
+                    references: wines(id)
+                    nullable: false
+              - column:
+                  name: quantity
+                  type: INTEGER
+                  constraints:
+                    nullable: false
+              - column:
+                  name: price
+                  type: DECIMAL
+                  constraints:
+                    nullable: false
+              - column:
+                  name: deleted
+                  type: BOOLEAN
+                  defaultValueBoolean: false
+                  constraints:
+                    nullable: false

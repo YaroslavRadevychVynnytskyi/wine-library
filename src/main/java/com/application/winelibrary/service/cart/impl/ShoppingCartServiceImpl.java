@@ -1,11 +1,12 @@
 package com.application.winelibrary.service.cart.impl;
 
-import com.application.winelibrary.dto.UpdateWineQuantityRequestDto;
 import com.application.winelibrary.dto.cart.CartResponseDto;
 import com.application.winelibrary.dto.wine.AddWineToCartRequestDto;
+import com.application.winelibrary.dto.wine.UpdateWineQuantityRequestDto;
 import com.application.winelibrary.entity.CartItem;
 import com.application.winelibrary.entity.ShoppingCart;
 import com.application.winelibrary.entity.Wine;
+import com.application.winelibrary.exception.OutOfInventoryException;
 import com.application.winelibrary.mapper.ShoppingCartMapper;
 import com.application.winelibrary.repository.cart.ShoppingCartRepository;
 import com.application.winelibrary.repository.cartitem.CartItemRepository;
@@ -28,8 +29,11 @@ public class ShoppingCartServiceImpl implements ShoppingCartService {
     @Override
     @Transactional
     public CartResponseDto add(Long userId, AddWineToCartRequestDto requestDto) {
+        Wine wine = getWineById(requestDto.wineId());
+        checkInventoryAvailability(wine.getInventory(), requestDto.quantity());
+
         CartItem cartItem = new CartItem();
-        cartItem.setWine(getWineById(requestDto.wineId()));
+        cartItem.setWine(wine);
         cartItem.setQuantity(requestDto.quantity());
         cartItem.setShoppingCart(getCartById(userId));
 
@@ -60,6 +64,12 @@ public class ShoppingCartServiceImpl implements ShoppingCartService {
     @Override
     public void removeWine(Long cartItemId) {
         cartItemRepository.deleteById(cartItemId);
+    }
+
+    private void checkInventoryAvailability(Integer availableQuantity, Integer cartQuantity) {
+        if (cartQuantity > availableQuantity) {
+            throw new OutOfInventoryException("Can't add to cart more items than are in stock");
+        }
     }
 
     private Wine getWineById(Long wineId) {
