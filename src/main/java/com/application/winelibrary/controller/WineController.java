@@ -1,7 +1,15 @@
 package com.application.winelibrary.controller;
 
+import com.application.winelibrary.dto.comment.CommentResponseDto;
+import com.application.winelibrary.dto.comment.PostCommentRequestDto;
+import com.application.winelibrary.dto.rating.AddRatingRequestDto;
+import com.application.winelibrary.dto.rating.AverageRatingResponseDto;
+import com.application.winelibrary.dto.rating.RatingResponseDto;
 import com.application.winelibrary.dto.wine.CreateWineRequestDto;
 import com.application.winelibrary.dto.wine.WineDetailedResponseDto;
+import com.application.winelibrary.entity.User;
+import com.application.winelibrary.service.comment.CommentService;
+import com.application.winelibrary.service.rating.RatingService;
 import com.application.winelibrary.service.wine.WineService;
 import io.swagger.v3.oas.annotations.Operation;
 import io.swagger.v3.oas.annotations.tags.Tag;
@@ -10,6 +18,7 @@ import java.util.List;
 import lombok.RequiredArgsConstructor;
 import org.springframework.data.domain.Pageable;
 import org.springframework.security.access.prepost.PreAuthorize;
+import org.springframework.security.core.Authentication;
 import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -24,6 +33,8 @@ import org.springframework.web.bind.annotation.RestController;
 @RequestMapping("/wines")
 @RequiredArgsConstructor
 public class WineController {
+    private final CommentService commentService;
+    private final RatingService ratingService;
     private final WineService wineService;
 
     @PreAuthorize("hasRole('ROLE_ADMIN')")
@@ -66,5 +77,41 @@ public class WineController {
     @Operation(summary = "Remove wine", description = "Removes a wine from db by ID")
     public void deleteById(@PathVariable Long id) {
         wineService.deleteById(id);
+    }
+
+    @PreAuthorize("hasRole('ROLE_USER')")
+    @PostMapping("/{wineId}/comments")
+    public CommentResponseDto postComment(Authentication authentication,
+                                          @PathVariable Long wineId,
+                                          @RequestBody @Valid PostCommentRequestDto requestDto) {
+        User user = (User) authentication.getPrincipal();
+        return commentService.postComment(user.getId(), wineId, requestDto);
+    }
+
+    @PreAuthorize("hasRole('ROLE_USER')")
+    @GetMapping("/{wineId}/comments")
+    public List<CommentResponseDto> getAllComments(@PathVariable Long wineId) {
+        return commentService.getAllComments(wineId);
+    }
+
+    @PreAuthorize("hasRole('ROLE_USER') or hasRole('ROLE_ADMIN')")
+    @DeleteMapping("/{commentId}/comments")
+    public void deleteComment(@PathVariable Long commentId) {
+        commentService.deleteComment(commentId);
+    }
+
+    @PreAuthorize("hasRole('ROLE_USER')")
+    @PostMapping("/{wineId}/ratings")
+    public RatingResponseDto addRating(Authentication authentication,
+                                       @PathVariable Long wineId,
+                                       @RequestBody @Valid AddRatingRequestDto requestDto) {
+        User user = (User) authentication.getPrincipal();
+        return ratingService.addRating(user.getId(), wineId, requestDto);
+    }
+
+    @PreAuthorize("hasRole('ROLE_USER')")
+    @GetMapping("/{wineId}/ratings")
+    public AverageRatingResponseDto getAverageRating(@PathVariable Long wineId) {
+        return ratingService.getAverageRating(wineId);
     }
 }
