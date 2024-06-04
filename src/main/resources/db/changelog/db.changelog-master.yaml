@@ -1,35 +1,40 @@
 databaseChangeLog:
   - include:
-      file: db/changelog/changes/01-create-wines-table.yaml
+      file: db/changelog/changes/create/01-create-wines-table.yaml
   - include:
-      file: db/changelog/changes/02-create-foods-table.yaml
+      file: db/changelog/changes/create/02-create-foods-table.yaml
   - include:
-      file: db/changelog/changes/03-create-wines_foods-table.yaml
+      file: db/changelog/changes/create/03-create-wines_foods-table.yaml
   - include:
-      file: db/changelog/changes/04-insert-into-foods-table.yaml
+      file: db/changelog/changes/create/04-create-users-table.yaml
   - include:
-      file: db/changelog/changes/05-insert-into-wines-table.yaml
+      file: db/changelog/changes/create/05-create-roles-table.yaml
   - include:
-      file: db/changelog/changes/06-insert-into-wines_foods-table.yaml
+      file: db/changelog/changes/create/06-create-users_roles-table.yaml
   - include:
-      file: db/changelog/changes/07-create-users-table.yaml
+      file: db/changelog/changes/create/07-create-shopping_carts-table.yaml
   - include:
-      file: db/changelog/changes/08-create-roles-table.yaml
+      file: db/changelog/changes/create/08-create-cart_items-table.yaml
   - include:
-      file: db/changelog/changes/09-create-users_roles-table.yaml
+      file: db/changelog/changes/create/09-create-orders-table.yaml
+  - include:
+      file: db/changelog/changes/create/10-create-order_items-table.yaml
+  - include:
+      file: db/changelog/changes/create/11-create-comments-table.yaml
+  - include:
+      file: db/changelog/changes/create/12-create-ratings-table.yaml
+# inserts
+  - include:
+      file: db/changelog/changes/insert/1-insert-into-foods-table.yaml
+  - include:
+      file: db/changelog/changes/insert/2-insert-into-wines-table.yaml
+  - include:
+      file: db/changelog/changes/insert/3-insert-into-wines_foods-table.yaml
 #  - include:
-#      file: db/changelog/changes/10-insert-into-roles-table.yaml
+#      file: db/changelog/changes/insert/4-insert-into-roles-table.yaml
 #  - include:
-#      file: db/changelog/changes/11-insert-into-users-table.yaml
+#      file: db/changelog/changes/insert/5-insert-into-users-table.yaml
 #  - include:
-#      file: db/changelog/changes/12-insert-into-users_roles-table.yaml
-  - include:
-      file: db/changelog/changes/13-create-shopping_carts-table.yaml
-  - include:
-      file: db/changelog/changes/14-create-cart_items-table.yaml
+#      file: db/changelog/changes/insert/6-insert-into-users_roles-table.yaml
 #  - include:
-#      file: db/changelog/changes/15-insert-into-shopping_carts-table.yaml
-  - include:
-      file: db/changelog/changes/16-create-orders-table.yaml
-  - include:
-      file: db/changelog/changes/17-create-order_items-table.yaml
+#      file: db/changelog/changes/insert/7-insert-into-shopping_carts-table.yaml
