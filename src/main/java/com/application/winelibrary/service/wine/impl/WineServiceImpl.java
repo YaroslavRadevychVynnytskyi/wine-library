@@ -3,11 +3,13 @@ package com.application.winelibrary.service.wine.impl;
 import com.application.winelibrary.dto.food.FoodDto;
 import com.application.winelibrary.dto.wine.CreateWineRequestDto;
 import com.application.winelibrary.dto.wine.WineDetailedResponseDto;
+import com.application.winelibrary.dto.wine.WineSearchParameters;
 import com.application.winelibrary.entity.Food;
 import com.application.winelibrary.entity.Wine;
 import com.application.winelibrary.mapper.WineMapper;
 import com.application.winelibrary.repository.food.FoodRepository;
 import com.application.winelibrary.repository.wine.WineRepository;
+import com.application.winelibrary.repository.wine.WineSpecificationBuilder;
 import com.application.winelibrary.service.wine.WineService;
 import jakarta.persistence.EntityNotFoundException;
 import java.util.List;
@@ -16,6 +18,7 @@ import java.util.stream.Collectors;
 import lombok.RequiredArgsConstructor;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
+import org.springframework.data.jpa.domain.Specification;
 import org.springframework.stereotype.Service;
 
 @Service
@@ -24,6 +27,8 @@ public class WineServiceImpl implements WineService {
     private final FoodRepository foodRepository;
     private final WineRepository wineRepository;
     private final WineMapper wineMapper;
+
+    private final WineSpecificationBuilder wineSpecificationBuilder;
 
     @Override
     public WineDetailedResponseDto save(CreateWineRequestDto requestDto) {
@@ -65,6 +70,14 @@ public class WineServiceImpl implements WineService {
     @Override
     public void deleteById(Long id) {
         wineRepository.deleteById(id);
+    }
+
+    @Override
+    public List<WineDetailedResponseDto> search(WineSearchParameters searchParameters) {
+        Specification<Wine> wineSpec = wineSpecificationBuilder.build(searchParameters);
+        return wineRepository.findAll(wineSpec).stream()
+                .map(wineMapper::toDto)
+                .toList();
     }
 
     private Wine getWineById(Long id) {

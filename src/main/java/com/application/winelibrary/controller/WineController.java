@@ -7,6 +7,7 @@ import com.application.winelibrary.dto.rating.AverageRatingResponseDto;
 import com.application.winelibrary.dto.rating.RatingResponseDto;
 import com.application.winelibrary.dto.wine.CreateWineRequestDto;
 import com.application.winelibrary.dto.wine.WineDetailedResponseDto;
+import com.application.winelibrary.dto.wine.WineSearchParameters;
 import com.application.winelibrary.entity.User;
 import com.application.winelibrary.service.comment.CommentService;
 import com.application.winelibrary.service.rating.RatingService;
@@ -113,5 +114,11 @@ public class WineController {
     @GetMapping("/{wineId}/ratings")
     public AverageRatingResponseDto getAverageRating(@PathVariable Long wineId) {
         return ratingService.getAverageRating(wineId);
+    }
+
+    @PreAuthorize("hasRole('ROLE_USER') or hasRole('ADMIN')")
+    @GetMapping("/search")
+    public List<WineDetailedResponseDto> search(WineSearchParameters searchParameters) {
+        return wineService.search(searchParameters);
     }
 }
