@@ -1,0 +1,30 @@
+version: "3.8"
+
+services:
+  mysqldb:
+    image: mysql:8.3.0
+    restart: unless-stopped
+    env_file: ./.env
+    environment:
+      - MYSQL_DATABASE=$MYSQLDB_DATABASE
+      - MYSQL_ROOT_PASSWORD=$MYSQLDB_ROOT_PASSWORD
+    ports:
+      - $MYSQL_LOCAL_PORT:$MYSQL_DB_DOCKER_PORT
+  app:
+    depends_on:
+      - mysqldb
+    image: wine_library
+    restart: unless-stopped
+    build: .
+    env_file: ./.env
+    ports:
+      - $SPRING_LOCAL_PORT:$SPRING_DOCKER_PORT
+      - $DEBUG_PORT:$DEBUG_PORT
+    environment:
+      SPRING_APPLICATION_JSON: '{
+        "spring.datasource.url" : "jdbc:mariadb://mysqldb:$MYSQL_DB_DOCKER_PORT/$MYSQLDB_DATABASE?serverTimezone=UTC&allowPublicKeyRetrieval=true",
+        "spring.datasource.username" : "$MYSQLDB_USER",
+        "spring.datasource.password" : "$MYSQLDB_ROOT_PASSWORD",
+        "spring.jpa.hibernate.ddl-auto" : "validate"
+      }'
+      JAVA_TOOL_OPTIONS: "-agentlib:jdwp=transport=dt_socket,server=y,suspend=n,address=*:5005"
