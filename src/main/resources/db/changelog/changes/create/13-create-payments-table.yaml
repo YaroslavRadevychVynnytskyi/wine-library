@@ -1,0 +1,48 @@
+databaseChangeLog:
+  - changeSet:
+      id: create-payments-table
+      author: Yaroslav Radevych-Vynnytskyi
+      changes:
+        - createTable:
+            tableName: payments
+            columns:
+              - column:
+                  name: id
+                  type: BIGINT
+                  autoIncrement: true
+                  constraints:
+                    primaryKey: true
+                    nullable: false
+              - column:
+                  name: status
+                  type: VARCHAR(255)
+                  constraints:
+                    nullable: false
+              - column:
+                  name: order_id
+                  type: BIGINT
+                  constraints:
+                    foreignKeyName: fk_payments_orders
+                    references: orders(id)
+                    nullable: false
+              - column:
+                  name: session_url
+                  type: TEXT
+                  constraints:
+                    nullable: false
+              - column:
+                  name: session_id
+                  type: TEXT
+                  constraints:
+                    nullable: false
+              - column:
+                  name: amount
+                  type: DECIMAL
+                  constraints:
+                    nullable: false
+              - column:
+                  name: deleted
+                  type: BOOLEAN
+                  defaultValueBoolean: false
+                  constraints:
+                    nullable: false

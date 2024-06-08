@@ -49,7 +49,7 @@ public class SecurityConfig {
                 .authorizeHttpRequests(
                         auth -> auth
                                 .requestMatchers("/auth/**", "/error", "swagger-ui/**",
-                                        "/wines", "/wines/{id}")
+                                        "/wines", "/wines/{id}", "/payments/**")
                                 .permitAll()
                                 .anyRequest()
                                 .authenticated()
