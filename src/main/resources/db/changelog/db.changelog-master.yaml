@@ -23,6 +23,8 @@ databaseChangeLog:
       file: db/changelog/changes/create/11-create-comments-table.yaml
   - include:
       file: db/changelog/changes/create/12-create-ratings-table.yaml
+  - include:
+      file: db/changelog/changes/create/13-create-payments-table.yaml
 # inserts
   - include:
       file: db/changelog/changes/insert/1-insert-into-foods-table.yaml
