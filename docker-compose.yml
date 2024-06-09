@@ -25,6 +25,9 @@ services:
         "spring.datasource.url" : "jdbc:mariadb://mysqldb:$MYSQL_DB_DOCKER_PORT/$MYSQLDB_DATABASE?serverTimezone=UTC&allowPublicKeyRetrieval=true",
         "spring.datasource.username" : "$MYSQLDB_USER",
         "spring.datasource.password" : "$MYSQLDB_ROOT_PASSWORD",
-        "spring.jpa.hibernate.ddl-auto" : "validate"
+        "spring.jpa.hibernate.ddl-auto" : "validate",
+        "stripe.secret.key" : "$STRIPE_SECRET_KEY",
+        "stripe.success.url" : "http://localhost:$SPRING_LOCAL_PORT/payments/success?rentalId=",
+        "stripe.cancel.url" : "http://localhost:$SPRING_LOCAL_PORT/payments/cancel?rentalId="
       }'
       JAVA_TOOL_OPTIONS: "-agentlib:jdwp=transport=dt_socket,server=y,suspend=n,address=*:5005"
