@@ -29,7 +29,7 @@ public class ShoppingCartController {
     @PreAuthorize("hasRole('ROLE_USER')")
     @PostMapping
     @Operation(summary = "Add wine to shopping cart",
-            description = "Adds wine to user's shopping cart")
+            description = "User access. Adds wine to user's shopping cart")
     public CartResponseDto add(Authentication authentication,
                                @RequestBody AddWineToCartRequestDto requestDto) {
         User user = (User) authentication.getPrincipal();
@@ -38,7 +38,8 @@ public class ShoppingCartController {
 
     @PreAuthorize("hasRole('ROLE_USER')")
     @GetMapping
-    @Operation(summary = "Retrieve shopping cart", description = "Provides user's shopping cart")
+    @Operation(summary = "Retrieve shopping cart",
+            description = "User access. Provides user's shopping cart")
     public CartResponseDto retrieveCart(Authentication authentication) {
         User user = (User) authentication.getPrincipal();
         return cartService.retrieveCart(user.getId());
@@ -47,7 +48,7 @@ public class ShoppingCartController {
     @PreAuthorize("hasRole('ROLE_USER')")
     @PutMapping("/items/{cartItemId}")
     @Operation(summary = "Update wine quantity",
-            description = "Updates quantity of certain wine in user's cart")
+            description = "User access. Updates quantity of certain wine in user's cart")
     public CartResponseDto updateQuantity(Authentication authentication,
                                           @PathVariable Long cartItemId,
                                           @RequestBody UpdateWineQuantityRequestDto requestDto) {
@@ -57,7 +58,8 @@ public class ShoppingCartController {
 
     @PreAuthorize("hasRole('ROLE_USER')")
     @DeleteMapping("/items/{cartItemId}")
-    @Operation(summary = "Remove wine", description = "Deletes certain wine from user's cart")
+    @Operation(summary = "Remove wine",
+            description = "User access. Deletes certain wine from user's cart")
     public void removeWine(@PathVariable Long cartItemId) {
         cartService.removeWine(cartItemId);
     }

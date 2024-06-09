@@ -28,7 +28,8 @@ public class UserController {
 
     @PreAuthorize("hasRole('ROLE_USER')")
     @GetMapping("/me")
-    @Operation(summary = "Retrieve user's profile info", description = "Retrieves user's data")
+    @Operation(summary = "Retrieve user's profile info",
+            description = "User access. Retrieves user's data")
     public UserResponseDto getProfileInfo(Authentication authentication) {
         User user = (User) authentication.getPrincipal();
         return userService.getProfileInfo(user.getId());
@@ -36,7 +37,8 @@ public class UserController {
 
     @PreAuthorize("hasRole('ROLE_USER')")
     @PostMapping("/me")
-    @Operation(summary = "Update user's profile info", description = "Updated user's data")
+    @Operation(summary = "Update user's profile info",
+            description = "User access. Updated user's data")
     public UserResponseDto updateProfileInfo(
             Authentication authentication,
             @RequestBody @Valid UserRegistrationRequestDto requestDto
@@ -47,7 +49,8 @@ public class UserController {
 
     @PreAuthorize("hasRole('ROLE_ADMIN')")
     @PutMapping("/{id}/role")
-    @Operation(summary = "Update user's role", description = "Updates user's role")
+    @Operation(summary = "Update user's role",
+            description = "Admin access. Updates user's role")
     public UserResponseDto updateUserRole(
             @RequestBody UpdateUserRoleRequestDto requestDto,
             @PathVariable Long id

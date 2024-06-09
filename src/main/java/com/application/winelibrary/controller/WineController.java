@@ -40,7 +40,8 @@ public class WineController {
 
     @PreAuthorize("hasRole('ROLE_ADMIN')")
     @PostMapping
-    @Operation(summary = "Add a new wine", description = "Saves new wine into db")
+    @Operation(summary = "Add a new wine",
+            description = "Admin access endpoint. Saves new wine into db")
     public WineDetailedResponseDto save(@RequestBody @Valid CreateWineRequestDto requestDto) {
         return wineService.save(requestDto);
     }
@@ -48,7 +49,8 @@ public class WineController {
     @GetMapping
     @Operation(
             summary = "Get a list of wines",
-            description = "Provides a list of all wines with pagination available"
+            description = "Everyone access endpoint. "
+                    + "Provides a list of all wines with pagination available"
     )
     public List<WineDetailedResponseDto> findAll(Pageable pageable) {
         return wineService.findAll(pageable);
@@ -57,7 +59,8 @@ public class WineController {
     @GetMapping("/{id}")
     @Operation(
             summary = "Get wine's detailed information",
-            description = "Retrieves wine's detailed information based of wine's ID"
+            description = "Everyone access endpoint. "
+                    + "Retrieves wine's detailed information based of wine's ID"
     )
     public WineDetailedResponseDto findById(@PathVariable Long id) {
         return wineService.findById(id);
@@ -65,7 +68,8 @@ public class WineController {
 
     @PreAuthorize("hasRole('ROLE_ADMIN')")
     @PutMapping("/{id}")
-    @Operation(summary = "Update wine", description = "Updates a wine by ID")
+    @Operation(summary = "Update wine",
+            description = "Admin access endpoint. Updates a wine by ID")
     public WineDetailedResponseDto updateById(
             @PathVariable Long id,
             @RequestBody @Valid CreateWineRequestDto requestDto
@@ -75,13 +79,15 @@ public class WineController {
 
     @PreAuthorize("hasRole('ROLE_ADMIN')")
     @DeleteMapping("/{id}")
-    @Operation(summary = "Remove wine", description = "Removes a wine from db by ID")
+    @Operation(summary = "Remove wine",
+            description = "Admin access endpoint. Removes a wine from db by ID")
     public void deleteById(@PathVariable Long id) {
         wineService.deleteById(id);
     }
 
     @PreAuthorize("hasRole('ROLE_USER')")
     @PostMapping("/{wineId}/comments")
+    @Operation(summary = "Leave comment", description = "User endpoint to leave comment on wine")
     public CommentResponseDto postComment(Authentication authentication,
                                           @PathVariable Long wineId,
                                           @RequestBody @Valid PostCommentRequestDto requestDto) {
@@ -91,18 +97,23 @@ public class WineController {
 
     @PreAuthorize("hasRole('ROLE_USER')")
     @GetMapping("/{wineId}/comments")
+    @Operation(summary = "Get all comments",
+            description = "User access endpoint to retrieve all comments of certain wine")
     public List<CommentResponseDto> getAllComments(@PathVariable Long wineId) {
         return commentService.getAllComments(wineId);
     }
 
     @PreAuthorize("hasRole('ROLE_USER') or hasRole('ROLE_ADMIN')")
     @DeleteMapping("/{commentId}/comments")
+    @Operation(summary = "Remove comment",
+            description = "Both User/Admin access endpoint to delete a comment")
     public void deleteComment(@PathVariable Long commentId) {
         commentService.deleteComment(commentId);
     }
 
     @PreAuthorize("hasRole('ROLE_USER')")
     @PostMapping("/{wineId}/ratings")
+    @Operation(summary = "Rate the wine", description = "User endpoint to set wine rating")
     public RatingResponseDto addRating(Authentication authentication,
                                        @PathVariable Long wineId,
                                        @RequestBody @Valid AddRatingRequestDto requestDto) {
@@ -110,14 +121,18 @@ public class WineController {
         return ratingService.addRating(user.getId(), wineId, requestDto);
     }
 
-    @PreAuthorize("hasRole('ROLE_USER')")
+    @PreAuthorize("hasRole('ROLE_USER') or hasRole('ADMIN')")
     @GetMapping("/{wineId}/ratings")
+    @Operation(summary = "Get average rating of certain wine",
+            description = "User/Admin access endpoint to receive average rating of certain wine")
     public AverageRatingResponseDto getAverageRating(@PathVariable Long wineId) {
         return ratingService.getAverageRating(wineId);
     }
 
     @PreAuthorize("hasRole('ROLE_USER') or hasRole('ADMIN')")
     @GetMapping("/search")
+    @Operation(summary = "Dynamic query params search",
+            description = "User/Admin access endpoint for dynamic filtering")
     public List<WineDetailedResponseDto> search(WineSearchParameters searchParameters) {
         return wineService.search(searchParameters);
     }

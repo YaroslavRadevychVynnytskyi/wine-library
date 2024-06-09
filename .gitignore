@@ -39,5 +39,4 @@ maven-wrapper.jar
 maven-wrapper.properties
 
 ### project ###
-src/main/resources/application.properties
 .env
