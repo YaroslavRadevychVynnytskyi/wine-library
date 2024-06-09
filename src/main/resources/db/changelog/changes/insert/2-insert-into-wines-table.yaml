@@ -74,7 +74,7 @@ databaseChangeLog:
                   value: 750
               - column:
                   name: alcohol_content
-                  value: 13.5
+                  value: 13
               - column:
                   name: wine_type
                   value: RED
@@ -170,7 +170,7 @@ databaseChangeLog:
                   value: 750
               - column:
                   name: alcohol_content
-                  value: 14.5
+                  value: 14
               - column:
                   name: wine_type
                   value: RED
@@ -266,7 +266,7 @@ databaseChangeLog:
                   value: 750
               - column:
                   name: alcohol_content
-                  value: 12.5
+                  value: 12
               - column:
                   name: wine_type
                   value: SPARKLING
@@ -506,7 +506,7 @@ databaseChangeLog:
                   value: 750
               - column:
                   name: alcohol_content
-                  value: 14.5
+                  value: 14
               - column:
                   name: wine_type
                   value: RED
@@ -554,7 +554,7 @@ databaseChangeLog:
                   value: 750
               - column:
                   name: alcohol_content
-                  value: 13.5
+                  value: 13
               - column:
                   name: wine_type
                   value: RED
@@ -602,7 +602,7 @@ databaseChangeLog:
                   value: 750
               - column:
                   name: alcohol_content
-                  value: 14.5
+                  value: 14
               - column:
                   name: wine_type
                   value: RED
@@ -698,7 +698,7 @@ databaseChangeLog:
                   value: 750
               - column:
                   name: alcohol_content
-                  value: 11.5
+                  value: 11
               - column:
                   name: wine_type
                   value: WHITE
@@ -794,7 +794,7 @@ databaseChangeLog:
                   value: 750
               - column:
                   name: alcohol_content
-                  value: 13.5
+                  value: 13
               - column:
                   name: wine_type
                   value: WHITE
@@ -1082,7 +1082,7 @@ databaseChangeLog:
                   value: 750
               - column:
                   name: alcohol_content
-                  value: 13.5
+                  value: 13
               - column:
                   name: wine_type
                   value: RED
@@ -1226,7 +1226,7 @@ databaseChangeLog:
                   value: 750
               - column:
                   name: alcohol_content
-                  value: 12.5
+                  value: 12
               - column:
                   name: wine_type
                   value: WHITE
@@ -1466,7 +1466,7 @@ databaseChangeLog:
                   value: 750
               - column:
                   name: alcohol_content
-                  value: 12.5
+                  value: 12
               - column:
                   name: wine_type
                   value: ROSE
@@ -1562,7 +1562,7 @@ databaseChangeLog:
                   value: 750
               - column:
                   name: alcohol_content
-                  value: 13.5
+                  value: 13
               - column:
                   name: wine_type
                   value: RED
@@ -1658,7 +1658,7 @@ databaseChangeLog:
                   value: 750
               - column:
                   name: alcohol_content
-                  value: 14.5
+                  value: 14
               - column:
                   name: wine_type
                   value: RED
@@ -1802,7 +1802,7 @@ databaseChangeLog:
                   value: 750
               - column:
                   name: alcohol_content
-                  value: 13.5
+                  value: 13
               - column:
                   name: wine_type
                   value: RED
