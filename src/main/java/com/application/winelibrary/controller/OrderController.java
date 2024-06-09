@@ -31,7 +31,7 @@ public class OrderController {
     @PreAuthorize("hasRole('ROLE_USER')")
     @PostMapping
     @Operation(summary = "Place order",
-            description = "Creates an order from items in user's cart and saves it")
+            description = "User access. Creates an order from items in user's cart and saves it")
     public OrderResponseDto placeOrder(Authentication authentication,
                                        @RequestBody @Valid PlaceOrderRequestDto requestDto) {
         User user = (User) authentication.getPrincipal();
@@ -40,7 +40,8 @@ public class OrderController {
 
     @PreAuthorize("hasRole('ROLE_USER')")
     @GetMapping
-    @Operation(summary = "View order history", description = "Provides user's order history")
+    @Operation(summary = "View order history",
+            description = "User access. Provides user's order history")
     public List<OrderResponseDto> retrieveOrderHistory(Authentication authentication) {
         User user = (User) authentication.getPrincipal();
         return orderService.retrieveOrderHistory(user.getId());
@@ -49,7 +50,7 @@ public class OrderController {
     @PreAuthorize("hasRole('ROLE_USER')")
     @GetMapping("/{orderId}/items")
     @Operation(summary = "View order items in specific order",
-            description = "Returns a list of all order items in specific order")
+            description = "User access. Returns a list of all order items in specific order")
     public List<OrderItemDto> retrieveAllOrderItemsOfSpecificOrder(@PathVariable Long orderId) {
         return orderService.retrieveOrderItemsOfSpecificOrder(orderId);
     }
@@ -57,7 +58,7 @@ public class OrderController {
     @PreAuthorize("hasRole('ROLE_USER')")
     @GetMapping("/{orderId}/items/{itemId}")
     @Operation(summary = "Get a specific order item from specific order",
-            description = "Returns item from order by id")
+            description = "User access. Returns item from order by id")
     public OrderItemDto retrieveSpecificOrderItemOfSpecificOrder(@PathVariable Long orderId,
                                                                  @PathVariable Long itemId) {
         return orderService.retrieveSpecificOrderItemOfSpecificOrder(orderId, itemId);
@@ -66,7 +67,7 @@ public class OrderController {
     @PreAuthorize("hasRole('ROLE_ADMIN')")
     @PatchMapping("/{id}")
     @Operation(summary = "Update order status",
-            description = "Updates status of an order (available for admin)")
+            description = "Admin access. Updates status of an order")
     public OrderResponseDto updateStatus(@PathVariable Long id,
                                      @RequestBody UpdateStatusRequestDto requestDto) {
         return orderService.updateStatus(id, requestDto);
