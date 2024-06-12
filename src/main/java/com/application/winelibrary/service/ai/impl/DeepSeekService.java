@@ -1,11 +1,11 @@
 package com.application.winelibrary.service.ai.impl;
 
 import com.application.winelibrary.service.ai.AiService;
+import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.JsonNode;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import java.io.IOException;
 import lombok.RequiredArgsConstructor;
-import lombok.SneakyThrows;
 import okhttp3.MediaType;
 import okhttp3.OkHttpClient;
 import okhttp3.Request;
@@ -32,7 +32,6 @@ public class DeepSeekService implements AiService {
     @Value("${deepseek.key}")
     private String deepSeekKey;
 
-    @SneakyThrows
     @Override
     public String sendRequest(String requestMessage) {
         String chatModel;
@@ -53,7 +52,12 @@ public class DeepSeekService implements AiService {
                 .addHeader("Accept", "application/json")
                 .addHeader("Authorization", "Bearer " + deepSeekKey)
                 .build();
-        Response response = client.newCall(request).execute();;
+        Response response = null;
+        try {
+            response = client.newCall(request).execute();
+        } catch (IOException e) {
+            throw new RuntimeException("Can not execute new call", e);
+        }
         return parseResponse(response);
     }
 
@@ -85,9 +89,19 @@ public class DeepSeekService implements AiService {
                 + "}";
     }
 
-    private String parseResponse(Response response) throws IOException {
-        String responseString = response.body().string();
-        JsonNode rootNode = objectMapper.readTree(responseString);
+    private String parseResponse(Response response) {
+        String responseString = null;
+        try {
+            responseString = response.body().string();
+        } catch (IOException e) {
+            throw new RuntimeException("Can not retrieve response string", e);
+        }
+        JsonNode rootNode = null;
+        try {
+            rootNode = objectMapper.readTree(responseString);
+        } catch (JsonProcessingException e) {
+            throw new RuntimeException("Can not read tree", e);
+        }
         JsonNode choicesNode = rootNode.path("choices");
         JsonNode firstChoiceNode = choicesNode.get(0);
         JsonNode messageNode = firstChoiceNode.path("message");
