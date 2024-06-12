@@ -13,4 +13,9 @@ public interface UserService {
     UserResponseDto updateProfileInfo(Long userId, UserRegistrationRequestDto requestDto);
 
     UserResponseDto updateUserRole(Long userId, UpdateUserRoleRequestDto requestDto);
+
+    UserResponseDto processOAuthPostLogin(String oauthId,
+                                          String username,
+                                          String firstName,
+                                          String lastName);
 }

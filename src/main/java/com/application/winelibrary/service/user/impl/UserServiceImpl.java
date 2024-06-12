@@ -13,6 +13,7 @@ import com.application.winelibrary.repository.role.RoleRepository;
 import com.application.winelibrary.repository.user.UserRepository;
 import com.application.winelibrary.service.user.UserService;
 import jakarta.persistence.EntityNotFoundException;
+import java.util.Optional;
 import java.util.Set;
 import lombok.RequiredArgsConstructor;
 import org.springframework.security.crypto.password.PasswordEncoder;
@@ -62,6 +63,31 @@ public class UserServiceImpl implements UserService {
         user.setRoles(Set.of(roleRepository.getByName(requestDto.role())));
         User savedUser = userRepository.save(user);
         return userMapper.toDto(savedUser);
+    }
+
+    @Override
+    @Transactional
+    public UserResponseDto processOAuthPostLogin(String oauthId,
+                                                 String username,
+                                                 String firstName,
+                                                 String lastName) {
+        Optional<User> user = userRepository.findByEmail(username);
+        if (user.isEmpty()) {
+            User newUser = User.builder()
+                    .oauthProvider("google")
+                    .oauthId(oauthId)
+                    .firstName(firstName)
+                    .lastName(lastName)
+                    .email(username)
+                    .password(passwordEncoder.encode(""))
+                    .roles(Set.of(roleRepository.getByName(Role.RoleName.USER)))
+                    .build();
+
+            User savedUser = userRepository.save(newUser);
+            createShoppingCart(savedUser);
+            return userMapper.toDto(savedUser);
+        }
+        return userMapper.toDto(user.get());
     }
 
     private void checkUserExistence(String email) throws RegistrationException {
