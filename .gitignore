@@ -40,3 +40,4 @@ maven-wrapper.properties
 
 ### project ###
 .env
+default-ai-query.txt
