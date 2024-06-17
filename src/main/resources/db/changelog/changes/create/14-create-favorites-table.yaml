@@ -1,0 +1,40 @@
+databaseChangeLog:
+  - changeSet:
+      id: create-favorites-table
+      author: Yaroslav Radevych-Vynnytskyi
+      changes:
+        - createTable:
+            tableName: favorites
+            columns:
+              - column:
+                  name: id
+                  type: BIGINT
+                  autoIncrement: true
+                  constraints:
+                    primaryKey: true
+                    nullable: false
+              - column:
+                  name: user_id
+                  type: BIGINT
+                  constraints:
+                    foreignKeyName: fk_favorites_users
+                    references: users(id)
+                    nullable: false
+              - column:
+                  name: wine_id
+                  type: BIGINT
+                  constraints:
+                    foreignKeyName: fk_favorites_wines
+                    references: wines(id)
+                    nullable: false
+              - column:
+                  name: added_at
+                  type: DATETIME
+                  constraints:
+                    nullable: false
+              - column:
+                  name: deleted
+                  type: BOOLEAN
+                  defaultValueBoolean: false
+                  constraints:
+                    nullable: false
