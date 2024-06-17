@@ -36,9 +36,9 @@ public class FavoriteServiceImpl implements FavoriteService {
         favorite.setWine(getWineById(wineId));
         favorite.setAddedAt(LocalDateTime.now());
 
-        Favorite savedFavourite = favoriteRepository.save(favorite);
+        Favorite savedFavorite = favoriteRepository.save(favorite);
 
-        return favoriteMapper.toDto(savedFavourite);
+        return favoriteMapper.toDto(savedFavorite);
     }
 
     @Override
