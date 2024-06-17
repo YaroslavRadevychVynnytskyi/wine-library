@@ -3,6 +3,7 @@ package com.application.winelibrary.repository.wine;
 import com.application.winelibrary.entity.Wine;
 import com.application.winelibrary.repository.custom.CustomRepository;
 import java.util.List;
+import java.util.Optional;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 import org.springframework.data.jpa.domain.Specification;
@@ -17,4 +18,7 @@ public interface WineRepository extends JpaRepository<Wine, Long>, JpaSpecificat
 
     @EntityGraph(attributePaths = {"recommendedFood"})
     List<Wine> findAll(Specification<Wine> spec);
+
+    @EntityGraph(attributePaths = {"recommendedFood"})
+    Optional<Wine> findById(Long id);
 }

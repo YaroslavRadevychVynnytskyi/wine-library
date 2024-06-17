@@ -95,10 +95,9 @@ public class WineController {
         return commentService.postComment(user.getId(), wineId, requestDto);
     }
 
-    @PreAuthorize("hasRole('ROLE_USER')")
     @GetMapping("/{wineId}/comments")
     @Operation(summary = "Get all comments",
-            description = "User access endpoint to retrieve all comments of certain wine")
+            description = "Everyone access endpoint to retrieve all comments of certain wine")
     public List<CommentResponseDto> getAllComments(@PathVariable Long wineId) {
         return commentService.getAllComments(wineId);
     }
@@ -107,8 +106,10 @@ public class WineController {
     @DeleteMapping("/{commentId}/comments")
     @Operation(summary = "Remove comment",
             description = "Both User/Admin access endpoint to delete a comment")
-    public void deleteComment(@PathVariable Long commentId) {
-        commentService.deleteComment(commentId);
+    public void deleteComment(Authentication authentication,
+                              @PathVariable Long commentId) {
+        User user = (User) authentication.getPrincipal();
+        commentService.deleteComment(user.getId(), commentId);
     }
 
     @PreAuthorize("hasRole('ROLE_USER')")
@@ -121,7 +122,6 @@ public class WineController {
         return ratingService.addRating(user.getId(), wineId, requestDto);
     }
 
-    @PreAuthorize("hasRole('ROLE_USER') or hasRole('ADMIN')")
     @GetMapping("/{wineId}/ratings")
     @Operation(summary = "Get average rating of certain wine",
             description = "User/Admin access endpoint to receive average rating of certain wine")
@@ -129,10 +129,9 @@ public class WineController {
         return ratingService.getAverageRating(wineId);
     }
 
-    @PreAuthorize("hasRole('ROLE_USER') or hasRole('ADMIN')")
     @GetMapping("/search")
     @Operation(summary = "Dynamic query params search",
-            description = "User/Admin access endpoint for dynamic filtering")
+            description = "Everyone access endpoint for dynamic filtering")
     public List<WineDetailedResponseDto> search(WineSearchParameters searchParameters) {
         return wineService.search(searchParameters);
     }
