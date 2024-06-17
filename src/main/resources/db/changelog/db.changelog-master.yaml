@@ -32,11 +32,11 @@ databaseChangeLog:
       file: db/changelog/changes/insert/2-insert-into-wines-table.yaml
   - include:
       file: db/changelog/changes/insert/3-insert-into-wines_foods-table.yaml
-#  - include:
-#      file: db/changelog/changes/insert/4-insert-into-roles-table.yaml
-#  - include:
-#      file: db/changelog/changes/insert/5-insert-into-users-table.yaml
-#  - include:
-#      file: db/changelog/changes/insert/6-insert-into-users_roles-table.yaml
-#  - include:
-#      file: db/changelog/changes/insert/7-insert-into-shopping_carts-table.yaml
+  - include:
+      file: db/changelog/changes/insert/4-insert-into-roles-table.yaml
+  - include:
+      file: db/changelog/changes/insert/5-insert-into-users-table.yaml
+  - include:
+      file: db/changelog/changes/insert/6-insert-into-users_roles-table.yaml
+  - include:
+      file: db/changelog/changes/insert/7-insert-into-shopping_carts-table.yaml
