@@ -3,6 +3,7 @@ package com.application.winelibrary.service.comment.impl;
 import com.application.winelibrary.dto.comment.CommentResponseDto;
 import com.application.winelibrary.dto.comment.PostCommentRequestDto;
 import com.application.winelibrary.entity.Comment;
+import com.application.winelibrary.entity.Role;
 import com.application.winelibrary.entity.User;
 import com.application.winelibrary.entity.Wine;
 import com.application.winelibrary.mapper.CommentMapper;
@@ -45,8 +46,26 @@ public class CommentServiceImpl implements CommentService {
     }
 
     @Override
-    public void deleteComment(Long commentId) {
-        commentRepository.deleteById(commentId);
+    public void deleteComment(Long userId, Long commentId) {
+        User user = getUserById(userId);
+        if (isAdmin(user)) {
+            commentRepository.deleteById(commentId);
+            return;
+        }
+
+        Comment comment = getCommentById(commentId);
+        if (isCommentOwner(user, comment)) {
+            commentRepository.deleteById(commentId);
+        }
+    }
+
+    private boolean isAdmin(User user) {
+        return user.getRoles().stream()
+                .anyMatch(r -> r.getName().equals(Role.RoleName.ADMIN));
+    }
+
+    private boolean isCommentOwner(User user, Comment comment) {
+        return comment.getUser().getId().equals(user.getId());
     }
 
     private User getUserById(Long userId) {
@@ -59,5 +78,11 @@ public class CommentServiceImpl implements CommentService {
         return wineRepository.findById(wineId)
                 .orElseThrow(() ->
                         new EntityNotFoundException("Can't find wine with ID: " + wineId));
+    }
+
+    private Comment getCommentById(Long commentId) {
+        return commentRepository.findById(commentId)
+                .orElseThrow(() ->
+                        new EntityNotFoundException("Can't find comment with ID: " + commentId));
     }
 }

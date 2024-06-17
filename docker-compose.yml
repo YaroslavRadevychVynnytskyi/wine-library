@@ -28,6 +28,11 @@ services:
         "spring.jpa.hibernate.ddl-auto" : "validate",
         "stripe.secret.key" : "$STRIPE_SECRET_KEY",
         "stripe.success.url" : "http://localhost:$SPRING_LOCAL_PORT/payments/success?rentalId=",
-        "stripe.cancel.url" : "http://localhost:$SPRING_LOCAL_PORT/payments/cancel?rentalId="
+        "stripe.cancel.url" : "http://localhost:$SPRING_LOCAL_PORT/payments/cancel?rentalId=",
+        "deepseek.url" : "https://api.deepseek.com",
+        "deepseek.key" : "$DEEPSEEK_KEY",
+        "spring.security.oauth2.client.registration.google.client-id" : "$OAUTH_GOOGLE_CLIENT_ID",
+        "spring.security.oauth2.client.registration.google.client-secret" : "$OAUTH_GOOGLE_CLIENT_SECRET",
+        "spring.security.oauth2.client.registration.google.redirect-uri" : "http://localhost:$SPRING_LOCAL_PORT/login/oauth2/code/google"
       }'
       JAVA_TOOL_OPTIONS: "-agentlib:jdwp=transport=dt_socket,server=y,suspend=n,address=*:5005"

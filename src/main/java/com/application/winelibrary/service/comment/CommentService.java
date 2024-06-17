@@ -9,5 +9,5 @@ public interface CommentService {
 
     List<CommentResponseDto> getAllComments(Long wineId);
 
-    void deleteComment(Long commentId);
+    void deleteComment(Long userId, Long commentId);
 }
