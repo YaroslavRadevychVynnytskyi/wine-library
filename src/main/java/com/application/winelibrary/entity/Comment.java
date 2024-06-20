@@ -37,6 +37,18 @@ public class Comment {
     @Column(nullable = false)
     private String text;
 
+    @Column(nullable = false)
+    private String advantages;
+
+    @Column(nullable = false)
+    private String disadvantages;
+
+    @Column(nullable = false)
+    private Integer likes = 0;
+
+    @Column(nullable = false)
+    private Integer dislikes = 0;
+
     @Column(name = "created_at", nullable = false)
     private LocalDateTime createdAt = LocalDateTime.now();
 }
