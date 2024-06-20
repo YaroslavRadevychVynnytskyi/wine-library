@@ -33,6 +33,26 @@ databaseChangeLog:
                   constraints:
                     nullable: false
               - column:
+                  name: advantages
+                  type: TEXT
+                  constraints:
+                    nullable: false
+              - column:
+                  name: disadvantages
+                  type: TEXT
+                  constraints:
+                    nullable: false
+              - column:
+                  name: likes
+                  type: INTEGER
+                  constraints:
+                    nullable: false
+              - column:
+                  name: dislikes
+                  type: INTEGER
+                  constraints:
+                    nullable: false
+              - column:
                   name: created_at
                   type: DATETIME
                   constraints:

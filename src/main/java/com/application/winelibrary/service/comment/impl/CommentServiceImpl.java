@@ -29,10 +29,10 @@ public class CommentServiceImpl implements CommentService {
     public CommentResponseDto postComment(Long userId,
                                           Long wineId,
                                           PostCommentRequestDto requestDto) {
-        Comment comment = new Comment();
-        comment.setText(requestDto.text());
+        Comment comment = commentMapper.toModel(requestDto);
         comment.setUser(getUserById(userId));
         comment.setWine(getWineById(wineId));
+
         Comment savedComment = commentRepository.save(comment);
         return commentMapper.toDto(savedComment);
     }
@@ -57,6 +57,20 @@ public class CommentServiceImpl implements CommentService {
         if (isCommentOwner(user, comment)) {
             commentRepository.deleteById(commentId);
         }
+    }
+
+    @Override
+    public void putLike(Long commentId) {
+        Comment comment = getCommentById(commentId);
+        comment.setLikes(comment.getLikes() + 1);
+        commentRepository.save(comment);
+    }
+
+    @Override
+    public void putDislike(Long commentId) {
+        Comment comment = getCommentById(commentId);
+        comment.setDislikes(comment.getDislikes() + 1);
+        commentRepository.save(comment);
     }
 
     private boolean isAdmin(User user) {

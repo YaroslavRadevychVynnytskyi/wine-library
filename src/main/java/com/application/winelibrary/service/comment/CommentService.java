@@ -10,4 +10,8 @@ public interface CommentService {
     List<CommentResponseDto> getAllComments(Long wineId);
 
     void deleteComment(Long userId, Long commentId);
+
+    void putLike(Long commentId);
+
+    void putDislike(Long commentId);
 }

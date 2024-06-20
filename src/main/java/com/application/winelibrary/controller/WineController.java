@@ -102,6 +102,22 @@ public class WineController {
         return commentService.getAllComments(wineId);
     }
 
+    @PreAuthorize("hasRole('ROLE_USER')")
+    @PostMapping("comments/{commentId}/like")
+    @Operation(summary = "Put a like on comment",
+            description = "User access. Puts a like on comment")
+    public void putLikeOnComment(@PathVariable Long commentId) {
+        commentService.putLike(commentId);
+    }
+
+    @PreAuthorize("hasRole('ROLE_USER')")
+    @PostMapping("comments/{commentId}/dislike")
+    @Operation(summary = "Put a dislike on comment",
+            description = "User access. Puts a dislike on comment")
+    public void putDislikeOnComment(@PathVariable Long commentId) {
+        commentService.putDislike(commentId);
+    }
+
     @PreAuthorize("hasRole('ROLE_USER') or hasRole('ROLE_ADMIN')")
     @DeleteMapping("/{commentId}/comments")
     @Operation(summary = "Remove comment",
