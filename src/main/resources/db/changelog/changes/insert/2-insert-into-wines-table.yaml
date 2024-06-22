@@ -47,10 +47,13 @@ databaseChangeLog:
                   value: 215
               - column:
                   name: image_url
-                  value: https://image.maudau.com.ua/webp/size/origin/products/81/9e/2e/819e2ea5-7697-42e3-899b-60a24b22a810
+                  value: https://muchomaswine.com/wp-content/uploads/2023/08/mucho-mas-tto-web_2-1.png
               - column:
                   name: deleted
                   value: 0
+              - column:
+                  name: country_flag_url
+                  value: https://upload.wikimedia.org/wikipedia/commons/6/6f/Spain_flag_300.png?20060514101634
         - insert:
             tableName: wines
             columns:
@@ -95,10 +98,13 @@ databaseChangeLog:
                   value: 1250
               - column:
                   name: image_url
-                  value: https://images.silpo.ua/products/1600x1600/webp/23f468e5-a339-4748-9d86-c2907a91b3be.png
+                  value: https://vintagemarket.com.ua/cdn/shop/products/601868_739a8d82-cf5c-411c-bc58-a66e4dcc8b86_1600x.jpg?v=1644620298
               - column:
                   name: deleted
                   value: 0
+              - column:
+                  name: country_flag_url
+                  value: https://upload.wikimedia.org/wikipedia/commons/6/62/Flag_of_France.png
         - insert:
             tableName: wines
             columns:
@@ -147,6 +153,9 @@ databaseChangeLog:
               - column:
                   name: deleted
                   value: 0
+              - column:
+                  name: country_flag_url
+                  value: https://upload.wikimedia.org/wikipedia/commons/e/e4/Flag_of_Italy_%281946%E2%80%932003%29.png
         - insert:
             tableName: wines
             columns:
@@ -191,10 +200,13 @@ databaseChangeLog:
                   value: 600
               - column:
                   name: image_url
-                  value: https://image.maudau.com.ua/webp/size/origin/products/e6/cd/62/e6cd627e-4069-472c-b327-648a9e6085bd
+                  value: https://winestyle.com.ua/images_gen/109/109590/0_0_orig.webp
               - column:
                   name: deleted
                   value: 0
+              - column:
+                  name: country_flag_url
+                  value: https://upload.wikimedia.org/wikipedia/en/thumb/b/b9/Flag_of_Australia.svg/1280px-Flag_of_Australia.svg.png
         - insert:
             tableName: wines
             columns:
@@ -243,6 +255,9 @@ databaseChangeLog:
               - column:
                   name: deleted
                   value: 0
+              - column:
+                  name: country_flag_url
+                  value: https://upload.wikimedia.org/wikipedia/commons/thumb/3/34/Flag_of_New_Zealand.png/1200px-Flag_of_New_Zealand.png
         - insert:
             tableName: wines
             columns:
@@ -291,6 +306,9 @@ databaseChangeLog:
               - column:
                   name: deleted
                   value: 0
+              - column:
+                  name: country_flag_url
+                  value: https://upload.wikimedia.org/wikipedia/commons/6/62/Flag_of_France.png
         - insert:
             tableName: wines
             columns:
@@ -339,6 +357,9 @@ databaseChangeLog:
               - column:
                   name: deleted
                   value: 0
+              - column:
+                  name: country_flag_url
+                  value: https://upload.wikimedia.org/wikipedia/commons/thumb/d/de/Flag_of_the_United_States.png/1200px-Flag_of_the_United_States.png
         - insert:
             tableName: wines
             columns:
@@ -383,10 +404,13 @@ databaseChangeLog:
                   value: 700
               - column:
                   name: image_url
-                  value: https://image.maudau.com.ua/webp/size/origin/products/74/e0/3a/74e03ae8-6d37-4af6-9f12-8d8c64babdba
+                  value: https://www.masi.it/files/styles/bottle/public/b_costasera.png?itok=IKKIiIwn
               - column:
                   name: deleted
                   value: 0
+              - column:
+                  name: country_flag_url
+                  value: https://upload.wikimedia.org/wikipedia/commons/e/e4/Flag_of_Italy_%281946%E2%80%932003%29.png
         - insert:
             tableName: wines
             columns:
@@ -435,6 +459,9 @@ databaseChangeLog:
               - column:
                   name: deleted
                   value: 0
+              - column:
+                  name: country_flag_url
+                  value: https://upload.wikimedia.org/wikipedia/commons/6/6f/Spain_flag_300.png?20060514101634
         - insert:
             tableName: wines
             columns:
@@ -479,10 +506,13 @@ databaseChangeLog:
                   value: 200
               - column:
                   name: image_url
-                  value: https://image.maudau.com.ua/webp/size/origin/products/03/10/e2/0310e2ff-3d0d-40f9-a737-8f253d136f0c.jpg
+                  value: https://images.vivino.com/thumbs/mJmsDMhORtqBltwWBMSp9g_pb_x600.png
               - column:
                   name: deleted
                   value: 0
+              - column:
+                  name: country_flag_url
+                  value: https://upload.wikimedia.org/wikipedia/commons/6/62/Flag_of_France.png
         - insert:
             tableName: wines
             columns:
@@ -527,10 +557,13 @@ databaseChangeLog:
                   value: 1200
               - column:
                   name: image_url
-                  value: https://image.maudau.com.ua/webp/size/origin/products/e7/af/b5/e7afb518-3628-4962-bbb7-af3e39a5011c.jpg
+                  value: https://winebutik.com.ua/sites/default/files/gaja-barbaresco-1977.jpg
               - column:
                   name: deleted
                   value: 0
+              - column:
+                  name: country_flag_url
+                  value: https://upload.wikimedia.org/wikipedia/commons/e/e4/Flag_of_Italy_%281946%E2%80%932003%29.png
         - insert:
             tableName: wines
             columns:
@@ -579,6 +612,9 @@ databaseChangeLog:
               - column:
                   name: deleted
                   value: 0
+              - column:
+                  name: country_flag_url
+                  value: https://upload.wikimedia.org/wikipedia/commons/e/e4/Flag_of_Italy_%281946%E2%80%932003%29.png
         - insert:
             tableName: wines
             columns:
@@ -627,6 +663,9 @@ databaseChangeLog:
               - column:
                   name: deleted
                   value: 0
+              - column:
+                  name: country_flag_url
+                  value: https://upload.wikimedia.org/wikipedia/commons/thumb/d/de/Flag_of_the_United_States.png/1200px-Flag_of_the_United_States.png
         - insert:
             tableName: wines
             columns:
@@ -675,6 +714,9 @@ databaseChangeLog:
               - column:
                   name: deleted
                   value: 0
+              - column:
+                  name: country_flag_url
+                  value: https://upload.wikimedia.org/wikipedia/commons/6/62/Flag_of_France.png
         - insert:
             tableName: wines
             columns:
@@ -719,10 +761,13 @@ databaseChangeLog:
                   value: 150
               - column:
                   name: image_url
-                  value: https://image.maudau.com.ua/webp/size/origin/products/23/4d/a5/234da5a2-ddfa-48cb-8fe9-10046799dff4.jpg
+                  value: https://goodwine.com.ua/media/catalog/product/cache/6fcc3261ae04eb835842842bdcf655db/4/0/40853.png?auto=webp&format=png&width=640&height=800&fit=cover
               - column:
                   name: deleted
                   value: 0
+              - column:
+                  name: country_flag_url
+                  value: https://upload.wikimedia.org/wikipedia/commons/6/6f/Spain_flag_300.png?20060514101634
         - insert:
             tableName: wines
             columns:
@@ -767,10 +812,13 @@ databaseChangeLog:
                   value: 120
               - column:
                   name: image_url
-                  value: https://image.maudau.com.ua/webp/size/origin/products/2e/94/69/2e94693f-fce9-405a-b08d-616648d23c51.png
+                  value: https://img.drinksdirect.com/yellow-tail-shiraz-75cl-1021/3816/800x800/1021.webp
               - column:
                   name: deleted
                   value: 0
+              - column:
+                  name: country_flag_url
+                  value: https://upload.wikimedia.org/wikipedia/en/thumb/b/b9/Flag_of_Australia.svg/1280px-Flag_of_Australia.svg.png
         - insert:
             tableName: wines
             columns:
@@ -819,6 +867,9 @@ databaseChangeLog:
               - column:
                   name: deleted
                   value: 0
+              - column:
+                  name: country_flag_url
+                  value: https://upload.wikimedia.org/wikipedia/commons/thumb/d/de/Flag_of_the_United_States.png/1200px-Flag_of_the_United_States.png
         - insert:
             tableName: wines
             columns:
@@ -863,10 +914,13 @@ databaseChangeLog:
                   value: 400
               - column:
                   name: image_url
-                  value: https://image.maudau.com.ua/webp/size/origin/products/fd/d8/1f/fdd81f82-5bfe-4008-856f-ff2274aedddc.jpg
+                  value: https://winewine.ua/wp-content/uploads/2024/02/moet-chandon-brut-imperial-557202.png
               - column:
                   name: deleted
                   value: 0
+              - column:
+                  name: country_flag_url
+                  value: https://upload.wikimedia.org/wikipedia/commons/6/62/Flag_of_France.png
         - insert:
             tableName: wines
             columns:
@@ -911,10 +965,13 @@ databaseChangeLog:
                   value: 180
               - column:
                   name: image_url
-                  value: https://image.maudau.com.ua/webp/size/origin/products/79/35/8c/79358cf3-6e2c-4bfe-9cee-b17958e9a6a3.jpg
+                  value: https://images.alko.fi/images/cs_srgb,f_auto,t_medium/cdn/944807/chateau-ste-michelle-riesling-2021.jpg
               - column:
                   name: deleted
                   value: 0
+              - column:
+                  name: country_flag_url
+                  value: https://upload.wikimedia.org/wikipedia/commons/thumb/d/de/Flag_of_the_United_States.png/1200px-Flag_of_the_United_States.png
         - insert:
             tableName: wines
             columns:
@@ -959,10 +1016,13 @@ databaseChangeLog:
                   value: 900
               - column:
                   name: image_url
-                  value: https://image.maudau.com.ua/webp/size/origin/products/a1/81/4b/a1814bda-9986-445f-b97e-350624d2920c.jpg
+                  value: https://goodwine.com.ua/media/catalog/product/cache/6fcc3261ae04eb835842842bdcf655db/t/4/t4575.png
               - column:
                   name: deleted
                   value: 0
+              - column:
+                  name: country_flag_url
+                  value: https://upload.wikimedia.org/wikipedia/commons/e/e4/Flag_of_Italy_%281946%E2%80%932003%29.png
         - insert:
             tableName: wines
             columns:
@@ -1011,6 +1071,9 @@ databaseChangeLog:
               - column:
                   name: deleted
                   value: 0
+              - column:
+                  name: country_flag_url
+                  value: https://upload.wikimedia.org/wikipedia/commons/6/62/Flag_of_France.png
         - insert:
             tableName: wines
             columns:
@@ -1059,6 +1122,9 @@ databaseChangeLog:
               - column:
                   name: deleted
                   value: 0
+              - column:
+                  name: country_flag_url
+                  value: https://upload.wikimedia.org/wikipedia/commons/thumb/d/de/Flag_of_the_United_States.png/1200px-Flag_of_the_United_States.png
         - insert:
             tableName: wines
             columns:
@@ -1103,10 +1169,13 @@ databaseChangeLog:
                   value: 1000
               - column:
                   name: image_url
-                  value: https://images.silpo.ua/products/1600x1600/webp/6d1496fc-1ca1-4782-9877-61ff548b4d96.png
+                  value: https://goodwine.com.ua/media/catalog/product/cache/6fcc3261ae04eb835842842bdcf655db/t/3/t3066.png?auto=webp&format=png&width=640&height=450&fit=cover
               - column:
                   name: deleted
                   value: 0
+              - column:
+                  name: country_flag_url
+                  value: https://upload.wikimedia.org/wikipedia/commons/6/62/Flag_of_France.png
         - insert:
             tableName: wines
             columns:
@@ -1151,10 +1220,13 @@ databaseChangeLog:
                   value: 200
               - column:
                   name: image_url
-                  value: https://www.heinemann-shop.com/medias/527Wx527H-null?context=bWFzdGVyfGltYWdlc3wzMTM2OXxpbWFnZS9qcGVnfGFHUmtMMmd5WVM4NU9EQXdPVEV5TWpjek5ETTRMelV5TjFkNE5USTNTRjl1ZFd4c3xkMjg1NGZiNjQ0OTQ4YTdiYzQ0MTU3NDVjMTQ1YzIyMTZjYTY5NjllOWY2MWQwNTIxODBiOTc4YTBiYWRlY2U5&v=1691476295394
+                  value: https://www.wine.com/product/images/w_600,h_600,dpr_2.0,c_fit,q_auto:good,fl_progressive/vwam5dclf6hiex3j39ey.jpg
               - column:
                   name: deleted
                   value: 0
+              - column:
+                  name: country_flag_url
+                  value: https://upload.wikimedia.org/wikipedia/commons/thumb/3/34/Flag_of_New_Zealand.png/1200px-Flag_of_New_Zealand.png
         - insert:
             tableName: wines
             columns:
@@ -1203,6 +1275,9 @@ databaseChangeLog:
               - column:
                   name: deleted
                   value: 0
+              - column:
+                  name: country_flag_url
+                  value: https://upload.wikimedia.org/wikipedia/commons/thumb/8/8f/Flag_of_Argentina.png/1200px-Flag_of_Argentina.png
         - insert:
             tableName: wines
             columns:
@@ -1251,6 +1326,9 @@ databaseChangeLog:
               - column:
                   name: deleted
                   value: 0
+              - column:
+                  name: country_flag_url
+                  value: https://upload.wikimedia.org/wikipedia/commons/e/e4/Flag_of_Italy_%281946%E2%80%932003%29.png
         - insert:
             tableName: wines
             columns:
@@ -1299,6 +1377,9 @@ databaseChangeLog:
               - column:
                   name: deleted
                   value: 0
+              - column:
+                  name: country_flag_url
+                  value: https://upload.wikimedia.org/wikipedia/commons/6/62/Flag_of_France.png
         - insert:
             tableName: wines
             columns:
@@ -1343,10 +1424,13 @@ databaseChangeLog:
                   value: 300
               - column:
                   name: image_url
-                  value: https://image.maudau.com.ua/webp/size/origin/products/41/12/48/41124828-eeae-4da3-a05d-de93318a3065.jpg
+                  value: https://winebutik.com.ua/sites/default/files/chateau-guiraud-sauternes.jpg
               - column:
                   name: deleted
                   value: 0
+              - column:
+                  name: country_flag_url
+                  value: https://upload.wikimedia.org/wikipedia/commons/6/62/Flag_of_France.png
         - insert:
             tableName: wines
             columns:
@@ -1391,10 +1475,13 @@ databaseChangeLog:
                   value: 500
               - column:
                   name: image_url
-                  value: https://image.maudau.com.ua/webp/size/origin/products/44/b0/95/44b095af-4f20-4398-b93d-d09de4b3ab58.jpg
+                  value: https://lh6.googleusercontent.com/proxy/azSRuGKussU7SxQEuovOp_lcdagnovLDUxpylP__FKk7yazbElfFMcjW4UpX7uoe1NR_LXeQaCpV8ZA9A-_lCe6idhZul3-IoLSnUHnp_K652erPowcuu9e-3XHDLjLUg3Vr5NpY
               - column:
                   name: deleted
                   value: 0
+              - column:
+                  name: country_flag_url
+                  value: https://upload.wikimedia.org/wikipedia/commons/2/2d/Portugal_flag_300.png
         - insert:
             tableName: wines
             columns:
@@ -1439,10 +1526,13 @@ databaseChangeLog:
                   value: 350
               - column:
                   name: image_url
-                  value: https://winetime.com.ua/uploads/public/goods/660/1560427499_50424_502_378.webp
+                  value: https://www.piocesare.it/wp-content/uploads/2016/09/barolo.png
               - column:
                   name: deleted
                   value: 0
+              - column:
+                  name: country_flag_url
+                  value: https://upload.wikimedia.org/wikipedia/commons/e/e4/Flag_of_Italy_%281946%E2%80%932003%29.png
         - insert:
             tableName: wines
             columns:
@@ -1491,6 +1581,9 @@ databaseChangeLog:
               - column:
                   name: deleted
                   value: 0
+              - column:
+                  name: country_flag_url
+                  value: https://upload.wikimedia.org/wikipedia/commons/6/62/Flag_of_France.png
         - insert:
             tableName: wines
             columns:
@@ -1535,10 +1628,13 @@ databaseChangeLog:
                   value: 12000
               - column:
                   name: image_url
-                  value: https://image.maudau.com.ua/webp/size/origin/products/76/a3/21/76a321f7-7f3c-4305-aa46-0023c26af3ba
+                  value: https://winebutik.com.ua/sites/default/files/domaine-romanee-conti-2006.jpg
               - column:
                   name: deleted
                   value: 0
+              - column:
+                  name: country_flag_url
+                  value: https://upload.wikimedia.org/wikipedia/commons/6/62/Flag_of_France.png
         - insert:
             tableName: wines
             columns:
@@ -1583,10 +1679,13 @@ databaseChangeLog:
                   value: 120
               - column:
                   name: image_url
-                  value: https://image.maudau.com.ua/webp/size/origin/products/09/91/40/099140b2-4488-4631-952c-c208a6898d53.jpg
+                  value: https://goodwine.com.ua/media/catalog/product/cache/6fcc3261ae04eb835842842bdcf655db/4/4/44362_1.png?auto=webp&format=png&width=640&height=450&fit=cover
               - column:
                   name: deleted
                   value: 0
+              - column:
+                  name: country_flag_url
+                  value: https://upload.wikimedia.org/wikipedia/commons/6/6f/Spain_flag_300.png?20060514101634
         - insert:
             tableName: wines
             columns:
@@ -1631,10 +1730,13 @@ databaseChangeLog:
                   value: 130
               - column:
                   name: image_url
-                  value: https://image.maudau.com.ua/webp/size/origin/products/72/4f/ff/724fff30-f923-4f84-a578-04db3d141b82.jpg
+                  value: https://conchaytoro.com/content/uploads/2018/07/cdd-cs-1.png
               - column:
                   name: deleted
                   value: 0
+              - column:
+                  name: country_flag_url
+                  value: https://upload.wikimedia.org/wikipedia/commons/a/ae/Flag_of_Chile.png
         - insert:
             tableName: wines
             columns:
@@ -1683,6 +1785,9 @@ databaseChangeLog:
               - column:
                   name: deleted
                   value: 0
+              - column:
+                  name: country_flag_url
+                  value: https://upload.wikimedia.org/wikipedia/commons/thumb/d/de/Flag_of_the_United_States.png/1200px-Flag_of_the_United_States.png
         - insert:
             tableName: wines
             columns:
@@ -1731,6 +1836,9 @@ databaseChangeLog:
               - column:
                   name: deleted
                   value: 0
+              - column:
+                  name: country_flag_url
+                  value: https://upload.wikimedia.org/wikipedia/commons/0/0c/Flag_of_Lebanon.png
         - insert:
             tableName: wines
             columns:
@@ -1779,6 +1887,9 @@ databaseChangeLog:
               - column:
                   name: deleted
                   value: 0
+              - column:
+                  name: country_flag_url
+                  value: https://upload.wikimedia.org/wikipedia/commons/e/e4/Flag_of_Italy_%281946%E2%80%932003%29.png
         - insert:
             tableName: wines
             columns:
@@ -1827,6 +1938,9 @@ databaseChangeLog:
               - column:
                   name: deleted
                   value: 0
+              - column:
+                  name: country_flag_url
+                  value: https://upload.wikimedia.org/wikipedia/commons/thumb/d/de/Flag_of_the_United_States.png/1200px-Flag_of_the_United_States.png
         - insert:
             tableName: wines
             columns:
@@ -1875,6 +1989,9 @@ databaseChangeLog:
               - column:
                   name: deleted
                   value: 0
+              - column:
+                  name: country_flag_url
+                  value: https://upload.wikimedia.org/wikipedia/commons/a/ae/Flag_of_Chile.png
         - insert:
             tableName: wines
             columns:
@@ -1919,7 +2036,10 @@ databaseChangeLog:
                   value: 180
               - column:
                   name: image_url
-                  value: https://image.maudau.com.ua/webp/size/origin/products/5a/0d/f1/5a0df16c-25b3-4b6d-b761-4f2e5a85f938
+                  value: https://images.vivino.com/thumbs/jBG8kmhBTtGl7o0GJhMUTA_pb_x960.png
               - column:
                   name: deleted
                   value: 0
+              - column:
+                  name: country_flag_url
+                  value: https://upload.wikimedia.org/wikipedia/commons/6/62/Flag_of_France.png

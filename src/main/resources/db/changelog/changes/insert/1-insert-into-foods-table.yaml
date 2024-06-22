@@ -12,6 +12,9 @@ databaseChangeLog:
               - column:
                   name: name
                   value: MEAT
+              - column:
+                  name: image_url
+                  value: https://raw.githubusercontent.com/YaroslavRadevychVynnytskyi/content-wine-library/061dd7c35da1b75de506680ef84b8e6c7cf472f3/food-pics/meat.svg
         - insert:
             tableName: foods
             columns:
@@ -21,6 +24,9 @@ databaseChangeLog:
               - column:
                   name: name
                   value: CHEESE
+              - column:
+                  name: image_url
+                  value: https://raw.githubusercontent.com/YaroslavRadevychVynnytskyi/content-wine-library/061dd7c35da1b75de506680ef84b8e6c7cf472f3/food-pics/cheese.svg
         - insert:
             tableName: foods
             columns:
@@ -30,6 +36,9 @@ databaseChangeLog:
               - column:
                   name: name
                   value: COLD_SNACKS
+              - column:
+                  name: image_url
+                  value: https://raw.githubusercontent.com/YaroslavRadevychVynnytskyi/content-wine-library/061dd7c35da1b75de506680ef84b8e6c7cf472f3/food-pics/cold-snack.svg
         - insert:
             tableName: foods
             columns:
@@ -39,6 +48,9 @@ databaseChangeLog:
               - column:
                   name: name
                   value: FISH
+              - column:
+                  name: image_url
+                  value: https://raw.githubusercontent.com/YaroslavRadevychVynnytskyi/content-wine-library/061dd7c35da1b75de506680ef84b8e6c7cf472f3/food-pics/fish.svg
         - insert:
             tableName: foods
             columns:
@@ -48,6 +60,9 @@ databaseChangeLog:
               - column:
                   name: name
                   value: POULTRY
+              - column:
+                  name: image_url
+                  value: https://raw.githubusercontent.com/YaroslavRadevychVynnytskyi/content-wine-library/061dd7c35da1b75de506680ef84b8e6c7cf472f3/food-pics/poultry.svg
         - insert:
             tableName: foods
             columns:
@@ -57,3 +72,6 @@ databaseChangeLog:
               - column:
                   name: name
                   value: SEAFOOD
+              - column:
+                  name: image_url
+                  value: https://raw.githubusercontent.com/YaroslavRadevychVynnytskyi/content-wine-library/061dd7c35da1b75de506680ef84b8e6c7cf472f3/food-pics/seafood.svg

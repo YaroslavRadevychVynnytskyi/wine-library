@@ -11,6 +11,7 @@ public record WineDetailedResponseDto(
         String name,
         String trademark,
         String country,
+        String countryFlagUrl,
         Year year,
         Integer liquidVolume,
         Integer alcoholContent,

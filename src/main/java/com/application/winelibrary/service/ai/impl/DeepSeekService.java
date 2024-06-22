@@ -106,14 +106,16 @@ public class DeepSeekService implements AiService {
         JsonNode firstChoiceNode = choicesNode.get(0);
         JsonNode messageNode = firstChoiceNode.path("message");
         String content = messageNode.path("content").asText();
-        return cleanQuery(content);
+        return cleanResponse(content);
     }
 
-    private String cleanQuery(String query) {
-        if (query.startsWith(" ```") && query.contains("SELECT")) {
-            query = query.substring(7).trim();
-            query = query.substring(0, query.length() - 3).trim();
+    private String cleanResponse(String response) {
+        if (response.startsWith(" ```") && response.contains("SELECT")) {
+            response = response.substring(7).trim();
+            response = response.substring(0, response.length() - 3).trim();
+        } else {
+            response = response.replaceAll("\\\\n1|\\\\n2|\\\\n3|\\\\n|\\*\\*", "");
         }
-        return query;
+        return response;
     }
 }

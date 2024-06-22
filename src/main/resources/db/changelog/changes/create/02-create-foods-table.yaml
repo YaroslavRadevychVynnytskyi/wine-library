@@ -20,6 +20,9 @@ databaseChangeLog:
                     nullable: false
                     unique: true
               - column:
+                  name: image_url
+                  type: TEXT
+              - column:
                   name: deleted
                   type: BOOLEAN
                   defaultValueBoolean: false

@@ -30,6 +30,9 @@ databaseChangeLog:
                   constraints:
                     nullable: false
               - column:
+                  name: country_flag_url
+                  type: TEXT
+              - column:
                   name: year
                   type: INTEGER
                   constraints:

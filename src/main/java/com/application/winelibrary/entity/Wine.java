@@ -47,6 +47,9 @@ public class Wine {
     @Column(nullable = false)
     private String country;
 
+    @Column(name = "country_flag_url")
+    private String countryFlagUrl;
+
     @Column(nullable = false)
     private Year year;
 
