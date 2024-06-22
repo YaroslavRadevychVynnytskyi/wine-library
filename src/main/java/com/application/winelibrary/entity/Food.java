@@ -28,6 +28,9 @@ public class Food {
     @Enumerated(EnumType.STRING)
     private FoodName name;
 
+    @Column(name = "image_url")
+    private String imageUrl;
+
     public enum FoodName {
         MEAT,
         CHEESE,

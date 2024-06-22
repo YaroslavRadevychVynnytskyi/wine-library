@@ -2,6 +2,7 @@ package com.application.winelibrary.service.wine.impl;
 
 import com.application.winelibrary.dto.food.FoodDto;
 import com.application.winelibrary.dto.wine.CreateWineRequestDto;
+import com.application.winelibrary.dto.wine.UpdateCountryImageRequestDto;
 import com.application.winelibrary.dto.wine.WineDetailedResponseDto;
 import com.application.winelibrary.dto.wine.WineSearchParameters;
 import com.application.winelibrary.entity.Food;
@@ -78,6 +79,15 @@ public class WineServiceImpl implements WineService {
         return wineRepository.findAll(wineSpec).stream()
                 .map(wineMapper::toDto)
                 .toList();
+    }
+
+    @Override
+    public WineDetailedResponseDto updateCountryImage(
+            Long id,
+            UpdateCountryImageRequestDto requestDto) {
+        Wine wine = getWineById(id);
+        wine.setCountryFlagUrl(requestDto.countryFlagUrl());
+        return wineMapper.toDto(wineRepository.save(wine));
     }
 
     private Wine getWineById(Long id) {

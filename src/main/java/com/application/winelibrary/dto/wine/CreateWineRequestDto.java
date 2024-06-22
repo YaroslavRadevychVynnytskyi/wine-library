@@ -18,6 +18,8 @@ public record CreateWineRequestDto(
         @NotBlank
         String country,
 
+        String countryFlagUrl,
+
         @NotNull
         Year year,
 
