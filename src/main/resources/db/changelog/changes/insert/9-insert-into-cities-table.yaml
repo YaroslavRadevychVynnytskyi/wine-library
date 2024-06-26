@@ -1,0 +1,29 @@
+databaseChangeLog:
+  - changeSet:
+      id: insert-into-cities-table
+      author: Yaroslav Radevych-Vynnytskyi
+      changes:
+        - insert:
+            tableName: cities
+            columns:
+              - column:
+                  name: name
+                  value: Lviv
+        - insert:
+            tableName: cities
+            columns:
+              - column:
+                  name: name
+                  value: Drohobych
+        - insert:
+            tableName: cities
+            columns:
+              - column:
+                  name: name
+                  value: Yavoriv
+        - insert:
+            tableName: cities
+            columns:
+              - column:
+                  name: name
+                  value: Kyiv

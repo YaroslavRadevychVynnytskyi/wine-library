@@ -9,5 +9,8 @@ import org.mapstruct.Mapping;
 @Mapper(config = MapperConfig.class, uses = OrderItemMapper.class)
 public interface OrderMapper {
     @Mapping(target = "userId", source = "user.id")
+    @Mapping(target = "deliveryType", source = "deliveryType.type")
+    @Mapping(target = "deliveryPrice", source = "deliveryType.price")
+    @Mapping(target = "city", source = "city.name")
     OrderResponseDto toDto(Order order);
 }

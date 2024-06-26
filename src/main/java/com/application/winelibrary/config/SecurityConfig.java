@@ -57,7 +57,8 @@ public class SecurityConfig {
                                 .requestMatchers("auth/register", "/auth/sign-in", "/error",
                                         "swagger-ui/**", "/wines", "/wines/{id}", "/payments/**",
                                         "/selection", "/wines/search", "wines/{wineId}/ratings",
-                                "wines/{wineId}/comments")
+                                "wines/{wineId}/comments", "cities", "/orders/shipping-address",
+                                        "verification/**")
                                 .permitAll()
                                 .anyRequest().authenticated()
                 )

@@ -42,9 +42,32 @@ public class Order {
     @JoinColumn(name = "user_id", nullable = false)
     private User user;
 
+    @Column(nullable = false)
+    private String email;
+
+    @Column(name = "first_name", nullable = false)
+    private String firstName;
+
+    @Column(name = "last_name", nullable = false)
+    private String lastName;
+
+    @Column(name = "phone_number", nullable = false)
+    private String phoneNumber;
+
+    @ManyToOne
+    @JoinColumn(name = "delivery_type_id", nullable = false)
+    private Delivery deliveryType;
+
+    @Enumerated(EnumType.STRING)
+    @Column(name = "payment_type", columnDefinition = "varchar", nullable = false)
+    private PaymentType paymentType;
+
     @Enumerated(EnumType.STRING)
     @Column(columnDefinition = "varchar", nullable = false)
     private Status status;
+
+    @Column(nullable = false)
+    private BigDecimal orderAmount;
 
     @Column(nullable = false)
     private BigDecimal total;
@@ -52,12 +75,24 @@ public class Order {
     @Column(name = "order_date", nullable = false)
     private LocalDateTime orderDate;
 
+    @ManyToOne
+    @JoinColumn(name = "city_id", nullable = false)
+    private City city;
+
     @Column(name = "shipping_address", nullable = false)
     private String shippingAddress;
 
     @OneToMany(mappedBy = "order")
     @Cascade(CascadeType.ALL)
     private Set<OrderItem> orderItems;
+
+    @Column(name = "is_verified", nullable = false)
+    private boolean isVerified = false;
+
+    public enum PaymentType {
+        CARD,
+        CASH
+    }
 
     public enum Status {
         PENDING,

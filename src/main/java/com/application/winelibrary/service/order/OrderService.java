@@ -4,6 +4,7 @@ import com.application.winelibrary.dto.order.OrderResponseDto;
 import com.application.winelibrary.dto.order.PlaceOrderRequestDto;
 import com.application.winelibrary.dto.order.UpdateStatusRequestDto;
 import com.application.winelibrary.dto.orderitem.OrderItemDto;
+import com.application.winelibrary.dto.post.PostOfficesResponseDto;
 import java.util.List;
 
 public interface OrderService {
@@ -16,4 +17,6 @@ public interface OrderService {
     OrderItemDto retrieveSpecificOrderItemOfSpecificOrder(Long orderId, Long itemId);
 
     OrderResponseDto updateStatus(Long orderId, UpdateStatusRequestDto requestDto);
+
+    PostOfficesResponseDto getShippingAddress(String cityName);
 }

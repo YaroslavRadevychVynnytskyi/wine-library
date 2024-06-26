@@ -16,17 +16,27 @@ databaseChangeLog:
   - include:
       file: db/changelog/changes/create/08-create-cart_items-table.yaml
   - include:
-      file: db/changelog/changes/create/09-create-orders-table.yaml
+      file: db/changelog/changes/create/09-create-delivery-table.yaml
   - include:
-      file: db/changelog/changes/create/10-create-order_items-table.yaml
+      file: db/changelog/changes/create/10-create-cities-table.yaml
   - include:
-      file: db/changelog/changes/create/11-create-comments-table.yaml
+      file: db/changelog/changes/create/11-create-nova_post_offices-table.yaml
   - include:
-      file: db/changelog/changes/create/12-create-ratings-table.yaml
+      file: db/changelog/changes/create/12-create-ukr_post_offices-table.yaml
   - include:
-      file: db/changelog/changes/create/13-create-payments-table.yaml
+      file: db/changelog/changes/create/13-create-orders-table.yaml
   - include:
-      file: db/changelog/changes/create/14-create-favorites-table.yaml
+      file: db/changelog/changes/create/14-create-order_items-table.yaml
+  - include:
+      file: db/changelog/changes/create/15-create-payments-table.yaml
+  - include:
+      file: db/changelog/changes/create/16-create-comments-table.yaml
+  - include:
+      file: db/changelog/changes/create/17-create-ratings-table.yaml
+  - include:
+      file: db/changelog/changes/create/18-create-favorites-table.yaml
+  - include:
+      file: db/changelog/changes/create/19-create-verification_codes-table.yaml
 # inserts
   - include:
       file: db/changelog/changes/insert/1-insert-into-foods-table.yaml
@@ -42,3 +52,11 @@ databaseChangeLog:
       file: db/changelog/changes/insert/6-insert-into-users_roles-table.yaml
   - include:
       file: db/changelog/changes/insert/7-insert-into-shopping_carts-table.yaml
+  - include:
+      file: db/changelog/changes/insert/8-insert-into-delivery-table.yaml
+  - include:
+      file: db/changelog/changes/insert/9-insert-into-cities-table.yaml
+  - include:
+      file: db/changelog/changes/insert/10-insert-into-nova_post_offices-table.yaml
+  - include:
+      file: db/changelog/changes/insert/11-insert-into-ukr_offices-table.yaml

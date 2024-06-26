@@ -1,6 +1,7 @@
-package com.application.winelibrary.validation;
+package com.application.winelibrary.validation.validator;
 
 import com.application.winelibrary.dto.user.registration.UserRegistrationRequestDto;
+import com.application.winelibrary.validation.PasswordMatch;
 import jakarta.validation.ConstraintValidator;
 import jakarta.validation.ConstraintValidatorContext;
 import java.util.Objects;

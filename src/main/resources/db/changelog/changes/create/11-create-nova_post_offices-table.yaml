@@ -1,10 +1,10 @@
 databaseChangeLog:
   - changeSet:
-      id: create-orders-table
+      id: create-nova_post_offices-table
       author: Yaroslav Radevych-Vynnytskyi
       changes:
         - createTable:
-            tableName: orders
+            tableName: nova_post_offices
             columns:
               - column:
                   name: id
@@ -14,31 +14,16 @@ databaseChangeLog:
                     primaryKey: true
                     nullable: false
               - column:
-                  name: user_id
+                  name: name
+                  type: VARCHAR(255)
+                  constraints:
+                    nullable: false
+              - column:
+                  name: city_id
                   type: BIGINT
                   constraints:
-                    foreignKeyName: fk_orders_users
-                    references: users(id)
-                    nullable: false
-              - column:
-                  name: status
-                  type: VARCHAR(255)
-                  constraints:
-                    nullable: false
-              - column:
-                  name: total
-                  type: DECIMAL
-                  constraints:
-                    nullable: false
-              - column:
-                  name: order_date
-                  type: DATETIME
-                  constraints:
-                    nullable: false
-              - column:
-                  name: shipping_address
-                  type: VARCHAR(255)
-                  constraints:
+                    foreignKeyName: fk_nova_post_offices_cities
+                    references: cities(id)
                     nullable: false
               - column:
                   name: deleted
