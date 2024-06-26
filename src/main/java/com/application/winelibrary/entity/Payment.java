@@ -37,7 +37,7 @@ public class Payment {
     @Column(columnDefinition = "varchar", nullable = false)
     private Status status;
 
-    @ManyToOne //maybe need to use cascade
+    @ManyToOne
     @JoinColumn(name = "order_id", nullable = false)
     private Order order;
 

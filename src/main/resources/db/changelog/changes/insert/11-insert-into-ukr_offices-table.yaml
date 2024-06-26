@@ -1,0 +1,126 @@
+databaseChangeLog:
+  - changeSet:
+      id: insert-into-ukr_post_offices-table
+      author: Yaroslav Radevych-Vynnytskyi
+      changes:
+# Lviv
+        - insert:
+            tableName: ukr_post_offices
+            columns:
+              - column:
+                  name: name
+                  value: Ukrposhta 79026
+              - column:
+                  name: city_id
+                  value: 1
+        - insert:
+            tableName: ukr_post_offices
+            columns:
+              - column:
+                  name: name
+                  value: Ukrposhta 79034
+              - column:
+                  name: city_id
+                  value: 1
+        - insert:
+            tableName: ukr_post_offices
+            columns:
+              - column:
+                  name: name
+                  value: Ukrposhta 79017
+              - column:
+                  name: city_id
+                  value: 1
+        - insert:
+            tableName: ukr_post_offices
+            columns:
+              - column:
+                  name: name
+                  value: Ukrposhta 79018
+              - column:
+                  name: city_id
+                  value: 1
+# Drohobych
+        - insert:
+            tableName: ukr_post_offices
+            columns:
+              - column:
+                  name: name
+                  value: Ukrposhta 82100
+              - column:
+                  name: city_id
+                  value: 2
+        - insert:
+            tableName: ukr_post_offices
+            columns:
+              - column:
+                  name: name
+                  value: Ukrposhta 82109
+              - column:
+                  name: city_id
+                  value: 2
+        - insert:
+            tableName: ukr_post_offices
+            columns:
+              - column:
+                  name: name
+                  value: Ukrposhta 82107
+              - column:
+                  name: city_id
+                  value: 2
+# Yavoriv
+        - insert:
+            tableName: ukr_post_offices
+            columns:
+              - column:
+                  name: name
+                  value: Ukrposhta 81001
+              - column:
+                  name: city_id
+                  value: 3
+        - insert:
+            tableName: ukr_post_offices
+            columns:
+              - column:
+                  name: name
+                  value: Ukrposhta 81000
+              - column:
+                  name: city_id
+                  value: 3
+# Kyiv
+        - insert:
+            tableName: ukr_post_offices
+            columns:
+              - column:
+                  name: name
+                  value: Ukrposhta 79008
+              - column:
+                  name: city_id
+                  value: 4
+        - insert:
+            tableName: ukr_post_offices
+            columns:
+              - column:
+                  name: name
+                  value: Ukrposhta 03038
+              - column:
+                  name: city_id
+                  value: 4
+        - insert:
+            tableName: ukr_post_offices
+            columns:
+              - column:
+                  name: name
+                  value: Ukrposhta 03150
+              - column:
+                  name: city_id
+                  value: 4
+        - insert:
+            tableName: ukr_post_offices
+            columns:
+              - column:
+                  name: name
+                  value: Ukrposhta 01024
+              - column:
+                  name: city_id
+                  value: 4

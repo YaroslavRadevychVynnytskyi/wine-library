@@ -6,7 +6,9 @@ import com.application.winelibrary.dto.payment.CancelPaymentResponseDto;
 import com.application.winelibrary.dto.payment.PaymentResponseDto;
 import com.application.winelibrary.entity.Order;
 import com.application.winelibrary.entity.Payment;
+import com.application.winelibrary.exception.OrderNotVerifiedException;
 import com.application.winelibrary.exception.PaymentException;
+import com.application.winelibrary.exception.PaymentTypeException;
 import com.application.winelibrary.mapper.PaymentMapper;
 import com.application.winelibrary.repository.order.OrderRepository;
 import com.application.winelibrary.repository.payment.PaymentRepository;
@@ -47,7 +49,7 @@ public class PaymentServiceImpl implements PaymentService {
 
     @Override
     public PaymentResponseDto createPayment(Long orderId) {
-        checkIfOrderIsPaid(orderId);
+        checkOrderValidity(orderId);
 
         Order order = getOrderById(orderId);
 
@@ -97,6 +99,22 @@ public class PaymentServiceImpl implements PaymentService {
         return paymentMapper.toDto(savedPayment);
     }
 
+    private void checkOrderValidity(Long orderId) {
+        Optional<Payment> payment = paymentRepository.findByOrderId(orderId);
+        if (payment.isPresent() && payment.get().getStatus().equals(Payment.Status.PAID)) {
+            throw new PaymentException("Order with ID: " + orderId + " is already paid");
+        }
+
+        Optional<Order> order = orderRepository.findById(orderId);
+        if (order.isPresent() && !order.get().isVerified()) {
+            throw new OrderNotVerifiedException("Order with ID: " + orderId + " is not verified");
+        }
+        if (order.isPresent() && !order.get().getPaymentType().equals(Order.PaymentType.CARD)) {
+            throw new PaymentTypeException("Order with ID: " + orderId
+                    + " doesn't have a CARD payment type");
+        }
+    }
+
     @Override
     public PaymentResponseDto checkSuccessfulPayment(Long orderId) {
         Payment payment = paymentRepository.findByOrderId(orderId).orElseThrow(() ->
@@ -130,13 +148,6 @@ public class PaymentServiceImpl implements PaymentService {
         return payments.stream()
                 .map(paymentMapper::toDto)
                 .toList();
-    }
-
-    private void checkIfOrderIsPaid(Long orderId) {
-        Optional<Payment> payment = paymentRepository.findByOrderId(orderId);
-        if (payment.isPresent() && payment.get().getStatus().equals(Payment.Status.PAID)) {
-            throw new PaymentException("Order with ID: " + orderId + " is already paid");
-        }
     }
 
     private String getSuccessUrl(Long orderId) {

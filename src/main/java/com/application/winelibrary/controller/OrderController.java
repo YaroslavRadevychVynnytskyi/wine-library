@@ -4,6 +4,7 @@ import com.application.winelibrary.dto.order.OrderResponseDto;
 import com.application.winelibrary.dto.order.PlaceOrderRequestDto;
 import com.application.winelibrary.dto.order.UpdateStatusRequestDto;
 import com.application.winelibrary.dto.orderitem.OrderItemDto;
+import com.application.winelibrary.dto.post.PostOfficesResponseDto;
 import com.application.winelibrary.entity.User;
 import com.application.winelibrary.service.order.OrderService;
 import io.swagger.v3.oas.annotations.Operation;
@@ -19,6 +20,7 @@ import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
 @Tag(name = "Order management", description = "Endpoints for managing orders")
@@ -71,5 +73,10 @@ public class OrderController {
     public OrderResponseDto updateStatus(@PathVariable Long id,
                                      @RequestBody UpdateStatusRequestDto requestDto) {
         return orderService.updateStatus(id, requestDto);
+    }
+
+    @GetMapping("/shipping-address")
+    public PostOfficesResponseDto getPostOffices(@RequestParam String city) {
+        return orderService.getShippingAddress(city);
     }
 }

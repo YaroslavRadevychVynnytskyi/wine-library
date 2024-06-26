@@ -1,0 +1,32 @@
+databaseChangeLog:
+  - changeSet:
+      id: insert-into-delivery-table
+      author: Yaroslav Radevych-Vynnytskyi
+      changes:
+        - insert:
+            tableName: delivery
+            columns:
+              - column:
+                  name: type
+                  value: NOVA_POST_COURIER
+              - column:
+                  name: price
+                  value: 120
+        - insert:
+            tableName: delivery
+            columns:
+              - column:
+                  name: type
+                  value: NOVA_POST_PICKUP
+              - column:
+                  name: price
+                  value: 100
+        - insert:
+            tableName: delivery
+            columns:
+              - column:
+                  name: type
+                  value: UKR_POST_PICKUP
+              - column:
+                  name: price
+                  value: 60

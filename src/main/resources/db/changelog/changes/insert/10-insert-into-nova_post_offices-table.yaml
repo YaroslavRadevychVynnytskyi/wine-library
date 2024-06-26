@@ -1,0 +1,126 @@
+databaseChangeLog:
+  - changeSet:
+      id: insert-into-nova_post_offices-table
+      author: Yaroslav Radevych-Vynnytskyi
+      changes:
+# Lviv
+        - insert:
+            tableName: nova_post_offices
+            columns:
+              - column:
+                  name: name
+                  value: Nova post 1 - 359 Horodotska street
+              - column:
+                  name: city_id
+                  value: 1
+        - insert:
+            tableName: nova_post_offices
+            columns:
+              - column:
+                  name: name
+                  value: Nova post 2 - 7 Plastova street
+              - column:
+                  name: city_id
+                  value: 1
+        - insert:
+            tableName: nova_post_offices
+            columns:
+              - column:
+                  name: name
+                  value: Nova post 3 - 22 Uhorska street
+              - column:
+                  name: city_id
+                  value: 1
+        - insert:
+            tableName: nova_post_offices
+            columns:
+              - column:
+                  name: name
+                  value: Nova post 4 - 15 Truskavetska street
+              - column:
+                  name: city_id
+                  value: 1
+# Drohobych
+        - insert:
+            tableName: nova_post_offices
+            columns:
+              - column:
+                  name: name
+                  value: Nova post 1 - 183 Horishnya Brama street
+              - column:
+                  name: city_id
+                  value: 2
+        - insert:
+            tableName: nova_post_offices
+            columns:
+              - column:
+                  name: name
+                  value: Nova post 2 - 2 Boryslavska street
+              - column:
+                  name: city_id
+                  value: 2
+        - insert:
+            tableName: nova_post_offices
+            columns:
+              - column:
+                  name: name
+                  value: Nova post 3 - 42 Hrushevskoho street
+              - column:
+                  name: city_id
+                  value: 2
+# Yavoriv
+        - insert:
+            tableName: nova_post_offices
+            columns:
+              - column:
+                  name: name
+                  value: Nova post 1 - 62 Makoveiya street
+              - column:
+                  name: city_id
+                  value: 3
+        - insert:
+            tableName: nova_post_offices
+            columns:
+              - column:
+                  name: name
+                  value: Nova post 2 - 3 Tychyny street
+              - column:
+                  name: city_id
+                  value: 3
+# Kyiv
+        - insert:
+            tableName: nova_post_offices
+            columns:
+              - column:
+                  name: name
+                  value: Nova post 1 - 135 Pirogivsky shliah
+              - column:
+                  name: city_id
+                  value: 4
+        - insert:
+            tableName: nova_post_offices
+            columns:
+              - column:
+                  name: name
+                  value: Nova post 2 - 11 Bogatyrska street
+              - column:
+                  name: city_id
+                  value: 4
+        - insert:
+            tableName: nova_post_offices
+            columns:
+              - column:
+                  name: name
+                  value: Nova post 3 - 13 Kalachivska street
+              - column:
+                  name: city_id
+                  value: 4
+        - insert:
+            tableName: nova_post_offices
+            columns:
+              - column:
+                  name: name
+                  value: Nova post 4 - 69 Verkhovynna street
+              - column:
+                  name: city_id
+                  value: 4

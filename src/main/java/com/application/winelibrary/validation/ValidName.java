@@ -1,5 +1,6 @@
 package com.application.winelibrary.validation;
 
+import com.application.winelibrary.validation.validator.NameValidator;
 import jakarta.validation.Constraint;
 import jakarta.validation.Payload;
 import java.lang.annotation.ElementType;
