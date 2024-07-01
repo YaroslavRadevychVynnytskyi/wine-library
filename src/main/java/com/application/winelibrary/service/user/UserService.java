@@ -1,5 +1,7 @@
 package com.application.winelibrary.service.user;
 
+import com.application.winelibrary.dto.user.management.UpdatePasswordRequestDto;
+import com.application.winelibrary.dto.user.management.UpdatePasswordResponseDto;
 import com.application.winelibrary.dto.user.management.UpdateUserRoleRequestDto;
 import com.application.winelibrary.dto.user.registration.UserRegistrationRequestDto;
 import com.application.winelibrary.dto.user.registration.UserResponseDto;
@@ -18,4 +20,6 @@ public interface UserService {
                                           String username,
                                           String firstName,
                                           String lastName);
+
+    UpdatePasswordResponseDto updateUserPassword(Long userId, UpdatePasswordRequestDto requestDto);
 }

@@ -1,5 +1,7 @@
 package com.application.winelibrary.service.user.impl;
 
+import com.application.winelibrary.dto.user.management.UpdatePasswordRequestDto;
+import com.application.winelibrary.dto.user.management.UpdatePasswordResponseDto;
 import com.application.winelibrary.dto.user.management.UpdateUserRoleRequestDto;
 import com.application.winelibrary.dto.user.registration.UserRegistrationRequestDto;
 import com.application.winelibrary.dto.user.registration.UserResponseDto;
@@ -88,6 +90,19 @@ public class UserServiceImpl implements UserService {
             return userMapper.toDto(savedUser);
         }
         return userMapper.toDto(user.get());
+    }
+
+    @Override
+    public UpdatePasswordResponseDto updateUserPassword(Long userId,
+                                                        UpdatePasswordRequestDto requestDto) {
+        User user = getUserById(userId);
+
+        if (passwordEncoder.matches(requestDto.getCurrentPassword(), user.getPassword())) {
+            user.setPassword(passwordEncoder.encode(requestDto.getPassword()));
+            userRepository.save(user);
+            return new UpdatePasswordResponseDto("Successfully updated password", true);
+        }
+        return new UpdatePasswordResponseDto("Failed to update password", false);
     }
 
     private void checkUserExistence(String email) throws RegistrationException {

@@ -33,6 +33,10 @@ services:
         "deepseek.key" : "$DEEPSEEK_KEY",
         "spring.security.oauth2.client.registration.google.client-id" : "$OAUTH_GOOGLE_CLIENT_ID",
         "spring.security.oauth2.client.registration.google.client-secret" : "$OAUTH_GOOGLE_CLIENT_SECRET",
-        "spring.security.oauth2.client.registration.google.redirect-uri" : "http://localhost:$SPRING_LOCAL_PORT/login/oauth2/code/google"
+        "spring.security.oauth2.client.registration.google.redirect-uri" : "http://localhost:$SPRING_LOCAL_PORT/login/oauth2/code/google",
+        "geonames.url" : "$GEONAMES_URL",
+        "twilio.account.sid" : "$TWILIO_SID",
+        "twilio.auth.token" : "$TWILIO_AUTH_TOKEN",
+        "twilio.phone.number" : "$TWILIO_PHONE_NUMBER"
       }'
       JAVA_TOOL_OPTIONS: "-agentlib:jdwp=transport=dt_socket,server=y,suspend=n,address=*:5005"
