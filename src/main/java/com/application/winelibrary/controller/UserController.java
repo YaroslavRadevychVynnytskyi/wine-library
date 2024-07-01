@@ -1,5 +1,7 @@
 package com.application.winelibrary.controller;
 
+import com.application.winelibrary.dto.user.management.UpdatePasswordRequestDto;
+import com.application.winelibrary.dto.user.management.UpdatePasswordResponseDto;
 import com.application.winelibrary.dto.user.management.UpdateUserRoleRequestDto;
 import com.application.winelibrary.dto.user.registration.UserRegistrationRequestDto;
 import com.application.winelibrary.dto.user.registration.UserResponseDto;
@@ -9,6 +11,8 @@ import io.swagger.v3.oas.annotations.Operation;
 import io.swagger.v3.oas.annotations.tags.Tag;
 import jakarta.validation.Valid;
 import lombok.RequiredArgsConstructor;
+import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
 import org.springframework.security.access.prepost.PreAuthorize;
 import org.springframework.security.core.Authentication;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -56,5 +60,20 @@ public class UserController {
             @PathVariable Long id
     ) {
         return userService.updateUserRole(id, requestDto);
+    }
+
+    @PreAuthorize("hasRole('ROLE_USER')")
+    @PutMapping("/update-password")
+    @Operation(summary = "Update password", description = "User access. Updates user's password")
+    public ResponseEntity<UpdatePasswordResponseDto> updateUserPassword(
+            Authentication authentication,
+            @RequestBody @Valid UpdatePasswordRequestDto requestDto) {
+        User user = (User) authentication.getPrincipal();
+        UpdatePasswordResponseDto responseDto = userService
+                .updateUserPassword(user.getId(), requestDto);
+        if (responseDto.isSuccess()) {
+            return ResponseEntity.ok(responseDto);
+        }
+        return ResponseEntity.status(HttpStatus.BAD_REQUEST).body(responseDto);
     }
 }

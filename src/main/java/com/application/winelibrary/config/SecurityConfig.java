@@ -57,16 +57,17 @@ public class SecurityConfig {
                                 .requestMatchers("auth/register", "/auth/sign-in", "/error",
                                         "swagger-ui/**", "/wines", "/wines/{id}", "/payments/**",
                                         "/selection", "/wines/search", "wines/{wineId}/ratings",
-                                "wines/{wineId}/comments", "cities", "/orders/shipping-address",
-                                        "verification/**")
+                                "wines/{wineId}/comments", "cities", "/cities/shipping-address",
+                                        "verification/**", "/login**")
                                 .permitAll()
                                 .anyRequest().authenticated()
                 )
                 .sessionManagement(session ->
                         session.sessionCreationPolicy(SessionCreationPolicy.STATELESS))
                 .oauth2Login(oauth2 -> oauth2
+                        .userInfoEndpoint(userInfo -> userInfo.userService(oauthUserService()))
                         .successHandler(successHandler)
-                        .userInfoEndpoint(userInfo -> userInfo.userService(oauthUserService())))
+                        )
                 .addFilterBefore(jwtAuthenticationFilter,
                         UsernamePasswordAuthenticationFilter.class)
                 .userDetailsService(userDetailsService)

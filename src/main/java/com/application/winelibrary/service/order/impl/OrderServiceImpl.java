@@ -4,17 +4,13 @@ import com.application.winelibrary.dto.order.OrderResponseDto;
 import com.application.winelibrary.dto.order.PlaceOrderRequestDto;
 import com.application.winelibrary.dto.order.UpdateStatusRequestDto;
 import com.application.winelibrary.dto.orderitem.OrderItemDto;
-import com.application.winelibrary.dto.post.PostOfficeDto;
-import com.application.winelibrary.dto.post.PostOfficesResponseDto;
 import com.application.winelibrary.entity.CartItem;
-import com.application.winelibrary.entity.City;
 import com.application.winelibrary.entity.Order;
 import com.application.winelibrary.entity.OrderItem;
 import com.application.winelibrary.entity.User;
 import com.application.winelibrary.exception.TotalCalculationException;
 import com.application.winelibrary.mapper.CartItemMapper;
 import com.application.winelibrary.mapper.OrderMapper;
-import com.application.winelibrary.mapper.PostOfficeMapper;
 import com.application.winelibrary.repository.cartitem.CartItemRepository;
 import com.application.winelibrary.repository.city.CityRepository;
 import com.application.winelibrary.repository.delivery.DeliveryRepository;
@@ -43,7 +39,6 @@ public class OrderServiceImpl implements OrderService {
     private final DeliveryRepository deliveryRepository;
     private final OrderItemRepository orderItemRepository;
 
-    private final PostOfficeMapper postOfficeMapper;
     private final CartItemMapper cartItemMapper;
     private final OrderMapper orderMapper;
 
@@ -101,21 +96,6 @@ public class OrderServiceImpl implements OrderService {
         return orderMapper.toDto(order);
     }
 
-    @Override
-    public PostOfficesResponseDto getShippingAddress(String cityName) {
-        City city = getCityByName(cityName);
-
-        Set<PostOfficeDto> ukrPostOffices = city.getUkrPostOffices().stream()
-                .map(postOfficeMapper::ukrPostToDto)
-                .collect(Collectors.toSet());
-
-        Set<PostOfficeDto> novaPostOffices = city.getNovaPostOffices().stream()
-                .map(postOfficeMapper::novaPosToDto)
-                .collect(Collectors.toSet());
-
-        return new PostOfficesResponseDto(ukrPostOffices, novaPostOffices);
-    }
-
     private User getUserById(Long userId) {
         return userRepository.findById(userId).orElseThrow(
                 () -> new EntityNotFoundException("Can't find user with ID: " + userId));
@@ -144,10 +124,5 @@ public class OrderServiceImpl implements OrderService {
     private void updateWineInventory(Set<OrderItem> orderItems) {
         orderItems.forEach(item -> item.getWine()
                 .setInventory(item.getWine().getInventory() - item.getQuantity()));
-    }
-
-    private City getCityByName(String name) {
-        return cityRepository.findByName(name).orElseThrow(() ->
-                new EntityNotFoundException("Can't find city with name: " + name));
     }
 }

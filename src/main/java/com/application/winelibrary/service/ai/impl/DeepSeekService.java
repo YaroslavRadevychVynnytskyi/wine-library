@@ -110,8 +110,8 @@ public class DeepSeekService implements AiService {
     }
 
     private String cleanResponse(String response) {
-        if (response.startsWith(" ```") && response.contains("SELECT")) {
-            response = response.substring(7).trim();
+        if (response.startsWith("```") && response.contains("SELECT")) {
+            response = response.substring(6).trim();
             response = response.substring(0, response.length() - 3).trim();
         } else {
             response = response.replaceAll("\\\\n1|\\\\n2|\\\\n3|\\\\n|\\*\\*", "");
