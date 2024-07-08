@@ -11,6 +11,8 @@ import jakarta.persistence.Table;
 import lombok.EqualsAndHashCode;
 import lombok.Getter;
 import lombok.Setter;
+import org.hibernate.annotations.Cascade;
+import org.hibernate.annotations.CascadeType;
 import org.hibernate.annotations.SoftDelete;
 
 @Entity
@@ -29,6 +31,7 @@ public class CartItem {
     private ShoppingCart shoppingCart;
 
     @ManyToOne
+    @Cascade(CascadeType.PERSIST)
     @JoinColumn(name = "wine_id", nullable = false)
     private Wine wine;
 

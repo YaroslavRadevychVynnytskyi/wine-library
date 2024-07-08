@@ -8,6 +8,8 @@ import com.application.winelibrary.service.cart.ShoppingCartService;
 import io.swagger.v3.oas.annotations.Operation;
 import io.swagger.v3.oas.annotations.tags.Tag;
 import lombok.RequiredArgsConstructor;
+import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
 import org.springframework.security.access.prepost.PreAuthorize;
 import org.springframework.security.core.Authentication;
 import org.springframework.web.bind.annotation.DeleteMapping;
@@ -57,10 +59,17 @@ public class ShoppingCartController {
     }
 
     @PreAuthorize("hasRole('ROLE_USER')")
-    @DeleteMapping("/items/{cartItemId}")
+    @DeleteMapping("/items/{wineId}")
     @Operation(summary = "Remove wine",
             description = "User access. Deletes certain wine from user's cart")
-    public void removeWine(@PathVariable Long cartItemId) {
-        cartService.removeWine(cartItemId);
+    public ResponseEntity<String> removeWine(Authentication authentication,
+                                     @PathVariable Long wineId) {
+        User user = (User) authentication.getPrincipal();
+        try {
+            cartService.removeWine(user.getId(), wineId);
+            return ResponseEntity.ok("Wine removed from cart successfully");
+        } catch (Exception e) {
+            return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR).body(e.getMessage());
+        }
     }
 }
