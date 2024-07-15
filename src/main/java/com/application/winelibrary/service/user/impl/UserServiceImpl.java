@@ -2,6 +2,8 @@ package com.application.winelibrary.service.user.impl;
 
 import com.application.winelibrary.dto.user.management.UpdatePasswordRequestDto;
 import com.application.winelibrary.dto.user.management.UpdatePasswordResponseDto;
+import com.application.winelibrary.dto.user.management.UpdateUserFirstNameRequestDto;
+import com.application.winelibrary.dto.user.management.UpdateUserLastNameRequestDto;
 import com.application.winelibrary.dto.user.management.UpdateUserRoleRequestDto;
 import com.application.winelibrary.dto.user.registration.UserRegistrationRequestDto;
 import com.application.winelibrary.dto.user.registration.UserResponseDto;
@@ -51,15 +53,6 @@ public class UserServiceImpl implements UserService {
     }
 
     @Override
-    public UserResponseDto updateProfileInfo(Long userId, UserRegistrationRequestDto requestDto) {
-        User user = getUserById(userId);
-        userMapper.updateUserFromDto(requestDto, user);
-        user.setPassword(passwordEncoder.encode(requestDto.getPassword()));
-        userRepository.save(user);
-        return userMapper.toDto(user);
-    }
-
-    @Override
     public UserResponseDto updateUserRole(Long userId, UpdateUserRoleRequestDto requestDto) {
         User user = getUserById(userId);
         user.setRoles(Set.of(roleRepository.getByName(requestDto.role())));
@@ -97,12 +90,29 @@ public class UserServiceImpl implements UserService {
                                                         UpdatePasswordRequestDto requestDto) {
         User user = getUserById(userId);
 
-        if (passwordEncoder.matches(requestDto.getCurrentPassword(), user.getPassword())) {
+        if (passwordEncoder.matches(requestDto.getCurrentPassword(), user.getPassword())
+                && !passwordEncoder.matches(requestDto.getPassword(), user.getPassword())) {
             user.setPassword(passwordEncoder.encode(requestDto.getPassword()));
             userRepository.save(user);
             return new UpdatePasswordResponseDto("Successfully updated password", true);
         }
         return new UpdatePasswordResponseDto("Failed to update password", false);
+    }
+
+    @Override
+    public UserResponseDto updateUserFirstName(Long userId,
+                                               UpdateUserFirstNameRequestDto requestDto) {
+        User user = getUserById(userId);
+        user.setFirstName(requestDto.firstName());
+        return userMapper.toDto(userRepository.save(user));
+    }
+
+    @Override
+    public UserResponseDto updateUserLastName(Long userId,
+                                              UpdateUserLastNameRequestDto requestDto) {
+        User user = getUserById(userId);
+        user.setLastName(requestDto.lastName());
+        return userMapper.toDto(userRepository.save(user));
     }
 
     private void checkUserExistence(String email) throws RegistrationException {

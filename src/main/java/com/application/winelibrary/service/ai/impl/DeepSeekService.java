@@ -1,5 +1,6 @@
 package com.application.winelibrary.service.ai.impl;
 
+import com.application.winelibrary.exception.DangerousJpqlException;
 import com.application.winelibrary.service.ai.AiService;
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.JsonNode;
@@ -110,6 +111,13 @@ public class DeepSeekService implements AiService {
     }
 
     private String cleanResponse(String response) {
+        if (response.contains("DROP")
+                || response.contains("DELETE")
+                || response.contains("UPDATE")
+                || response.contains("ALTER")) {
+            throw new DangerousJpqlException("Potentially dangerous query");
+        }
+
         if (response.startsWith("```") && response.contains("SELECT")) {
             response = response.substring(6).trim();
             response = response.substring(0, response.length() - 3).trim();

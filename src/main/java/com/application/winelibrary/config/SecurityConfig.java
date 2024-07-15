@@ -58,16 +58,12 @@ public class SecurityConfig {
                                         "swagger-ui/**", "/wines", "/wines/{id}", "/payments/**",
                                         "/selection", "/wines/search", "wines/{wineId}/ratings",
                                 "wines/{wineId}/comments", "cities", "/cities/shipping-address",
-                                        "verification/**", "/login**")
+                                        "verification/**", "/login**", "/auth/oauth/sign-in")
                                 .permitAll()
                                 .anyRequest().authenticated()
                 )
                 .sessionManagement(session ->
                         session.sessionCreationPolicy(SessionCreationPolicy.STATELESS))
-                .oauth2Login(oauth2 -> oauth2
-                        .userInfoEndpoint(userInfo -> userInfo.userService(oauthUserService()))
-                        .successHandler(successHandler)
-                        )
                 .addFilterBefore(jwtAuthenticationFilter,
                         UsernamePasswordAuthenticationFilter.class)
                 .userDetailsService(userDetailsService)

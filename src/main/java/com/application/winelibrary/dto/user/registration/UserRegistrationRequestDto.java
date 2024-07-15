@@ -12,9 +12,11 @@ import org.hibernate.validator.constraints.Length;
 public class UserRegistrationRequestDto {
     @NotBlank
     @ValidName
+    @Length(min = 2, max = 50)
     private String firstName;
     @NotBlank
     @ValidName
+    @Length(min = 2, max = 70)
     private String lastName;
     @NotBlank
     @Email

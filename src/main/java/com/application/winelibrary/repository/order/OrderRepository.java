@@ -16,6 +16,8 @@ public interface OrderRepository extends JpaRepository<Order, Long> {
     Optional<Order> findById(Long id);
 
     @Query("SELECT o FROM Order o JOIN FETCH o.orderItems oi JOIN FETCH o.deliveryType dt "
-            + "WHERE o.phoneNumber = :phoneNumber AND o.isVerified != true")
-    Optional<Order> findNotVerifiedByPhoneNumber(@Param("phoneNumber") String phoneNumber);
+            + "WHERE o.id = :orderId AND o.phoneNumber = :phoneNumber AND o.isVerified != true")
+    Optional<Order> findNotVerifiedByOrderIdAndPhoneNumber(
+            @Param("orderId") Long orderId, @Param("phoneNumber") String phoneNumber
+    );
 }

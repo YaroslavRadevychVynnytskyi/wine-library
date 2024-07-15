@@ -34,6 +34,6 @@ public class VerificationController {
             + "code from SMS to server and validates it")
     public VerificationResponseDto verifyCode(
             @RequestBody SendVerificationCodeRequestDto requestDto) {
-        return verificationService.verifyCode(requestDto.phoneNumber(), requestDto.code());
+        return verificationService.verifyCode(requestDto);
     }
 }
