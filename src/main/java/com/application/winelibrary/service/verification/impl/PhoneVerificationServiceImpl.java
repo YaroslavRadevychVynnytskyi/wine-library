@@ -1,5 +1,6 @@
 package com.application.winelibrary.service.verification.impl;
 
+import com.application.winelibrary.dto.verification.SendVerificationCodeRequestDto;
 import com.application.winelibrary.dto.verification.VerificationResponseDto;
 import com.application.winelibrary.entity.Order;
 import com.application.winelibrary.entity.VerificationCode;
@@ -42,29 +43,32 @@ public class PhoneVerificationServiceImpl implements PhoneVerificationService {
 
     @Override
     @Transactional
-    public VerificationResponseDto verifyCode(String phoneNumber, String code) {
+    public VerificationResponseDto verifyCode(SendVerificationCodeRequestDto requestDto) {
         Optional<VerificationCode> verificationCode = verificationCodeRepository
-                .findByPhoneNumberAndCode(phoneNumber, code);
+                .findByPhoneNumberAndCode(requestDto.phoneNumber(), requestDto.code());
 
         if (verificationCode.isPresent()
                 && verificationCode.get().getExpirationTime().isAfter(LocalDateTime.now())) {
-            Order order = getNotVerifiedOrderByPhoneNumber(phoneNumber);
+            Order order = getNotVerifiedOrderByOrderIdAndPhoneNumber(requestDto.orderId(),
+                    requestDto.phoneNumber());
             order.setVerified(true);
             orderRepository.save(order);
 
-            verificationCodeRepository.deleteByPhoneNumberAndCode(phoneNumber, code);
+            verificationCodeRepository.deleteByPhoneNumberAndCode(requestDto.phoneNumber(),
+                    requestDto.code());
             return new VerificationResponseDto(true);
         }
         return new VerificationResponseDto(false);
     }
 
     private String generateVerificationCode() {
-        int code = 1000 + random.nextInt(9999);
+        int code = 1000 + random.nextInt(8999);
         return String.valueOf(code);
     }
 
-    private Order getNotVerifiedOrderByPhoneNumber(String phoneNumber) {
-        return orderRepository.findNotVerifiedByPhoneNumber(phoneNumber).orElseThrow(() ->
-                new EntityNotFoundException("Can't find order with phone number: " + phoneNumber));
+    private Order getNotVerifiedOrderByOrderIdAndPhoneNumber(Long orderId, String phoneNumber) {
+        return orderRepository.findNotVerifiedByOrderIdAndPhoneNumber(orderId, phoneNumber)
+                .orElseThrow(() -> new EntityNotFoundException("Can't find order with"
+                        + " phone number: " + phoneNumber));
     }
 }
