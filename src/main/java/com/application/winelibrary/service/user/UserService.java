@@ -7,6 +7,7 @@ import com.application.winelibrary.dto.user.management.UpdateUserLastNameRequest
 import com.application.winelibrary.dto.user.management.UpdateUserRoleRequestDto;
 import com.application.winelibrary.dto.user.registration.UserRegistrationRequestDto;
 import com.application.winelibrary.dto.user.registration.UserResponseDto;
+import com.application.winelibrary.entity.User;
 import com.application.winelibrary.exception.RegistrationException;
 
 public interface UserService {
@@ -16,10 +17,7 @@ public interface UserService {
 
     UserResponseDto updateUserRole(Long userId, UpdateUserRoleRequestDto requestDto);
 
-    UserResponseDto processOAuthPostLogin(String oauthId,
-                                          String username,
-                                          String firstName,
-                                          String lastName);
+    UserResponseDto processOAuthLogin(User user);
 
     UpdatePasswordResponseDto updateUserPassword(Long userId, UpdatePasswordRequestDto requestDto);
 

@@ -62,27 +62,14 @@ public class UserServiceImpl implements UserService {
 
     @Override
     @Transactional
-    public UserResponseDto processOAuthPostLogin(String oauthId,
-                                                 String username,
-                                                 String firstName,
-                                                 String lastName) {
-        Optional<User> user = userRepository.findByEmail(username);
-        if (user.isEmpty()) {
-            User newUser = User.builder()
-                    .oauthProvider("google")
-                    .oauthId(oauthId)
-                    .firstName(firstName)
-                    .lastName(lastName)
-                    .email(username)
-                    .password(passwordEncoder.encode(""))
-                    .roles(Set.of(roleRepository.getByName(Role.RoleName.USER)))
-                    .build();
-
-            User savedUser = userRepository.save(newUser);
+    public UserResponseDto processOAuthLogin(User user) {
+        Optional<User> optionalUser = userRepository.findByEmail(user.getEmail());
+        if (optionalUser.isEmpty()) {
+            User savedUser = userRepository.save(user);
             createShoppingCart(savedUser);
             return userMapper.toDto(savedUser);
         }
-        return userMapper.toDto(user.get());
+        return userMapper.toDto(optionalUser.get());
     }
 
     @Override
