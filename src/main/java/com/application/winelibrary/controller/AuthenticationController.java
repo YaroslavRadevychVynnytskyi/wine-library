@@ -42,7 +42,7 @@ public class AuthenticationController {
     }
 
     @PostMapping("/oauth/sign-in")
-    @Operation(summary = "OAuth sing in for user",
+    @Operation(summary = "OAuth sign in for user",
             description = "OAuth sign in endpoint. Returns JWT")
     public ResponseEntity<UserLoginResponseDto> oauthLogin(
             @RequestBody OAuthLoginUserRequestDto requestDto) {
