@@ -2,7 +2,6 @@
 ![](https://raw.githubusercontent.com/YaroslavRadevychVynnytskyi/content-wine-library/main/backend-readme-pics/main-pic-1.jpeg)
 
 ## 1. About the project
-___
 This repository contains a source code for the backend of the "Wine Library" project,
 which is a REST API. The main aim of the “Wine Library” is to make internet wine 
 buying as satisfying as possible. To achieve this, we did our best to provide elegant design and advanced features 
@@ -13,7 +12,6 @@ preferences. Join us on a journey to explore the world of wines with Wine Librar
 where technology meets elegance to deliver an exceptional shopping experience.
 
 ## 2. Where to find front-end part of the project
-___
 You can check out the front-end part of our project [here](https://github.com/BodyaRespect/wine-library).
 
 ## 3. Documentation and usage
@@ -23,7 +21,6 @@ Also, you may try using Postman to send requests. [Here](https://web.postman.co/
 is public collection of all available endpoints.
 
 ## 4. How to run the project on your machine
-___
 #### Requirements:
 * JDK 17.0.10
 * Apache Maven version 3.8.7 or higher
