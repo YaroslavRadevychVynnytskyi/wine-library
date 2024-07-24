@@ -72,4 +72,13 @@ public class ShoppingCartController {
             return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR).body(e.getMessage());
         }
     }
+
+    @PreAuthorize("hasRole('ROLE_USER')")
+    @PostMapping("/add-favorites")
+    @Operation(summary = "Order the whole liked list",
+            description = "User access. Puts into cart all liked items")
+    public CartResponseDto addLikedItems(Authentication authentication) {
+        User user = (User) authentication.getPrincipal();
+        return cartService.addLikedItems(user.getId());
+    }
 }

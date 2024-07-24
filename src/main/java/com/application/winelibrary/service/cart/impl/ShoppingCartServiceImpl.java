@@ -4,6 +4,7 @@ import com.application.winelibrary.dto.cart.CartResponseDto;
 import com.application.winelibrary.dto.wine.AddWineToCartRequestDto;
 import com.application.winelibrary.dto.wine.UpdateWineQuantityRequestDto;
 import com.application.winelibrary.entity.CartItem;
+import com.application.winelibrary.entity.Favorite;
 import com.application.winelibrary.entity.ShoppingCart;
 import com.application.winelibrary.entity.Wine;
 import com.application.winelibrary.exception.CartItemNotFoundException;
@@ -12,9 +13,11 @@ import com.application.winelibrary.exception.OutOfInventoryException;
 import com.application.winelibrary.mapper.ShoppingCartMapper;
 import com.application.winelibrary.repository.cart.ShoppingCartRepository;
 import com.application.winelibrary.repository.cartitem.CartItemRepository;
+import com.application.winelibrary.repository.favorite.FavoriteRepository;
 import com.application.winelibrary.repository.wine.WineRepository;
 import com.application.winelibrary.service.cart.ShoppingCartService;
 import jakarta.persistence.EntityNotFoundException;
+import java.util.List;
 import java.util.Optional;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
@@ -23,8 +26,9 @@ import org.springframework.transaction.annotation.Transactional;
 @Service
 @RequiredArgsConstructor
 public class ShoppingCartServiceImpl implements ShoppingCartService {
-    private final CartItemRepository cartItemRepository;
     private final ShoppingCartRepository cartRepository;
+    private final FavoriteRepository favoriteRepository;
+    private final CartItemRepository cartItemRepository;
     private final WineRepository wineRepository;
 
     private final ShoppingCartMapper cartMapper;
@@ -32,7 +36,7 @@ public class ShoppingCartServiceImpl implements ShoppingCartService {
     @Override
     @Transactional
     public CartResponseDto add(Long userId, AddWineToCartRequestDto requestDto) {
-        checkIfAlreadyInCart(userId, requestDto.wineId());
+        checkIfAlreadyInCart(userId, List.of(requestDto.wineId()));
 
         Wine wine = getWineById(requestDto.wineId());
         checkInventoryAvailability(wine.getInventory(), requestDto.quantity());
@@ -85,11 +89,44 @@ public class ShoppingCartServiceImpl implements ShoppingCartService {
         }
     }
 
-    private void checkIfAlreadyInCart(Long userId, Long wineId) {
-        Optional<CartItem> item = cartItemRepository.findByShoppingCartIdAndWineId(userId, wineId);
-        if (item.isPresent()) {
-            throw new ExistingCartItemException("Wine with ID: " + wineId
-                    + " is already in user's shopping cart");
+    @Transactional
+    @Override
+    public CartResponseDto addLikedItems(Long userId) {
+        List<Favorite> userFavorites = favoriteRepository.findByUserId(userId);
+        ShoppingCart cart = getCartById(userId);
+
+        List<Long> winesInCartIds = cartItemRepository.findCartItemsByShoppingCartId(userId)
+                .stream()
+                .map(ci -> ci.getWine().getId())
+                .toList();
+
+        List<CartItem> cartItems = userFavorites.stream()
+                .filter(favorite -> !winesInCartIds.contains(favorite.getWine().getId()))
+                .map(favorite -> {
+                    Wine wine = wineRepository.findById(favorite.getWine().getId())
+                            .orElseThrow(EntityNotFoundException::new);
+
+                    CartItem cartItem = new CartItem();
+                    cartItem.setWine(wine);
+                    cartItem.setShoppingCart(cart);
+                    cartItem.setQuantity(1);
+
+                    wine.setInventory(wine.getInventory() - 1);
+                    return cartItem;
+                })
+                .toList();
+        cartItemRepository.saveAll(cartItems);
+        return cartMapper.toDto(getCartById(userId));
+    }
+
+    private void checkIfAlreadyInCart(Long userId, List<Long> wineIds) {
+        for (Long wineId : wineIds) {
+            Optional<CartItem> item = cartItemRepository
+                    .findByShoppingCartIdAndWineId(userId, wineId);
+            if (item.isPresent()) {
+                throw new ExistingCartItemException("Wine with ID: " + wineId
+                        + " is already in user's shopping cart");
+            }
         }
     }
 
