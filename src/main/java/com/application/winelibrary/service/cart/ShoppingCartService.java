@@ -17,4 +17,6 @@ public interface ShoppingCartService {
     );
 
     void removeWine(Long userId, Long wineId) throws CartItemNotFoundException;
+
+    CartResponseDto addLikedItems(Long userId);
 }
