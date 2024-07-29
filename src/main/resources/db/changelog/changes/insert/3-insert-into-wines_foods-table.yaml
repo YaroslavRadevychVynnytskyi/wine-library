@@ -363,3 +363,131 @@ databaseChangeLog:
               - column:
                   name: food_id
                   value: 2 # CHEESE
+        - insert:
+            tableName: wines_foods
+            columns:
+              - column:
+                  name: wine_id
+                  value: 41
+              - column:
+                  name: food_id
+                  value: 5
+        - insert:
+            tableName: wines_foods
+            columns:
+              - column:
+                  name: wine_id
+                  value: 42
+              - column:
+                  name: food_id
+                  value: 2
+        - insert:
+            tableName: wines_foods
+            columns:
+              - column:
+                  name: wine_id
+                  value: 43
+              - column:
+                  name: food_id
+                  value: 1
+        - insert:
+            tableName: wines_foods
+            columns:
+              - column:
+                  name: wine_id
+                  value: 44
+              - column:
+                  name: food_id
+                  value: 4
+        - insert:
+            tableName: wines_foods
+            columns:
+              - column:
+                  name: wine_id
+                  value: 45
+              - column:
+                  name: food_id
+                  value: 6
+        - insert:
+            tableName: wines_foods
+            columns:
+              - column:
+                  name: wine_id
+                  value: 46
+              - column:
+                  name: food_id
+                  value: 3
+        - insert:
+            tableName: wines_foods
+            columns:
+              - column:
+                  name: wine_id
+                  value: 47
+              - column:
+                  name: food_id
+                  value: 2
+        - insert:
+            tableName: wines_foods
+            columns:
+              - column:
+                  name: wine_id
+                  value: 48
+              - column:
+                  name: food_id
+                  value: 4
+
+        - insert:
+            tableName: wines_foods
+            columns:
+              - column:
+                  name: wine_id
+                  value: 49
+              - column:
+                  name: food_id
+                  value: 5
+        - insert:
+            tableName: wines_foods
+            columns:
+              - column:
+                  name: wine_id
+                  value: 50
+              - column:
+                  name: food_id
+                  value: 1
+
+        - insert:
+            tableName: wines_foods
+            columns:
+              - column:
+                  name: wine_id
+                  value: 51
+              - column:
+                  name: food_id
+                  value: 6
+        - insert:
+            tableName: wines_foods
+            columns:
+              - column:
+                  name: wine_id
+                  value: 52
+              - column:
+                  name: food_id
+                  value: 3
+        - insert:
+            tableName: wines_foods
+            columns:
+              - column:
+                  name: wine_id
+                  value: 53
+              - column:
+                  name: food_id
+                  value: 2
+        - insert:
+            tableName: wines_foods
+            columns:
+              - column:
+                  name: wine_id
+                  value: 54
+              - column:
+                  name: food_id
+                  value: 4

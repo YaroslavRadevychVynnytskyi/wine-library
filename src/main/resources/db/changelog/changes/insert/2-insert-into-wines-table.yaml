@@ -38,7 +38,7 @@ databaseChangeLog:
                   value: LOW
               - column:
                   name: description
-                  value: 4.2+ Very rare stuff
+                  value: Mucho Mas Tinto wine has a beautiful ruby-red color. Bright, full aroma reveals notes of cherry jelly, ripe red berries, dark fruits, plum, with hints of black licorice, wood, vanilla and spices. A complex, juicy, lively taste, filled with pronounced fruity mineral notes and hints of cocoa, which turn into a persistent, elegant aftertaste.The wine is made from a blend of red grape varieties. Each variety was collected in different parts of Spain, where it shows itself better. The purpose of creating such a blend is to reflect the variety of colors of the Spanish wine regions. The wine undergoes a 10-14-day alcoholic fermentation in steel tanks at a controlled temperature of 26-28 ºC. Aged in American oak barrels for 3-4 months until malolactic fermentation is complete.
               - column:
                   name: inventory
                   value: 34
@@ -47,13 +47,13 @@ databaseChangeLog:
                   value: 215
               - column:
                   name: image_url
-                  value: https://muchomaswine.com/wp-content/uploads/2023/08/mucho-mas-tto-web_2-1.png
+                  value: https://raw.githubusercontent.com/YaroslavRadevychVynnytskyi/content-wine-library/main/wine-pics/1.png
               - column:
                   name: deleted
                   value: 0
               - column:
                   name: country_flag_url
-                  value: https://upload.wikimedia.org/wikipedia/commons/6/6f/Spain_flag_300.png?20060514101634
+                  value: https://raw.githubusercontent.com/YaroslavRadevychVynnytskyi/content-wine-library/main/countries-pics/spain.png
         - insert:
             tableName: wines
             columns:
@@ -89,7 +89,7 @@ databaseChangeLog:
                   value: MEDIUM
               - column:
                   name: description
-                  value: Rich and complex
+                  value: Chateau Margaux belongs to the big five of the Premier Grand Cru Classé of 1855. The economy is the only one that received 20 out of 20 points, and back in 1705, London newspapers already wrote about this outstanding economy. Chateau Margot 2018 consists of 90% Cabernet Sauvignon, 4% Merlot, 4% Cabernet Franc, and 2% Petit Verdot, which is 36% of the crop. This is the classic Margaux in its most attractive manifestation. The aroma includes shades of black currant, wild blueberries, Black Forest cake, red currant, pink oil, dark chocolate, and star anise. The taste from medium to full explodes with rich black fruits, fragrant earth, and floral layers, supported by a strong structure of exquisitely ripe, fine-grained tannins and a seamless base of freshness. Drink 2027 - 2067. Wine Advocate 100 points.
               - column:
                   name: inventory
                   value: 20
@@ -98,13 +98,13 @@ databaseChangeLog:
                   value: 1250
               - column:
                   name: image_url
-                  value: https://vintagemarket.com.ua/cdn/shop/products/601868_739a8d82-cf5c-411c-bc58-a66e4dcc8b86_1600x.jpg?v=1644620298
+                  value: https://raw.githubusercontent.com/YaroslavRadevychVynnytskyi/content-wine-library/main/wine-pics/2.jpg
               - column:
                   name: deleted
                   value: 0
               - column:
                   name: country_flag_url
-                  value: https://upload.wikimedia.org/wikipedia/commons/6/62/Flag_of_France.png
+                  value: https://raw.githubusercontent.com/YaroslavRadevychVynnytskyi/content-wine-library/main/countries-pics/france.png
         - insert:
             tableName: wines
             columns:
@@ -140,7 +140,7 @@ databaseChangeLog:
                   value: HIGH
               - column:
                   name: description
-                  value: Bold and tannic
+                  value: Barolo DOCG Serradenari hails from the highest part of La Morra, almost 500 meters above sea level, in a magnificent natural amphitheater overlooking the Piedmontese Alps. Optimal sun exposure and height allow, in light of the ongoing climatic changes, to pick grapes later. The wine has a greater 'zest' than other Barolo in the portfolio but retains the characteristics and typical features of La Morra. Aging for two years, partly in barrels and partly in oak barrels of 25 hectoliters. 2019's Barolo Serradenari has a more botanical bouquet, and we mean it has a bud of lavender, thyme, anise, and other flowers and herbs you might find in a fragrant garden. It is nuanced and delicate, framed by a light note of ash or crushed limestone. And the taste is quite stable or sharp. Only 6,000 bottles were produced. Drink 2025 - 2040. Wine Advocate 95 points.
               - column:
                   name: inventory
                   value: 15
@@ -149,13 +149,13 @@ databaseChangeLog:
                   value: 750
               - column:
                   name: image_url
-                  value: https://content2.rozetka.com.ua/goods/images/big/363951100.jpg
+                  value: https://raw.githubusercontent.com/YaroslavRadevychVynnytskyi/content-wine-library/main/wine-pics/3.webp
               - column:
                   name: deleted
                   value: 0
               - column:
                   name: country_flag_url
-                  value: https://upload.wikimedia.org/wikipedia/commons/e/e4/Flag_of_Italy_%281946%E2%80%932003%29.png
+                  value: https://raw.githubusercontent.com/YaroslavRadevychVynnytskyi/content-wine-library/main/countries-pics/italy.png
         - insert:
             tableName: wines
             columns:
@@ -191,7 +191,7 @@ databaseChangeLog:
                   value: MEDIUM
               - column:
                   name: description
-                  value: Full-bodied and rich
+                  value: Bin 389 Cabernet Shiraz, embodying the power of Penfolds in thick color, a complex fragrant bouquet, and a powerful, plentiful taste, derived from the perfect combination of Cabernet Sauvignon, provides flavor structure and length, and Shiraz, gives wine intensity, richness and flesh. The first vintage 'Bin 389' was made in 1960, since then the wine still has a reputation as consistent and unique in life expectancy and received its well-deserved nickname 'baby Grange' due to its proximity to the style of the great flagship wine 'Grange.' Vintage extraction in 2016 took place within 12 months in barrels of American oak. 'Bin 389' perfectly matches the style of the winery, showing all the advantages of varietal mixing. At the peak of maturity, the 2016 vintage will be from 2021 to 2036. For the production of 'Bean 389,' the emphasis is on optimizing the collection of grapes from various most suitable vineyards from different regions of South Australia. At almost every stage of wine making, a process of careful selection, testing of the blend or further refinement is applied before the wine 'goes out into the world.' All this is reflected in the final result of the finished blend in the spirit and tradition of the great Australian style. When Dr. Christopher Rawson Penfold and his wife Mary arrived from Great Britain in the young colony of South Australia in 1844, they brought with them sprouts that they planted around their stone cottage, called 'The Grange.' The case took place in the town of Magill, now part of the suburbs of Adelaide. Today, Penfolds sells wine worldwide. In Australia, Penfolds is an unsurpassed leader in its field and creates an international reputation for the quality of the country's wine products. Penfolds skillfully uses the many years of experience of its specialists. The philosophy of the company says 'The right style, the right grapes, the right oak, the right bottling time and a little patience - all this ensures the world popularity of our wine
               - column:
                   name: inventory
                   value: 25
@@ -200,13 +200,13 @@ databaseChangeLog:
                   value: 600
               - column:
                   name: image_url
-                  value: https://winestyle.com.ua/images_gen/109/109590/0_0_orig.webp
+                  value: https://raw.githubusercontent.com/YaroslavRadevychVynnytskyi/content-wine-library/main/wine-pics/4.webp
               - column:
                   name: deleted
                   value: 0
               - column:
                   name: country_flag_url
-                  value: https://upload.wikimedia.org/wikipedia/en/thumb/b/b9/Flag_of_Australia.svg/1280px-Flag_of_Australia.svg.png
+                  value: https://raw.githubusercontent.com/YaroslavRadevychVynnytskyi/content-wine-library/main/countries-pics/australia.png
         - insert:
             tableName: wines
             columns:
@@ -242,7 +242,7 @@ databaseChangeLog:
                   value: HIGH
               - column:
                   name: description
-                  value: Crisp and aromatic
+                  value: Cloudy Bay's fresh, intensely fruity white dry wine 'Sauvignon Blanc' from New Zealand is the purest embodiment of the spirit of the Marlborough region. Its aroma is replete with pronounced characteristic notes of citrus and occupation lime, which are supported by juicy tones of nectarines. The elegant, concentrated taste demonstrates the accents of ripe stone fruit and lemongrass combined with a charming mineral. Its living acidity leads to a long appetizing aftertaste, which indicates the aging of the drink in oak barrels. Relatively young winery Cloudy Bay specializes in the production of this unusual wine, reflecting all the wealth and uniqueness of the local terroir. The grapes for Sauvignon Blanc come from different parts of the Vairano Valley. The combination of well-drained rocky dry soils and the sunny marine climate of Marlborough with significant temperature fluctuations between day and night, helps the berries achieve optimal maturity and an ideal balance of acidity. To preserve the freshness of the grapes, it is harvested in the cool evening exclusively by hand and within a few hours destructed and squeezed. The resulting grape juice is cooled and settled for 48-72 hours, fermentation is made mainly in stainless steel tanks with a mixture of cultivated and wild yeast. About 10% of the mixture ferments at higher temperatures in old French oak barriques and large-volume vats. The final blend of Sauvignon Blanc includes only the best batches.
               - column:
                   name: inventory
                   value: 40
@@ -251,13 +251,13 @@ databaseChangeLog:
                   value: 350
               - column:
                   name: image_url
-                  value: https://bayadera.ua/uploaded-images/product/size_600/1VN-VCB075-023.webp
+                  value: https://raw.githubusercontent.com/YaroslavRadevychVynnytskyi/content-wine-library/main/wine-pics/5.webp
               - column:
                   name: deleted
                   value: 0
               - column:
                   name: country_flag_url
-                  value: https://upload.wikimedia.org/wikipedia/commons/thumb/3/34/Flag_of_New_Zealand.png/1200px-Flag_of_New_Zealand.png
+                  value: https://raw.githubusercontent.com/YaroslavRadevychVynnytskyi/content-wine-library/main/countries-pics/new-zealand.png
         - insert:
             tableName: wines
             columns:
@@ -293,7 +293,7 @@ databaseChangeLog:
                   value: HIGH
               - column:
                   name: description
-                  value: Elegant and refined
+                  value: Dom Perignon - exclusively vintage champagne, able to express at the same time the nature of champagne at home and the features of the year. Ripe, generous fruit aroma filled with notes of guava, grapefruit peel, peaches and nectarines, warm notes of vanilla and brioche. The taste is fresh, long, structural, silky, and juicy with delicate bitterness and salty notes, splendor of ripe fruits, and expressive minerality. It goes well with seafood, for example, with pickled and fried in oil octopus, pasta with seafood, and cardamom mousse.
               - column:
                   name: inventory
                   value: 10
@@ -302,13 +302,13 @@ databaseChangeLog:
                   value: 2000
               - column:
                   name: image_url
-                  value: https://elitochka.com/uploads/tovary-novaja/champanskoe/Dom-Perignon-Brut-0,75L-1.jpg
+                  value: https://raw.githubusercontent.com/YaroslavRadevychVynnytskyi/content-wine-library/main/wine-pics/6.jpg
               - column:
                   name: deleted
                   value: 0
               - column:
                   name: country_flag_url
-                  value: https://upload.wikimedia.org/wikipedia/commons/6/62/Flag_of_France.png
+                  value: https://raw.githubusercontent.com/YaroslavRadevychVynnytskyi/content-wine-library/main/countries-pics/france.png
         - insert:
             tableName: wines
             columns:
@@ -344,7 +344,7 @@ databaseChangeLog:
                   value: MEDIUM
               - column:
                   name: description
-                  value: Rich and buttery
+                  value: This Chardonnay is vibrant, luscious, and full-bodied, a delightful example of Napa Valley expression. On the nose, perfumed white floral notes of honeysuckle and citrus blossom aromas leads to a creamy mouth-enveloping palate with layered flavors of pomelo, pineapple, and mango. Balanced oak offers hints of vanilla and ginger spice, while golden delicious apple and brioche toast enhance the experience. A hint of minerality compliments the fruit-forward character, all leading to a lovely, mouthwatering, and crisp, refreshing finish with length and depth.
               - column:
                   name: inventory
                   value: 30
@@ -353,13 +353,13 @@ databaseChangeLog:
                   value: 500
               - column:
                   name: image_url
-                  value: https://winestyle.com.ua/images_gen/181/181822/0_0_orig.webp
+                  value: https://raw.githubusercontent.com/YaroslavRadevychVynnytskyi/content-wine-library/main/wine-pics/7.webp
               - column:
                   name: deleted
                   value: 0
               - column:
                   name: country_flag_url
-                  value: https://upload.wikimedia.org/wikipedia/commons/thumb/d/de/Flag_of_the_United_States.png/1200px-Flag_of_the_United_States.png
+                  value: https://raw.githubusercontent.com/YaroslavRadevychVynnytskyi/content-wine-library/main/countries-pics/usa.png
         - insert:
             tableName: wines
             columns:
@@ -395,7 +395,7 @@ databaseChangeLog:
                   value: HIGH
               - column:
                   name: description
-                  value: Intense and full-bodied
+                  value: The wine is quite reserved on the nose to start, but with a decant it opens up nicely. The wine has aromas of red-cherry preserve, ripe plum, clove, anise and cinnamon. The palate is elegant with notes of dried leaves, dark chocolate and dark cherries. The tannins are already well integrated, giving the wine a magnificent texture. Expect to enjoy this for a while Best from 2025-2035.
               - column:
                   name: inventory
                   value: 22
@@ -404,13 +404,13 @@ databaseChangeLog:
                   value: 700
               - column:
                   name: image_url
-                  value: https://www.masi.it/files/styles/bottle/public/b_costasera.png?itok=IKKIiIwn
+                  value: https://raw.githubusercontent.com/YaroslavRadevychVynnytskyi/content-wine-library/main/wine-pics/8.png
               - column:
                   name: deleted
                   value: 0
               - column:
                   name: country_flag_url
-                  value: https://upload.wikimedia.org/wikipedia/commons/e/e4/Flag_of_Italy_%281946%E2%80%932003%29.png
+                  value: https://raw.githubusercontent.com/YaroslavRadevychVynnytskyi/content-wine-library/main/countries-pics/italy.png
         - insert:
             tableName: wines
             columns:
@@ -446,7 +446,7 @@ databaseChangeLog:
                   value: MEDIUM
               - column:
                   name: description
-                  value: Legendary and complex
+                  value: 2013 was a year to spend time in the vineyard, tend to it with care, and not rest on your laurels during harvest. A more elegant, subtle, and complex profile. The grapes are harvested from the 40 hectares used to produce Unico, a wine that ages at least ten years between barrel and bottle, representing one of the world's longest ageing processes. For the first phase, we used 225-litre French and American oak barrels to start to structure the wine; the second phase involved using 22,000-litre wooden vats. A long, complex, yet wonderful wine construction, during which they obtain endless nuances, definition, texture, and depth over time. This incredible terroir and the unique ageing process make our wines timeless when they aged. 2013 is a subtle, elegant, fresh, vertical, complex, silky, and well-defined vintage. This wine is a true paradox, enjoyable to drink now, but timeless when allowed to age in bottle.
               - column:
                   name: inventory
                   value: 12
@@ -455,13 +455,13 @@ databaseChangeLog:
                   value: 2500
               - column:
                   name: image_url
-                  value: https://goodwine.com.ua/media/catalog/product/cache/6fcc3261ae04eb835842842bdcf655db/t/9/t9926.png?auto=webp&format=png&width=960&height=1200&fit=cover
+                  value: https://raw.githubusercontent.com/YaroslavRadevychVynnytskyi/content-wine-library/main/wine-pics/9.webp
               - column:
                   name: deleted
                   value: 0
               - column:
                   name: country_flag_url
-                  value: https://upload.wikimedia.org/wikipedia/commons/6/6f/Spain_flag_300.png?20060514101634
+                  value: https://raw.githubusercontent.com/YaroslavRadevychVynnytskyi/content-wine-library/main/countries-pics/spain.png
         - insert:
             tableName: wines
             columns:
@@ -497,7 +497,7 @@ databaseChangeLog:
                   value: MEDIUM
               - column:
                   name: description
-                  value: Light and fruity
+                  value: Louis Jadot wine (Louis Jadot) Beaujolais Villages has a rich red-purple color with a fresh aroma of red fruits, notes of dark cherries and roses, light spice of pepper and licorice. The wine is very balanced and fresh with pleasant acidity and palpable tannins in the aftertaste. Beaujolais Villages is ideal for a variety of sausages, pates and terrines, meat snacks, fried red meat, white fish and cheeses. Wine should be drunk young, but can easily lie down for 5 years or more. Wine should be served at a temperature of 11-14 ° C
               - column:
                   name: inventory
                   value: 40
@@ -506,13 +506,13 @@ databaseChangeLog:
                   value: 200
               - column:
                   name: image_url
-                  value: https://images.vivino.com/thumbs/mJmsDMhORtqBltwWBMSp9g_pb_x600.png
+                  value: https://raw.githubusercontent.com/YaroslavRadevychVynnytskyi/content-wine-library/main/wine-pics/10.png
               - column:
                   name: deleted
                   value: 0
               - column:
                   name: country_flag_url
-                  value: https://upload.wikimedia.org/wikipedia/commons/6/62/Flag_of_France.png
+                  value: https://raw.githubusercontent.com/YaroslavRadevychVynnytskyi/content-wine-library/main/countries-pics/france.png
         - insert:
             tableName: wines
             columns:
@@ -548,7 +548,7 @@ databaseChangeLog:
                   value: HIGH
               - column:
                   name: description
-                  value: Elegant and complex
+                  value: Barbaresco is the flagship of the Gaia winery. Complex, complete, elegant, with exquisite tannins, this wine has a very long storage potential - more than 20-30 years. For Italy, Barbaresco is not just a wine, it is a symbol! And Barbaresco from Gaia confirms this idea with his exclusivity. Wine is born from the Nebbiolo grape, which got its name, according to one version, from the Italian word nebbia, which means fog. In early October, when the Nebbiolo harvest is in full swing, a thick white fog often falls on the vineyards in the morning. According to another version, the name of the variety comes from the word 'nobile,' translated from Italian - 'noble.' This variety is characterized by tanniness in youth and balance as it ages. The harvest for the production of Barbaresco Gaia wine comes from 14 different vineyards in Barbaresco and Treiso.
               - column:
                   name: inventory
                   value: 15
@@ -557,13 +557,13 @@ databaseChangeLog:
                   value: 1200
               - column:
                   name: image_url
-                  value: https://winebutik.com.ua/sites/default/files/gaja-barbaresco-1977.jpg
+                  value: https://raw.githubusercontent.com/YaroslavRadevychVynnytskyi/content-wine-library/main/wine-pics/11.jpg
               - column:
                   name: deleted
                   value: 0
               - column:
                   name: country_flag_url
-                  value: https://upload.wikimedia.org/wikipedia/commons/e/e4/Flag_of_Italy_%281946%E2%80%932003%29.png
+                  value: https://raw.githubusercontent.com/YaroslavRadevychVynnytskyi/content-wine-library/main/countries-pics/italy.png
         - insert:
             tableName: wines
             columns:
@@ -599,7 +599,7 @@ databaseChangeLog:
                   value: MEDIUM
               - column:
                   name: description
-                  value: Smooth and balanced
+                  value: Tenuta San Guido, Sassicaia Bolgheri is a Tuscan red wine produced in Bolghera. Translated from Italian, 'Sasikaya' means 'stone land' and indicates the rocky soils of vineyards. Vines germinate at an altitude of 80-300 meters above sea level, under the influence of the marine climate and the surrounding hills, protecting from the wind. Harvesting takes place in the first half of September. Fermentation lasts 15 days in stainless steel tanks at a controlled temperature. Aging takes place in French oak barrels, a third of which are new, within 24 months.
               - column:
                   name: inventory
                   value: 20
@@ -608,13 +608,13 @@ databaseChangeLog:
                   value: 1000
               - column:
                   name: image_url
-                  value: https://goodwine.com.ua/media/catalog/product/cache/6fcc3261ae04eb835842842bdcf655db/r/9/r9264.png?auto=webp&format=png&width=960&height=1200&fit=cover
+                  value: https://raw.githubusercontent.com/YaroslavRadevychVynnytskyi/content-wine-library/main/wine-pics/12.webp
               - column:
                   name: deleted
                   value: 0
               - column:
                   name: country_flag_url
-                  value: https://upload.wikimedia.org/wikipedia/commons/e/e4/Flag_of_Italy_%281946%E2%80%932003%29.png
+                  value: https://raw.githubusercontent.com/YaroslavRadevychVynnytskyi/content-wine-library/main/countries-pics/italy.png
         - insert:
             tableName: wines
             columns:
@@ -650,7 +650,7 @@ databaseChangeLog:
                   value: MEDIUM
               - column:
                   name: description
-                  value: Rich and complex
+                  value: Opus One 2015 is one of the best wines of the last decade. According to the winemakers themselves, starting in 2013 in California there was an ideal weather for ripening grapes, which significantly affected the taste and structure of wines of the 2015 period of creation of such. A special approach to filtration, identification and storage has transferred the drink to the category of elite and noble wines of the United States. According to gourmets, the ideal period for drinking wine will be a decade, starting in 2020
               - column:
                   name: inventory
                   value: 12
@@ -659,13 +659,13 @@ databaseChangeLog:
                   value: 1800
               - column:
                   name: image_url
-                  value: https://goodwine.com.ua/media/catalog/product/cache/6fcc3261ae04eb835842842bdcf655db/r/3/r3968.png?auto=webp&format=png&width=960&height=1200&fit=cover
+                  value: https://raw.githubusercontent.com/YaroslavRadevychVynnytskyi/content-wine-library/main/wine-pics/13.webp
               - column:
                   name: deleted
                   value: 0
               - column:
                   name: country_flag_url
-                  value: https://upload.wikimedia.org/wikipedia/commons/thumb/d/de/Flag_of_the_United_States.png/1200px-Flag_of_the_United_States.png
+                  value: https://raw.githubusercontent.com/YaroslavRadevychVynnytskyi/content-wine-library/main/countries-pics/usa.png
         - insert:
             tableName: wines
             columns:
@@ -701,7 +701,7 @@ databaseChangeLog:
                   value: HIGH
               - column:
                   name: description
-                  value: Luxurious and rich
+                  value: Chateau d'Yquem is undoubtedly the best wine from Sauternes. According to the wine classification of 1855, it belongs to the highest category of Premier Grand Cru Superieur and has been on the list of the best Bordeaux producers for more than two hundred years. The multifaceted aroma is revealed by shades of citrus, apricot, honey, mango and nuances of mandarin. The taste feels outstanding character and strength, the wine is round, full-bodied and extremely harmonious, with good acidity.
               - column:
                   name: inventory
                   value: 8
@@ -710,13 +710,13 @@ databaseChangeLog:
                   value: 3000
               - column:
                   name: image_url
-                  value: https://goodwine.com.ua/media/catalog/product/cache/6fcc3261ae04eb835842842bdcf655db/4/3/43526_1.png?auto=webp&format=png&width=960&height=1200&fit=cover
+                  value: https://raw.githubusercontent.com/YaroslavRadevychVynnytskyi/content-wine-library/main/wine-pics/14.webp
               - column:
                   name: deleted
                   value: 0
               - column:
                   name: country_flag_url
-                  value: https://upload.wikimedia.org/wikipedia/commons/6/62/Flag_of_France.png
+                  value: https://raw.githubusercontent.com/YaroslavRadevychVynnytskyi/content-wine-library/main/countries-pics/france.png
         - insert:
             tableName: wines
             columns:
@@ -752,7 +752,7 @@ databaseChangeLog:
                   value: MEDIUM
               - column:
                   name: description
-                  value: Fresh and fruity
+                  value: It is produced in Catalonia from the Parellada variety. This is the first wine that was created by Miguel Torres. Vina Sol has an intense aroma with shades of pear, apple, peach, citrus, white flowers. It tastes fresh, bright, juicy, drinking, lively, with pleasant fruit tones. This wine is recommended to serve at a temperature 8-10S as an aperitif, to white fish, cold meat snacks, salads, seafood. The history of the Spanish winery No. 1 and in general, bearing the name of one of the most famous wineries in the world, began in the 17th century. Young and promising Spaniard Jaime Torres, grew up in a family of winemakers. But since he was the youngest son, he inherited almost nothing and, in search of earnings, decided to go to America, where he began to transport goods and traded oil.
               - column:
                   name: inventory
                   value: 50
@@ -761,13 +761,13 @@ databaseChangeLog:
                   value: 150
               - column:
                   name: image_url
-                  value: https://goodwine.com.ua/media/catalog/product/cache/6fcc3261ae04eb835842842bdcf655db/4/0/40853.png?auto=webp&format=png&width=640&height=800&fit=cover
+                  value: https://raw.githubusercontent.com/YaroslavRadevychVynnytskyi/content-wine-library/main/wine-pics/15.webp
               - column:
                   name: deleted
                   value: 0
               - column:
                   name: country_flag_url
-                  value: https://upload.wikimedia.org/wikipedia/commons/6/6f/Spain_flag_300.png?20060514101634
+                  value: https://raw.githubusercontent.com/YaroslavRadevychVynnytskyi/content-wine-library/main/countries-pics/spain.png
         - insert:
             tableName: wines
             columns:
@@ -803,7 +803,7 @@ databaseChangeLog:
                   value: LOW
               - column:
                   name: description
-                  value: Juicy and vibrant
+                  value: Yellow Tail is a young but rapidly developing Australian winery that is part of the large family company Casella Family Brand. The basis of the creation of wine under this logo was revised priorities in winemaking, so wines are not distinguished by strictness, Instead, they are presented to the consumer as a young representative of elite beverages.
               - column:
                   name: inventory
                   value: 60
@@ -812,13 +812,13 @@ databaseChangeLog:
                   value: 120
               - column:
                   name: image_url
-                  value: https://img.drinksdirect.com/yellow-tail-shiraz-75cl-1021/3816/800x800/1021.webp
+                  value: https://raw.githubusercontent.com/YaroslavRadevychVynnytskyi/content-wine-library/main/wine-pics/16.webp
               - column:
                   name: deleted
                   value: 0
               - column:
                   name: country_flag_url
-                  value: https://upload.wikimedia.org/wikipedia/en/thumb/b/b9/Flag_of_Australia.svg/1280px-Flag_of_Australia.svg.png
+                  value: https://raw.githubusercontent.com/YaroslavRadevychVynnytskyi/content-wine-library/main/countries-pics/australia.png
         - insert:
             tableName: wines
             columns:
@@ -854,7 +854,7 @@ databaseChangeLog:
                   value: HIGH
               - column:
                   name: description
-                  value: Bright and zesty
+                  value: The wine 'Reserve' Fume Blanc is made from two varieties of grapes, Sauvignon Blanc and Semillon, grown on the To Kalon Vineyard in western Okeville. The characteristics of the terrarium allow to collect grapes, from which produce a great wine with characteristic varietal aroma and taste, exceptional depth and expression. Grapes are harvested by hand early in the morning. When pressing carefully ensure that contact with the skin is minimal to maintain purity and freshness. The fermentation process takes place in barrels of French oak, 28% of which are new. The wine is aged on the sieve for 10 months, with the wine being mixed by hand twice a week to give the taste a creamy texture. The final mixture is added a small amount of Semillion, which adds complexity and depth to the bouquet
               - column:
                   name: inventory
                   value: 35
@@ -863,13 +863,13 @@ databaseChangeLog:
                   value: 250
               - column:
                   name: image_url
-                  value: https://goodwine.com.ua/media/catalog/product/cache/6fcc3261ae04eb835842842bdcf655db/r/8/r8029.png?auto=webp&format=png&width=960&height=1200&fit=cover
+                  value: https://raw.githubusercontent.com/YaroslavRadevychVynnytskyi/content-wine-library/main/wine-pics/17.webp
               - column:
                   name: deleted
                   value: 0
               - column:
                   name: country_flag_url
-                  value: https://upload.wikimedia.org/wikipedia/commons/thumb/d/de/Flag_of_the_United_States.png/1200px-Flag_of_the_United_States.png
+                  value: https://raw.githubusercontent.com/YaroslavRadevychVynnytskyi/content-wine-library/main/countries-pics/usa.png
         - insert:
             tableName: wines
             columns:
@@ -905,7 +905,7 @@ databaseChangeLog:
                   value: HIGH
               - column:
                   name: description
-                  value: Elegant and fresh
+                  value: Moet Imperial is the iconic champagne of the wine house Moët & Chandon and the most popular champagne in the world. Its blend reflects the diversity and complementarity of Champagne's three main grape varieties, the proportions of which vary from year to year but always exhibit the same harmony Pinot Noir's body (30 to 40%), Meunier's softness (30 to 40%) and Chardonnay's grace (20 to 30%). Its color is slightly golden-straw-yellow with delicate green highlights. Aroma of green apples, citrus. The impressive intensity of these fruit notes is immediately followed by a wave of mineral freshness and white flowers. Then the light shades of bun, cereals and fresh nuts hint at elegant maturity.
               - column:
                   name: inventory
                   value: 28
@@ -914,13 +914,13 @@ databaseChangeLog:
                   value: 400
               - column:
                   name: image_url
-                  value: https://winewine.ua/wp-content/uploads/2024/02/moet-chandon-brut-imperial-557202.png
+                  value: https://raw.githubusercontent.com/YaroslavRadevychVynnytskyi/content-wine-library/main/wine-pics/18.webp
               - column:
                   name: deleted
                   value: 0
               - column:
                   name: country_flag_url
-                  value: https://upload.wikimedia.org/wikipedia/commons/6/62/Flag_of_France.png
+                  value: https://raw.githubusercontent.com/YaroslavRadevychVynnytskyi/content-wine-library/main/countries-pics/france.png
         - insert:
             tableName: wines
             columns:
@@ -956,7 +956,7 @@ databaseChangeLog:
                   value: MEDIUM
               - column:
                   name: description
-                  value: Refreshing and fruity
+                  value: The berries for this wine are obtained from the best vineyards in the Columbia Valley. Harvesting takes place during the night coolness to preserve their freshness and natural acidity. Only the best batches of grapes are chosen for the Chateau Ste Michelle Dry Riesling wine to create an elegant dry style and fruity character. Cold fermentation in stainless steel vats allows you to maintain freshness and bright fruit shades.
               - column:
                   name: inventory
                   value: 50
@@ -965,13 +965,13 @@ databaseChangeLog:
                   value: 180
               - column:
                   name: image_url
-                  value: https://images.alko.fi/images/cs_srgb,f_auto,t_medium/cdn/944807/chateau-ste-michelle-riesling-2021.jpg
+                  value: https://raw.githubusercontent.com/YaroslavRadevychVynnytskyi/content-wine-library/main/wine-pics/19.jpg
               - column:
                   name: deleted
                   value: 0
               - column:
                   name: country_flag_url
-                  value: https://upload.wikimedia.org/wikipedia/commons/thumb/d/de/Flag_of_the_United_States.png/1200px-Flag_of_the_United_States.png
+                  value: https://raw.githubusercontent.com/YaroslavRadevychVynnytskyi/content-wine-library/main/countries-pics/usa.png
         - insert:
             tableName: wines
             columns:
@@ -1007,7 +1007,7 @@ databaseChangeLog:
                   value: HIGH
               - column:
                   name: description
-                  value: Powerful and structured
+                  value: Red dry wine Brunello di Montalcino DOCG - true pride of the Azienda Uggiano. This is one of the most important vintage collection, originating from the Tuscan city of Montagnano. The drink is considered a model of world level. The rich and velvety taste with a complex aromatic spectrum will surprise even the most sophisticated connoisseurs of Italian wines.
               - column:
                   name: inventory
                   value: 18
@@ -1016,13 +1016,13 @@ databaseChangeLog:
                   value: 900
               - column:
                   name: image_url
-                  value: https://goodwine.com.ua/media/catalog/product/cache/6fcc3261ae04eb835842842bdcf655db/t/4/t4575.png
+                  value: https://raw.githubusercontent.com/YaroslavRadevychVynnytskyi/content-wine-library/main/wine-pics/20.jpeg
               - column:
                   name: deleted
                   value: 0
               - column:
                   name: country_flag_url
-                  value: https://upload.wikimedia.org/wikipedia/commons/e/e4/Flag_of_Italy_%281946%E2%80%932003%29.png
+                  value: https://raw.githubusercontent.com/YaroslavRadevychVynnytskyi/content-wine-library/main/countries-pics/italy.png
         - insert:
             tableName: wines
             columns:
@@ -1058,7 +1058,7 @@ databaseChangeLog:
                   value: MEDIUM
               - column:
                   name: description
-                  value: Elegant and refreshing
+                  value: Whispering Angel, Caves d'Esclans is a beautiful pink dry wine with an incredibly beautiful peach color. You look at a drink, and you want to fall in love. The creator of this masterpiece is the French wine company Chateau d'Esclans, which has been surprising us with its excellent high-quality drinks for many years.
               - column:
                   name: inventory
                   value: 25
@@ -1067,13 +1067,13 @@ databaseChangeLog:
                   value: 250
               - column:
                   name: image_url
-                  value: https://goodwine.com.ua/media/catalog/product/cache/6fcc3261ae04eb835842842bdcf655db/1/9/19034.jpg?auto=webp&format=pjpg&width=960&height=1200&fit=cover
+                  value: https://raw.githubusercontent.com/YaroslavRadevychVynnytskyi/content-wine-library/main/wine-pics/21.webp
               - column:
                   name: deleted
                   value: 0
               - column:
                   name: country_flag_url
-                  value: https://upload.wikimedia.org/wikipedia/commons/6/62/Flag_of_France.png
+                  value: https://raw.githubusercontent.com/YaroslavRadevychVynnytskyi/content-wine-library/main/countries-pics/france.png
         - insert:
             tableName: wines
             columns:
@@ -1109,7 +1109,7 @@ databaseChangeLog:
                   value: MEDIUM
               - column:
                   name: description
-                  value: Balanced and elegant
+                  value: Golden straw-colored in the glass, the wine opens with cinnamon and ripe peach, bolstered by aromas of melon, fig, and pear. More fruity than floral upon release, there’s nonetheless plenty of honeysuckle and spice, softening to green apple and vanilla. Initially fused with lemon curd and ripe orange, there’s dynamic tension transitioning to the midpalate between the suppleness of summer stonefruit and the austere acid beneath. The citrus lingers as well, amidst a billowy texture that bolsters the bare minerality, contrasted only by the whisper-soft hint of fresh baked bread. Bright and fresh, ripe apricot along with orange marmalade lend a slight sweetness peppered by toasted almond and clove.
               - column:
                   name: inventory
                   value: 20
@@ -1118,13 +1118,13 @@ databaseChangeLog:
                   value: 600
               - column:
                   name: image_url
-                  value: https://goodwine.com.ua/media/catalog/product/cache/6fcc3261ae04eb835842842bdcf655db/r/8/r8818_1.png?auto=webp&format=png&width=960&height=1200&fit=cover
+                  value: https://raw.githubusercontent.com/YaroslavRadevychVynnytskyi/content-wine-library/main/wine-pics/22.webp
               - column:
                   name: deleted
                   value: 0
               - column:
                   name: country_flag_url
-                  value: https://upload.wikimedia.org/wikipedia/commons/thumb/d/de/Flag_of_the_United_States.png/1200px-Flag_of_the_United_States.png
+                  value: https://raw.githubusercontent.com/YaroslavRadevychVynnytskyi/content-wine-library/main/countries-pics/usa.png
         - insert:
             tableName: wines
             columns:
@@ -1160,7 +1160,7 @@ databaseChangeLog:
                   value: HIGH
               - column:
                   name: description
-                  value: Classic Bordeaux with rich flavors
+                  value: Cuve 2015 - the best investment and a great gift to the connoisseur. The exact production technology of the large wine 'Chateau Lafite-Rothschild' is kept secret, but the basic rules of the winery are known to the townsfolk. Vineyards are located on hillsides with southern exposure; vines have an average age of 40 years, although there are both 30 and 50-year-olds; berries are collected by hand, maceration and fermentation of grapes from different sites takes place separately and lasts about three weeks, partly in oak containers, partly in neutral tanks; aging in French barriques lasts about 20 months, and then the assembly process takes place under the clear guidance of the chief winemaker.
               - column:
                   name: inventory
                   value: 20
@@ -1169,13 +1169,13 @@ databaseChangeLog:
                   value: 1000
               - column:
                   name: image_url
-                  value: https://goodwine.com.ua/media/catalog/product/cache/6fcc3261ae04eb835842842bdcf655db/t/3/t3066.png?auto=webp&format=png&width=640&height=450&fit=cover
+                  value: https://raw.githubusercontent.com/YaroslavRadevychVynnytskyi/content-wine-library/main/wine-pics/23.webp
               - column:
                   name: deleted
                   value: 0
               - column:
                   name: country_flag_url
-                  value: https://upload.wikimedia.org/wikipedia/commons/6/62/Flag_of_France.png
+                  value: https://raw.githubusercontent.com/YaroslavRadevychVynnytskyi/content-wine-library/main/countries-pics/france.png
         - insert:
             tableName: wines
             columns:
@@ -1211,7 +1211,7 @@ databaseChangeLog:
                   value: MEDIUM
               - column:
                   name: description
-                  value: Crisp and refreshing with tropical notes
+                  value: Kim Crawford Marlborough Sauvignon Blanc is made from grapes grown in Marlborough vineyards on alluvial and gravel soils. The combination of dry and temperate climate provides almost ideal conditions for growing grapes. Berries are harvested at night to minimize oxidation. Fermentation takes place at low temperatures in stainless steel tanks. Before bottling, pasting and stabilization are performed. Marlborough Sauvignon Blanc was awarded a Gold Medal at the 2006 Air New Zealand Wine Awards.
               - column:
                   name: inventory
                   value: 50
@@ -1220,13 +1220,13 @@ databaseChangeLog:
                   value: 200
               - column:
                   name: image_url
-                  value: https://www.wine.com/product/images/w_600,h_600,dpr_2.0,c_fit,q_auto:good,fl_progressive/vwam5dclf6hiex3j39ey.jpg
+                  value: https://raw.githubusercontent.com/YaroslavRadevychVynnytskyi/content-wine-library/main/wine-pics/24.jpg
               - column:
                   name: deleted
                   value: 0
               - column:
                   name: country_flag_url
-                  value: https://upload.wikimedia.org/wikipedia/commons/thumb/3/34/Flag_of_New_Zealand.png/1200px-Flag_of_New_Zealand.png
+                  value: https://raw.githubusercontent.com/YaroslavRadevychVynnytskyi/content-wine-library/main/countries-pics/new-zealand.png
         - insert:
             tableName: wines
             columns:
@@ -1262,7 +1262,7 @@ databaseChangeLog:
                   value: MEDIUM
               - column:
                   name: description
-                  value: Rich and full-bodied with dark fruit flavors
+                  value: The epic tale of the noble Malbec grape is like no other, and the label for Catena Zapata Malbec Argentino pays tribute to the variety’s history in France and its rise in Argentina. Four female figures embody different landmarks in the history of the grape. Eleanor of Aquitaine represents the birth of Malbec. She is a strong, Old-World presence, lingering at the bridge in Cahors, where Malbec came into its own. Next, the Immigrant symbolizes the movement to the New World and the unknown explorers and adventurers who connected Europe with the Americas. Phylloxera personifies the death of Malbec in the Old World, which enabled its rebirth in the new. Finally, there is Bodega Catena Zapata, represented by Adrianna Catena, who depicts birth, earth, and motherhood, sharing the riches of the New World. Today, the Catena family’s fourth generation leads the high-altitude renaissance in Argentina. We are returning Malbec to the sky... where it belongs.
               - column:
                   name: inventory
                   value: 40
@@ -1271,13 +1271,13 @@ databaseChangeLog:
                   value: 180
               - column:
                   name: image_url
-                  value: https://goodwine.com.ua/media/catalog/product/cache/6fcc3261ae04eb835842842bdcf655db/Q/6/Q6161_1.png?auto=webp&format=png&width=960&height=1200&fit=cover
+                  value: https://raw.githubusercontent.com/YaroslavRadevychVynnytskyi/content-wine-library/main/wine-pics/25.webp
               - column:
                   name: deleted
                   value: 0
               - column:
                   name: country_flag_url
-                  value: https://upload.wikimedia.org/wikipedia/commons/thumb/8/8f/Flag_of_Argentina.png/1200px-Flag_of_Argentina.png
+                  value: https://raw.githubusercontent.com/YaroslavRadevychVynnytskyi/content-wine-library/main/countries-pics/argentina.png
         - insert:
             tableName: wines
             columns:
@@ -1313,7 +1313,7 @@ databaseChangeLog:
                   value: HIGH
               - column:
                   name: description
-                  value: Light and crisp with notes of apple and citrus
+                  value: The Pinot Grigio from Santa Margarita is a fresh, harmonious white wine that demonstrates intensity, purity of aroma as well as dryness and balanced taste. The grapes are made from the Pinot Grigio grape, which is grown in vineyards in the Valle del Adige.
               - column:
                   name: inventory
                   value: 45
@@ -1322,13 +1322,13 @@ databaseChangeLog:
                   value: 150
               - column:
                   name: image_url
-                  value: https://image.maudau.com.ua/webp/size/origin/products/b7/45/ab/b745abe9-c46d-4a38-aff7-bf17d1cd07a1.jpg
+                  value: https://raw.githubusercontent.com/YaroslavRadevychVynnytskyi/content-wine-library/main/wine-pics/26.jpg
               - column:
                   name: deleted
                   value: 0
               - column:
                   name: country_flag_url
-                  value: https://upload.wikimedia.org/wikipedia/commons/e/e4/Flag_of_Italy_%281946%E2%80%932003%29.png
+                  value: https://raw.githubusercontent.com/YaroslavRadevychVynnytskyi/content-wine-library/main/countries-pics/italy.png
         - insert:
             tableName: wines
             columns:
@@ -1364,7 +1364,7 @@ databaseChangeLog:
                   value: HIGH
               - column:
                   name: description
-                  value: Elegant and complex with fine bubbles
+                  value: Champagne Veuve Clicquot Brut - really branded champagne, combining all four dimensions, defining the style of Widow Clicquot freshness, strength, aromatic richness and aroma, silkiness. This cuvée is the result of blending grapes from 50 to 60 different cru and is 45% composed of reserve wines. The vast majority of Pinot Noir 50% gives the wine strength, Chardonnay 30% - freshness, and the shade of Meunier 20% - fruitiness. Exposure to sediment for at least 3 years enhances its aromatic richness and silky texture.
               - column:
                   name: inventory
                   value: 30
@@ -1373,13 +1373,13 @@ databaseChangeLog:
                   value: 450
               - column:
                   name: image_url
-                  value: https://bayadera.ua/uploaded-images/product/size_600/1SH-SVC075-001.webp
+                  value: https://raw.githubusercontent.com/YaroslavRadevychVynnytskyi/content-wine-library/main/wine-pics/27.jpg
               - column:
                   name: deleted
                   value: 0
               - column:
                   name: country_flag_url
-                  value: https://upload.wikimedia.org/wikipedia/commons/6/62/Flag_of_France.png
+                  value: https://raw.githubusercontent.com/YaroslavRadevychVynnytskyi/content-wine-library/main/countries-pics/france.png
         - insert:
             tableName: wines
             columns:
@@ -1415,7 +1415,7 @@ databaseChangeLog:
                   value: MEDIUM
               - column:
                   name: description
-                  value: Lush and honeyed with a long finish
+                  value: Chateau Giraud was founded by a merchant family on the site of an old noble estate. For many years, the family winery carries the philosophy of incredible love for wine, high-quality production with the preservation of traditions and the introduction of innovations, maintaining biodiversity in the vineyard. The Chateau Giraud 2005 drink is made from botritized grapes of the Sauvignon and Semillon varieties, which undergo two stages of fermentation - in wooden containers and in neutral tanks. Exposure lasts about two years on sediment.
               - column:
                   name: inventory
                   value: 25
@@ -1424,13 +1424,13 @@ databaseChangeLog:
                   value: 300
               - column:
                   name: image_url
-                  value: https://winebutik.com.ua/sites/default/files/chateau-guiraud-sauternes.jpg
+                  value: https://raw.githubusercontent.com/YaroslavRadevychVynnytskyi/content-wine-library/main/wine-pics/28.jpg
               - column:
                   name: deleted
                   value: 0
               - column:
                   name: country_flag_url
-                  value: https://upload.wikimedia.org/wikipedia/commons/6/62/Flag_of_France.png
+                  value: https://raw.githubusercontent.com/YaroslavRadevychVynnytskyi/content-wine-library/main/countries-pics/france.png
         - insert:
             tableName: wines
             columns:
@@ -1466,7 +1466,7 @@ databaseChangeLog:
                   value: MEDIUM
               - column:
                   name: description
-                  value: Rich and nutty with a smooth finish
+                  value: Intense amber color. Luxurious, complex and lush aroma with spices, jam and nutty notes, orange blossom and antiquity from prolonged contact with the barrel. Rich aroma of raisins and noble caramel, surrounded by flying coffee notes. The taste is rich full of concentrated aromas, extremely velvety, without the slightest aggressiveness with a long soft aftertaste. The beauty of this velvety wine with excellent acidity is especially evident in combination with foie gras and brioche at the beginning of an exquisite dinner. The extreme complexity makes it ideal for eating at the end of a meal with walnuts or dried fruits. Excellent accompaniment to many desserts with figs, almonds and caramel. This port is also good paired with creme brulee or fresh strawberries. Unlike ruby ports, the old tone can be chilled, making it the perfect wine for summer.
               - column:
                   name: inventory
                   value: 15
@@ -1475,13 +1475,13 @@ databaseChangeLog:
                   value: 500
               - column:
                   name: image_url
-                  value: https://lh6.googleusercontent.com/proxy/azSRuGKussU7SxQEuovOp_lcdagnovLDUxpylP__FKk7yazbElfFMcjW4UpX7uoe1NR_LXeQaCpV8ZA9A-_lCe6idhZul3-IoLSnUHnp_K652erPowcuu9e-3XHDLjLUg3Vr5NpY
+                  value: https://raw.githubusercontent.com/YaroslavRadevychVynnytskyi/content-wine-library/main/wine-pics/29.jpg
               - column:
                   name: deleted
                   value: 0
               - column:
                   name: country_flag_url
-                  value: https://upload.wikimedia.org/wikipedia/commons/2/2d/Portugal_flag_300.png
+                  value: https://raw.githubusercontent.com/YaroslavRadevychVynnytskyi/content-wine-library/main/countries-pics/portugal.png
         - insert:
             tableName: wines
             columns:
@@ -1517,7 +1517,7 @@ databaseChangeLog:
                   value: HIGH
               - column:
                   name: description
-                  value: Complex and structured with intense flavors
+                  value: Barolo by Pio Cesare is a wine that has already conquered thousands of gourmets with its elegant taste, magnificent velvety structure, long aftertaste and excellent storage potential - at least 15 years. This famous wine is obtained from the Nebbiolo grape variety, collected from several vineyards owned by the farm and a small part acquired on the basis of long-term contracts from local producers. Thus, the rich Barolo blend presents various characteristics of almost all zones of the Barolo region. 'It is difficult to become a fan of Barolo after the first sip, but if you have already tasted it, affection remains for life, in the variety of its tastes and aromas you can drown,' says Pio Boffa, a representative of the third generation of the Cesare family. Read more https://winestyle.com.ua
               - column:
                   name: inventory
                   value: 22
@@ -1526,13 +1526,13 @@ databaseChangeLog:
                   value: 350
               - column:
                   name: image_url
-                  value: https://www.piocesare.it/wp-content/uploads/2016/09/barolo.png
+                  value: https://raw.githubusercontent.com/YaroslavRadevychVynnytskyi/content-wine-library/main/wine-pics/30.png
               - column:
                   name: deleted
                   value: 0
               - column:
                   name: country_flag_url
-                  value: https://upload.wikimedia.org/wikipedia/commons/e/e4/Flag_of_Italy_%281946%E2%80%932003%29.png
+                  value: https://raw.githubusercontent.com/YaroslavRadevychVynnytskyi/content-wine-library/main/countries-pics/italy.png
         - insert:
             tableName: wines
             columns:
@@ -1568,7 +1568,7 @@ databaseChangeLog:
                   value: MEDIUM
               - column:
                   name: description
-                  value: Fresh and fruity with notes of strawberry
+                  value: La Vieille Ferme wines are fresh, fruity wines daily from the Rhone Valley, produced in the Côte du Ventoux region. The Perrin family produces some of the highest quality wines in the region with an excellent price/quality ratio. Juicy, light rosé wine with the aroma of rose petals and citrus fruits. In taste, notes of grapefruit and berries give the wine saturation and balance. Fresh rosé wine is suitable for any occasion.
               - column:
                   name: inventory
                   value: 40
@@ -1577,13 +1577,13 @@ databaseChangeLog:
                   value: 100
               - column:
                   name: image_url
-                  value: https://content1.rozetka.com.ua/goods/images/big/176184804.jpg
+                  value: https://raw.githubusercontent.com/YaroslavRadevychVynnytskyi/content-wine-library/main/wine-pics/31.webp
               - column:
                   name: deleted
                   value: 0
               - column:
                   name: country_flag_url
-                  value: https://upload.wikimedia.org/wikipedia/commons/6/62/Flag_of_France.png
+                  value: https://raw.githubusercontent.com/YaroslavRadevychVynnytskyi/content-wine-library/main/countries-pics/france.png
         - insert:
             tableName: wines
             columns:
@@ -1619,7 +1619,7 @@ databaseChangeLog:
                   value: HIGH
               - column:
                   name: description
-                  value: Exquisite and rare Burgundy
+                  value: Romannee Conti is one of the oldest and most respected estates in France. The vineyards with a south-eastern exposure are concentrated around the village of Vonromi and are cultivated according to organic farming principles. Most wines are red, from the classic for Burgundy Pinot Noir. The exception is the wine range Montrachet - they are made of Chardonnay. All products of the Domaine de la Romanee-Conti are produced in limited quantities, which affects the quality and price of the wine.
               - column:
                   name: inventory
                   value: 5
@@ -1628,13 +1628,13 @@ databaseChangeLog:
                   value: 12000
               - column:
                   name: image_url
-                  value: https://winebutik.com.ua/sites/default/files/domaine-romanee-conti-2006.jpg
+                  value: https://raw.githubusercontent.com/YaroslavRadevychVynnytskyi/content-wine-library/main/wine-pics/32.jpg
               - column:
                   name: deleted
                   value: 0
               - column:
                   name: country_flag_url
-                  value: https://upload.wikimedia.org/wikipedia/commons/6/62/Flag_of_France.png
+                  value: https://raw.githubusercontent.com/YaroslavRadevychVynnytskyi/content-wine-library/main/countries-pics/france.png
         - insert:
             tableName: wines
             columns:
@@ -1670,7 +1670,7 @@ databaseChangeLog:
                   value: MEDIUM
               - column:
                   name: description
-                  value: Smooth and velvety with ripe fruit flavors
+                  value: Aroma with a predominance of blackberry tones, black currant, smoke, with a pepper tint. Taste generous, bright, rounded, reveals a palette of ripe forest berries. Aging 6 months in American and French barrels.
               - column:
                   name: inventory
                   value: 60
@@ -1679,13 +1679,13 @@ databaseChangeLog:
                   value: 120
               - column:
                   name: image_url
-                  value: https://goodwine.com.ua/media/catalog/product/cache/6fcc3261ae04eb835842842bdcf655db/4/4/44362_1.png?auto=webp&format=png&width=640&height=450&fit=cover
+                  value: https://raw.githubusercontent.com/YaroslavRadevychVynnytskyi/content-wine-library/main/wine-pics/33.webp
               - column:
                   name: deleted
                   value: 0
               - column:
                   name: country_flag_url
-                  value: https://upload.wikimedia.org/wikipedia/commons/6/6f/Spain_flag_300.png?20060514101634
+                  value: https://raw.githubusercontent.com/YaroslavRadevychVynnytskyi/content-wine-library/main/countries-pics/spain.png
         - insert:
             tableName: wines
             columns:
@@ -1721,7 +1721,7 @@ databaseChangeLog:
                   value: MEDIUM
               - column:
                   name: description
-                  value: Rich and full-bodied with dark fruit flavors
+                  value: Casillero del Diablo Cabernet Sauvignon - Casillero del Diablo Cabernet Sauvignon - red dry Chilean wine, made from grapes grown in the Central Valley. It has a flavor with hints of black currant, cherries, plums, coffee beans. The taste is juicy and elegant, with good tannins and intense berry tones. Casillero del Diablo Cabernet Sauvignon is recommended to be served at 14-16 C temperature to slightly spicy dishes of red meat, ripe cheeses.
               - column:
                   name: inventory
                   value: 55
@@ -1730,13 +1730,13 @@ databaseChangeLog:
                   value: 130
               - column:
                   name: image_url
-                  value: https://conchaytoro.com/content/uploads/2018/07/cdd-cs-1.png
+                  value: https://raw.githubusercontent.com/YaroslavRadevychVynnytskyi/content-wine-library/main/wine-pics/34.png
               - column:
                   name: deleted
                   value: 0
               - column:
                   name: country_flag_url
-                  value: https://upload.wikimedia.org/wikipedia/commons/a/ae/Flag_of_Chile.png
+                  value: https://raw.githubusercontent.com/YaroslavRadevychVynnytskyi/content-wine-library/main/countries-pics/chile.png
         - insert:
             tableName: wines
             columns:
@@ -1772,7 +1772,7 @@ databaseChangeLog:
                   value: HIGH
               - column:
                   name: description
-                  value: Powerful and elegant with rich flavors
+                  value: Insignia opens impressively with an almost heady aroma of red fruit, crème de cassis, fresh tobacco and dried rose petals. The taste is dense and juicy with expressive layers of blackberries, raspberries, blackcurrants and dark chocolate. A beautiful and dynamic wine with lots of energy, length, complexity and refinement.
               - column:
                   name: inventory
                   value: 18
@@ -1781,13 +1781,13 @@ databaseChangeLog:
                   value: 700
               - column:
                   name: image_url
-                  value: https://winewine.ua/wp-content/uploads/2022/11/phelps_900x.png
+                  value: https://raw.githubusercontent.com/YaroslavRadevychVynnytskyi/content-wine-library/main/wine-pics/35.webp
               - column:
                   name: deleted
                   value: 0
               - column:
                   name: country_flag_url
-                  value: https://upload.wikimedia.org/wikipedia/commons/thumb/d/de/Flag_of_the_United_States.png/1200px-Flag_of_the_United_States.png
+                  value: https://raw.githubusercontent.com/YaroslavRadevychVynnytskyi/content-wine-library/main/countries-pics/usa.png
         - insert:
             tableName: wines
             columns:
@@ -1823,7 +1823,7 @@ databaseChangeLog:
                   value: MEDIUM
               - column:
                   name: description
-                  value: Complex and earthy with rich flavors
+                  value: Chateau Musar is one of the most discussed Lebanese wine farms in the modern world. The Wall Street Journal wrote 'This wine is from the Bekaa Valley class and character of Bordeaux, but with a unique taste.' Chateau Musar Red is a mixture of Cabernet Sauvignon, Carignan and Senso from vineyards located near the villages of Aana and Kefraya in the Bekaa Valley, which were planted in the 1930s. The wine shows a fine structure dominated by shades of fruit, tobacco leaves, skin and exotic spices. Soft texture and high acidity make this wine gastronomic.
               - column:
                   name: inventory
                   value: 20
@@ -1832,13 +1832,13 @@ databaseChangeLog:
                   value: 500
               - column:
                   name: image_url
-                  value: https://goodwine.com.ua/media/catalog/product/cache/6fcc3261ae04eb835842842bdcf655db/r/2/r2544.jpg?auto=webp&format=pjpg&width=960&height=1200&fit=cover
+                  value: https://raw.githubusercontent.com/YaroslavRadevychVynnytskyi/content-wine-library/main/wine-pics/36.webp
               - column:
                   name: deleted
                   value: 0
               - column:
                   name: country_flag_url
-                  value: https://upload.wikimedia.org/wikipedia/commons/0/0c/Flag_of_Lebanon.png
+                  value: https://raw.githubusercontent.com/YaroslavRadevychVynnytskyi/content-wine-library/main/countries-pics/lebanon.png
         - insert:
             tableName: wines
             columns:
@@ -1874,7 +1874,7 @@ databaseChangeLog:
                   value: HIGH
               - column:
                   name: description
-                  value: Bold and structured with rich fruit flavors
+                  value: Banfi Brunello di Montalcino is a wine for true connoisseurs looking for the sophistication and complexity of wine. It is considered one of the best examples of Brunello di Montalcino wine and is worthy of the attention of those who want to enjoy the Italian wine culture.
               - column:
                   name: inventory
                   value: 25
@@ -1883,13 +1883,13 @@ databaseChangeLog:
                   value: 400
               - column:
                   name: image_url
-                  value: https://content1.rozetka.com.ua/goods/images/big/432502186.jpg
+                  value: https://raw.githubusercontent.com/YaroslavRadevychVynnytskyi/content-wine-library/main/wine-pics/37.webp
               - column:
                   name: deleted
                   value: 0
               - column:
                   name: country_flag_url
-                  value: https://upload.wikimedia.org/wikipedia/commons/e/e4/Flag_of_Italy_%281946%E2%80%932003%29.png
+                  value: https://raw.githubusercontent.com/YaroslavRadevychVynnytskyi/content-wine-library/main/countries-pics/italy.png
         - insert:
             tableName: wines
             columns:
@@ -1925,7 +1925,7 @@ databaseChangeLog:
                   value: HIGH
               - column:
                   name: description
-                  value: Elegant and balanced with rich flavors
+                  value: Wine Ridge Vineyards (Ridge Vineyards) California Monte Bello 2018 - is a hallmark, because once the wines from this site in a blind tasting were able to defeat the outstanding Chateau from Bordeaux.
               - column:
                   name: inventory
                   value: 15
@@ -1934,13 +1934,13 @@ databaseChangeLog:
                   value: 600
               - column:
                   name: image_url
-                  value: https://cache3.voyageursduvin.com/products/Ridge-Vineyards-Monte-Bello-zoom.jpg
+                  value: https://raw.githubusercontent.com/YaroslavRadevychVynnytskyi/content-wine-library/main/wine-pics/38.jpg
               - column:
                   name: deleted
                   value: 0
               - column:
                   name: country_flag_url
-                  value: https://upload.wikimedia.org/wikipedia/commons/thumb/d/de/Flag_of_the_United_States.png/1200px-Flag_of_the_United_States.png
+                  value: https://raw.githubusercontent.com/YaroslavRadevychVynnytskyi/content-wine-library/main/countries-pics/usa.png
         - insert:
             tableName: wines
             columns:
@@ -1976,7 +1976,7 @@ databaseChangeLog:
                   value: MEDIUM
               - column:
                   name: description
-                  value: Juicy and vibrant with dark fruit flavors
+                  value: Secreto Malbec is a red dry wine made from Malbec grapes grown in the vineyards of San Carlos and El Olivar in the Chilean Colchagua Valley. The average age of the vines is 14 years, the soils of the vineyard have good porosity and drainage Grapes were collected by hand, after the berries were separated from the stems and pressed in a steel vat. Then a three-day cold maceration was carried out at a temperature of 8 ° C to achieve better extraction of colour and aroma. Alcoholic fermentation was carried out on yeast at a temperature of 26-28 ° C with two daily pumping of wort. 46% of the wine was aged in French oak barricades for 9 months, the rest - in steel and cement vats.
               - column:
                   name: inventory
                   value: 30
@@ -1985,13 +1985,13 @@ databaseChangeLog:
                   value: 200
               - column:
                   name: image_url
-                  value: https://winestyle.com.ua/images_gen/223/223754/0_0_orig.webp
+                  value: https://raw.githubusercontent.com/YaroslavRadevychVynnytskyi/content-wine-library/main/wine-pics/39.webp
               - column:
                   name: deleted
                   value: 0
               - column:
                   name: country_flag_url
-                  value: https://upload.wikimedia.org/wikipedia/commons/a/ae/Flag_of_Chile.png
+                  value: https://raw.githubusercontent.com/YaroslavRadevychVynnytskyi/content-wine-library/main/countries-pics/chile.png
         - insert:
             tableName: wines
             columns:
@@ -2027,7 +2027,7 @@ databaseChangeLog:
                   value: HIGH
               - column:
                   name: description
-                  value: Elegant and crisp with citrus and floral notes
+                  value: Bouchard Ainé & Fils House is proud of its long history and centuries-old traditions. At its origins is Michel Bouchard, who in 1731 moved to Burgundy with the sole purpose of selling wine. His cooperation with local winegrowers and immersion in the environment of winemakers could not leave Michel indifferent, and already with his son, Joseph Bouchard, he moved from selling other people's wines to producing his own.
               - column:
                   name: inventory
                   value: 35
@@ -2036,10 +2036,724 @@ databaseChangeLog:
                   value: 180
               - column:
                   name: image_url
-                  value: https://images.vivino.com/thumbs/jBG8kmhBTtGl7o0GJhMUTA_pb_x960.png
+                  value: https://raw.githubusercontent.com/YaroslavRadevychVynnytskyi/content-wine-library/main/wine-pics/40.png
               - column:
                   name: deleted
                   value: 0
               - column:
                   name: country_flag_url
-                  value: https://upload.wikimedia.org/wikipedia/commons/6/62/Flag_of_France.png
+                  value: https://raw.githubusercontent.com/YaroslavRadevychVynnytskyi/content-wine-library/main/countries-pics/france.png
+        - insert:
+            tableName: wines
+            columns:
+              - column:
+                  name: id
+                  value: 41
+              - column:
+                  name: name
+                  value: Castillo de Salobrena, 1l
+              - column:
+                  name: trademark
+                  value: Castillo de Salobrena
+              - column:
+                  name: country
+                  value: Spain
+              - column:
+                  name: year
+                  value: 2022
+              - column:
+                  name: liquid_volume
+                  value: 1000
+              - column:
+                  name: alcohol_content
+                  value: 0
+              - column:
+                  name: wine_type
+                  value: FRUIT
+              - column:
+                  name: sweetness
+                  value: DRY
+              - column:
+                  name: acidity
+                  value: LOW
+              - column:
+                  name: description
+                  value: Castillo de Salobreña White 100% No Alcohol Fruit Wine is a refreshing and delightful beverage crafted for those who enjoy the taste of wine without the alcohol content. This 1-liter bottle offers a unique experience, combining the elegance of traditional white wine with the health benefits and vibrant flavors of fruit juice.
+              - column:
+                  name: inventory
+                  value: 35
+              - column:
+                  name: price
+                  value: 90
+              - column:
+                  name: image_url
+                  value: https://raw.githubusercontent.com/YaroslavRadevychVynnytskyi/content-wine-library/main/wine-pics/41.webp
+              - column:
+                  name: deleted
+                  value: 0
+              - column:
+                  name: country_flag_url
+                  value: https://raw.githubusercontent.com/YaroslavRadevychVynnytskyi/content-wine-library/main/countries-pics/spain.png
+        - insert:
+            tableName: wines
+            columns:
+              - column:
+                  name: id
+                  value: 42
+              - column:
+                  name: name
+                  value: Katlenburger Strawberry wine, 0,75l
+              - column:
+                  name: trademark
+                  value: Katlenburger
+              - column:
+                  name: country
+                  value: Germany
+              - column:
+                  name: year
+                  value: 2024
+              - column:
+                  name: liquid_volume
+                  value: 750
+              - column:
+                  name: alcohol_content
+                  value: 8
+              - column:
+                  name: wine_type
+                  value: FRUIT
+              - column:
+                  name: sweetness
+                  value: DRY
+              - column:
+                  name: acidity
+                  value: LOW
+              - column:
+                  name: description
+                  value: Family company Katlenburger Dr. Demuth, located in Lower Saxony - one of the leading fruit wineries in Europe. Katlenburger processes juice from local and exotic fruits. The range of the company is very wide fruit wines and summer soft drinks, mead and cocktails, as well as fruit mulled wines. The quality of Katlenburger is confirmed by victories at the exhibition of the German Agricultural Society (DLG).
+              - column:
+                  name: inventory
+                  value: 35
+              - column:
+                  name: price
+                  value: 40
+              - column:
+                  name: image_url
+                  value: https://raw.githubusercontent.com/YaroslavRadevychVynnytskyi/content-wine-library/main/wine-pics/42.webp
+              - column:
+                  name: deleted
+                  value: 0
+              - column:
+                  name: country_flag_url
+                  value: https://raw.githubusercontent.com/YaroslavRadevychVynnytskyi/content-wine-library/main/countries-pics/germany.png
+        - insert:
+            tableName: wines
+            columns:
+              - column:
+                  name: id
+                  value: 43
+              - column:
+                  name: name
+                  value: Chateau Palmer Margaux, 0,75l
+              - column:
+                  name: trademark
+                  value: Chateau Palmer Margaux
+              - column:
+                  name: country
+                  value: France
+              - column:
+                  name: year
+                  value: 2009
+              - column:
+                  name: liquid_volume
+                  value: 750
+              - column:
+                  name: alcohol_content
+                  value: 13
+              - column:
+                  name: wine_type
+                  value: BIODYNAMIC
+              - column:
+                  name: sweetness
+                  value: DRY
+              - column:
+                  name: acidity
+                  value: HIGH
+              - column:
+                  name: description
+                  value: Due to its elegance, finesse and exceptional quality, Chateau Palmer 2009 is called one of the best vintages of the farm. The extraordinary attention paid to the selection of vineyard plots, the accuracy of the vinification processes and control of the assemblage allowed the drink to reveal the full authenticity of the unique terroir. The 2009 cuvee is not only the pride of the Chateau, but also the best investment, because the drink has the potential to be stored for 50 years or more. It would also be a good choice to present this wine as a gift.
+              - column:
+                  name: inventory
+                  value: 20
+              - column:
+                  name: price
+                  value: 990
+              - column:
+                  name: image_url
+                  value: https://raw.githubusercontent.com/YaroslavRadevychVynnytskyi/content-wine-library/main/wine-pics/43.jpg
+              - column:
+                  name: deleted
+                  value: 0
+              - column:
+                  name: country_flag_url
+                  value: https://raw.githubusercontent.com/YaroslavRadevychVynnytskyi/content-wine-library/main/countries-pics/france.png
+        - insert:
+            tableName: wines
+            columns:
+              - column:
+                  name: id
+                  value: 44
+              - column:
+                  name: name
+                  value: Brocard Chablis Grand Cru Les Clos, 1l
+              - column:
+                  name: trademark
+                  value: Jean-Marc Brocard
+              - column:
+                  name: country
+                  value: France
+              - column:
+                  name: year
+                  value: 2020
+              - column:
+                  name: liquid_volume
+                  value: 750
+              - column:
+                  name: alcohol_content
+                  value: 13
+              - column:
+                  name: wine_type
+                  value: BIODYNAMIC
+              - column:
+                  name: sweetness
+                  value: DRY
+              - column:
+                  name: acidity
+                  value: HIGH
+              - column:
+                  name: description
+                  value: The 2020 Brocard Chablis Grand Cru Les Clos wine is one of the best in this wine category. Created by a biodynamic approach in the vineyard. The site of Grand Cru Le Clos got its name from the walls surrounding it from the time when the monks were engaged in viticulture. The site has a southwestern exposure, which allows the vines to absorb sunlight for as long as possible. Wort fermentation took place in large oak containers, and two types of tubs were chosen for aging for a duration of 1.5 years. This is the perfect wine for a gift to a true connoisseur of Chablis Grand Cru.
+              - column:
+                  name: inventory
+                  value: 40
+              - column:
+                  name: price
+                  value: 150
+              - column:
+                  name: image_url
+                  value: https://raw.githubusercontent.com/YaroslavRadevychVynnytskyi/content-wine-library/main/wine-pics/44.jpg
+              - column:
+                  name: deleted
+                  value: 0
+              - column:
+                  name: country_flag_url
+                  value: https://raw.githubusercontent.com/YaroslavRadevychVynnytskyi/content-wine-library/main/countries-pics/france.png
+        - insert:
+            tableName: wines
+            columns:
+              - column:
+                  name: id
+                  value: 45
+              - column:
+                  name: name
+                  value: La Chablisienne Chablis Grand Cru Chateau Grenouilles, 0,75l
+              - column:
+                  name: trademark
+                  value: LaChablisienne
+              - column:
+                  name: country
+                  value: France
+              - column:
+                  name: year
+                  value: 2020
+              - column:
+                  name: liquid_volume
+                  value: 750
+              - column:
+                  name: alcohol_content
+                  value: 14
+              - column:
+                  name: wine_type
+                  value: BIODYNAMIC
+              - column:
+                  name: sweetness
+                  value: DRY
+              - column:
+                  name: acidity
+                  value: HIGH
+              - column:
+                  name: description
+                  value: Legendary wine! The Chateau Grenouille estate, located near the village of Chablis, produces a rare Grand Cru Chablis. This truly rare wine, obtained by carefully selecting old Chardonnay vines in the Grenouille climate, has an intense, complex aroma revealed by fresh fruits, subtle floral aromas and shades of spices. In taste - extremely clean, thin and elegant, with a very long mineral aftertaste. This wine is from legend and, like everything mythical, takes time to open up. Wine critics claim that the 2020 Chablis Grand Cru Chateau Grenouilles is one of the best, among all previously manufactured La Chablisienne.
+              - column:
+                  name: inventory
+                  value: 30
+              - column:
+                  name: price
+                  value: 145
+              - column:
+                  name: image_url
+                  value: https://raw.githubusercontent.com/YaroslavRadevychVynnytskyi/content-wine-library/main/wine-pics/45.jpg
+              - column:
+                  name: deleted
+                  value: 0
+              - column:
+                  name: country_flag_url
+                  value: https://raw.githubusercontent.com/YaroslavRadevychVynnytskyi/content-wine-library/main/countries-pics/france.png
+        - insert:
+            tableName: wines
+            columns:
+              - column:
+                  name: id
+                  value: 46
+              - column:
+                  name: name
+                  value: Fonseca Vintage Port, 0,75l
+              - column:
+                  name: trademark
+                  value: Fonseca
+              - column:
+                  name: country
+                  value: Portugal
+              - column:
+                  name: year
+                  value: 2017
+              - column:
+                  name: liquid_volume
+                  value: 750
+              - column:
+                  name: alcohol_content
+                  value: 20
+              - column:
+                  name: wine_type
+                  value: FORTIFIED
+              - column:
+                  name: sweetness
+                  value: SWEET
+              - column:
+                  name: acidity
+                  value: MEDIUM
+              - column:
+                  name: description
+                  value: Unveil the captivating essence of Fonseca's Vintage Port wines, an embodiment of mastery in the art of winemaking since the mid-19th century. Embrace the allure of these wines, characterized by their intricate layers of fruit that command attention and evolve into opulent richness and complexity over time.
+              - column:
+                  name: inventory
+                  value: 15
+              - column:
+                  name: price
+                  value: 100
+              - column:
+                  name: image_url
+                  value: https://raw.githubusercontent.com/YaroslavRadevychVynnytskyi/content-wine-library/main/wine-pics/46.jpg
+              - column:
+                  name: deleted
+                  value: 0
+              - column:
+                  name: country_flag_url
+                  value: https://raw.githubusercontent.com/YaroslavRadevychVynnytskyi/content-wine-library/main/countries-pics/portugal.png
+        - insert:
+            tableName: wines
+            columns:
+              - column:
+                  name: id
+                  value: 47
+              - column:
+                  name: name
+                  value: Chateau Kefraya Comte de M 2011 Magnum, 0,75l
+              - column:
+                  name: trademark
+                  value: Chateau Kefraya
+              - column:
+                  name: country
+                  value: Lebanon
+              - column:
+                  name: year
+                  value: 2011
+              - column:
+                  name: liquid_volume
+                  value: 750
+              - column:
+                  name: alcohol_content
+                  value: 14
+              - column:
+                  name: wine_type
+                  value: RED
+              - column:
+                  name: sweetness
+                  value: SEMI_SWEET
+              - column:
+                  name: acidity
+                  value: MEDIUM
+              - column:
+                  name: description
+                  value: A deep ruby colored wine, Chateau Kefraya Comte de M 2011 is clear and brilliant with garnet-colored reflections. The first bouquet is very intense with notes of fresh red fruit, chocolate as well as aromas of menthol, cigar, blackberry, forest fruit and cloves. There are second notes of sandalwood, leather and glazed red fruit. The wine is fresh, full-bodied, powerful and complex. The tannins are well- structured and the oak perfectly integrated. The finish is sustained and powerful.
+              - column:
+                  name: inventory
+                  value: 20
+              - column:
+                  name: price
+                  value: 104
+              - column:
+                  name: image_url
+                  value: https://raw.githubusercontent.com/YaroslavRadevychVynnytskyi/content-wine-library/main/wine-pics/48.webp
+              - column:
+                  name: deleted
+                  value: 0
+              - column:
+                  name: country_flag_url
+                  value: https://raw.githubusercontent.com/YaroslavRadevychVynnytskyi/content-wine-library/main/countries-pics/lebanon.png
+        - insert:
+            tableName: wines
+            columns:
+              - column:
+                  name: id
+                  value: 48
+              - column:
+                  name: name
+                  value: Chateau Heritage Family reserve, 0,75l
+              - column:
+                  name: trademark
+                  value: Chateau
+              - column:
+                  name: country
+                  value: Lebanon
+              - column:
+                  name: year
+                  value: 2017
+              - column:
+                  name: liquid_volume
+                  value: 750
+              - column:
+                  name: alcohol_content
+                  value: 15
+              - column:
+                  name: wine_type
+                  value: RED
+              - column:
+                  name: sweetness
+                  value: DRY
+              - column:
+                  name: acidity
+                  value: MEDIUM
+              - column:
+                  name: description
+                  value: Chateau Heritage Family Reserve is  a rich, deep ruby remaining purple at rim. Intense, penetrating and very spicy bouquet, unashamedly expressive. Dense, fleshy and intense on the palate; remarkably youthful but with obvious development and depth. Layers of sumptuous flavors, revealing hints of licorice, cinnamon and dried fruit. Full bodied yet subtly caressing the palate where it lingers seductively.
+              - column:
+                  name: inventory
+                  value: 25
+              - column:
+                  name: price
+                  value: 60
+              - column:
+                  name: image_url
+                  value: https://raw.githubusercontent.com/YaroslavRadevychVynnytskyi/content-wine-library/main/wine-pics/49.png
+              - column:
+                  name: deleted
+                  value: 0
+              - column:
+                  name: country_flag_url
+                  value: https://raw.githubusercontent.com/YaroslavRadevychVynnytskyi/content-wine-library/main/countries-pics/lebanon.png
+        - insert:
+            tableName: wines
+            columns:
+              - column:
+                  name: id
+                  value: 49
+              - column:
+                  name: name
+                  value: Ott Etoile Cotes de Provence Rose, 0,75l
+              - column:
+                  name: trademark
+                  value: Domaines Ott
+              - column:
+                  name: country
+                  value: France
+              - column:
+                  name: year
+                  value: 2020
+              - column:
+                  name: liquid_volume
+                  value: 750
+              - column:
+                  name: alcohol_content
+                  value: 14
+              - column:
+                  name: wine_type
+                  value: ROSE
+              - column:
+                  name: sweetness
+                  value: DRY
+              - column:
+                  name: acidity
+                  value: MEDIUM
+              - column:
+                  name: description
+                  value: Etoile is a rare unique wine that combines all the best of the three châteaux of Domaines Ott the Clos Mireille slate terroir is reflected in the magnificent brackish character of this cuvée, the chalk soils of the Château de Sel give the wine sophistication, and the chalk sandstones and sandy marl soils Chateau Romassan saturate Etoile with structure and power. To create this wine, a blend of Grenache (80%) and Mourvedre (20%) varieties was used. 25% of the wine is aged in spherical ceramic containers to emphasize the purity of the fruit. Crystal clear wine with an incredibly generous and exquisite bouquet that plays with shades of fruit intertwined with minerality. Refined and complex taste will delight with its splendor.
+              - column:
+                  name: inventory
+                  value: 45
+              - column:
+                  name: price
+                  value: 160
+              - column:
+                  name: image_url
+                  value: https://raw.githubusercontent.com/YaroslavRadevychVynnytskyi/content-wine-library/main/wine-pics/50.webp
+              - column:
+                  name: deleted
+                  value: 0
+              - column:
+                  name: country_flag_url
+                  value: https://raw.githubusercontent.com/YaroslavRadevychVynnytskyi/content-wine-library/main/countries-pics/france.png
+        - insert:
+            tableName: wines
+            columns:
+              - column:
+                  name: id
+                  value: 50
+              - column:
+                  name: name
+                  value: Ch Mouton-Rothschild Pauillac, 0,75l
+              - column:
+                  name: trademark
+                  value: Chateau Mouton-Rothschild
+              - column:
+                  name: country
+                  value: France
+              - column:
+                  name: year
+                  value: 2001
+              - column:
+                  name: liquid_volume
+                  value: 750
+              - column:
+                  name: alcohol_content
+                  value: 12
+              - column:
+                  name: wine_type
+                  value: FRUIT
+              - column:
+                  name: sweetness
+                  value: DRY
+              - column:
+                  name: acidity
+                  value: LOW
+              - column:
+                  name: description
+                  value: The basis of the philosophy of Chateau Mouton-Rothschild is a collaboration of the highest quality of produced drinks with art integrated into both the Chateau and its wines. Everything, from vineyards to the cellar, in the Rothschild economy is full of aristocracy and eclecticism, not forgetting about the production of the main nectar of wine Premier Crewe Klasse Chateau Mouton-Rothschild 2001. This masterpiece is created from Bordeaux varieties according to ancient technology with fermentation and malolaxy in wooden vats and aging in French barriques. The label for the vintage in 2001 was drawn by the American architect, sculptor and artist Robert Wilson.
+              - column:
+                  name: inventory
+                  value: 35
+              - column:
+                  name: price
+                  value: 2900
+              - column:
+                  name: image_url
+                  value: https://raw.githubusercontent.com/YaroslavRadevychVynnytskyi/content-wine-library/main/wine-pics/51.webp
+              - column:
+                  name: deleted
+                  value: 0
+              - column:
+                  name: country_flag_url
+                  value: https://raw.githubusercontent.com/YaroslavRadevychVynnytskyi/content-wine-library/main/countries-pics/france.png
+        - insert:
+            tableName: wines
+            columns:
+              - column:
+                  name: id
+                  value: 51
+              - column:
+                  name: name
+                  value: Méthode Traditionelle, 0,75l
+              - column:
+                  name: trademark
+                  value: Méthode Traditionelle
+              - column:
+                  name: country
+                  value: Germany
+              - column:
+                  name: year
+                  value: 2023
+              - column:
+                  name: liquid_volume
+                  value: 750
+              - column:
+                  name: alcohol_content
+                  value: 12
+              - column:
+                  name: wine_type
+                  value: SPARKLING
+              - column:
+                  name: sweetness
+                  value: BRUT
+              - column:
+                  name: acidity
+                  value: HIGH
+              - column:
+                  name: description
+                  value: This classic, non-vintage Brut is a blend of Chardonnay (75%) and Pinot Noir (25%). The grapes, harvested in early to mid-August, were carefully selected from a vineyard planted at 4,300 feet in Engle, New Mexico where cool nights prolong the growing season.
+              - column:
+                  name: inventory
+                  value: 15
+              - column:
+                  name: price
+                  value: 50
+              - column:
+                  name: image_url
+                  value: https://raw.githubusercontent.com/YaroslavRadevychVynnytskyi/content-wine-library/main/wine-pics/52.jpg
+              - column:
+                  name: deleted
+                  value: 0
+              - column:
+                  name: country_flag_url
+                  value: https://raw.githubusercontent.com/YaroslavRadevychVynnytskyi/content-wine-library/main/countries-pics/germany.png
+        - insert:
+            tableName: wines
+            columns:
+              - column:
+                  name: id
+                  value: 52
+              - column:
+                  name: name
+                  value: Catena Zapata, 0,75l
+              - column:
+                  name: trademark
+                  value: Catena Zapata
+              - column:
+                  name: country
+                  value: Argentina
+              - column:
+                  name: year
+                  value: 2019
+              - column:
+                  name: liquid_volume
+                  value: 750
+              - column:
+                  name: alcohol_content
+                  value: 14
+              - column:
+                  name: wine_type
+                  value: RED
+              - column:
+                  name: sweetness
+                  value: SEMI_DRY
+              - column:
+                  name: acidity
+                  value: HIGH
+              - column:
+                  name: description
+                  value: Catena Zapata is one of the most important wineries in Mendoza. Founded in 1902, the farm remains family-run and is famous for its rich, full-bodied wines. The Katena family grows grapes in the foothills of the Andes. The grapes come from a vineyard located at an altitude of almost 5,000 meters above sea level. At this very high altitude, the nights are cool, just a few degrees above zero even in summer, and the sunlight is more intense, thanks to which the grapes acquire a special character. The result is a malbec with a beautiful texture that seems to slowly open in the glass - the aromas of violets and berries are complicated by some spices. More layered flavor
+              - column:
+                  name: inventory
+                  value: 47
+              - column:
+                  name: price
+                  value: 160
+              - column:
+                  name: image_url
+                  value: https://raw.githubusercontent.com/YaroslavRadevychVynnytskyi/content-wine-library/main/wine-pics/53.webp
+              - column:
+                  name: deleted
+                  value: 0
+              - column:
+                  name: country_flag_url
+                  value: https://raw.githubusercontent.com/YaroslavRadevychVynnytskyi/content-wine-library/main/countries-pics/argentina.png
+        - insert:
+            tableName: wines
+            columns:
+              - column:
+                  name: id
+                  value: 53
+              - column:
+                  name: name
+                  value: Cavas de Weinert, 0,75l
+              - column:
+                  name: trademark
+                  value: Cavas de Weinert
+              - column:
+                  name: country
+                  value: Argentina
+              - column:
+                  name: year
+                  value: 2004
+              - column:
+                  name: liquid_volume
+                  value: 750
+              - column:
+                  name: alcohol_content
+                  value: 14
+              - column:
+                  name: wine_type
+                  value: RED
+              - column:
+                  name: sweetness
+                  value: SEMI_DRY
+              - column:
+                  name: acidity
+                  value: MEDIUM
+              - column:
+                  name: description
+                  value: Weinert is a serious Argentine manufacturer that adheres to the traditional style with an emphasis on long aging of wines. Their malbacks do not leave wine ratings and are considered one of the largest in the world. Cavas de Weinert Gran Vino is a complex and harmonious wine, aged for about four years in barrels and three years in concrete vats. This is a blend of Malbec, Cabernet Sauvignon and Merlot from Lujan de Cuyo. The wine contains a mixture of red raspberries and black fruits, aromatic herbs, spices, flowers, dried meat and leather. Taste moderate, compact, really polished and balanced. Great classic wine.
+              - column:
+                  name: inventory
+                  value: 48
+              - column:
+                  name: price
+                  value: 200
+              - column:
+                  name: image_url
+                  value: https://raw.githubusercontent.com/YaroslavRadevychVynnytskyi/content-wine-library/main/wine-pics/54.webp
+              - column:
+                  name: deleted
+                  value: 0
+              - column:
+                  name: country_flag_url
+                  value: https://raw.githubusercontent.com/YaroslavRadevychVynnytskyi/content-wine-library/main/countries-pics/argentina.png
+        - insert:
+            tableName: wines
+            columns:
+              - column:
+                  name: id
+                  value: 54
+              - column:
+                  name: name
+                  value: Yangarra King's Wood Shiraz McLaren Vale, 0,75l
+              - column:
+                  name: trademark
+                  value: Yangarra
+              - column:
+                  name: country
+                  value: Australia
+              - column:
+                  name: year
+                  value: 2019
+              - column:
+                  name: liquid_volume
+                  value: 750
+              - column:
+                  name: alcohol_content
+                  value: 15
+              - column:
+                  name: wine_type
+                  value: RED
+              - column:
+                  name: sweetness
+                  value: DRY
+              - column:
+                  name: acidity
+                  value: HIGH
+              - column:
+                  name: description
+                  value: The combination of ancient geology, the highlands and the Mediterranean climate in Yangarra provides ideal conditions for viticulture. Grapes are harvested by hand, fermented by wild yeast. In Yangarra King's Wood Shiraz McLaren Vale 2019, pressing is not used, and aging for 15 months takes place exclusively in 25-liter fooders from French oak. Dry 2019 caused very low yields, providing wines with concentration, freshness of taste and pronounced natural acidity.
+              - column:
+                  name: inventory
+                  value: 30
+              - column:
+                  name: price
+                  value: 130
+              - column:
+                  name: image_url
+                  value: https://raw.githubusercontent.com/YaroslavRadevychVynnytskyi/content-wine-library/main/wine-pics/55.jpg
+              - column:
+                  name: deleted
+                  value: 0
+              - column:
+                  name: country_flag_url
+                  value: https://raw.githubusercontent.com/YaroslavRadevychVynnytskyi/content-wine-library/main/countries-pics/australia.png
