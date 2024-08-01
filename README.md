@@ -9,19 +9,25 @@ alongside reliability and robustness.
 A key feature of the Wine Library is its AI-driven recommendation system. This innovative 
 functionality allows us to provide personalized wine suggestions based on users' 
 preferences. Join us on a journey to explore the world of wines with Wine Library, 
-where technology meets elegance to deliver an exceptional shopping experience.\
-Feel free to visit and explore our site by [this link](https://bodyarespect.github.io/wine-library/)!
+where technology meets elegance to deliver an exceptional shopping experience.
 
-## 2. Where to find front-end part of the project
+## 2. How to try it out?
+Feel free to visit and explore our site by [this link](https://bodyarespect.github.io/wine-library/)!\
+We have a dummy user Alice, which you can use to discover full functionality of the application.\
+Credentials:\
+```email: alice@email.com```\
+```password: alice123```
+
+## 3. Where to find front-end part of the project
 You can check out the front-end part of our project [here](https://github.com/BodyaRespect/wine-library).
 
-## 3. Documentation and usage
+## 4. Documentation and usage
 Use this url to find information about the API:
 https://api.winelibrary.wuaze.com/swagger-ui/index.html#/  
 Also, you may try using Postman to send requests. [Here](https://web.postman.co/workspace/bbc70790-d1bb-4376-989e-8b0901791111) 
 is public collection of all available endpoints.
 
-## 4. How to run the project on your machine
+## 5. How to run the project on your machine
 #### Requirements:
 * JDK 17.0.10
 * Apache Maven version 3.8.7 or higher
@@ -38,7 +44,7 @@ and running ``` java -jar wine-library-0.0.1-SNAPSHOT.jar```
 If you did everything correctly, you may access swagger by following URL:
 http://localhost:8080/swagger-ui.html#/
 
-## 5. Technologies used
+## 6. Technologies used
 
 * Development, persistence and build tools
 1. JDK 17.0.10
