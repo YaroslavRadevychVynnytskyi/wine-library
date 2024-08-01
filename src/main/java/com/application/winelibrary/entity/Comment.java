@@ -37,10 +37,8 @@ public class Comment {
     @Column(nullable = false)
     private String text;
 
-    @Column(nullable = false)
     private String advantages;
 
-    @Column(nullable = false)
     private String disadvantages;
 
     @Column(nullable = false)

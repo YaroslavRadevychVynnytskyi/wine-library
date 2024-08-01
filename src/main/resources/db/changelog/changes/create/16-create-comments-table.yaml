@@ -35,13 +35,9 @@ databaseChangeLog:
               - column:
                   name: advantages
                   type: TEXT
-                  constraints:
-                    nullable: false
               - column:
                   name: disadvantages
                   type: TEXT
-                  constraints:
-                    nullable: false
               - column:
                   name: likes
                   type: INTEGER

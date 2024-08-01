@@ -13,12 +13,13 @@ import org.springframework.data.jpa.repository.JpaSpecificationExecutor;
 
 public interface WineRepository extends JpaRepository<Wine, Long>, JpaSpecificationExecutor<Wine>,
         CustomRepository<Wine> {
-    @EntityGraph(attributePaths = {"recommendedFood"})
+    @EntityGraph(attributePaths = {"recommendedFood", "comments", "comments.user"})
     Page<Wine> findAll(Pageable pageable);
 
     @EntityGraph(attributePaths = {"recommendedFood"})
     List<Wine> findAll(Specification<Wine> spec);
 
-    @EntityGraph(attributePaths = {"recommendedFood"})
+    @EntityGraph(attributePaths = {"recommendedFood", "comments", "comments.user",
+            "ratings", "ratings.user"})
     Optional<Wine> findById(Long id);
 }

@@ -13,6 +13,7 @@ public interface WineMapper {
     @Mapping(target = "recommendedFood", ignore = true)
     Wine toModel(CreateWineRequestDto requestDto);
 
+    @Mapping(target = "commentsCount", expression = "java(wine.getComments().size())")
     WineDetailedResponseDto toDto(Wine wine);
 
     @Mapping(target = "id", ignore = true)

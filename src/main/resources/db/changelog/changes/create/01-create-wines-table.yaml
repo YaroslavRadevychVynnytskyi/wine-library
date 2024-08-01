@@ -75,6 +75,12 @@ databaseChangeLog:
                   name: image_url
                   type: TEXT
               - column:
+                  name: average_rating
+                  type: DOUBLE
+                  defaultValue: "0"
+                  constraints:
+                    nullable: false
+              - column:
                   name: deleted
                   type: BOOLEAN
                   defaultValueBoolean: false

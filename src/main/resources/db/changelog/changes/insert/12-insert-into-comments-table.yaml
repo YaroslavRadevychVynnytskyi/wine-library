@@ -1,0 +1,32 @@
+databaseChangeLog:
+  - changeSet:
+      id: insert-into-comments-table
+      author: Andrii Pytlak
+      changes:
+        - insert:
+            tableName: comments
+            columns:
+              - column:
+                  name: user_id
+                  value: 3
+              - column:
+                  name: wine_id
+                  value: 2
+              - column:
+                  name: text
+                  value: Perfect wine
+              - column:
+                  name: advantages
+                  value: Very tasty
+              - column:
+                  name: disadvantages
+                  value: Expensive
+              - column:
+                  name: likes
+                  value: 2
+              - column:
+                  name: dislikes
+                  value: 1
+              - column:
+                  name: created_at
+                  value: "2024-08-15 12:00:00"
