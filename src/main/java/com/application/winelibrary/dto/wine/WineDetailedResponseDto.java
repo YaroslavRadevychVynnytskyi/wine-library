@@ -22,6 +22,8 @@ public record WineDetailedResponseDto(
         String description,
         Integer inventory,
         BigDecimal price,
-        String imageUrl
+        String imageUrl,
+        Double averageRating,
+        Integer commentsCount
 ) {
 }

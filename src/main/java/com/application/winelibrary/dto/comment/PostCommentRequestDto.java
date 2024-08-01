@@ -8,12 +8,10 @@ public record PostCommentRequestDto(
         @Length(min = 4, max = 700)
         String text,
 
-        @NotBlank
-        @Length(min = 4, max = 200)
+        @Length(max = 200)
         String advantages,
 
-        @NotBlank
-        @Length(min = 4, max = 200)
+        @Length(max = 200)
         String disadvantages
 ) {
 }

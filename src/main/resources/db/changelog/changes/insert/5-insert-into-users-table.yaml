@@ -33,3 +33,18 @@ databaseChangeLog:
               - column:
                   name: password
                   value: $2a$10$vEjGON2nXfnHAlxWEH4bKunFzAPNNj80A2XPpQsenfF8MicVa9vH6 # 1234yaroslav56
+        - insert:
+            tableName: users
+            columns:
+              - column:
+                  name: first_name
+                  value: Jane
+              - column:
+                  name: last_name
+                  value: Cool
+              - column:
+                  name: email
+                  value: jane@email.com
+              - column:
+                  name: password
+                  value: $2a$10$vEjGON2nXfnHAlxWEH4bKunFzAPNNj80A2XPpQsenfF8MicVa9vH6 # 1234yaroslav56

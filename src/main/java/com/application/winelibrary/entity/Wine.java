@@ -97,6 +97,9 @@ public class Wine {
     @OneToMany(mappedBy = "wine", cascade = CascadeType.ALL, orphanRemoval = true)
     private Set<Rating> ratings;
 
+    @Column(name = "average_rating", nullable = false)
+    private Double averageRating = 0.0;
+
     public enum WineType {
         RED,
         WHITE,

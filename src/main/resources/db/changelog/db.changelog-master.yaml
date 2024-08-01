@@ -60,3 +60,5 @@ databaseChangeLog:
       file: db/changelog/changes/insert/10-insert-into-nova_post_offices-table.yaml
   - include:
       file: db/changelog/changes/insert/11-insert-into-ukr_offices-table.yaml
+  - include:
+      file: db/changelog/changes/insert/12-insert-into-comments-table.yaml
