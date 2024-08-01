@@ -9,7 +9,8 @@ alongside reliability and robustness.
 A key feature of the Wine Library is its AI-driven recommendation system. This innovative 
 functionality allows us to provide personalized wine suggestions based on users' 
 preferences. Join us on a journey to explore the world of wines with Wine Library, 
-where technology meets elegance to deliver an exceptional shopping experience.
+where technology meets elegance to deliver an exceptional shopping experience.\
+Feel free to visit and explore our site by [this link](https://bodyarespect.github.io/wine-library/)!
 
 ## 2. Where to find front-end part of the project
 You can check out the front-end part of our project [here](https://github.com/BodyaRespect/wine-library).
