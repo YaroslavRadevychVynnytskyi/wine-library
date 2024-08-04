@@ -1,6 +1,6 @@
 databaseChangeLog:
   - changeSet:
-      id: insert-into-shopping_cars-table
+      id: insert-into-shopping_carts-table
       author: Yaroslav Radevych-Vynnytskyi
       changes:
         - insert:
@@ -12,3 +12,615 @@ databaseChangeLog:
               - column:
                   name: user_id
                   value: 2
+        - insert:
+            tableName: shopping_carts
+            columns:
+              - column:
+                  name: id
+                  value: 3
+              - column:
+                  name: user_id
+                  value: 3
+        - insert:
+            tableName: shopping_carts
+            columns:
+              - column:
+                  name: id
+                  value: 4
+              - column:
+                  name: user_id
+                  value: 4
+        - insert:
+            tableName: shopping_carts
+            columns:
+              - column:
+                  name: id
+                  value: 5
+              - column:
+                  name: user_id
+                  value: 5
+        - insert:
+            tableName: shopping_carts
+            columns:
+              - column:
+                  name: id
+                  value: 6
+              - column:
+                  name: user_id
+                  value: 6
+        - insert:
+            tableName: shopping_carts
+            columns:
+              - column:
+                  name: id
+                  value: 7
+              - column:
+                  name: user_id
+                  value: 7
+        - insert:
+            tableName: shopping_carts
+            columns:
+              - column:
+                  name: id
+                  value: 8
+              - column:
+                  name: user_id
+                  value: 8
+        - insert:
+            tableName: shopping_carts
+            columns:
+              - column:
+                  name: id
+                  value: 9
+              - column:
+                  name: user_id
+                  value: 9
+        - insert:
+            tableName: shopping_carts
+            columns:
+              - column:
+                  name: id
+                  value: 10
+              - column:
+                  name: user_id
+                  value: 10
+        - insert:
+            tableName: shopping_carts
+            columns:
+              - column:
+                  name: id
+                  value: 11
+              - column:
+                  name: user_id
+                  value: 11
+        - insert:
+            tableName: shopping_carts
+            columns:
+              - column:
+                  name: id
+                  value: 12
+              - column:
+                  name: user_id
+                  value: 12
+        - insert:
+            tableName: shopping_carts
+            columns:
+              - column:
+                  name: id
+                  value: 13
+              - column:
+                  name: user_id
+                  value: 13
+        - insert:
+            tableName: shopping_carts
+            columns:
+              - column:
+                  name: id
+                  value: 14
+              - column:
+                  name: user_id
+                  value: 14
+        - insert:
+            tableName: shopping_carts
+            columns:
+              - column:
+                  name: id
+                  value: 15
+              - column:
+                  name: user_id
+                  value: 15
+        - insert:
+            tableName: shopping_carts
+            columns:
+              - column:
+                  name: id
+                  value: 16
+              - column:
+                  name: user_id
+                  value: 16
+        - insert:
+            tableName: shopping_carts
+            columns:
+              - column:
+                  name: id
+                  value: 17
+              - column:
+                  name: user_id
+                  value: 17
+        - insert:
+            tableName: shopping_carts
+            columns:
+              - column:
+                  name: id
+                  value: 18
+              - column:
+                  name: user_id
+                  value: 18
+        - insert:
+            tableName: shopping_carts
+            columns:
+              - column:
+                  name: id
+                  value: 19
+              - column:
+                  name: user_id
+                  value: 19
+        - insert:
+            tableName: shopping_carts
+            columns:
+              - column:
+                  name: id
+                  value: 20
+              - column:
+                  name: user_id
+                  value: 20
+        - insert:
+            tableName: shopping_carts
+            columns:
+              - column:
+                  name: id
+                  value: 21
+              - column:
+                  name: user_id
+                  value: 21
+        - insert:
+            tableName: shopping_carts
+            columns:
+              - column:
+                  name: id
+                  value: 22
+              - column:
+                  name: user_id
+                  value: 22
+        - insert:
+            tableName: shopping_carts
+            columns:
+              - column:
+                  name: id
+                  value: 23
+              - column:
+                  name: user_id
+                  value: 23
+        - insert:
+            tableName: shopping_carts
+            columns:
+              - column:
+                  name: id
+                  value: 24
+              - column:
+                  name: user_id
+                  value: 24
+        - insert:
+            tableName: shopping_carts
+            columns:
+              - column:
+                  name: id
+                  value: 25
+              - column:
+                  name: user_id
+                  value: 25
+        - insert:
+            tableName: shopping_carts
+            columns:
+              - column:
+                  name: id
+                  value: 26
+              - column:
+                  name: user_id
+                  value: 26
+        - insert:
+            tableName: shopping_carts
+            columns:
+              - column:
+                  name: id
+                  value: 27
+              - column:
+                  name: user_id
+                  value: 27
+        - insert:
+            tableName: shopping_carts
+            columns:
+              - column:
+                  name: id
+                  value: 28
+              - column:
+                  name: user_id
+                  value: 28
+        - insert:
+            tableName: shopping_carts
+            columns:
+              - column:
+                  name: id
+                  value: 29
+              - column:
+                  name: user_id
+                  value: 29
+        - insert:
+            tableName: shopping_carts
+            columns:
+              - column:
+                  name: id
+                  value: 30
+              - column:
+                  name: user_id
+                  value: 30
+        - insert:
+            tableName: shopping_carts
+            columns:
+              - column:
+                  name: id
+                  value: 31
+              - column:
+                  name: user_id
+                  value: 31
+        - insert:
+            tableName: shopping_carts
+            columns:
+              - column:
+                  name: id
+                  value: 32
+              - column:
+                  name: user_id
+                  value: 32
+        - insert:
+            tableName: shopping_carts
+            columns:
+              - column:
+                  name: id
+                  value: 33
+              - column:
+                  name: user_id
+                  value: 33
+        - insert:
+            tableName: shopping_carts
+            columns:
+              - column:
+                  name: id
+                  value: 34
+              - column:
+                  name: user_id
+                  value: 34
+        - insert:
+            tableName: shopping_carts
+            columns:
+              - column:
+                  name: id
+                  value: 35
+              - column:
+                  name: user_id
+                  value: 35
+        - insert:
+            tableName: shopping_carts
+            columns:
+              - column:
+                  name: id
+                  value: 36
+              - column:
+                  name: user_id
+                  value: 36
+        - insert:
+            tableName: shopping_carts
+            columns:
+              - column:
+                  name: id
+                  value: 37
+              - column:
+                  name: user_id
+                  value: 37
+        - insert:
+            tableName: shopping_carts
+            columns:
+              - column:
+                  name: id
+                  value: 38
+              - column:
+                  name: user_id
+                  value: 38
+        - insert:
+            tableName: shopping_carts
+            columns:
+              - column:
+                  name: id
+                  value: 39
+              - column:
+                  name: user_id
+                  value: 39
+        - insert:
+            tableName: shopping_carts
+            columns:
+              - column:
+                  name: id
+                  value: 40
+              - column:
+                  name: user_id
+                  value: 40
+        - insert:
+            tableName: shopping_carts
+            columns:
+              - column:
+                  name: id
+                  value: 41
+              - column:
+                  name: user_id
+                  value: 41
+        - insert:
+            tableName: shopping_carts
+            columns:
+              - column:
+                  name: id
+                  value: 42
+              - column:
+                  name: user_id
+                  value: 42
+        - insert:
+            tableName: shopping_carts
+            columns:
+              - column:
+                  name: id
+                  value: 43
+              - column:
+                  name: user_id
+                  value: 43
+        - insert:
+            tableName: shopping_carts
+            columns:
+              - column:
+                  name: id
+                  value: 44
+              - column:
+                  name: user_id
+                  value: 44
+        - insert:
+            tableName: shopping_carts
+            columns:
+              - column:
+                  name: id
+                  value: 45
+              - column:
+                  name: user_id
+                  value: 45
+        - insert:
+            tableName: shopping_carts
+            columns:
+              - column:
+                  name: id
+                  value: 46
+              - column:
+                  name: user_id
+                  value: 46
+        - insert:
+            tableName: shopping_carts
+            columns:
+              - column:
+                  name: id
+                  value: 47
+              - column:
+                  name: user_id
+                  value: 47
+        - insert:
+            tableName: shopping_carts
+            columns:
+              - column:
+                  name: id
+                  value: 48
+              - column:
+                  name: user_id
+                  value: 48
+        - insert:
+            tableName: shopping_carts
+            columns:
+              - column:
+                  name: id
+                  value: 49
+              - column:
+                  name: user_id
+                  value: 49
+        - insert:
+            tableName: shopping_carts
+            columns:
+              - column:
+                  name: id
+                  value: 50
+              - column:
+                  name: user_id
+                  value: 50
+        - insert:
+            tableName: shopping_carts
+            columns:
+              - column:
+                  name: id
+                  value: 51
+              - column:
+                  name: user_id
+                  value: 51
+        - insert:
+            tableName: shopping_carts
+            columns:
+              - column:
+                  name: id
+                  value: 52
+              - column:
+                  name: user_id
+                  value: 52
+        - insert:
+            tableName: shopping_carts
+            columns:
+              - column:
+                  name: id
+                  value: 53
+              - column:
+                  name: user_id
+                  value: 53
+        - insert:
+            tableName: shopping_carts
+            columns:
+              - column:
+                  name: id
+                  value: 54
+              - column:
+                  name: user_id
+                  value: 54
+        - insert:
+            tableName: shopping_carts
+            columns:
+              - column:
+                  name: id
+                  value: 55
+              - column:
+                  name: user_id
+                  value: 55
+        - insert:
+            tableName: shopping_carts
+            columns:
+              - column:
+                  name: id
+                  value: 56
+              - column:
+                  name: user_id
+                  value: 56
+        - insert:
+            tableName: shopping_carts
+            columns:
+              - column:
+                  name: id
+                  value: 57
+              - column:
+                  name: user_id
+                  value: 57
+        - insert:
+            tableName: shopping_carts
+            columns:
+              - column:
+                  name: id
+                  value: 58
+              - column:
+                  name: user_id
+                  value: 58
+        - insert:
+            tableName: shopping_carts
+            columns:
+              - column:
+                  name: id
+                  value: 59
+              - column:
+                  name: user_id
+                  value: 59
+        - insert:
+            tableName: shopping_carts
+            columns:
+              - column:
+                  name: id
+                  value: 60
+              - column:
+                  name: user_id
+                  value: 60
+        - insert:
+            tableName: shopping_carts
+            columns:
+              - column:
+                  name: id
+                  value: 61
+              - column:
+                  name: user_id
+                  value: 61
+        - insert:
+            tableName: shopping_carts
+            columns:
+              - column:
+                  name: id
+                  value: 62
+              - column:
+                  name: user_id
+                  value: 62
+        - insert:
+            tableName: shopping_carts
+            columns:
+              - column:
+                  name: id
+                  value: 63
+              - column:
+                  name: user_id
+                  value: 63
+        - insert:
+            tableName: shopping_carts
+            columns:
+              - column:
+                  name: id
+                  value: 64
+              - column:
+                  name: user_id
+                  value: 64
+        - insert:
+            tableName: shopping_carts
+            columns:
+              - column:
+                  name: id
+                  value: 65
+              - column:
+                  name: user_id
+                  value: 65
+        - insert:
+            tableName: shopping_carts
+            columns:
+              - column:
+                  name: id
+                  value: 66
+              - column:
+                  name: user_id
+                  value: 66
+        - insert:
+            tableName: shopping_carts
+            columns:
+              - column:
+                  name: id
+                  value: 67
+              - column:
+                  name: user_id
+                  value: 67
+        - insert:
+            tableName: shopping_carts
+            columns:
+              - column:
+                  name: id
+                  value: 68
+              - column:
+                  name: user_id
+                  value: 68
+        - insert:
+            tableName: shopping_carts
+            columns:
+              - column:
+                  name: id
+                  value: 69
+              - column:
+                  name: user_id
+                  value: 69
+        - insert:
+            tableName: shopping_carts
+            columns:
+              - column:
+                  name: id
+                  value: 70
+              - column:
+                  name: user_id
+                  value: 70

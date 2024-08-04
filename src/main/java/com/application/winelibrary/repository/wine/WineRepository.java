@@ -16,7 +16,7 @@ public interface WineRepository extends JpaRepository<Wine, Long>, JpaSpecificat
     @EntityGraph(attributePaths = {"recommendedFood", "comments", "comments.user"})
     Page<Wine> findAll(Pageable pageable);
 
-    @EntityGraph(attributePaths = {"recommendedFood"})
+    @EntityGraph(attributePaths = {"recommendedFood", "comments", "comments.user"})
     List<Wine> findAll(Specification<Wine> spec);
 
     @EntityGraph(attributePaths = {"recommendedFood", "comments", "comments.user",
