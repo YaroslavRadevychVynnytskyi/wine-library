@@ -11,7 +11,7 @@ databaseChangeLog:
                   value: 3
               - column:
                   name: wine_id
-                  value: 2
+                  value: 1
               - column:
                   name: text
                   value: Perfect wine
@@ -29,4 +29,5701 @@ databaseChangeLog:
                   value: 1
               - column:
                   name: created_at
-                  value: "2024-08-15 12:00:00"
+                  value: "2024-07-15 12:00:00"
+        - insert:
+            tableName: comments
+            columns:
+              - column:
+                  name: user_id
+                  value: 4
+              - column:
+                  name: wine_id
+                  value: 1
+              - column:
+                  name: text
+                  value: Great aroma and smooth finish
+              - column:
+                  name: advantages
+                  value: Excellent aroma
+              - column:
+                  name: disadvantages
+                  value: Limited availability
+              - column:
+                  name: likes
+                  value: 10
+              - column:
+                  name: dislikes
+                  value: 2
+              - column:
+                  name: created_at
+                  value: "2024-07-16 12:30:00"
+        - insert:
+            tableName: comments
+            columns:
+              - column:
+                  name: user_id
+                  value: 5
+              - column:
+                  name: wine_id
+                  value: 1
+              - column:
+                  name: text
+                  value: Good value for the price
+              - column:
+                  name: advantages
+                  value: Affordable price
+              - column:
+                  name: disadvantages
+                  value: Average taste
+              - column:
+                  name: likes
+                  value: 7
+              - column:
+                  name: dislikes
+                  value: 1
+              - column:
+                  name: created_at
+                  value: "2024-07-14 11:00:00"
+        - insert:
+            tableName: comments
+            columns:
+              - column:
+                  name: user_id
+                  value: 6
+              - column:
+                  name: wine_id
+                  value: 1
+              - column:
+                  name: text
+                  value: A bit too sweet for my taste
+              - column:
+                  name: advantages
+                  value: Nice packaging
+              - column:
+                  name: disadvantages
+                  value: Too sweet
+              - column:
+                  name: likes
+                  value: 4
+              - column:
+                  name: dislikes
+                  value: 3
+              - column:
+                  name: created_at
+                  value: "2024-07-18 12:00:00"
+        - insert:
+            tableName: comments
+            columns:
+              - column:
+                  name: user_id
+                  value: 7
+              - column:
+                  name: wine_id
+                  value: 2
+              - column:
+                  name: text
+                  value: An excellent choice for a celebration
+              - column:
+                  name: advantages
+                  value: Perfect for special occasions
+              - column:
+                  name: disadvantages
+                  value: Hard to find
+              - column:
+                  name: likes
+                  value: 15
+              - column:
+                  name: dislikes
+                  value: 0
+              - column:
+                  name: created_at
+                  value: "2024-07-19 18:00:00"
+        - insert:
+            tableName: comments
+            columns:
+              - column:
+                  name: user_id
+                  value: 8
+              - column:
+                  name: wine_id
+                  value: 2
+              - column:
+                  name: text
+                  value: Surprisingly good for a lesser-known brand
+              - column:
+                  name: advantages
+                  value: Unique taste
+              - column:
+                  name: disadvantages
+                  value: Not widely available
+              - column:
+                  name: likes
+                  value: 8
+              - column:
+                  name: dislikes
+                  value: 1
+              - column:
+                  name: created_at
+                  value: "2024-07-20 22:00:00"
+        - insert:
+            tableName: comments
+            columns:
+              - column:
+                  name: user_id
+                  value: 9
+              - column:
+                  name: wine_id
+                  value: 2
+              - column:
+                  name: text
+                  value: A truly exceptional wine, worth every penny.
+              - column:
+                  name: advantages
+                  value: Exceptional quality
+              - column:
+                  name: disadvantages
+                  value: Very expensive
+              - column:
+                  name: likes
+                  value: 25
+              - column:
+                  name: dislikes
+                  value: 2
+              - column:
+                  name: created_at
+                  value: "2024-07-18 12:00:00"
+        - insert:
+            tableName: comments
+            columns:
+              - column:
+                  name: user_id
+                  value: 10
+              - column:
+                  name: wine_id
+                  value: 3
+              - column:
+                  name: text
+                  value: Excellent choice for fans of robust wines.
+              - column:
+                  name: advantages
+                  value: Great complexity
+              - column:
+                  name: disadvantages
+                  value: Too sweet
+              - column:
+                  name: likes
+                  value: 14
+              - column:
+                  name: dislikes
+                  value: 1
+              - column:
+                  name: created_at
+                  value: "2024-07-19 18:30:00"
+        - insert:
+            tableName: comments
+            columns:
+              - column:
+                  name: user_id
+                  value: 11
+              - column:
+                  name: wine_id
+                  value: 3
+              - column:
+                  name: text
+                  value: Rich and full-bodied, perfect with red meat.
+              - column:
+                  name: advantages
+                  value: Bold flavor
+              - column:
+                  name: disadvantages
+                  value: High tannins
+              - column:
+                  name: likes
+                  value: 20
+              - column:
+                  name: dislikes
+                  value: 4
+              - column:
+                  name: created_at
+                  value: "2024-07-18 14:00:00"
+        - insert:
+            tableName: comments
+            columns:
+              - column:
+                  name: user_id
+                  value: 12
+              - column:
+                  name: wine_id
+                  value: 3
+              - column:
+                  name: text
+                  value: Delightful and complex, one of my favorites.
+              - column:
+                  name: advantages
+                  value: Long finish
+              - column:
+                  name: disadvantages
+                  value: A bit pricey
+              - column:
+                  name: likes
+                  value: 17
+              - column:
+                  name: dislikes
+                  value: 2
+              - column:
+                  name: created_at
+                  value: "2024-07-21 11:20:00"
+        - insert:
+            tableName: comments
+            columns:
+              - column:
+                  name: user_id
+                  value: 13
+              - column:
+                  name: wine_id
+                  value: 4
+              - column:
+                  name: text
+                  value: A classic Australian wine, very satisfying.
+              - column:
+                  name: advantages
+                  value: Great structure
+              - column:
+                  name: disadvantages
+                  value: Needs time to open up
+              - column:
+                  name: likes
+                  value: 18
+              - column:
+                  name: dislikes
+                  value: 3
+              - column:
+                  name: created_at
+                  value: "2024-07-22 15:00:00"
+        - insert:
+            tableName: comments
+            columns:
+              - column:
+                  name: user_id
+                  value: 14
+              - column:
+                  name: wine_id
+                  value: 4
+              - column:
+                  name: text
+                  value: Deep and intense, perfect for aging.
+              - column:
+                  name: advantages
+                  value: Rich and bold
+              - column:
+                  name: disadvantages
+                  value: Requires aging
+              - column:
+                  name: likes
+                  value: 22
+              - column:
+                  name: dislikes
+                  value: 1
+              - column:
+                  name: created_at
+                  value: "2024-07-13 12:00:00"
+        - insert:
+            tableName: comments
+            columns:
+              - column:
+                  name: user_id
+                  value: 15
+              - column:
+                  name: wine_id
+                  value: 4
+              - column:
+                  name: text
+                  value: A wine with great potential, will only get better.
+              - column:
+                  name: advantages
+                  value: Excellent depth
+              - column:
+                  name: disadvantages
+                  value: Tannic
+              - column:
+                  name: likes
+                  value: 16
+              - column:
+                  name: dislikes
+                  value: 2
+              - column:
+                  name: created_at
+                  value: "2024-07-11 12:30:00"
+        - insert:
+            tableName: comments
+            columns:
+              - column:
+                  name: user_id
+                  value: 16
+              - column:
+                  name: wine_id
+                  value: 4
+              - column:
+                  name: text
+                  value: A must-try for any wine enthusiast.
+              - column:
+                  name: advantages
+                  value: Complex aroma
+              - column:
+                  name: disadvantages
+                  value: Expensive
+              - column:
+                  name: likes
+                  value: 30
+              - column:
+                  name: dislikes
+                  value: 4
+              - column:
+                  name: created_at
+                  value: "2024-07-25 10:00:00"
+        - insert:
+            tableName: comments
+            columns:
+              - column:
+                  name: user_id
+                  value: 17
+              - column:
+                  name: wine_id
+                  value: 5
+              - column:
+                  name: text
+                  value: Refreshing and vibrant, perfect for summer.
+              - column:
+                  name: advantages
+                  value: Fresh taste
+              - column:
+                  name: disadvantages
+                  value: Lacks complexity
+              - column:
+                  name: likes
+                  value: 12
+              - column:
+                  name: dislikes
+                  value: 1
+              - column:
+                  name: created_at
+                  value: "2024-07-26 14:20:00"
+        - insert:
+            tableName: comments
+            columns:
+              - column:
+                  name: user_id
+                  value: 18
+              - column:
+                  name: wine_id
+                  value: 5
+              - column:
+                  name: text
+                  value: Zesty and lively, great with seafood.
+              - column:
+                  name: advantages
+                  value: Crisp finish
+              - column:
+                  name: disadvantages
+                  value: High acidity
+              - column:
+                  name: likes
+                  value: 15
+              - column:
+                  name: dislikes
+                  value: 0
+              - column:
+                  name: created_at
+                  value: "2024-07-18 10:00:00"
+        - insert:
+            tableName: comments
+            columns:
+              - column:
+                  name: user_id
+                  value: 19
+              - column:
+                  name: wine_id
+                  value: 5
+              - column:
+                  name: text
+                  value: A classic Sauvignon Blanc, very enjoyable.
+              - column:
+                  name: advantages
+                  value: Intense fruit flavors
+              - column:
+                  name: disadvantages
+                  value: Short finish
+              - column:
+                  name: likes
+                  value: 10
+              - column:
+                  name: dislikes
+                  value: 2
+              - column:
+                  name: created_at
+                  value: "2024-07-28 12:00:00"
+        - insert:
+            tableName: comments
+            columns:
+              - column:
+                  name: user_id
+                  value: 20
+              - column:
+                  name: wine_id
+                  value: 5
+              - column:
+                  name: text
+                  value: Good balance of acidity and sweetness.
+              - column:
+                  name: advantages
+                  value: Balanced taste
+              - column:
+                  name: disadvantages
+                  value: Not very unique
+              - column:
+                  name: likes
+                  value: 8
+              - column:
+                  name: dislikes
+                  value: 1
+              - column:
+                  name: created_at
+                  value: "2024-07-18 18:30:00"
+        - insert:
+            tableName: comments
+            columns:
+              - column:
+                  name: user_id
+                  value: 21
+              - column:
+                  name: wine_id
+                  value: 6
+              - column:
+                  name: text
+                  value: Luxurious and refined, perfect for celebrations.
+              - column:
+                  name: advantages
+                  value: Elegant and refined
+              - column:
+                  name: disadvantages
+                  value: Very expensive
+              - column:
+                  name: likes
+                  value: 25
+              - column:
+                  name: dislikes
+                  value: 3
+              - column:
+                  name: created_at
+                  value: "2024-07-11 12:00:00"
+        - insert:
+            tableName: comments
+            columns:
+              - column:
+                  name: user_id
+                  value: 22
+              - column:
+                  name: wine_id
+                  value: 6
+              - column:
+                  name: text
+                  value: A champagne of exceptional quality and taste.
+              - column:
+                  name: advantages
+                  value: Complex aroma
+              - column:
+                  name: disadvantages
+                  value: High price
+              - column:
+                  name: likes
+                  value: 20
+              - column:
+                  name: dislikes
+                  value: 2
+              - column:
+                  name: created_at
+                  value: "2024-07-30 12:00:00"
+        - insert:
+            tableName: comments
+            columns:
+              - column:
+                  name: user_id
+                  value: 23
+              - column:
+                  name: wine_id
+                  value: 6
+              - column:
+                  name: text
+                  value: Perfect for a special occasion, very elegant.
+              - column:
+                  name: advantages
+                  value: Luxurious taste
+              - column:
+                  name: disadvantages
+                  value: Requires proper storage
+              - column:
+                  name: likes
+                  value: 18
+              - column:
+                  name: dislikes
+                  value: 1
+              - column:
+                  name: created_at
+                  value: "2024-07-08 14:00:00"
+        - insert:
+            tableName: comments
+            columns:
+              - column:
+                  name: user_id
+                  value: 24
+              - column:
+                  name: wine_id
+                  value: 6
+              - column:
+                  name: text
+                  value: An exquisite champagne, very memorable.
+              - column:
+                  name: advantages
+                  value: Exceptional flavor
+              - column:
+                  name: disadvantages
+                  value: Not for everyday occasions
+              - column:
+                  name: likes
+                  value: 30
+              - column:
+                  name: dislikes
+                  value: 4
+              - column:
+                  name: created_at
+                  value: "2024-07-13 12:00:00"
+        - insert:
+            tableName: comments
+            columns:
+              - column:
+                  name: user_id
+                  value: 25
+              - column:
+                  name: wine_id
+                  value: 7
+              - column:
+                  name: text
+                  value: This Chardonnay is a delightful example of Napa Valley. It's beautifully balanced with rich flavors and a crisp finish.
+              - column:
+                  name: advantages
+                  value: Complex aroma, buttery texture
+              - column:
+                  name: disadvantages
+                  value: A bit pricey, but worth it for the quality.
+              - column:
+                  name: likes
+                  value: 35
+              - column:
+                  name: dislikes
+                  value: 4
+              - column:
+                  name: created_at
+                  value: "2024-07-13 12:21:00"
+        - insert:
+            tableName: comments
+            columns:
+              - column:
+                  name: user_id
+                  value: 25
+              - column:
+                  name: wine_id
+                  value: 7
+              - column:
+                  name: text
+                  value: I found this Chardonnay to be a bit too oaky for my taste. However, I can appreciate the complexity of flavors and the smooth finish.
+              - column:
+                  name: advantages
+                  value: Well-balanced, good for special occasions
+              - column:
+                  name: disadvantages
+                  value: Oaky flavor might be overpowering for some
+              - column:
+                  name: likes
+                  value: 22
+              - column:
+                  name: dislikes
+                  value: 7
+              - column:
+                  name: created_at
+                  value: "2024-07-13 12:21:00"
+        - insert:
+            tableName: comments
+            columns:
+              - column:
+                  name: user_id
+                  value: 25
+              - column:
+                  name: wine_id
+                  value: 7
+              - column:
+                  name: text
+                  value: Paired this Chardonnay with a seafood dinner and it was amazing!
+              - column:
+                  name: advantages
+                  value: Pairs well with food, smooth finish
+              - column:
+                  name: disadvantages
+                  value: Might be too rich for some palates
+              - column:
+                  name: likes
+                  value: 41
+              - column:
+                  name: dislikes
+                  value: 1
+              - column:
+                  name: created_at
+                  value: "2024-07-14 12:21:00"
+        - insert:
+            tableName: comments
+            columns:
+              - column:
+                  name: user_id
+                  value: 26
+              - column:
+                  name: wine_id
+                  value: 7
+              - column:
+                  name: text
+                  value: A great Chardonnay for those who enjoy a richer style.
+              - column:
+                  name: advantages
+                  value: Complex flavors, well-balanced
+              - column:
+                  name: disadvantages
+                  value: Rich and oaky, may not be for everyone
+              - column:
+                  name: likes
+                  value: 38
+              - column:
+                  name: dislikes
+                  value: 3
+              - column:
+                  name: created_at
+                  value: "2024-07-25 12:48:00"
+        - insert:
+            tableName: comments
+            columns:
+              - column:
+                  name: user_id
+                  value: 27
+              - column:
+                  name: wine_id
+                  value: 8
+              - column:
+                  name: text
+                  value: A truly elegant wine with rich flavors. The tannins are perfectly integrated.
+              - column:
+                  name: advantages
+                  value: Elegant, well-integrated tannins
+              - column:
+                  name: disadvantages
+                  value: Needs time to decant
+              - column:
+                  name: likes
+                  value: 45
+              - column:
+                  name: dislikes
+                  value: 2
+              - column:
+                  name: created_at
+                  value: "2024-07-30 14:00:00"
+        - insert:
+            tableName: comments
+            columns:
+              - column:
+                  name: user_id
+                  value: 28
+              - column:
+                  name: wine_id
+                  value: 8
+              - column:
+                  name: text
+                  value: Rich and complex, but a bit too strong for my taste.
+              - column:
+                  name: advantages
+                  value: Complex, rich flavor
+              - column:
+                  name: disadvantages
+                  value: Strong, may not suit everyone
+              - column:
+                  name: likes
+                  value: 30
+              - column:
+                  name: dislikes
+                  value: 7
+              - column:
+                  name: created_at
+                  value: "2024-07-30 15:15:00"
+        - insert:
+            tableName: comments
+            columns:
+              - column:
+                  name: user_id
+                  value: 29
+              - column:
+                  name: wine_id
+                  value: 8
+              - column:
+                  name: text
+                  value: Perfect for a special occasion. The wine's complexity is impressive.
+              - column:
+                  name: advantages
+                  value: Perfect for special occasions, impressive complexity
+              - column:
+                  name: disadvantages
+                  value: Expensive
+              - column:
+                  name: likes
+                  value: 55
+              - column:
+                  name: dislikes
+                  value: 5
+              - column:
+                  name: created_at
+                  value: "2024-07-30 16:30:00"
+        - insert:
+            tableName: comments
+            columns:
+              - column:
+                  name: user_id
+                  value: 30
+              - column:
+                  name: wine_id
+                  value: 8
+              - column:
+                  name: text
+                  value: The wine needs to be decanted for best results. Once opened, it’s fantastic.
+              - column:
+                  name: advantages
+                  value: Needs decanting, fantastic after opening
+              - column:
+                  name: disadvantages
+                  value: Requires decanting
+              - column:
+                  name: likes
+                  value: 40
+              - column:
+                  name: dislikes
+                  value: 3
+              - column:
+                  name: created_at
+                  value: "2024-07-30 17:45:00"
+        - insert:
+            tableName: comments
+            columns:
+              - column:
+                  name: user_id
+                  value: 31
+              - column:
+                  name: wine_id
+                  value: 9
+              - column:
+                  name: text
+                  value: An exceptional wine with deep complexity and a long finish.
+              - column:
+                  name: advantages
+                  value: Deep complexity, long finish
+              - column:
+                  name: disadvantages
+                  value: Price
+              - column:
+                  name: likes
+                  value: 60
+              - column:
+                  name: dislikes
+                  value: 4
+              - column:
+                  name: created_at
+                  value: "2024-07-30 18:00:00"
+        - insert:
+            tableName: comments
+            columns:
+              - column:
+                  name: user_id
+                  value: 32
+              - column:
+                  name: wine_id
+                  value: 9
+              - column:
+                  name: text
+                  value: Truly a masterpiece. The aging process is evident in every sip.
+              - column:
+                  name: advantages
+                  value: Masterpiece, evident aging process
+              - column:
+                  name: disadvantages
+                  value: Can be too complex for some
+              - column:
+                  name: likes
+                  value: 50
+              - column:
+                  name: dislikes
+                  value: 3
+              - column:
+                  name: created_at
+                  value: "2024-07-30 19:15:00"
+        - insert:
+            tableName: comments
+            columns:
+              - column:
+                  name: user_id
+                  value: 33
+              - column:
+                  name: wine_id
+                  value: 9
+              - column:
+                  name: text
+                  value: Great wine, but the price might be a bit high for casual drinkers.
+              - column:
+                  name: advantages
+                  value: Great quality
+              - column:
+                  name: disadvantages
+                  value: High price
+              - column:
+                  name: likes
+                  value: 35
+              - column:
+                  name: dislikes
+                  value: 4
+              - column:
+                  name: created_at
+                  value: "2024-07-30 20:30:00"
+        - insert:
+            tableName: comments
+            columns:
+              - column:
+                  name: user_id
+                  value: 34
+              - column:
+                  name: wine_id
+                  value: 9
+              - column:
+                  name: text
+                  value: A classic choice for collectors. A wine to age and savor.
+              - column:
+                  name: advantages
+                  value: Ideal for collectors, good aging potential
+              - column:
+                  name: disadvantages
+                  value: Not for immediate consumption
+              - column:
+                  name: likes
+                  value: 40
+              - column:
+                  name: dislikes
+                  value: 2
+              - column:
+                  name: created_at
+                  value: "2024-07-30 21:45:00"
+        - insert:
+            tableName: comments
+            columns:
+              - column:
+                  name: user_id
+                  value: 35
+              - column:
+                  name: wine_id
+                  value: 10
+              - column:
+                  name: text
+                  value: A delightful Beaujolais with fresh fruit notes and a pleasant acidity.
+              - column:
+                  name: advantages
+                  value: Fresh fruit notes, pleasant acidity
+              - column:
+                  name: disadvantages
+                  value: Best enjoyed young
+              - column:
+                  name: likes
+                  value: 42
+              - column:
+                  name: dislikes
+                  value: 1
+              - column:
+                  name: created_at
+                  value: "2024-07-30 22:00:00"
+        - insert:
+            tableName: comments
+            columns:
+              - column:
+                  name: user_id
+                  value: 36
+              - column:
+                  name: wine_id
+                  value: 10
+              - column:
+                  name: text
+                  value: A well-balanced wine that pairs perfectly with a variety of foods.
+              - column:
+                  name: advantages
+                  value: Well-balanced, versatile food pairing
+              - column:
+                  name: disadvantages
+                  value: Shorter aging potential
+              - column:
+                  name: likes
+                  value: 37
+              - column:
+                  name: dislikes
+                  value: 2
+              - column:
+                  name: created_at
+                  value: "2024-07-30 23:15:00"
+        - insert:
+            tableName: comments
+            columns:
+              - column:
+                  name: user_id
+                  value: 37
+              - column:
+                  name: wine_id
+                  value: 10
+              - column:
+                  name: text
+                  value: A nice, easy-drinking wine. Perfect for casual gatherings.
+              - column:
+                  name: advantages
+                  value: Easy-drinking, casual
+              - column:
+                  name: disadvantages
+                  value: Lacks complexity
+              - column:
+                  name: likes
+                  value: 33
+              - column:
+                  name: dislikes
+                  value: 5
+              - column:
+                  name: created_at
+                  value: "2024-07-30 00:30:00"
+        - insert:
+            tableName: comments
+            columns:
+              - column:
+                  name: user_id
+                  value: 38
+              - column:
+                  name: wine_id
+                  value: 10
+              - column:
+                  name: text
+                  value: Very enjoyable, though I prefer wines with a bit more body.
+              - column:
+                  name: advantages
+                  value: Enjoyable, fresh
+              - column:
+                  name: disadvantages
+                  value: Lacks body
+              - column:
+                  name: likes
+                  value: 29
+              - column:
+                  name: dislikes
+                  value: 4
+              - column:
+                  name: created_at
+                  value: "2024-07-30 01:45:00"
+        - insert:
+            tableName: comments
+            columns:
+              - column:
+                  name: user_id
+                  value: 39
+              - column:
+                  name: wine_id
+                  value: 11
+              - column:
+                  name: text
+                  value: A sophisticated wine with excellent aging potential. The tannins are prominent but well-integrated.
+              - column:
+                  name: advantages
+                  value: Excellent aging potential, well-integrated tannins
+              - column:
+                  name: disadvantages
+                  value: Needs time to mature
+              - column:
+                  name: likes
+                  value: 47
+              - column:
+                  name: dislikes
+                  value: 3
+              - column:
+                  name: created_at
+                  value: "2024-07-30 12:00:00"
+        - insert:
+            tableName: comments
+            columns:
+              - column:
+                  name: user_id
+                  value: 40
+              - column:
+                  name: wine_id
+                  value: 11
+              - column:
+                  name: text
+                  value: I like this wine so much!
+              - column:
+                  name: advantages
+                  value: Rich and complex, beautiful bouquet
+              - column:
+                  name: disadvantages
+                  value: Pricey
+              - column:
+                  name: likes
+                  value: 40
+              - column:
+                  name: dislikes
+                  value: 4
+              - column:
+                  name: created_at
+                  value: "2024-07-30 13:15:00"
+        - insert:
+            tableName: comments
+            columns:
+              - column:
+                  name: user_id
+                  value: 41
+              - column:
+                  name: wine_id
+                  value: 11
+              - column:
+                  name: text
+                  value: The complexity and depth of this wine are outstanding. A true representation of Barbaresco.
+              - column:
+                  name: advantages
+                  value: Outstanding complexity and depth
+              - column:
+                  name: disadvantages
+                  value: Needs decanting
+              - column:
+                  name: likes
+                  value: 50
+              - column:
+                  name: dislikes
+                  value: 2
+              - column:
+                  name: created_at
+                  value: "2024-07-30 14:30:00"
+        - insert:
+            tableName: comments
+            columns:
+              - column:
+                  name: user_id
+                  value: 42
+              - column:
+                  name: wine_id
+                  value: 11
+              - column:
+                  name: text
+                  value: The tannins are strong now, but this wine will be amazing after a few years of aging.
+              - column:
+                  name: advantages
+                  value: Strong aging potential
+              - column:
+                  name: disadvantages
+                  value: Strong tannins currently
+              - column:
+                  name: likes
+                  value: 35
+              - column:
+                  name: dislikes
+                  value: 5
+              - column:
+                  name: created_at
+                  value: "2024-07-30 15:45:00"
+        - insert:
+            tableName: comments
+            columns:
+              - column:
+                  name: user_id
+                  value: 43
+              - column:
+                  name: wine_id
+                  value: 12
+              - column:
+                  name: text
+                  value: A classic wine with a perfect balance of fruit and oak. Truly outstanding.
+              - column:
+                  name: advantages
+                  value: Perfect balance, outstanding quality
+              - column:
+                  name: disadvantages
+                  value: High price
+              - column:
+                  name: likes
+                  value: 52
+              - column:
+                  name: dislikes
+                  value: 3
+              - column:
+                  name: created_at
+                  value: "2024-07-30 16:00:00"
+        - insert:
+            tableName: comments
+            columns:
+              - column:
+                  name: user_id
+                  value: 44
+              - column:
+                  name: wine_id
+                  value: 12
+              - column:
+                  name: text
+                  value: Elegant and refined, with a beautiful expression of terroir. One of the best Italian reds.
+              - column:
+                  name: advantages
+                  value: Elegant, refined, great terroir expression
+              - column:
+                  name: disadvantages
+                  value: Needs decanting
+              - column:
+                  name: likes
+                  value: 45
+              - column:
+                  name: dislikes
+                  value: 2
+              - column:
+                  name: created_at
+                  value: "2024-07-30 17:15:00"
+        - insert:
+            tableName: comments
+            columns:
+              - column:
+                  name: user_id
+                  value: 45
+              - column:
+                  name: wine_id
+                  value: 12
+              - column:
+                  name: text
+                  value: A superb wine that perfectly balances power and elegance. Worth every penny.
+              - column:
+                  name: advantages
+                  value: Perfect balance, superb quality
+              - column:
+                  name: disadvantages
+                  value: Expensive
+              - column:
+                  name: likes
+                  value: 48
+              - column:
+                  name: dislikes
+                  value: 4
+              - column:
+                  name: created_at
+                  value: "2024-07-30 18:30:00"
+        - insert:
+            tableName: comments
+            columns:
+              - column:
+                  name: user_id
+                  value: 46
+              - column:
+                  name: wine_id
+                  value: 12
+              - column:
+                  name: text
+                  value: Incredible depth and complexity. A wine that will age beautifully.
+              - column:
+                  name: advantages
+                  value: Incredible depth and complexity
+              - column:
+                  name: disadvantages
+                  value: Needs aging to fully develop
+              - column:
+                  name: likes
+                  value: 50
+              - column:
+                  name: dislikes
+                  value: 3
+              - column:
+                  name: created_at
+                  value: "2024-07-30 19:45:00"
+        - insert:
+            tableName: comments
+            columns:
+              - column:
+                  name: user_id
+                  value: 47
+              - column:
+                  name: wine_id
+                  value: 13
+              - column:
+                  name: text
+                  value: A benchmark for American wines. Rich, smooth, and wonderfully balanced.
+              - column:
+                  name: advantages
+                  value: Rich, smooth, balanced
+              - column:
+                  name: disadvantages
+                  value: Expensive
+              - column:
+                  name: likes
+                  value: 55
+              - column:
+                  name: dislikes
+                  value: 3
+              - column:
+                  name: created_at
+                  value: "2024-07-30 20:00:00"
+        - insert:
+            tableName: comments
+            columns:
+              - column:
+                  name: user_id
+                  value: 48
+              - column:
+                  name: wine_id
+                  value: 13
+              - column:
+                  name: text
+                  value: A luxurious wine with velvety tannins and a long, elegant finish.
+              - column:
+                  name: advantages
+                  value: Luxurious, velvety tannins, long finish
+              - column:
+                  name: disadvantages
+                  value: High price point
+              - column:
+                  name: likes
+                  value: 48
+              - column:
+                  name: dislikes
+                  value: 5
+              - column:
+                  name: created_at
+                  value: "2024-07-30 21:15:00"
+        - insert:
+            tableName: comments
+            columns:
+              - column:
+                  name: user_id
+                  value: 49
+              - column:
+                  name: wine_id
+                  value: 13
+              - column:
+                  name: text
+                  value: Opus One delivers consistent quality every year. A must-have for collectors.
+              - column:
+                  name: advantages
+                  value: Consistent quality, must-have for collectors
+              - column:
+                  name: disadvantages
+                  value: Needs time to develop
+              - column:
+                  name: likes
+                  value: 53
+              - column:
+                  name: dislikes
+                  value: 4
+              - column:
+                  name: created_at
+                  value: "2024-07-30 22:30:00"
+        - insert:
+            tableName: comments
+            columns:
+              - column:
+                  name: user_id
+                  value: 50
+              - column:
+                  name: wine_id
+                  value: 13
+              - column:
+                  name: text
+                  value: A masterpiece of Napa Valley. Rich and complex with a perfect balance of fruit and oak.
+              - column:
+                  name: advantages
+                  value: Rich, complex, perfectly balanced
+              - column:
+                  name: disadvantages
+                  value: High cost
+              - column:
+                  name: likes
+                  value: 60
+              - column:
+                  name: dislikes
+                  value: 2
+              - column:
+                  name: created_at
+                  value: "2024-07-30 23:45:00"
+        - insert:
+            tableName: comments
+            columns:
+              - column:
+                  name: user_id
+                  value: 51
+              - column:
+                  name: wine_id
+                  value: 14
+              - column:
+                  name: text
+                  value: The pinnacle of Sauternes. A complex bouquet with layers of fruit and honey.
+              - column:
+                  name: advantages
+                  value: Complex bouquet, rich layers of flavor
+              - column:
+                  name: disadvantages
+                  value: Pricey
+              - column:
+                  name: likes
+                  value: 75
+              - column:
+                  name: dislikes
+                  value: 3
+              - column:
+                  name: created_at
+                  value: "2024-07-31 01:15:00"
+        - insert:
+            tableName: comments
+            columns:
+              - column:
+                  name: user_id
+                  value: 52
+              - column:
+                  name: wine_id
+                  value: 14
+              - column:
+                  name: text
+                  value: Incredibly rich and balanced with a long, luxurious finish. A true treat.
+              - column:
+                  name: advantages
+                  value: Incredibly rich, balanced, luxurious finish
+              - column:
+                  name: disadvantages
+                  value: Very expensive
+              - column:
+                  name: likes
+                  value: 70
+              - column:
+                  name: dislikes
+                  value: 3
+              - column:
+                  name: created_at
+                  value: "2024-07-31 00:00:00"
+        - insert:
+            tableName: comments
+            columns:
+              - column:
+                  name: user_id
+                  value: 53
+              - column:
+                  name: wine_id
+                  value: 14
+              - column:
+                  name: text
+                  value: A symphony of flavors, from citrus to honey. Truly a unique and unforgettable wine.
+              - column:
+                  name: advantages
+                  value: Symphony of flavors, unique
+              - column:
+                  name: disadvantages
+                  value: Very expensive
+              - column:
+                  name: likes
+                  value: 70
+              - column:
+                  name: dislikes
+                  value: 3
+              - column:
+                  name: created_at
+                  value: "2024-07-31 00:00:00"
+        - insert:
+            tableName: comments
+            columns:
+              - column:
+                  name: user_id
+                  value: 54
+              - column:
+                  name: wine_id
+                  value: 14
+              - column:
+                  name: text
+                  value: A legendary sweet wine with unmatched complexity and depth. Truly exceptional.
+              - column:
+                  name: advantages
+                  value: Unmatched complexity and depth
+              - column:
+                  name: disadvantages
+                  value: Needs time to develop
+              - column:
+                  name: likes
+                  value: 70
+              - column:
+                  name: dislikes
+                  value: 3
+              - column:
+                  name: created_at
+                  value: "2024-07-31 00:00:00"
+        - insert:
+            tableName: comments
+            columns:
+              - column:
+                  name: user_id
+                  value: 55
+              - column:
+                  name: wine_id
+                  value: 15
+              - column:
+                  name: text
+                  value: A refreshing white wine with bright citrus notes and a hint of pear. Perfect for summer.
+              - column:
+                  name: advantages
+                  value: Refreshing and easy to drink
+              - column:
+                  name: disadvantages
+                  value: A bit light for some tastes
+              - column:
+                  name: likes
+                  value: 45
+              - column:
+                  name: dislikes
+                  value: 7
+              - column:
+                  name: created_at
+                  value: "2024-07-31 01:00:00"
+        - insert:
+            tableName: comments
+            columns:
+              - column:
+                  name: user_id
+                  value: 56
+              - column:
+                  name: wine_id
+                  value: 15
+              - column:
+                  name: text
+                  value: Delicate and floral with a smooth finish. Great with seafood.
+              - column:
+                  name: advantages
+                  value: Delicate and floral
+              - column:
+                  name: disadvantages
+                  value: Not very complex
+              - column:
+                  name: likes
+                  value: 30
+              - column:
+                  name: dislikes
+                  value: 2
+              - column:
+                  name: created_at
+                  value: "2024-07-31 02:00:00"
+        - insert:
+            tableName: comments
+            columns:
+              - column:
+                  name: user_id
+                  value: 57
+              - column:
+                  name: wine_id
+                  value: 15
+              - column:
+                  name: text
+                  value: Light and fruity, this wine is a crowd-pleaser at any gathering.
+              - column:
+                  name: advantages
+                  value: Light and fruity
+              - column:
+                  name: disadvantages
+                  value: Lacks depth
+              - column:
+                  name: likes
+                  value: 60
+              - column:
+                  name: dislikes
+                  value: 1
+              - column:
+                  name: created_at
+                  value: "2024-07-31 03:00:00"
+        - insert:
+            tableName: comments
+            columns:
+              - column:
+                  name: user_id
+                  value: 58
+              - column:
+                  name: wine_id
+                  value: 15
+              - column:
+                  name: text
+                  value: Crisp and clean with a pleasant finish. Excellent value for the price.
+              - column:
+                  name: advantages
+                  value: Crisp and clean
+              - column:
+                  name: disadvantages
+                  value: Could use more complexity
+              - column:
+                  name: likes
+                  value: 45
+              - column:
+                  name: dislikes
+                  value: 7
+              - column:
+                  name: created_at
+                  value: "2024-07-31 04:00:00"
+        - insert:
+            tableName: comments
+            columns:
+              - column:
+                  name: user_id
+                  value: 59
+              - column:
+                  name: wine_id
+                  value: 16
+              - column:
+                  name: text
+                  value: Rich and full-bodied with a smooth, velvety texture. Great for a cozy evening.
+              - column:
+                  name: advantages
+                  value: Rich and full-bodied
+              - column:
+                  name: disadvantages
+                  value: A bit too sweet for some
+              - column:
+                  name: likes
+                  value: 15
+              - column:
+                  name: dislikes
+                  value: 8
+              - column:
+                  name: created_at
+                  value: "2024-07-31 05:00:00"
+        - insert:
+            tableName: comments
+            columns:
+              - column:
+                  name: user_id
+                  value: 60
+              - column:
+                  name: wine_id
+                  value: 16
+              - column:
+                  name: text
+                  value: A delightful blend of berries and spice. Perfect with grilled meats.
+              - column:
+                  name: advantages
+                  value: Berry and spice flavors
+              - column:
+                  name: disadvantages
+                  value: A bit heavy for summer
+              - column:
+                  name: likes
+                  value: 48
+              - column:
+                  name: dislikes
+                  value: 2
+              - column:
+                  name: created_at
+                  value: "2024-07-31 06:00:00"
+        - insert:
+            tableName: comments
+            columns:
+              - column:
+                  name: user_id
+                  value: 61
+              - column:
+                  name: wine_id
+                  value: 16
+              - column:
+                  name: text
+                  value: Smooth and easy to drink, with a pleasant sweetness. A reliable choice.
+              - column:
+                  name: advantages
+                  value: Smooth and sweet
+              - column:
+                  name: disadvantages
+                  value: Could be more complex
+              - column:
+                  name: likes
+                  value: 40
+              - column:
+                  name: dislikes
+                  value: 2
+              - column:
+                  name: created_at
+                  value: "2024-07-31 07:00:00"
+        - insert:
+            tableName: comments
+            columns:
+              - column:
+                  name: user_id
+                  value: 62
+              - column:
+                  name: wine_id
+                  value: 16
+              - column:
+                  name: text
+                  value: Great value for money. A versatile wine that pairs well with many dishes.
+              - column:
+                  name: advantages
+                  value: Great value
+              - column:
+                  name: disadvantages
+                  value: A bit basic
+              - column:
+                  name: likes
+                  value: 55
+              - column:
+                  name: dislikes
+                  value: 4
+              - column:
+                  name: created_at
+                  value: "2024-07-31 08:00:00"
+        - insert:
+            tableName: comments
+            columns:
+              - column:
+                  name: user_id
+                  value: 63
+              - column:
+                  name: wine_id
+                  value: 17
+              - column:
+                  name: text
+                  value: Crisp and refreshing with a lovely balance of acidity and fruit. Perfect for summer.
+              - column:
+                  name: advantages
+                  value: Crisp and refreshing
+              - column:
+                  name: disadvantages
+                  value: Slightly acidic for some
+              - column:
+                  name: likes
+                  value: 60
+              - column:
+                  name: dislikes
+                  value: 5
+              - column:
+                  name: created_at
+                  value: "2024-07-31 09:00:00"
+        - insert:
+            tableName: comments
+            columns:
+              - column:
+                  name: user_id
+                  value: 64
+              - column:
+                  name: wine_id
+                  value: 17
+              - column:
+                  name: text
+                  value: A sophisticated wine with a creamy texture and a hint of oak. Great with poultry.
+              - column:
+                  name: advantages
+                  value: Creamy texture
+              - column:
+                  name: disadvantages
+                  value: A bit oaky
+              - column:
+                  name: likes
+                  value: 67
+              - column:
+                  name: dislikes
+                  value: 1
+              - column:
+                  name: created_at
+                  value: "2024-07-31 10:00:00"
+        - insert:
+            tableName: comments
+            columns:
+              - column:
+                  name: user_id
+                  value: 65
+              - column:
+                  name: wine_id
+                  value: 17
+              - column:
+                  name: text
+                  value: A delightful mix of tropical fruits and citrus with a nice minerality.
+              - column:
+                  name: advantages
+                  value: Tropical fruits and citrus
+              - column:
+                  name: disadvantages
+                  value: A bit sharp
+              - column:
+                  name: likes
+                  value: 11
+              - column:
+                  name: dislikes
+                  value: 1
+              - column:
+                  name: created_at
+                  value: "2024-07-31 11:00:00"
+        - insert:
+            tableName: comments
+            columns:
+              - column:
+                  name: user_id
+                  value: 66
+              - column:
+                  name: wine_id
+                  value: 17
+              - column:
+                  name: text
+                  value: A refined wine with a fresh finish. Lovely with seafood dishes.
+              - column:
+                  name: advantages
+                  value: Fresh finish
+              - column:
+                  name: disadvantages
+                  value: Could be smoother
+              - column:
+                  name: likes
+                  value: 82
+              - column:
+                  name: dislikes
+                  value: 5
+              - column:
+                  name: created_at
+                  value: "2024-07-31 12:00:00"
+        - insert:
+            tableName: comments
+            columns:
+              - column:
+                  name: user_id
+                  value: 67
+              - column:
+                  name: wine_id
+                  value: 18
+              - column:
+                  name: text
+                  value: A classic champagne with fine bubbles and a crisp finish. Always a good choice for celebrations.
+              - column:
+                  name: advantages
+                  value: Fine bubbles and crisp finish
+              - column:
+                  name: disadvantages
+                  value: A bit pricey
+              - column:
+                  name: likes
+                  value: 80
+              - column:
+                  name: dislikes
+                  value: 2
+              - column:
+                  name: created_at
+                  value: "2024-07-31 13:00:00"
+        - insert:
+            tableName: comments
+            columns:
+              - column:
+                  name: user_id
+                  value: 68
+              - column:
+                  name: wine_id
+                  value: 18
+              - column:
+                  name: text
+                  value: Elegant and refined, with a delicate balance of fruit and acidity. Perfect for toasting.
+              - column:
+                  name: advantages
+                  value: Elegant and refined
+              - column:
+                  name: disadvantages
+                  value: Can be too acidic for some
+              - column:
+                  name: likes
+                  value: 71
+              - column:
+                  name: dislikes
+                  value: 5
+              - column:
+                  name: created_at
+                  value: "2024-07-31 14:00:00"
+        - insert:
+            tableName: comments
+            columns:
+              - column:
+                  name: user_id
+                  value: 69
+              - column:
+                  name: wine_id
+                  value: 18
+              - column:
+                  name: text
+                  value: A luxurious champagne with a fresh and vibrant flavor profile. A must-have for special occasions.
+              - column:
+                  name: advantages
+                  value: Fresh and vibrant
+              - column:
+                  name: disadvantages
+                  value: Pricey
+              - column:
+                  name: likes
+                  value: 11
+              - column:
+                  name: dislikes
+                  value: 2
+              - column:
+                  name: created_at
+                  value: "2024-07-31 15:00:00"
+        - insert:
+            tableName: comments
+            columns:
+              - column:
+                  name: user_id
+                  value: 70
+              - column:
+                  name: wine_id
+                  value: 18
+              - column:
+                  name: text
+                  value: Rich and complex, with notes of apple and brioche. A true classic.
+              - column:
+                  name: advantages
+                  value: Rich and complex
+              - column:
+                  name: disadvantages
+                  value: Slightly overhyped
+              - column:
+                  name: likes
+                  value: 87
+              - column:
+                  name: dislikes
+                  value: 1
+              - column:
+                  name: created_at
+                  value: "2024-07-31 16:00:00"
+        - insert:
+            tableName: comments
+            columns:
+              - column:
+                  name: user_id
+                  value: 3
+              - column:
+                  name: wine_id
+                  value: 19
+              - column:
+                  name: text
+                  value: Perfect wine
+              - column:
+                  name: advantages
+                  value: Very tasty
+              - column:
+                  name: disadvantages
+                  value: Expensive
+              - column:
+                  name: likes
+                  value: 2
+              - column:
+                  name: dislikes
+                  value: 1
+              - column:
+                  name: created_at
+                  value: "2024-07-15 12:00:00"
+        - insert:
+            tableName: comments
+            columns:
+              - column:
+                  name: user_id
+                  value: 4
+              - column:
+                  name: wine_id
+                  value: 19
+              - column:
+                  name: text
+                  value: Great aroma and smooth finish
+              - column:
+                  name: advantages
+                  value: Excellent aroma
+              - column:
+                  name: disadvantages
+                  value: Limited availability
+              - column:
+                  name: likes
+                  value: 10
+              - column:
+                  name: dislikes
+                  value: 2
+              - column:
+                  name: created_at
+                  value: "2024-07-16 12:30:00"
+        - insert:
+            tableName: comments
+            columns:
+              - column:
+                  name: user_id
+                  value: 5
+              - column:
+                  name: wine_id
+                  value: 19
+              - column:
+                  name: text
+                  value: Good value for the price
+              - column:
+                  name: advantages
+                  value: Affordable price
+              - column:
+                  name: disadvantages
+                  value: Average taste
+              - column:
+                  name: likes
+                  value: 7
+              - column:
+                  name: dislikes
+                  value: 1
+              - column:
+                  name: created_at
+                  value: "2024-07-14 11:00:00"
+        - insert:
+            tableName: comments
+            columns:
+              - column:
+                  name: user_id
+                  value: 6
+              - column:
+                  name: wine_id
+                  value: 19
+              - column:
+                  name: text
+                  value: A bit too sweet for my taste
+              - column:
+                  name: advantages
+                  value: Nice packaging
+              - column:
+                  name: disadvantages
+                  value: Too sweet
+              - column:
+                  name: likes
+                  value: 4
+              - column:
+                  name: dislikes
+                  value: 3
+              - column:
+                  name: created_at
+                  value: "2024-07-18 12:00:00"
+        - insert:
+            tableName: comments
+            columns:
+              - column:
+                  name: user_id
+                  value: 7
+              - column:
+                  name: wine_id
+                  value: 20
+              - column:
+                  name: text
+                  value: An excellent choice for a celebration
+              - column:
+                  name: advantages
+                  value: Perfect for special occasions
+              - column:
+                  name: disadvantages
+                  value: Hard to find
+              - column:
+                  name: likes
+                  value: 15
+              - column:
+                  name: dislikes
+                  value: 0
+              - column:
+                  name: created_at
+                  value: "2024-07-19 18:00:00"
+        - insert:
+            tableName: comments
+            columns:
+              - column:
+                  name: user_id
+                  value: 8
+              - column:
+                  name: wine_id
+                  value: 20
+              - column:
+                  name: text
+                  value: Surprisingly good for a lesser-known brand
+              - column:
+                  name: advantages
+                  value: Unique taste
+              - column:
+                  name: disadvantages
+                  value: Not widely available
+              - column:
+                  name: likes
+                  value: 8
+              - column:
+                  name: dislikes
+                  value: 1
+              - column:
+                  name: created_at
+                  value: "2024-07-20 22:00:00"
+        - insert:
+            tableName: comments
+            columns:
+              - column:
+                  name: user_id
+                  value: 9
+              - column:
+                  name: wine_id
+                  value: 20
+              - column:
+                  name: text
+                  value: A truly exceptional wine, worth every penny.
+              - column:
+                  name: advantages
+                  value: Exceptional quality
+              - column:
+                  name: disadvantages
+                  value: Very expensive
+              - column:
+                  name: likes
+                  value: 25
+              - column:
+                  name: dislikes
+                  value: 2
+              - column:
+                  name: created_at
+                  value: "2024-07-18 12:00:00"
+        - insert:
+            tableName: comments
+            columns:
+              - column:
+                  name: user_id
+                  value: 10
+              - column:
+                  name: wine_id
+                  value: 21
+              - column:
+                  name: text
+                  value: Excellent choice for fans of robust wines.
+              - column:
+                  name: advantages
+                  value: Great complexity
+              - column:
+                  name: disadvantages
+                  value: Too sweet
+              - column:
+                  name: likes
+                  value: 14
+              - column:
+                  name: dislikes
+                  value: 1
+              - column:
+                  name: created_at
+                  value: "2024-07-19 18:30:00"
+        - insert:
+            tableName: comments
+            columns:
+              - column:
+                  name: user_id
+                  value: 11
+              - column:
+                  name: wine_id
+                  value: 21
+              - column:
+                  name: text
+                  value: Rich and full-bodied, perfect with red meat.
+              - column:
+                  name: advantages
+                  value: Bold flavor
+              - column:
+                  name: disadvantages
+                  value: High tannins
+              - column:
+                  name: likes
+                  value: 20
+              - column:
+                  name: dislikes
+                  value: 4
+              - column:
+                  name: created_at
+                  value: "2024-07-18 14:00:00"
+        - insert:
+            tableName: comments
+            columns:
+              - column:
+                  name: user_id
+                  value: 12
+              - column:
+                  name: wine_id
+                  value: 21
+              - column:
+                  name: text
+                  value: Delightful and complex, one of my favorites.
+              - column:
+                  name: advantages
+                  value: Long finish
+              - column:
+                  name: disadvantages
+                  value: A bit pricey
+              - column:
+                  name: likes
+                  value: 17
+              - column:
+                  name: dislikes
+                  value: 2
+              - column:
+                  name: created_at
+                  value: "2024-07-21 11:20:00"
+        - insert:
+            tableName: comments
+            columns:
+              - column:
+                  name: user_id
+                  value: 13
+              - column:
+                  name: wine_id
+                  value: 22
+              - column:
+                  name: text
+                  value: A classic Australian wine, very satisfying.
+              - column:
+                  name: advantages
+                  value: Great structure
+              - column:
+                  name: disadvantages
+                  value: Needs time to open up
+              - column:
+                  name: likes
+                  value: 18
+              - column:
+                  name: dislikes
+                  value: 3
+              - column:
+                  name: created_at
+                  value: "2024-07-22 15:00:00"
+        - insert:
+            tableName: comments
+            columns:
+              - column:
+                  name: user_id
+                  value: 14
+              - column:
+                  name: wine_id
+                  value: 22
+              - column:
+                  name: text
+                  value: Deep and intense, perfect for aging.
+              - column:
+                  name: advantages
+                  value: Rich and bold
+              - column:
+                  name: disadvantages
+                  value: Requires aging
+              - column:
+                  name: likes
+                  value: 22
+              - column:
+                  name: dislikes
+                  value: 1
+              - column:
+                  name: created_at
+                  value: "2024-07-13 12:00:00"
+        - insert:
+            tableName: comments
+            columns:
+              - column:
+                  name: user_id
+                  value: 15
+              - column:
+                  name: wine_id
+                  value: 22
+              - column:
+                  name: text
+                  value: A wine with great potential, will only get better.
+              - column:
+                  name: advantages
+                  value: Excellent depth
+              - column:
+                  name: disadvantages
+                  value: Tannic
+              - column:
+                  name: likes
+                  value: 16
+              - column:
+                  name: dislikes
+                  value: 2
+              - column:
+                  name: created_at
+                  value: "2024-07-11 12:30:00"
+        - insert:
+            tableName: comments
+            columns:
+              - column:
+                  name: user_id
+                  value: 16
+              - column:
+                  name: wine_id
+                  value: 22
+              - column:
+                  name: text
+                  value: A must-try for any wine enthusiast.
+              - column:
+                  name: advantages
+                  value: Complex aroma
+              - column:
+                  name: disadvantages
+                  value: Expensive
+              - column:
+                  name: likes
+                  value: 30
+              - column:
+                  name: dislikes
+                  value: 4
+              - column:
+                  name: created_at
+                  value: "2024-07-25 10:00:00"
+        - insert:
+            tableName: comments
+            columns:
+              - column:
+                  name: user_id
+                  value: 17
+              - column:
+                  name: wine_id
+                  value: 23
+              - column:
+                  name: text
+                  value: Refreshing and vibrant, perfect for summer.
+              - column:
+                  name: advantages
+                  value: Fresh taste
+              - column:
+                  name: disadvantages
+                  value: Lacks complexity
+              - column:
+                  name: likes
+                  value: 12
+              - column:
+                  name: dislikes
+                  value: 1
+              - column:
+                  name: created_at
+                  value: "2024-07-26 14:20:00"
+        - insert:
+            tableName: comments
+            columns:
+              - column:
+                  name: user_id
+                  value: 18
+              - column:
+                  name: wine_id
+                  value: 23
+              - column:
+                  name: text
+                  value: Zesty and lively, great with seafood.
+              - column:
+                  name: advantages
+                  value: Crisp finish
+              - column:
+                  name: disadvantages
+                  value: High acidity
+              - column:
+                  name: likes
+                  value: 15
+              - column:
+                  name: dislikes
+                  value: 0
+              - column:
+                  name: created_at
+                  value: "2024-07-18 10:00:00"
+        - insert:
+            tableName: comments
+            columns:
+              - column:
+                  name: user_id
+                  value: 19
+              - column:
+                  name: wine_id
+                  value: 23
+              - column:
+                  name: text
+                  value: A classic Sauvignon Blanc, very enjoyable.
+              - column:
+                  name: advantages
+                  value: Intense fruit flavors
+              - column:
+                  name: disadvantages
+                  value: Short finish
+              - column:
+                  name: likes
+                  value: 10
+              - column:
+                  name: dislikes
+                  value: 2
+              - column:
+                  name: created_at
+                  value: "2024-07-28 12:00:00"
+        - insert:
+            tableName: comments
+            columns:
+              - column:
+                  name: user_id
+                  value: 20
+              - column:
+                  name: wine_id
+                  value: 23
+              - column:
+                  name: text
+                  value: Good balance of acidity and sweetness.
+              - column:
+                  name: advantages
+                  value: Balanced taste
+              - column:
+                  name: disadvantages
+                  value: Not very unique
+              - column:
+                  name: likes
+                  value: 8
+              - column:
+                  name: dislikes
+                  value: 1
+              - column:
+                  name: created_at
+                  value: "2024-07-18 18:30:00"
+        - insert:
+            tableName: comments
+            columns:
+              - column:
+                  name: user_id
+                  value: 21
+              - column:
+                  name: wine_id
+                  value: 24
+              - column:
+                  name: text
+                  value: Luxurious and refined, perfect for celebrations.
+              - column:
+                  name: advantages
+                  value: Elegant and refined
+              - column:
+                  name: disadvantages
+                  value: Very expensive
+              - column:
+                  name: likes
+                  value: 25
+              - column:
+                  name: dislikes
+                  value: 3
+              - column:
+                  name: created_at
+                  value: "2024-07-11 12:00:00"
+        - insert:
+            tableName: comments
+            columns:
+              - column:
+                  name: user_id
+                  value: 22
+              - column:
+                  name: wine_id
+                  value: 24
+              - column:
+                  name: text
+                  value: A champagne of exceptional quality and taste.
+              - column:
+                  name: advantages
+                  value: Complex aroma
+              - column:
+                  name: disadvantages
+                  value: High price
+              - column:
+                  name: likes
+                  value: 20
+              - column:
+                  name: dislikes
+                  value: 2
+              - column:
+                  name: created_at
+                  value: "2024-07-30 12:00:00"
+        - insert:
+            tableName: comments
+            columns:
+              - column:
+                  name: user_id
+                  value: 23
+              - column:
+                  name: wine_id
+                  value: 24
+              - column:
+                  name: text
+                  value: Perfect for a special occasion, very elegant.
+              - column:
+                  name: advantages
+                  value: Luxurious taste
+              - column:
+                  name: disadvantages
+                  value: Requires proper storage
+              - column:
+                  name: likes
+                  value: 18
+              - column:
+                  name: dislikes
+                  value: 1
+              - column:
+                  name: created_at
+                  value: "2024-07-08 14:00:00"
+        - insert:
+            tableName: comments
+            columns:
+              - column:
+                  name: user_id
+                  value: 24
+              - column:
+                  name: wine_id
+                  value: 24
+              - column:
+                  name: text
+                  value: An exquisite champagne, very memorable.
+              - column:
+                  name: advantages
+                  value: Exceptional flavor
+              - column:
+                  name: disadvantages
+                  value: Not for everyday occasions
+              - column:
+                  name: likes
+                  value: 30
+              - column:
+                  name: dislikes
+                  value: 4
+              - column:
+                  name: created_at
+                  value: "2024-07-13 12:00:00"
+        - insert:
+            tableName: comments
+            columns:
+              - column:
+                  name: user_id
+                  value: 25
+              - column:
+                  name: wine_id
+                  value: 25
+              - column:
+                  name: text
+                  value: This Chardonnay is a delightful example of Napa Valley. It's beautifully balanced with rich flavors and a crisp finish.
+              - column:
+                  name: advantages
+                  value: Complex aroma, buttery texture
+              - column:
+                  name: disadvantages
+                  value: A bit pricey, but worth it for the quality.
+              - column:
+                  name: likes
+                  value: 35
+              - column:
+                  name: dislikes
+                  value: 4
+              - column:
+                  name: created_at
+                  value: "2024-07-13 12:21:00"
+        - insert:
+            tableName: comments
+            columns:
+              - column:
+                  name: user_id
+                  value: 25
+              - column:
+                  name: wine_id
+                  value: 25
+              - column:
+                  name: text
+                  value: I found this Chardonnay to be a bit too oaky for my taste. However, I can appreciate the complexity of flavors and the smooth finish.
+              - column:
+                  name: advantages
+                  value: Well-balanced, good for special occasions
+              - column:
+                  name: disadvantages
+                  value: Oaky flavor might be overpowering for some
+              - column:
+                  name: likes
+                  value: 22
+              - column:
+                  name: dislikes
+                  value: 7
+              - column:
+                  name: created_at
+                  value: "2024-07-13 12:21:00"
+        - insert:
+            tableName: comments
+            columns:
+              - column:
+                  name: user_id
+                  value: 25
+              - column:
+                  name: wine_id
+                  value: 25
+              - column:
+                  name: text
+                  value: Paired this Chardonnay with a seafood dinner and it was amazing!
+              - column:
+                  name: advantages
+                  value: Pairs well with food, smooth finish
+              - column:
+                  name: disadvantages
+                  value: Might be too rich for some palates
+              - column:
+                  name: likes
+                  value: 41
+              - column:
+                  name: dislikes
+                  value: 1
+              - column:
+                  name: created_at
+                  value: "2024-07-14 12:21:00"
+        - insert:
+            tableName: comments
+            columns:
+              - column:
+                  name: user_id
+                  value: 26
+              - column:
+                  name: wine_id
+                  value: 25
+              - column:
+                  name: text
+                  value: A great Chardonnay for those who enjoy a richer style.
+              - column:
+                  name: advantages
+                  value: Complex flavors, well-balanced
+              - column:
+                  name: disadvantages
+                  value: Rich and oaky, may not be for everyone
+              - column:
+                  name: likes
+                  value: 38
+              - column:
+                  name: dislikes
+                  value: 3
+              - column:
+                  name: created_at
+                  value: "2024-07-25 12:48:00"
+        - insert:
+            tableName: comments
+            columns:
+              - column:
+                  name: user_id
+                  value: 27
+              - column:
+                  name: wine_id
+                  value: 26
+              - column:
+                  name: text
+                  value: A truly elegant wine with rich flavors. The tannins are perfectly integrated.
+              - column:
+                  name: advantages
+                  value: Elegant, well-integrated tannins
+              - column:
+                  name: disadvantages
+                  value: Needs time to decant
+              - column:
+                  name: likes
+                  value: 45
+              - column:
+                  name: dislikes
+                  value: 2
+              - column:
+                  name: created_at
+                  value: "2024-07-30 14:00:00"
+        - insert:
+            tableName: comments
+            columns:
+              - column:
+                  name: user_id
+                  value: 28
+              - column:
+                  name: wine_id
+                  value: 26
+              - column:
+                  name: text
+                  value: Rich and complex, but a bit too strong for my taste.
+              - column:
+                  name: advantages
+                  value: Complex, rich flavor
+              - column:
+                  name: disadvantages
+                  value: Strong, may not suit everyone
+              - column:
+                  name: likes
+                  value: 30
+              - column:
+                  name: dislikes
+                  value: 7
+              - column:
+                  name: created_at
+                  value: "2024-07-30 15:15:00"
+        - insert:
+            tableName: comments
+            columns:
+              - column:
+                  name: user_id
+                  value: 29
+              - column:
+                  name: wine_id
+                  value: 26
+              - column:
+                  name: text
+                  value: Perfect for a special occasion. The wine's complexity is impressive.
+              - column:
+                  name: advantages
+                  value: Perfect for special occasions, impressive complexity
+              - column:
+                  name: disadvantages
+                  value: Expensive
+              - column:
+                  name: likes
+                  value: 55
+              - column:
+                  name: dislikes
+                  value: 5
+              - column:
+                  name: created_at
+                  value: "2024-07-30 16:30:00"
+        - insert:
+            tableName: comments
+            columns:
+              - column:
+                  name: user_id
+                  value: 30
+              - column:
+                  name: wine_id
+                  value: 26
+              - column:
+                  name: text
+                  value: The wine needs to be decanted for best results. Once opened, it’s fantastic.
+              - column:
+                  name: advantages
+                  value: Needs decanting, fantastic after opening
+              - column:
+                  name: disadvantages
+                  value: Requires decanting
+              - column:
+                  name: likes
+                  value: 40
+              - column:
+                  name: dislikes
+                  value: 3
+              - column:
+                  name: created_at
+                  value: "2024-07-30 17:45:00"
+        - insert:
+            tableName: comments
+            columns:
+              - column:
+                  name: user_id
+                  value: 31
+              - column:
+                  name: wine_id
+                  value: 27
+              - column:
+                  name: text
+                  value: An exceptional wine with deep complexity and a long finish.
+              - column:
+                  name: advantages
+                  value: Deep complexity, long finish
+              - column:
+                  name: disadvantages
+                  value: Price
+              - column:
+                  name: likes
+                  value: 60
+              - column:
+                  name: dislikes
+                  value: 4
+              - column:
+                  name: created_at
+                  value: "2024-07-30 18:00:00"
+        - insert:
+            tableName: comments
+            columns:
+              - column:
+                  name: user_id
+                  value: 32
+              - column:
+                  name: wine_id
+                  value: 27
+              - column:
+                  name: text
+                  value: Truly a masterpiece. The aging process is evident in every sip.
+              - column:
+                  name: advantages
+                  value: Masterpiece, evident aging process
+              - column:
+                  name: disadvantages
+                  value: Can be too complex for some
+              - column:
+                  name: likes
+                  value: 50
+              - column:
+                  name: dislikes
+                  value: 3
+              - column:
+                  name: created_at
+                  value: "2024-07-30 19:15:00"
+        - insert:
+            tableName: comments
+            columns:
+              - column:
+                  name: user_id
+                  value: 33
+              - column:
+                  name: wine_id
+                  value: 27
+              - column:
+                  name: text
+                  value: Great wine, but the price might be a bit high for casual drinkers.
+              - column:
+                  name: advantages
+                  value: Great quality
+              - column:
+                  name: disadvantages
+                  value: High price
+              - column:
+                  name: likes
+                  value: 35
+              - column:
+                  name: dislikes
+                  value: 4
+              - column:
+                  name: created_at
+                  value: "2024-07-30 20:30:00"
+        - insert:
+            tableName: comments
+            columns:
+              - column:
+                  name: user_id
+                  value: 34
+              - column:
+                  name: wine_id
+                  value: 27
+              - column:
+                  name: text
+                  value: A classic choice for collectors. A wine to age and savor.
+              - column:
+                  name: advantages
+                  value: Ideal for collectors, good aging potential
+              - column:
+                  name: disadvantages
+                  value: Not for immediate consumption
+              - column:
+                  name: likes
+                  value: 40
+              - column:
+                  name: dislikes
+                  value: 2
+              - column:
+                  name: created_at
+                  value: "2024-07-30 21:45:00"
+        - insert:
+            tableName: comments
+            columns:
+              - column:
+                  name: user_id
+                  value: 35
+              - column:
+                  name: wine_id
+                  value: 28
+              - column:
+                  name: text
+                  value: A delightful Beaujolais with fresh fruit notes and a pleasant acidity.
+              - column:
+                  name: advantages
+                  value: Fresh fruit notes, pleasant acidity
+              - column:
+                  name: disadvantages
+                  value: Best enjoyed young
+              - column:
+                  name: likes
+                  value: 42
+              - column:
+                  name: dislikes
+                  value: 1
+              - column:
+                  name: created_at
+                  value: "2024-07-30 22:00:00"
+        - insert:
+            tableName: comments
+            columns:
+              - column:
+                  name: user_id
+                  value: 36
+              - column:
+                  name: wine_id
+                  value: 28
+              - column:
+                  name: text
+                  value: A well-balanced wine that pairs perfectly with a variety of foods.
+              - column:
+                  name: advantages
+                  value: Well-balanced, versatile food pairing
+              - column:
+                  name: disadvantages
+                  value: Shorter aging potential
+              - column:
+                  name: likes
+                  value: 37
+              - column:
+                  name: dislikes
+                  value: 2
+              - column:
+                  name: created_at
+                  value: "2024-07-30 23:15:00"
+        - insert:
+            tableName: comments
+            columns:
+              - column:
+                  name: user_id
+                  value: 37
+              - column:
+                  name: wine_id
+                  value: 28
+              - column:
+                  name: text
+                  value: A nice, easy-drinking wine. Perfect for casual gatherings.
+              - column:
+                  name: advantages
+                  value: Easy-drinking, casual
+              - column:
+                  name: disadvantages
+                  value: Lacks complexity
+              - column:
+                  name: likes
+                  value: 33
+              - column:
+                  name: dislikes
+                  value: 5
+              - column:
+                  name: created_at
+                  value: "2024-07-30 00:30:00"
+        - insert:
+            tableName: comments
+            columns:
+              - column:
+                  name: user_id
+                  value: 38
+              - column:
+                  name: wine_id
+                  value: 28
+              - column:
+                  name: text
+                  value: Very enjoyable, though I prefer wines with a bit more body.
+              - column:
+                  name: advantages
+                  value: Enjoyable, fresh
+              - column:
+                  name: disadvantages
+                  value: Lacks body
+              - column:
+                  name: likes
+                  value: 29
+              - column:
+                  name: dislikes
+                  value: 4
+              - column:
+                  name: created_at
+                  value: "2024-07-30 01:45:00"
+        - insert:
+            tableName: comments
+            columns:
+              - column:
+                  name: user_id
+                  value: 39
+              - column:
+                  name: wine_id
+                  value: 29
+              - column:
+                  name: text
+                  value: A sophisticated wine with excellent aging potential. The tannins are prominent but well-integrated.
+              - column:
+                  name: advantages
+                  value: Excellent aging potential, well-integrated tannins
+              - column:
+                  name: disadvantages
+                  value: Needs time to mature
+              - column:
+                  name: likes
+                  value: 47
+              - column:
+                  name: dislikes
+                  value: 3
+              - column:
+                  name: created_at
+                  value: "2024-07-30 12:00:00"
+        - insert:
+            tableName: comments
+            columns:
+              - column:
+                  name: user_id
+                  value: 40
+              - column:
+                  name: wine_id
+                  value: 29
+              - column:
+                  name: text
+                  value: Cool wine
+              - column:
+                  name: advantages
+                  value: Rich and complex, beautiful bouquet
+              - column:
+                  name: disadvantages
+                  value: Pricey
+              - column:
+                  name: likes
+                  value: 40
+              - column:
+                  name: dislikes
+                  value: 4
+              - column:
+                  name: created_at
+                  value: "2024-07-30 13:15:00"
+        - insert:
+            tableName: comments
+            columns:
+              - column:
+                  name: user_id
+                  value: 41
+              - column:
+                  name: wine_id
+                  value: 29
+              - column:
+                  name: text
+                  value: The complexity and depth of this wine are outstanding. A true representation of Barbaresco.
+              - column:
+                  name: advantages
+                  value: Outstanding complexity and depth
+              - column:
+                  name: disadvantages
+                  value: Needs decanting
+              - column:
+                  name: likes
+                  value: 50
+              - column:
+                  name: dislikes
+                  value: 2
+              - column:
+                  name: created_at
+                  value: "2024-07-30 14:30:00"
+        - insert:
+            tableName: comments
+            columns:
+              - column:
+                  name: user_id
+                  value: 42
+              - column:
+                  name: wine_id
+                  value: 29
+              - column:
+                  name: text
+                  value: The tannins are strong now, but this wine will be amazing after a few years of aging.
+              - column:
+                  name: advantages
+                  value: Strong aging potential
+              - column:
+                  name: disadvantages
+                  value: Strong tannins currently
+              - column:
+                  name: likes
+                  value: 35
+              - column:
+                  name: dislikes
+                  value: 5
+              - column:
+                  name: created_at
+                  value: "2024-07-30 15:45:00"
+        - insert:
+            tableName: comments
+            columns:
+              - column:
+                  name: user_id
+                  value: 43
+              - column:
+                  name: wine_id
+                  value: 30
+              - column:
+                  name: text
+                  value: A classic wine with a perfect balance of fruit and oak. Truly outstanding.
+              - column:
+                  name: advantages
+                  value: Perfect balance, outstanding quality
+              - column:
+                  name: disadvantages
+                  value: High price
+              - column:
+                  name: likes
+                  value: 52
+              - column:
+                  name: dislikes
+                  value: 3
+              - column:
+                  name: created_at
+                  value: "2024-07-30 16:00:00"
+        - insert:
+            tableName: comments
+            columns:
+              - column:
+                  name: user_id
+                  value: 44
+              - column:
+                  name: wine_id
+                  value: 30
+              - column:
+                  name: text
+                  value: Elegant and refined, with a beautiful expression of terroir. One of the best Italian reds.
+              - column:
+                  name: advantages
+                  value: Elegant, refined, great terroir expression
+              - column:
+                  name: disadvantages
+                  value: Needs decanting
+              - column:
+                  name: likes
+                  value: 45
+              - column:
+                  name: dislikes
+                  value: 2
+              - column:
+                  name: created_at
+                  value: "2024-07-30 17:15:00"
+        - insert:
+            tableName: comments
+            columns:
+              - column:
+                  name: user_id
+                  value: 45
+              - column:
+                  name: wine_id
+                  value: 30
+              - column:
+                  name: text
+                  value: A superb wine that perfectly balances power and elegance. Worth every penny.
+              - column:
+                  name: advantages
+                  value: Perfect balance, superb quality
+              - column:
+                  name: disadvantages
+                  value: Expensive
+              - column:
+                  name: likes
+                  value: 48
+              - column:
+                  name: dislikes
+                  value: 4
+              - column:
+                  name: created_at
+                  value: "2024-07-30 18:30:00"
+        - insert:
+            tableName: comments
+            columns:
+              - column:
+                  name: user_id
+                  value: 46
+              - column:
+                  name: wine_id
+                  value: 30
+              - column:
+                  name: text
+                  value: Incredible depth and complexity. A wine that will age beautifully.
+              - column:
+                  name: advantages
+                  value: Incredible depth and complexity
+              - column:
+                  name: disadvantages
+                  value: Needs aging to fully develop
+              - column:
+                  name: likes
+                  value: 50
+              - column:
+                  name: dislikes
+                  value: 3
+              - column:
+                  name: created_at
+                  value: "2024-07-30 19:45:00"
+        - insert:
+            tableName: comments
+            columns:
+              - column:
+                  name: user_id
+                  value: 47
+              - column:
+                  name: wine_id
+                  value: 31
+              - column:
+                  name: text
+                  value: A benchmark for American wines. Rich, smooth, and wonderfully balanced.
+              - column:
+                  name: advantages
+                  value: Rich, smooth, balanced
+              - column:
+                  name: disadvantages
+                  value: Expensive
+              - column:
+                  name: likes
+                  value: 55
+              - column:
+                  name: dislikes
+                  value: 3
+              - column:
+                  name: created_at
+                  value: "2024-07-30 20:00:00"
+        - insert:
+            tableName: comments
+            columns:
+              - column:
+                  name: user_id
+                  value: 48
+              - column:
+                  name: wine_id
+                  value: 31
+              - column:
+                  name: text
+                  value: A luxurious wine with velvety tannins and a long, elegant finish.
+              - column:
+                  name: advantages
+                  value: Luxurious, velvety tannins, long finish
+              - column:
+                  name: disadvantages
+                  value: High price point
+              - column:
+                  name: likes
+                  value: 48
+              - column:
+                  name: dislikes
+                  value: 5
+              - column:
+                  name: created_at
+                  value: "2024-07-30 21:15:00"
+        - insert:
+            tableName: comments
+            columns:
+              - column:
+                  name: user_id
+                  value: 49
+              - column:
+                  name: wine_id
+                  value: 31
+              - column:
+                  name: text
+                  value: Opus One delivers consistent quality every year. A must-have for collectors.
+              - column:
+                  name: advantages
+                  value: Consistent quality, must-have for collectors
+              - column:
+                  name: disadvantages
+                  value: Needs time to develop
+              - column:
+                  name: likes
+                  value: 53
+              - column:
+                  name: dislikes
+                  value: 4
+              - column:
+                  name: created_at
+                  value: "2024-07-30 22:30:00"
+        - insert:
+            tableName: comments
+            columns:
+              - column:
+                  name: user_id
+                  value: 50
+              - column:
+                  name: wine_id
+                  value: 31
+              - column:
+                  name: text
+                  value: A masterpiece of Napa Valley. Rich and complex with a perfect balance of fruit and oak.
+              - column:
+                  name: advantages
+                  value: Rich, complex, perfectly balanced
+              - column:
+                  name: disadvantages
+                  value: High cost
+              - column:
+                  name: likes
+                  value: 60
+              - column:
+                  name: dislikes
+                  value: 2
+              - column:
+                  name: created_at
+                  value: "2024-07-30 23:45:00"
+        - insert:
+            tableName: comments
+            columns:
+              - column:
+                  name: user_id
+                  value: 51
+              - column:
+                  name: wine_id
+                  value: 32
+              - column:
+                  name: text
+                  value: The pinnacle of Sauternes. A complex bouquet with layers of fruit and honey.
+              - column:
+                  name: advantages
+                  value: Complex bouquet, rich layers of flavor
+              - column:
+                  name: disadvantages
+                  value: Pricey
+              - column:
+                  name: likes
+                  value: 75
+              - column:
+                  name: dislikes
+                  value: 3
+              - column:
+                  name: created_at
+                  value: "2024-07-31 01:15:00"
+        - insert:
+            tableName: comments
+            columns:
+              - column:
+                  name: user_id
+                  value: 52
+              - column:
+                  name: wine_id
+                  value: 32
+              - column:
+                  name: text
+                  value: Incredibly rich and balanced with a long, luxurious finish. A true treat.
+              - column:
+                  name: advantages
+                  value: Incredibly rich, balanced, luxurious finish
+              - column:
+                  name: disadvantages
+                  value: Very expensive
+              - column:
+                  name: likes
+                  value: 70
+              - column:
+                  name: dislikes
+                  value: 3
+              - column:
+                  name: created_at
+                  value: "2024-07-31 00:00:00"
+        - insert:
+            tableName: comments
+            columns:
+              - column:
+                  name: user_id
+                  value: 53
+              - column:
+                  name: wine_id
+                  value: 32
+              - column:
+                  name: text
+                  value: A symphony of flavors, from citrus to honey. Truly a unique and unforgettable wine.
+              - column:
+                  name: advantages
+                  value: Symphony of flavors, unique
+              - column:
+                  name: disadvantages
+                  value: Very expensive
+              - column:
+                  name: likes
+                  value: 70
+              - column:
+                  name: dislikes
+                  value: 3
+              - column:
+                  name: created_at
+                  value: "2024-07-31 00:00:00"
+        - insert:
+            tableName: comments
+            columns:
+              - column:
+                  name: user_id
+                  value: 54
+              - column:
+                  name: wine_id
+                  value: 32
+              - column:
+                  name: text
+                  value: A legendary sweet wine with unmatched complexity and depth. Truly exceptional.
+              - column:
+                  name: advantages
+                  value: Unmatched complexity and depth
+              - column:
+                  name: disadvantages
+                  value: Needs time to develop
+              - column:
+                  name: likes
+                  value: 70
+              - column:
+                  name: dislikes
+                  value: 3
+              - column:
+                  name: created_at
+                  value: "2024-07-31 00:00:00"
+        - insert:
+            tableName: comments
+            columns:
+              - column:
+                  name: user_id
+                  value: 55
+              - column:
+                  name: wine_id
+                  value: 33
+              - column:
+                  name: text
+                  value: A refreshing white wine with bright citrus notes and a hint of pear. Perfect for summer.
+              - column:
+                  name: advantages
+                  value: Refreshing and easy to drink
+              - column:
+                  name: disadvantages
+                  value: A bit light for some tastes
+              - column:
+                  name: likes
+                  value: 45
+              - column:
+                  name: dislikes
+                  value: 7
+              - column:
+                  name: created_at
+                  value: "2024-07-31 01:00:00"
+        - insert:
+            tableName: comments
+            columns:
+              - column:
+                  name: user_id
+                  value: 56
+              - column:
+                  name: wine_id
+                  value: 33
+              - column:
+                  name: text
+                  value: Delicate and floral with a smooth finish. Great with seafood.
+              - column:
+                  name: advantages
+                  value: Delicate and floral
+              - column:
+                  name: disadvantages
+                  value: Not very complex
+              - column:
+                  name: likes
+                  value: 30
+              - column:
+                  name: dislikes
+                  value: 2
+              - column:
+                  name: created_at
+                  value: "2024-07-31 02:00:00"
+        - insert:
+            tableName: comments
+            columns:
+              - column:
+                  name: user_id
+                  value: 57
+              - column:
+                  name: wine_id
+                  value: 33
+              - column:
+                  name: text
+                  value: Light and fruity, this wine is a crowd-pleaser at any gathering.
+              - column:
+                  name: advantages
+                  value: Light and fruity
+              - column:
+                  name: disadvantages
+                  value: Lacks depth
+              - column:
+                  name: likes
+                  value: 60
+              - column:
+                  name: dislikes
+                  value: 1
+              - column:
+                  name: created_at
+                  value: "2024-07-31 03:00:00"
+        - insert:
+            tableName: comments
+            columns:
+              - column:
+                  name: user_id
+                  value: 58
+              - column:
+                  name: wine_id
+                  value: 33
+              - column:
+                  name: text
+                  value: Crisp and clean with a pleasant finish. Excellent value for the price.
+              - column:
+                  name: advantages
+                  value: Crisp and clean
+              - column:
+                  name: disadvantages
+                  value: Could use more complexity
+              - column:
+                  name: likes
+                  value: 45
+              - column:
+                  name: dislikes
+                  value: 7
+              - column:
+                  name: created_at
+                  value: "2024-07-31 04:00:00"
+        - insert:
+            tableName: comments
+            columns:
+              - column:
+                  name: user_id
+                  value: 59
+              - column:
+                  name: wine_id
+                  value: 34
+              - column:
+                  name: text
+                  value: Rich and full-bodied with a smooth, velvety texture. Great for a cozy evening.
+              - column:
+                  name: advantages
+                  value: Rich and full-bodied
+              - column:
+                  name: disadvantages
+                  value: A bit too sweet for some
+              - column:
+                  name: likes
+                  value: 15
+              - column:
+                  name: dislikes
+                  value: 8
+              - column:
+                  name: created_at
+                  value: "2024-07-31 05:00:00"
+        - insert:
+            tableName: comments
+            columns:
+              - column:
+                  name: user_id
+                  value: 60
+              - column:
+                  name: wine_id
+                  value: 34
+              - column:
+                  name: text
+                  value: A delightful blend of berries and spice. Perfect with grilled meats.
+              - column:
+                  name: advantages
+                  value: Berry and spice flavors
+              - column:
+                  name: disadvantages
+                  value: A bit heavy for summer
+              - column:
+                  name: likes
+                  value: 48
+              - column:
+                  name: dislikes
+                  value: 2
+              - column:
+                  name: created_at
+                  value: "2024-07-31 06:00:00"
+        - insert:
+            tableName: comments
+            columns:
+              - column:
+                  name: user_id
+                  value: 61
+              - column:
+                  name: wine_id
+                  value: 34
+              - column:
+                  name: text
+                  value: Smooth and easy to drink, with a pleasant sweetness. A reliable choice.
+              - column:
+                  name: advantages
+                  value: Smooth and sweet
+              - column:
+                  name: disadvantages
+                  value: Could be more complex
+              - column:
+                  name: likes
+                  value: 40
+              - column:
+                  name: dislikes
+                  value: 2
+              - column:
+                  name: created_at
+                  value: "2024-07-31 07:00:00"
+        - insert:
+            tableName: comments
+            columns:
+              - column:
+                  name: user_id
+                  value: 62
+              - column:
+                  name: wine_id
+                  value: 34
+              - column:
+                  name: text
+                  value: Great value for money. A versatile wine that pairs well with many dishes.
+              - column:
+                  name: advantages
+                  value: Great value
+              - column:
+                  name: disadvantages
+                  value: A bit basic
+              - column:
+                  name: likes
+                  value: 55
+              - column:
+                  name: dislikes
+                  value: 4
+              - column:
+                  name: created_at
+                  value: "2024-07-31 08:00:00"
+        - insert:
+            tableName: comments
+            columns:
+              - column:
+                  name: user_id
+                  value: 63
+              - column:
+                  name: wine_id
+                  value: 35
+              - column:
+                  name: text
+                  value: Crisp and refreshing with a lovely balance of acidity and fruit. Perfect for summer.
+              - column:
+                  name: advantages
+                  value: Crisp and refreshing
+              - column:
+                  name: disadvantages
+                  value: Slightly acidic for some
+              - column:
+                  name: likes
+                  value: 60
+              - column:
+                  name: dislikes
+                  value: 5
+              - column:
+                  name: created_at
+                  value: "2024-07-31 09:00:00"
+        - insert:
+            tableName: comments
+            columns:
+              - column:
+                  name: user_id
+                  value: 64
+              - column:
+                  name: wine_id
+                  value: 35
+              - column:
+                  name: text
+                  value: A sophisticated wine with a creamy texture and a hint of oak. Great with poultry.
+              - column:
+                  name: advantages
+                  value: Creamy texture
+              - column:
+                  name: disadvantages
+                  value: A bit oaky
+              - column:
+                  name: likes
+                  value: 67
+              - column:
+                  name: dislikes
+                  value: 1
+              - column:
+                  name: created_at
+                  value: "2024-07-31 10:00:00"
+        - insert:
+            tableName: comments
+            columns:
+              - column:
+                  name: user_id
+                  value: 65
+              - column:
+                  name: wine_id
+                  value: 35
+              - column:
+                  name: text
+                  value: A delightful mix of tropical fruits and citrus with a nice minerality.
+              - column:
+                  name: advantages
+                  value: Tropical fruits and citrus
+              - column:
+                  name: disadvantages
+                  value: A bit sharp
+              - column:
+                  name: likes
+                  value: 11
+              - column:
+                  name: dislikes
+                  value: 1
+              - column:
+                  name: created_at
+                  value: "2024-07-31 11:00:00"
+        - insert:
+            tableName: comments
+            columns:
+              - column:
+                  name: user_id
+                  value: 66
+              - column:
+                  name: wine_id
+                  value: 35
+              - column:
+                  name: text
+                  value: A refined wine with a fresh finish. Lovely with seafood dishes.
+              - column:
+                  name: advantages
+                  value: Fresh finish
+              - column:
+                  name: disadvantages
+                  value: Could be smoother
+              - column:
+                  name: likes
+                  value: 82
+              - column:
+                  name: dislikes
+                  value: 5
+              - column:
+                  name: created_at
+                  value: "2024-07-31 12:00:00"
+        - insert:
+            tableName: comments
+            columns:
+              - column:
+                  name: user_id
+                  value: 67
+              - column:
+                  name: wine_id
+                  value: 36
+              - column:
+                  name: text
+                  value: A classic champagne with fine bubbles and a crisp finish. Always a good choice for celebrations.
+              - column:
+                  name: advantages
+                  value: Fine bubbles and crisp finish
+              - column:
+                  name: disadvantages
+                  value: A bit pricey
+              - column:
+                  name: likes
+                  value: 80
+              - column:
+                  name: dislikes
+                  value: 2
+              - column:
+                  name: created_at
+                  value: "2024-07-31 13:00:00"
+        - insert:
+            tableName: comments
+            columns:
+              - column:
+                  name: user_id
+                  value: 68
+              - column:
+                  name: wine_id
+                  value: 36
+              - column:
+                  name: text
+                  value: Elegant and refined, with a delicate balance of fruit and acidity. Perfect for toasting.
+              - column:
+                  name: advantages
+                  value: Elegant and refined
+              - column:
+                  name: disadvantages
+                  value: Can be too acidic for some
+              - column:
+                  name: likes
+                  value: 71
+              - column:
+                  name: dislikes
+                  value: 5
+              - column:
+                  name: created_at
+                  value: "2024-07-31 14:00:00"
+        - insert:
+            tableName: comments
+            columns:
+              - column:
+                  name: user_id
+                  value: 69
+              - column:
+                  name: wine_id
+                  value: 36
+              - column:
+                  name: text
+                  value: A luxurious champagne with a fresh and vibrant flavor profile. A must-have for special occasions.
+              - column:
+                  name: advantages
+                  value: Fresh and vibrant
+              - column:
+                  name: disadvantages
+                  value: Pricey
+              - column:
+                  name: likes
+                  value: 11
+              - column:
+                  name: dislikes
+                  value: 2
+              - column:
+                  name: created_at
+                  value: "2024-07-31 15:00:00"
+        - insert:
+            tableName: comments
+            columns:
+              - column:
+                  name: user_id
+                  value: 70
+              - column:
+                  name: wine_id
+                  value: 36
+              - column:
+                  name: text
+                  value: Rich and complex, with notes of apple and brioche. A true classic.
+              - column:
+                  name: advantages
+                  value: Rich and complex
+              - column:
+                  name: disadvantages
+                  value: Slightly overhyped
+              - column:
+                  name: likes
+                  value: 87
+              - column:
+                  name: dislikes
+                  value: 1
+              - column:
+                  name: created_at
+                  value: "2024-07-31 16:00:00"
+        - insert:
+            tableName: comments
+            columns:
+              - column:
+                  name: user_id
+                  value: 51
+              - column:
+                  name: wine_id
+                  value: 37
+              - column:
+                  name: text
+                  value: The pinnacle of Sauternes. A complex bouquet with layers of fruit and honey.
+              - column:
+                  name: advantages
+                  value: Complex bouquet, rich layers of flavor
+              - column:
+                  name: disadvantages
+                  value: Pricey
+              - column:
+                  name: likes
+                  value: 75
+              - column:
+                  name: dislikes
+                  value: 3
+              - column:
+                  name: created_at
+                  value: "2024-07-31 01:15:00"
+        - insert:
+            tableName: comments
+            columns:
+              - column:
+                  name: user_id
+                  value: 52
+              - column:
+                  name: wine_id
+                  value: 37
+              - column:
+                  name: text
+                  value: Incredibly rich and balanced with a long, luxurious finish. A true treat.
+              - column:
+                  name: advantages
+                  value: Incredibly rich, balanced, luxurious finish
+              - column:
+                  name: disadvantages
+                  value: Very expensive
+              - column:
+                  name: likes
+                  value: 70
+              - column:
+                  name: dislikes
+                  value: 3
+              - column:
+                  name: created_at
+                  value: "2024-07-31 00:00:00"
+        - insert:
+            tableName: comments
+            columns:
+              - column:
+                  name: user_id
+                  value: 53
+              - column:
+                  name: wine_id
+                  value: 37
+              - column:
+                  name: text
+                  value: A symphony of flavors, from citrus to honey. Truly a unique and unforgettable wine.
+              - column:
+                  name: advantages
+                  value: Symphony of flavors, unique
+              - column:
+                  name: disadvantages
+                  value: Very expensive
+              - column:
+                  name: likes
+                  value: 70
+              - column:
+                  name: dislikes
+                  value: 3
+              - column:
+                  name: created_at
+                  value: "2024-07-31 00:00:00"
+        - insert:
+            tableName: comments
+            columns:
+              - column:
+                  name: user_id
+                  value: 54
+              - column:
+                  name: wine_id
+                  value: 37
+              - column:
+                  name: text
+                  value: A legendary sweet wine with unmatched complexity and depth. Truly exceptional.
+              - column:
+                  name: advantages
+                  value: Unmatched complexity and depth
+              - column:
+                  name: disadvantages
+                  value: Needs time to develop
+              - column:
+                  name: likes
+                  value: 70
+              - column:
+                  name: dislikes
+                  value: 3
+              - column:
+                  name: created_at
+                  value: "2024-07-31 00:00:00"
+        - insert:
+            tableName: comments
+            columns:
+              - column:
+                  name: user_id
+                  value: 55
+              - column:
+                  name: wine_id
+                  value: 38
+              - column:
+                  name: text
+                  value: A refreshing white wine with bright citrus notes and a hint of pear. Perfect for summer.
+              - column:
+                  name: advantages
+                  value: Refreshing and easy to drink
+              - column:
+                  name: disadvantages
+                  value: A bit light for some tastes
+              - column:
+                  name: likes
+                  value: 45
+              - column:
+                  name: dislikes
+                  value: 7
+              - column:
+                  name: created_at
+                  value: "2024-07-31 01:00:00"
+        - insert:
+            tableName: comments
+            columns:
+              - column:
+                  name: user_id
+                  value: 56
+              - column:
+                  name: wine_id
+                  value: 38
+              - column:
+                  name: text
+                  value: Delicate and floral with a smooth finish. Great with seafood.
+              - column:
+                  name: advantages
+                  value: Delicate and floral
+              - column:
+                  name: disadvantages
+                  value: Not very complex
+              - column:
+                  name: likes
+                  value: 30
+              - column:
+                  name: dislikes
+                  value: 2
+              - column:
+                  name: created_at
+                  value: "2024-07-31 02:00:00"
+        - insert:
+            tableName: comments
+            columns:
+              - column:
+                  name: user_id
+                  value: 57
+              - column:
+                  name: wine_id
+                  value: 38
+              - column:
+                  name: text
+                  value: Light and fruity, this wine is a crowd-pleaser at any gathering.
+              - column:
+                  name: advantages
+                  value: Light and fruity
+              - column:
+                  name: disadvantages
+                  value: Lacks depth
+              - column:
+                  name: likes
+                  value: 60
+              - column:
+                  name: dislikes
+                  value: 1
+              - column:
+                  name: created_at
+                  value: "2024-07-31 03:00:00"
+        - insert:
+            tableName: comments
+            columns:
+              - column:
+                  name: user_id
+                  value: 58
+              - column:
+                  name: wine_id
+                  value: 38
+              - column:
+                  name: text
+                  value: Crisp and clean with a pleasant finish. Excellent value for the price.
+              - column:
+                  name: advantages
+                  value: Crisp and clean
+              - column:
+                  name: disadvantages
+                  value: Could use more complexity
+              - column:
+                  name: likes
+                  value: 45
+              - column:
+                  name: dislikes
+                  value: 7
+              - column:
+                  name: created_at
+                  value: "2024-07-31 04:00:00"
+        - insert:
+            tableName: comments
+            columns:
+              - column:
+                  name: user_id
+                  value: 59
+              - column:
+                  name: wine_id
+                  value: 39
+              - column:
+                  name: text
+                  value: Rich and full-bodied with a smooth, velvety texture. Great for a cozy evening.
+              - column:
+                  name: advantages
+                  value: Rich and full-bodied
+              - column:
+                  name: disadvantages
+                  value: A bit too sweet for some
+              - column:
+                  name: likes
+                  value: 15
+              - column:
+                  name: dislikes
+                  value: 8
+              - column:
+                  name: created_at
+                  value: "2024-07-31 05:00:00"
+        - insert:
+            tableName: comments
+            columns:
+              - column:
+                  name: user_id
+                  value: 60
+              - column:
+                  name: wine_id
+                  value: 39
+              - column:
+                  name: text
+                  value: A delightful blend of berries and spice. Perfect with grilled meats.
+              - column:
+                  name: advantages
+                  value: Berry and spice flavors
+              - column:
+                  name: disadvantages
+                  value: A bit heavy for summer
+              - column:
+                  name: likes
+                  value: 48
+              - column:
+                  name: dislikes
+                  value: 2
+              - column:
+                  name: created_at
+                  value: "2024-07-31 06:00:00"
+        - insert:
+            tableName: comments
+            columns:
+              - column:
+                  name: user_id
+                  value: 61
+              - column:
+                  name: wine_id
+                  value: 39
+              - column:
+                  name: text
+                  value: Smooth and easy to drink, with a pleasant sweetness. A reliable choice.
+              - column:
+                  name: advantages
+                  value: Smooth and sweet
+              - column:
+                  name: disadvantages
+                  value: Could be more complex
+              - column:
+                  name: likes
+                  value: 40
+              - column:
+                  name: dislikes
+                  value: 2
+              - column:
+                  name: created_at
+                  value: "2024-07-31 07:00:00"
+        - insert:
+            tableName: comments
+            columns:
+              - column:
+                  name: user_id
+                  value: 62
+              - column:
+                  name: wine_id
+                  value: 39
+              - column:
+                  name: text
+                  value: Great value for money. A versatile wine that pairs well with many dishes.
+              - column:
+                  name: advantages
+                  value: Great value
+              - column:
+                  name: disadvantages
+                  value: A bit basic
+              - column:
+                  name: likes
+                  value: 55
+              - column:
+                  name: dislikes
+                  value: 4
+              - column:
+                  name: created_at
+                  value: "2024-07-31 08:00:00"
+        - insert:
+            tableName: comments
+            columns:
+              - column:
+                  name: user_id
+                  value: 63
+              - column:
+                  name: wine_id
+                  value: 40
+              - column:
+                  name: text
+                  value: Crisp and refreshing with a lovely balance of acidity and fruit. Perfect for summer.
+              - column:
+                  name: advantages
+                  value: Crisp and refreshing
+              - column:
+                  name: disadvantages
+                  value: Slightly acidic for some
+              - column:
+                  name: likes
+                  value: 60
+              - column:
+                  name: dislikes
+                  value: 5
+              - column:
+                  name: created_at
+                  value: "2024-07-31 09:00:00"
+        - insert:
+            tableName: comments
+            columns:
+              - column:
+                  name: user_id
+                  value: 64
+              - column:
+                  name: wine_id
+                  value: 40
+              - column:
+                  name: text
+                  value: A sophisticated wine with a creamy texture and a hint of oak. Great with poultry.
+              - column:
+                  name: advantages
+                  value: Creamy texture
+              - column:
+                  name: disadvantages
+                  value: A bit oaky
+              - column:
+                  name: likes
+                  value: 67
+              - column:
+                  name: dislikes
+                  value: 1
+              - column:
+                  name: created_at
+                  value: "2024-07-31 10:00:00"
+        - insert:
+            tableName: comments
+            columns:
+              - column:
+                  name: user_id
+                  value: 65
+              - column:
+                  name: wine_id
+                  value: 40
+              - column:
+                  name: text
+                  value: A delightful mix of tropical fruits and citrus with a nice minerality.
+              - column:
+                  name: advantages
+                  value: Tropical fruits and citrus
+              - column:
+                  name: disadvantages
+                  value: A bit sharp
+              - column:
+                  name: likes
+                  value: 11
+              - column:
+                  name: dislikes
+                  value: 1
+              - column:
+                  name: created_at
+                  value: "2024-07-31 11:00:00"
+        - insert:
+            tableName: comments
+            columns:
+              - column:
+                  name: user_id
+                  value: 66
+              - column:
+                  name: wine_id
+                  value: 40
+              - column:
+                  name: text
+                  value: A refined wine with a fresh finish. Lovely with seafood dishes.
+              - column:
+                  name: advantages
+                  value: Fresh finish
+              - column:
+                  name: disadvantages
+                  value: Could be smoother
+              - column:
+                  name: likes
+                  value: 82
+              - column:
+                  name: dislikes
+                  value: 5
+              - column:
+                  name: created_at
+                  value: "2024-07-31 12:00:00"
+        - insert:
+            tableName: comments
+            columns:
+              - column:
+                  name: user_id
+                  value: 67
+              - column:
+                  name: wine_id
+                  value: 41
+              - column:
+                  name: text
+                  value: A classic champagne with fine bubbles and a crisp finish. Always a good choice for celebrations.
+              - column:
+                  name: advantages
+                  value: Fine bubbles and crisp finish
+              - column:
+                  name: disadvantages
+                  value: A bit pricey
+              - column:
+                  name: likes
+                  value: 80
+              - column:
+                  name: dislikes
+                  value: 2
+              - column:
+                  name: created_at
+                  value: "2024-07-31 13:00:00"
+        - insert:
+            tableName: comments
+            columns:
+              - column:
+                  name: user_id
+                  value: 68
+              - column:
+                  name: wine_id
+                  value: 41
+              - column:
+                  name: text
+                  value: Elegant and refined, with a delicate balance of fruit and acidity. Perfect for toasting.
+              - column:
+                  name: advantages
+                  value: Elegant and refined
+              - column:
+                  name: disadvantages
+                  value: Can be too acidic for some
+              - column:
+                  name: likes
+                  value: 71
+              - column:
+                  name: dislikes
+                  value: 5
+              - column:
+                  name: created_at
+                  value: "2024-07-31 14:00:00"
+        - insert:
+            tableName: comments
+            columns:
+              - column:
+                  name: user_id
+                  value: 69
+              - column:
+                  name: wine_id
+                  value: 41
+              - column:
+                  name: text
+                  value: A luxurious champagne with a fresh and vibrant flavor profile. A must-have for special occasions.
+              - column:
+                  name: advantages
+                  value: Fresh and vibrant
+              - column:
+                  name: disadvantages
+                  value: Pricey
+              - column:
+                  name: likes
+                  value: 11
+              - column:
+                  name: dislikes
+                  value: 2
+              - column:
+                  name: created_at
+                  value: "2024-07-31 15:00:00"
+        - insert:
+            tableName: comments
+            columns:
+              - column:
+                  name: user_id
+                  value: 70
+              - column:
+                  name: wine_id
+                  value: 41
+              - column:
+                  name: text
+                  value: Rich and complex, with notes of apple and brioche. A true classic.
+              - column:
+                  name: advantages
+                  value: Rich and complex
+              - column:
+                  name: disadvantages
+                  value: Slightly overhyped
+              - column:
+                  name: likes
+                  value: 87
+              - column:
+                  name: dislikes
+                  value: 1
+              - column:
+                  name: created_at
+                  value: "2024-07-31 16:00:00"
+        - insert:
+            tableName: comments
+            columns:
+              - column:
+                  name: user_id
+                  value: 63
+              - column:
+                  name: wine_id
+                  value: 42
+              - column:
+                  name: text
+                  value: Crisp and refreshing with a lovely balance of acidity and fruit. Perfect for summer.
+              - column:
+                  name: advantages
+                  value: Crisp and refreshing
+              - column:
+                  name: disadvantages
+                  value: Slightly acidic for some
+              - column:
+                  name: likes
+                  value: 60
+              - column:
+                  name: dislikes
+                  value: 5
+              - column:
+                  name: created_at
+                  value: "2024-07-31 09:00:00"
+        - insert:
+            tableName: comments
+            columns:
+              - column:
+                  name: user_id
+                  value: 64
+              - column:
+                  name: wine_id
+                  value: 42
+              - column:
+                  name: text
+                  value: A sophisticated wine with a creamy texture and a hint of oak. Great with poultry.
+              - column:
+                  name: advantages
+                  value: Creamy texture
+              - column:
+                  name: disadvantages
+                  value: A bit oaky
+              - column:
+                  name: likes
+                  value: 67
+              - column:
+                  name: dislikes
+                  value: 1
+              - column:
+                  name: created_at
+                  value: "2024-07-31 10:00:00"
+        - insert:
+            tableName: comments
+            columns:
+              - column:
+                  name: user_id
+                  value: 65
+              - column:
+                  name: wine_id
+                  value: 42
+              - column:
+                  name: text
+                  value: A delightful mix of tropical fruits and citrus with a nice minerality.
+              - column:
+                  name: advantages
+                  value: Tropical fruits and citrus
+              - column:
+                  name: disadvantages
+                  value: A bit sharp
+              - column:
+                  name: likes
+                  value: 11
+              - column:
+                  name: dislikes
+                  value: 1
+              - column:
+                  name: created_at
+                  value: "2024-07-31 11:00:00"
+        - insert:
+            tableName: comments
+            columns:
+              - column:
+                  name: user_id
+                  value: 66
+              - column:
+                  name: wine_id
+                  value: 42
+              - column:
+                  name: text
+                  value: A refined wine with a fresh finish. Lovely with seafood dishes.
+              - column:
+                  name: advantages
+                  value: Fresh finish
+              - column:
+                  name: disadvantages
+                  value: Could be smoother
+              - column:
+                  name: likes
+                  value: 82
+              - column:
+                  name: dislikes
+                  value: 5
+              - column:
+                  name: created_at
+                  value: "2024-07-31 12:00:00"
+        - insert:
+            tableName: comments
+            columns:
+              - column:
+                  name: user_id
+                  value: 67
+              - column:
+                  name: wine_id
+                  value: 43
+              - column:
+                  name: text
+                  value: A classic champagne with fine bubbles and a crisp finish. Always a good choice for celebrations.
+              - column:
+                  name: advantages
+                  value: Fine bubbles and crisp finish
+              - column:
+                  name: disadvantages
+                  value: A bit pricey
+              - column:
+                  name: likes
+                  value: 80
+              - column:
+                  name: dislikes
+                  value: 2
+              - column:
+                  name: created_at
+                  value: "2024-07-31 13:00:00"
+        - insert:
+            tableName: comments
+            columns:
+              - column:
+                  name: user_id
+                  value: 68
+              - column:
+                  name: wine_id
+                  value: 43
+              - column:
+                  name: text
+                  value: Elegant and refined, with a delicate balance of fruit and acidity. Perfect for toasting.
+              - column:
+                  name: advantages
+                  value: Elegant and refined
+              - column:
+                  name: disadvantages
+                  value: Can be too acidic for some
+              - column:
+                  name: likes
+                  value: 71
+              - column:
+                  name: dislikes
+                  value: 5
+              - column:
+                  name: created_at
+                  value: "2024-07-31 14:00:00"
+        - insert:
+            tableName: comments
+            columns:
+              - column:
+                  name: user_id
+                  value: 69
+              - column:
+                  name: wine_id
+                  value: 43
+              - column:
+                  name: text
+                  value: A luxurious champagne with a fresh and vibrant flavor profile. A must-have for special occasions.
+              - column:
+                  name: advantages
+                  value: Fresh and vibrant
+              - column:
+                  name: disadvantages
+                  value: Pricey
+              - column:
+                  name: likes
+                  value: 11
+              - column:
+                  name: dislikes
+                  value: 2
+              - column:
+                  name: created_at
+                  value: "2024-07-31 15:00:00"
+        - insert:
+            tableName: comments
+            columns:
+              - column:
+                  name: user_id
+                  value: 70
+              - column:
+                  name: wine_id
+                  value: 43
+              - column:
+                  name: text
+                  value: Rich and complex, with notes of apple and brioche. A true classic.
+              - column:
+                  name: advantages
+                  value: Rich and complex
+              - column:
+                  name: disadvantages
+                  value: Slightly overhyped
+              - column:
+                  name: likes
+                  value: 87
+              - column:
+                  name: dislikes
+                  value: 1
+              - column:
+                  name: created_at
+                  value: "2024-07-31 16:00:00"
+        - insert:
+            tableName: comments
+            columns:
+              - column:
+                  name: user_id
+                  value: 51
+              - column:
+                  name: wine_id
+                  value: 44
+              - column:
+                  name: text
+                  value: The pinnacle of Sauternes. A complex bouquet with layers of fruit and honey.
+              - column:
+                  name: advantages
+                  value: Complex bouquet, rich layers of flavor
+              - column:
+                  name: disadvantages
+                  value: Pricey
+              - column:
+                  name: likes
+                  value: 75
+              - column:
+                  name: dislikes
+                  value: 3
+              - column:
+                  name: created_at
+                  value: "2024-07-31 01:15:00"
+        - insert:
+            tableName: comments
+            columns:
+              - column:
+                  name: user_id
+                  value: 52
+              - column:
+                  name: wine_id
+                  value: 44
+              - column:
+                  name: text
+                  value: Incredibly rich and balanced with a long, luxurious finish. A true treat.
+              - column:
+                  name: advantages
+                  value: Incredibly rich, balanced, luxurious finish
+              - column:
+                  name: disadvantages
+                  value: Very expensive
+              - column:
+                  name: likes
+                  value: 70
+              - column:
+                  name: dislikes
+                  value: 3
+              - column:
+                  name: created_at
+                  value: "2024-07-31 00:00:00"
+        - insert:
+            tableName: comments
+            columns:
+              - column:
+                  name: user_id
+                  value: 53
+              - column:
+                  name: wine_id
+                  value: 44
+              - column:
+                  name: text
+                  value: A symphony of flavors, from citrus to honey. Truly a unique and unforgettable wine.
+              - column:
+                  name: advantages
+                  value: Symphony of flavors, unique
+              - column:
+                  name: disadvantages
+                  value: Very expensive
+              - column:
+                  name: likes
+                  value: 70
+              - column:
+                  name: dislikes
+                  value: 3
+              - column:
+                  name: created_at
+                  value: "2024-07-31 00:00:00"
+        - insert:
+            tableName: comments
+            columns:
+              - column:
+                  name: user_id
+                  value: 54
+              - column:
+                  name: wine_id
+                  value: 44
+              - column:
+                  name: text
+                  value: A legendary sweet wine with unmatched complexity and depth. Truly exceptional.
+              - column:
+                  name: advantages
+                  value: Unmatched complexity and depth
+              - column:
+                  name: disadvantages
+                  value: Needs time to develop
+              - column:
+                  name: likes
+                  value: 70
+              - column:
+                  name: dislikes
+                  value: 3
+              - column:
+                  name: created_at
+                  value: "2024-07-31 00:00:00"
+        - insert:
+            tableName: comments
+            columns:
+              - column:
+                  name: user_id
+                  value: 55
+              - column:
+                  name: wine_id
+                  value: 45
+              - column:
+                  name: text
+                  value: A refreshing white wine with bright citrus notes and a hint of pear. Perfect for summer.
+              - column:
+                  name: advantages
+                  value: Refreshing and easy to drink
+              - column:
+                  name: disadvantages
+                  value: A bit light for some tastes
+              - column:
+                  name: likes
+                  value: 45
+              - column:
+                  name: dislikes
+                  value: 7
+              - column:
+                  name: created_at
+                  value: "2024-07-31 01:00:00"
+        - insert:
+            tableName: comments
+            columns:
+              - column:
+                  name: user_id
+                  value: 56
+              - column:
+                  name: wine_id
+                  value: 45
+              - column:
+                  name: text
+                  value: Delicate and floral with a smooth finish. Great with seafood.
+              - column:
+                  name: advantages
+                  value: Delicate and floral
+              - column:
+                  name: disadvantages
+                  value: Not very complex
+              - column:
+                  name: likes
+                  value: 30
+              - column:
+                  name: dislikes
+                  value: 2
+              - column:
+                  name: created_at
+                  value: "2024-07-31 02:00:00"
+        - insert:
+            tableName: comments
+            columns:
+              - column:
+                  name: user_id
+                  value: 57
+              - column:
+                  name: wine_id
+                  value: 45
+              - column:
+                  name: text
+                  value: Light and fruity, this wine is a crowd-pleaser at any gathering.
+              - column:
+                  name: advantages
+                  value: Light and fruity
+              - column:
+                  name: disadvantages
+                  value: Lacks depth
+              - column:
+                  name: likes
+                  value: 60
+              - column:
+                  name: dislikes
+                  value: 1
+              - column:
+                  name: created_at
+                  value: "2024-07-31 03:00:00"
+        - insert:
+            tableName: comments
+            columns:
+              - column:
+                  name: user_id
+                  value: 58
+              - column:
+                  name: wine_id
+                  value: 45
+              - column:
+                  name: text
+                  value: Crisp and clean with a pleasant finish. Excellent value for the price.
+              - column:
+                  name: advantages
+                  value: Crisp and clean
+              - column:
+                  name: disadvantages
+                  value: Could use more complexity
+              - column:
+                  name: likes
+                  value: 45
+              - column:
+                  name: dislikes
+                  value: 7
+              - column:
+                  name: created_at
+                  value: "2024-07-31 04:00:00"
+        - insert:
+            tableName: comments
+            columns:
+              - column:
+                  name: user_id
+                  value: 59
+              - column:
+                  name: wine_id
+                  value: 46
+              - column:
+                  name: text
+                  value: Rich and full-bodied with a smooth, velvety texture. Great for a cozy evening.
+              - column:
+                  name: advantages
+                  value: Rich and full-bodied
+              - column:
+                  name: disadvantages
+                  value: A bit too sweet for some
+              - column:
+                  name: likes
+                  value: 15
+              - column:
+                  name: dislikes
+                  value: 8
+              - column:
+                  name: created_at
+                  value: "2024-07-31 05:00:00"
+        - insert:
+            tableName: comments
+            columns:
+              - column:
+                  name: user_id
+                  value: 60
+              - column:
+                  name: wine_id
+                  value: 46
+              - column:
+                  name: text
+                  value: A delightful blend of berries and spice. Perfect with grilled meats.
+              - column:
+                  name: advantages
+                  value: Berry and spice flavors
+              - column:
+                  name: disadvantages
+                  value: A bit heavy for summer
+              - column:
+                  name: likes
+                  value: 48
+              - column:
+                  name: dislikes
+                  value: 2
+              - column:
+                  name: created_at
+                  value: "2024-07-31 06:00:00"
+        - insert:
+            tableName: comments
+            columns:
+              - column:
+                  name: user_id
+                  value: 61
+              - column:
+                  name: wine_id
+                  value: 46
+              - column:
+                  name: text
+                  value: Smooth and easy to drink, with a pleasant sweetness. A reliable choice.
+              - column:
+                  name: advantages
+                  value: Smooth and sweet
+              - column:
+                  name: disadvantages
+                  value: Could be more complex
+              - column:
+                  name: likes
+                  value: 40
+              - column:
+                  name: dislikes
+                  value: 2
+              - column:
+                  name: created_at
+                  value: "2024-07-31 07:00:00"
+        - insert:
+            tableName: comments
+            columns:
+              - column:
+                  name: user_id
+                  value: 62
+              - column:
+                  name: wine_id
+                  value: 46
+              - column:
+                  name: text
+                  value: Great value for money. A versatile wine that pairs well with many dishes.
+              - column:
+                  name: advantages
+                  value: Great value
+              - column:
+                  name: disadvantages
+                  value: A bit basic
+              - column:
+                  name: likes
+                  value: 55
+              - column:
+                  name: dislikes
+                  value: 4
+              - column:
+                  name: created_at
+                  value: "2024-07-31 08:00:00"
+        - insert:
+            tableName: comments
+            columns:
+              - column:
+                  name: user_id
+                  value: 63
+              - column:
+                  name: wine_id
+                  value: 47
+              - column:
+                  name: text
+                  value: Crisp and refreshing with a lovely balance of acidity and fruit. Perfect for summer.
+              - column:
+                  name: advantages
+                  value: Crisp and refreshing
+              - column:
+                  name: disadvantages
+                  value: Slightly acidic for some
+              - column:
+                  name: likes
+                  value: 60
+              - column:
+                  name: dislikes
+                  value: 5
+              - column:
+                  name: created_at
+                  value: "2024-07-31 09:00:00"
+        - insert:
+            tableName: comments
+            columns:
+              - column:
+                  name: user_id
+                  value: 64
+              - column:
+                  name: wine_id
+                  value: 47
+              - column:
+                  name: text
+                  value: A sophisticated wine with a creamy texture and a hint of oak. Great with poultry.
+              - column:
+                  name: advantages
+                  value: Creamy texture
+              - column:
+                  name: disadvantages
+                  value: A bit oaky
+              - column:
+                  name: likes
+                  value: 67
+              - column:
+                  name: dislikes
+                  value: 1
+              - column:
+                  name: created_at
+                  value: "2024-07-31 10:00:00"
+        - insert:
+            tableName: comments
+            columns:
+              - column:
+                  name: user_id
+                  value: 65
+              - column:
+                  name: wine_id
+                  value: 47
+              - column:
+                  name: text
+                  value: A delightful mix of tropical fruits and citrus with a nice minerality.
+              - column:
+                  name: advantages
+                  value: Tropical fruits and citrus
+              - column:
+                  name: disadvantages
+                  value: A bit sharp
+              - column:
+                  name: likes
+                  value: 11
+              - column:
+                  name: dislikes
+                  value: 1
+              - column:
+                  name: created_at
+                  value: "2024-07-31 11:00:00"
+        - insert:
+            tableName: comments
+            columns:
+              - column:
+                  name: user_id
+                  value: 66
+              - column:
+                  name: wine_id
+                  value: 47
+              - column:
+                  name: text
+                  value: A refined wine with a fresh finish. Lovely with seafood dishes.
+              - column:
+                  name: advantages
+                  value: Fresh finish
+              - column:
+                  name: disadvantages
+                  value: Could be smoother
+              - column:
+                  name: likes
+                  value: 82
+              - column:
+                  name: dislikes
+                  value: 5
+              - column:
+                  name: created_at
+                  value: "2024-07-31 12:00:00"
+        - insert:
+            tableName: comments
+            columns:
+              - column:
+                  name: user_id
+                  value: 67
+              - column:
+                  name: wine_id
+                  value: 48
+              - column:
+                  name: text
+                  value: A classic champagne with fine bubbles and a crisp finish. Always a good choice for celebrations.
+              - column:
+                  name: advantages
+                  value: Fine bubbles and crisp finish
+              - column:
+                  name: disadvantages
+                  value: A bit pricey
+              - column:
+                  name: likes
+                  value: 80
+              - column:
+                  name: dislikes
+                  value: 2
+              - column:
+                  name: created_at
+                  value: "2024-07-31 13:00:00"
+        - insert:
+            tableName: comments
+            columns:
+              - column:
+                  name: user_id
+                  value: 68
+              - column:
+                  name: wine_id
+                  value: 48
+              - column:
+                  name: text
+                  value: Elegant and refined, with a delicate balance of fruit and acidity. Perfect for toasting.
+              - column:
+                  name: advantages
+                  value: Elegant and refined
+              - column:
+                  name: disadvantages
+                  value: Can be too acidic for some
+              - column:
+                  name: likes
+                  value: 71
+              - column:
+                  name: dislikes
+                  value: 5
+              - column:
+                  name: created_at
+                  value: "2024-07-31 14:00:00"
+        - insert:
+            tableName: comments
+            columns:
+              - column:
+                  name: user_id
+                  value: 69
+              - column:
+                  name: wine_id
+                  value: 48
+              - column:
+                  name: text
+                  value: A luxurious champagne with a fresh and vibrant flavor profile. A must-have for special occasions.
+              - column:
+                  name: advantages
+                  value: Fresh and vibrant
+              - column:
+                  name: disadvantages
+                  value: Pricey
+              - column:
+                  name: likes
+                  value: 11
+              - column:
+                  name: dislikes
+                  value: 2
+              - column:
+                  name: created_at
+                  value: "2024-07-31 15:00:00"
+        - insert:
+            tableName: comments
+            columns:
+              - column:
+                  name: user_id
+                  value: 70
+              - column:
+                  name: wine_id
+                  value: 48
+              - column:
+                  name: text
+                  value: Rich and complex, with notes of apple and brioche. A true classic.
+              - column:
+                  name: advantages
+                  value: Rich and complex
+              - column:
+                  name: disadvantages
+                  value: Slightly overhyped
+              - column:
+                  name: likes
+                  value: 87
+              - column:
+                  name: dislikes
+                  value: 1
+              - column:
+                  name: created_at
+                  value: "2024-07-31 16:00:00"
+        - insert:
+            tableName: comments
+            columns:
+              - column:
+                  name: user_id
+                  value: 63
+              - column:
+                  name: wine_id
+                  value: 49
+              - column:
+                  name: text
+                  value: Crisp and refreshing with a lovely balance of acidity and fruit. Perfect for summer.
+              - column:
+                  name: advantages
+                  value: Crisp and refreshing
+              - column:
+                  name: disadvantages
+                  value: Slightly acidic for some
+              - column:
+                  name: likes
+                  value: 60
+              - column:
+                  name: dislikes
+                  value: 5
+              - column:
+                  name: created_at
+                  value: "2024-07-31 09:00:00"
+        - insert:
+            tableName: comments
+            columns:
+              - column:
+                  name: user_id
+                  value: 64
+              - column:
+                  name: wine_id
+                  value: 49
+              - column:
+                  name: text
+                  value: A sophisticated wine with a creamy texture and a hint of oak. Great with poultry.
+              - column:
+                  name: advantages
+                  value: Creamy texture
+              - column:
+                  name: disadvantages
+                  value: A bit oaky
+              - column:
+                  name: likes
+                  value: 67
+              - column:
+                  name: dislikes
+                  value: 1
+              - column:
+                  name: created_at
+                  value: "2024-07-31 10:00:00"
+        - insert:
+            tableName: comments
+            columns:
+              - column:
+                  name: user_id
+                  value: 65
+              - column:
+                  name: wine_id
+                  value: 49
+              - column:
+                  name: text
+                  value: A delightful mix of tropical fruits and citrus with a nice minerality.
+              - column:
+                  name: advantages
+                  value: Tropical fruits and citrus
+              - column:
+                  name: disadvantages
+                  value: A bit sharp
+              - column:
+                  name: likes
+                  value: 11
+              - column:
+                  name: dislikes
+                  value: 1
+              - column:
+                  name: created_at
+                  value: "2024-07-31 11:00:00"
+        - insert:
+            tableName: comments
+            columns:
+              - column:
+                  name: user_id
+                  value: 66
+              - column:
+                  name: wine_id
+                  value: 49
+              - column:
+                  name: text
+                  value: A refined wine with a fresh finish. Lovely with seafood dishes.
+              - column:
+                  name: advantages
+                  value: Fresh finish
+              - column:
+                  name: disadvantages
+                  value: Could be smoother
+              - column:
+                  name: likes
+                  value: 82
+              - column:
+                  name: dislikes
+                  value: 5
+              - column:
+                  name: created_at
+                  value: "2024-07-31 12:00:00"
+        - insert:
+            tableName: comments
+            columns:
+              - column:
+                  name: user_id
+                  value: 67
+              - column:
+                  name: wine_id
+                  value: 50
+              - column:
+                  name: text
+                  value: A classic champagne with fine bubbles and a crisp finish. Always a good choice for celebrations.
+              - column:
+                  name: advantages
+                  value: Fine bubbles and crisp finish
+              - column:
+                  name: disadvantages
+                  value: A bit pricey
+              - column:
+                  name: likes
+                  value: 80
+              - column:
+                  name: dislikes
+                  value: 2
+              - column:
+                  name: created_at
+                  value: "2024-07-31 13:00:00"
+        - insert:
+            tableName: comments
+            columns:
+              - column:
+                  name: user_id
+                  value: 68
+              - column:
+                  name: wine_id
+                  value: 50
+              - column:
+                  name: text
+                  value: Elegant and refined, with a delicate balance of fruit and acidity. Perfect for toasting.
+              - column:
+                  name: advantages
+                  value: Elegant and refined
+              - column:
+                  name: disadvantages
+                  value: Can be too acidic for some
+              - column:
+                  name: likes
+                  value: 71
+              - column:
+                  name: dislikes
+                  value: 5
+              - column:
+                  name: created_at
+                  value: "2024-07-31 14:00:00"
+        - insert:
+            tableName: comments
+            columns:
+              - column:
+                  name: user_id
+                  value: 69
+              - column:
+                  name: wine_id
+                  value: 50
+              - column:
+                  name: text
+                  value: A luxurious champagne with a fresh and vibrant flavor profile. A must-have for special occasions.
+              - column:
+                  name: advantages
+                  value: Fresh and vibrant
+              - column:
+                  name: disadvantages
+                  value: Pricey
+              - column:
+                  name: likes
+                  value: 11
+              - column:
+                  name: dislikes
+                  value: 2
+              - column:
+                  name: created_at
+                  value: "2024-07-31 15:00:00"
+        - insert:
+            tableName: comments
+            columns:
+              - column:
+                  name: user_id
+                  value: 70
+              - column:
+                  name: wine_id
+                  value: 50
+              - column:
+                  name: text
+                  value: Rich and complex, with notes of apple and brioche. A true classic.
+              - column:
+                  name: advantages
+                  value: Rich and complex
+              - column:
+                  name: disadvantages
+                  value: Slightly overhyped
+              - column:
+                  name: likes
+                  value: 87
+              - column:
+                  name: dislikes
+                  value: 1
+              - column:
+                  name: created_at
+                  value: "2024-07-31 16:00:00"
+        - insert:
+            tableName: comments
+            columns:
+              - column:
+                  name: user_id
+                  value: 63
+              - column:
+                  name: wine_id
+                  value: 51
+              - column:
+                  name: text
+                  value: Crisp and refreshing with a lovely balance of acidity and fruit. Perfect for summer.
+              - column:
+                  name: advantages
+                  value: Crisp and refreshing
+              - column:
+                  name: disadvantages
+                  value: Slightly acidic for some
+              - column:
+                  name: likes
+                  value: 60
+              - column:
+                  name: dislikes
+                  value: 5
+              - column:
+                  name: created_at
+                  value: "2024-07-31 09:00:00"
+        - insert:
+            tableName: comments
+            columns:
+              - column:
+                  name: user_id
+                  value: 64
+              - column:
+                  name: wine_id
+                  value: 51
+              - column:
+                  name: text
+                  value: A sophisticated wine with a creamy texture and a hint of oak. Great with poultry.
+              - column:
+                  name: advantages
+                  value: Creamy texture
+              - column:
+                  name: disadvantages
+                  value: A bit oaky
+              - column:
+                  name: likes
+                  value: 67
+              - column:
+                  name: dislikes
+                  value: 1
+              - column:
+                  name: created_at
+                  value: "2024-07-31 10:00:00"
+        - insert:
+            tableName: comments
+            columns:
+              - column:
+                  name: user_id
+                  value: 65
+              - column:
+                  name: wine_id
+                  value: 51
+              - column:
+                  name: text
+                  value: A delightful mix of tropical fruits and citrus with a nice minerality.
+              - column:
+                  name: advantages
+                  value: Tropical fruits and citrus
+              - column:
+                  name: disadvantages
+                  value: A bit sharp
+              - column:
+                  name: likes
+                  value: 11
+              - column:
+                  name: dislikes
+                  value: 1
+              - column:
+                  name: created_at
+                  value: "2024-07-31 11:00:00"
+        - insert:
+            tableName: comments
+            columns:
+              - column:
+                  name: user_id
+                  value: 66
+              - column:
+                  name: wine_id
+                  value: 51
+              - column:
+                  name: text
+                  value: A refined wine with a fresh finish. Lovely with seafood dishes.
+              - column:
+                  name: advantages
+                  value: Fresh finish
+              - column:
+                  name: disadvantages
+                  value: Could be smoother
+              - column:
+                  name: likes
+                  value: 82
+              - column:
+                  name: dislikes
+                  value: 5
+              - column:
+                  name: created_at
+                  value: "2024-07-31 12:00:00"
+        - insert:
+            tableName: comments
+            columns:
+              - column:
+                  name: user_id
+                  value: 67
+              - column:
+                  name: wine_id
+                  value: 52
+              - column:
+                  name: text
+                  value: A classic champagne with fine bubbles and a crisp finish. Always a good choice for celebrations.
+              - column:
+                  name: advantages
+                  value: Fine bubbles and crisp finish
+              - column:
+                  name: disadvantages
+                  value: A bit pricey
+              - column:
+                  name: likes
+                  value: 80
+              - column:
+                  name: dislikes
+                  value: 2
+              - column:
+                  name: created_at
+                  value: "2024-07-31 13:00:00"
+        - insert:
+            tableName: comments
+            columns:
+              - column:
+                  name: user_id
+                  value: 68
+              - column:
+                  name: wine_id
+                  value: 52
+              - column:
+                  name: text
+                  value: Elegant and refined, with a delicate balance of fruit and acidity. Perfect for toasting.
+              - column:
+                  name: advantages
+                  value: Elegant and refined
+              - column:
+                  name: disadvantages
+                  value: Can be too acidic for some
+              - column:
+                  name: likes
+                  value: 71
+              - column:
+                  name: dislikes
+                  value: 5
+              - column:
+                  name: created_at
+                  value: "2024-07-31 14:00:00"
+        - insert:
+            tableName: comments
+            columns:
+              - column:
+                  name: user_id
+                  value: 69
+              - column:
+                  name: wine_id
+                  value: 52
+              - column:
+                  name: text
+                  value: A luxurious champagne with a fresh and vibrant flavor profile. A must-have for special occasions.
+              - column:
+                  name: advantages
+                  value: Fresh and vibrant
+              - column:
+                  name: disadvantages
+                  value: Pricey
+              - column:
+                  name: likes
+                  value: 11
+              - column:
+                  name: dislikes
+                  value: 2
+              - column:
+                  name: created_at
+                  value: "2024-07-31 15:00:00"
+        - insert:
+            tableName: comments
+            columns:
+              - column:
+                  name: user_id
+                  value: 70
+              - column:
+                  name: wine_id
+                  value: 52
+              - column:
+                  name: text
+                  value: Rich and complex, with notes of apple and brioche. A true classic.
+              - column:
+                  name: advantages
+                  value: Rich and complex
+              - column:
+                  name: disadvantages
+                  value: Slightly overhyped
+              - column:
+                  name: likes
+                  value: 87
+              - column:
+                  name: dislikes
+                  value: 1
+              - column:
+                  name: created_at
+                  value: "2024-07-31 16:00:00"
+        - insert:
+            tableName: comments
+            columns:
+              - column:
+                  name: user_id
+                  value: 51
+              - column:
+                  name: wine_id
+                  value: 53
+              - column:
+                  name: text
+                  value: The pinnacle of Sauternes. A complex bouquet with layers of fruit and honey.
+              - column:
+                  name: advantages
+                  value: Complex bouquet, rich layers of flavor
+              - column:
+                  name: disadvantages
+                  value: Pricey
+              - column:
+                  name: likes
+                  value: 75
+              - column:
+                  name: dislikes
+                  value: 3
+              - column:
+                  name: created_at
+                  value: "2024-07-31 01:15:00"
+        - insert:
+            tableName: comments
+            columns:
+              - column:
+                  name: user_id
+                  value: 52
+              - column:
+                  name: wine_id
+                  value: 53
+              - column:
+                  name: text
+                  value: Incredibly rich and balanced with a long, luxurious finish. A true treat.
+              - column:
+                  name: advantages
+                  value: Incredibly rich, balanced, luxurious finish
+              - column:
+                  name: disadvantages
+                  value: Very expensive
+              - column:
+                  name: likes
+                  value: 70
+              - column:
+                  name: dislikes
+                  value: 3
+              - column:
+                  name: created_at
+                  value: "2024-07-31 00:00:00"
+        - insert:
+            tableName: comments
+            columns:
+              - column:
+                  name: user_id
+                  value: 53
+              - column:
+                  name: wine_id
+                  value: 53
+              - column:
+                  name: text
+                  value: A symphony of flavors, from citrus to honey. Truly a unique and unforgettable wine.
+              - column:
+                  name: advantages
+                  value: Symphony of flavors, unique
+              - column:
+                  name: disadvantages
+                  value: Very expensive
+              - column:
+                  name: likes
+                  value: 70
+              - column:
+                  name: dislikes
+                  value: 3
+              - column:
+                  name: created_at
+                  value: "2024-07-31 00:00:00"
+        - insert:
+            tableName: comments
+            columns:
+              - column:
+                  name: user_id
+                  value: 54
+              - column:
+                  name: wine_id
+                  value: 53
+              - column:
+                  name: text
+                  value: A legendary sweet wine with unmatched complexity and depth. Truly exceptional.
+              - column:
+                  name: advantages
+                  value: Unmatched complexity and depth
+              - column:
+                  name: disadvantages
+                  value: Needs time to develop
+              - column:
+                  name: likes
+                  value: 70
+              - column:
+                  name: dislikes
+                  value: 3
+              - column:
+                  name: created_at
+                  value: "2024-07-31 00:00:00"
+        - insert:
+            tableName: comments
+            columns:
+              - column:
+                  name: user_id
+                  value: 55
+              - column:
+                  name: wine_id
+                  value: 54
+              - column:
+                  name: text
+                  value: A refreshing white wine with bright citrus notes and a hint of pear. Perfect for summer.
+              - column:
+                  name: advantages
+                  value: Refreshing and easy to drink
+              - column:
+                  name: disadvantages
+                  value: A bit light for some tastes
+              - column:
+                  name: likes
+                  value: 45
+              - column:
+                  name: dislikes
+                  value: 7
+              - column:
+                  name: created_at
+                  value: "2024-07-31 01:00:00"
+        - insert:
+            tableName: comments
+            columns:
+              - column:
+                  name: user_id
+                  value: 56
+              - column:
+                  name: wine_id
+                  value: 54
+              - column:
+                  name: text
+                  value: Delicate and floral with a smooth finish. Great with seafood.
+              - column:
+                  name: advantages
+                  value: Delicate and floral
+              - column:
+                  name: disadvantages
+                  value: Not very complex
+              - column:
+                  name: likes
+                  value: 30
+              - column:
+                  name: dislikes
+                  value: 2
+              - column:
+                  name: created_at
+                  value: "2024-07-31 02:00:00"
+        - insert:
+            tableName: comments
+            columns:
+              - column:
+                  name: user_id
+                  value: 57
+              - column:
+                  name: wine_id
+                  value: 54
+              - column:
+                  name: text
+                  value: Light and fruity, this wine is a crowd-pleaser at any gathering.
+              - column:
+                  name: advantages
+                  value: Light and fruity
+              - column:
+                  name: disadvantages
+                  value: Lacks depth
+              - column:
+                  name: likes
+                  value: 60
+              - column:
+                  name: dislikes
+                  value: 1
+              - column:
+                  name: created_at
+                  value: "2024-07-31 03:00:00"
+        - insert:
+            tableName: comments
+            columns:
+              - column:
+                  name: user_id
+                  value: 58
+              - column:
+                  name: wine_id
+                  value: 54
+              - column:
+                  name: text
+                  value: Crisp and clean with a pleasant finish. Excellent value for the price.
+              - column:
+                  name: advantages
+                  value: Crisp and clean
+              - column:
+                  name: disadvantages
+                  value: Could use more complexity
+              - column:
+                  name: likes
+                  value: 45
+              - column:
+                  name: dislikes
+                  value: 7
+              - column:
+                  name: created_at
+                  value: "2024-07-31 04:00:00"

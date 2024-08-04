@@ -4,7 +4,7 @@ databaseChangeLog:
       author: Yaroslav Radevych-Vynnytskyi
       changes:
         - insert:
-            tableName: users
+            tableName: users #1
             columns:
               - column:
                   name: first_name
@@ -19,7 +19,7 @@ databaseChangeLog:
                   name: password
                   value: $2a$10$vEjGON2nXfnHAlxWEH4bKunFzAPNNj80A2XPpQsenfF8MicVa9vH6 # 1234yaroslav56
         - insert:
-            tableName: users
+            tableName: users #2
             columns:
               - column:
                   name: first_name
@@ -34,7 +34,7 @@ databaseChangeLog:
                   name: password
                   value: $2a$10$vEjGON2nXfnHAlxWEH4bKunFzAPNNj80A2XPpQsenfF8MicVa9vH6 # 1234yaroslav56
         - insert:
-            tableName: users
+            tableName: users #3
             columns:
               - column:
                   name: first_name
@@ -45,6 +45,1011 @@ databaseChangeLog:
               - column:
                   name: email
                   value: jane@email.com
+              - column:
+                  name: password
+                  value: $2a$10$vEjGON2nXfnHAlxWEH4bKunFzAPNNj80A2XPpQsenfF8MicVa9vH6 # 1234yaroslav56
+        - insert:
+            tableName: users #4
+            columns:
+              - column:
+                  name: first_name
+                  value: Will
+              - column:
+                  name: last_name
+                  value: Smith
+              - column:
+                  name: email
+                  value: willsmith@email.com
+              - column:
+                  name: password
+                  value: $2a$10$vEjGON2nXfnHAlxWEH4bKunFzAPNNj80A2XPpQsenfF8MicVa9vH6 # 1234yaroslav56
+        - insert:
+            tableName: users #5
+            columns:
+              - column:
+                  name: first_name
+                  value: Iryna
+              - column:
+                  name: last_name
+                  value: Yurchak
+              - column:
+                  name: email
+                  value: irynayurchak@email.com
+              - column:
+                  name: password
+                  value: $2a$10$vEjGON2nXfnHAlxWEH4bKunFzAPNNj80A2XPpQsenfF8MicVa9vH6 # 1234yaroslav56
+        - insert:
+            tableName: users #6
+            columns:
+              - column:
+                  name: first_name
+                  value: Bob
+              - column:
+                  name: last_name
+                  value: Jones
+              - column:
+                  name: email
+                  value: bobjones@email.com
+              - column:
+                  name: password
+                  value: $2a$10$vEjGON2nXfnHAlxWEH4bKunFzAPNNj80A2XPpQsenfF8MicVa9vH6 # 1234yaroslav56
+        - insert:
+            tableName: users #7
+            columns:
+              - column:
+                  name: first_name
+                  value: Tayler
+              - column:
+                  name: last_name
+                  value: Durden
+              - column:
+                  name: email
+                  value: taylerdurden@email.com
+              - column:
+                  name: password
+                  value: $2a$10$vEjGON2nXfnHAlxWEH4bKunFzAPNNj80A2XPpQsenfF8MicVa9vH6 # 1234yaroslav56
+        - insert:
+            tableName: users #8
+            columns:
+              - column:
+                  name: first_name
+                  value: Cristiano
+              - column:
+                  name: last_name
+                  value: Ronaldo
+              - column:
+                  name: email
+                  value: ronaldo@email.com
+              - column:
+                  name: password
+                  value: $2a$10$vEjGON2nXfnHAlxWEH4bKunFzAPNNj80A2XPpQsenfF8MicVa9vH6 # 1234yaroslav56
+        - insert:
+            tableName: users #9
+            columns:
+              - column:
+                  name: first_name
+                  value: Harry
+              - column:
+                  name: last_name
+                  value: Kane
+              - column:
+                  name: email
+                  value: kane@email.com
+              - column:
+                  name: password
+                  value: $2a$10$vEjGON2nXfnHAlxWEH4bKunFzAPNNj80A2XPpQsenfF8MicVa9vH6 # 1234yaroslav56
+        - insert:
+            tableName: users #10
+            columns:
+              - column:
+                  name: first_name
+                  value: Andrii
+              - column:
+                  name: last_name
+                  value: Shevchenko
+              - column:
+                  name: email
+                  value: shevchenko@email.com
+              - column:
+                  name: password
+                  value: $2a$10$vEjGON2nXfnHAlxWEH4bKunFzAPNNj80A2XPpQsenfF8MicVa9vH6 # 1234yaroslav56
+        - insert:
+            tableName: users #11
+            columns:
+              - column:
+                  name: first_name
+                  value: Lionel
+              - column:
+                  name: last_name
+                  value: Messi
+              - column:
+                  name: email
+                  value: messi@email.com
+              - column:
+                  name: password
+                  value: $2a$10$vEjGON2nXfnHAlxWEH4bKunFzAPNNj80A2XPpQsenfF8MicVa9vH6 # 1234yaroslav56
+        - insert:
+            tableName: users #12
+            columns:
+              - column:
+                  name: first_name
+                  value: Karim
+              - column:
+                  name: last_name
+                  value: Benzema
+              - column:
+                  name: email
+                  value: benzema@email.com
+              - column:
+                  name: password
+                  value: $2a$10$vEjGON2nXfnHAlxWEH4bKunFzAPNNj80A2XPpQsenfF8MicVa9vH6 # 1234yaroslav56
+        - insert:
+            tableName: users #13
+            columns:
+              - column:
+                  name: first_name
+                  value: Andrii
+              - column:
+                  name: last_name
+                  value: Lunin
+              - column:
+                  name: email
+                  value: lunin@email.com
+              - column:
+                  name: password
+                  value: $2a$10$vEjGON2nXfnHAlxWEH4bKunFzAPNNj80A2XPpQsenfF8MicVa9vH6 # 1234yaroslav56
+        - insert:
+            tableName: users #14
+            columns:
+              - column:
+                  name: first_name
+                  value: Louis
+              - column:
+                  name: last_name
+                  value: Courtuis
+              - column:
+                  name: email
+                  value: courtuis@email.com
+              - column:
+                  name: password
+                  value: $2a$10$vEjGON2nXfnHAlxWEH4bKunFzAPNNj80A2XPpQsenfF8MicVa9vH6 # 1234yaroslav56
+        - insert:
+            tableName: users #15
+            columns:
+              - column:
+                  name: first_name
+                  value: Marcus
+              - column:
+                  name: last_name
+                  value: Rashford
+              - column:
+                  name: email
+                  value: rashford@email.com
+              - column:
+                  name: password
+                  value: $2a$10$vEjGON2nXfnHAlxWEH4bKunFzAPNNj80A2XPpQsenfF8MicVa9vH6 # 1234yaroslav56
+        - insert:
+            tableName: users #16
+            columns:
+              - column:
+                  name: first_name
+                  value: Wayne
+              - column:
+                  name: last_name
+                  value: Rooney
+              - column:
+                  name: email
+                  value: roney@email.com
+              - column:
+                  name: password
+                  value: $2a$10$vEjGON2nXfnHAlxWEH4bKunFzAPNNj80A2XPpQsenfF8MicVa9vH6 # 1234yaroslav56
+        - insert:
+            tableName: users #17
+            columns:
+              - column:
+                  name: first_name
+                  value: Diego
+              - column:
+                  name: last_name
+                  value: Maradona
+              - column:
+                  name: email
+                  value: maradona@email.com
+              - column:
+                  name: password
+                  value: $2a$10$vEjGON2nXfnHAlxWEH4bKunFzAPNNj80A2XPpQsenfF8MicVa9vH6 # 1234yaroslav56
+        - insert:
+            tableName: users #18
+            columns:
+              - column:
+                  name: first_name
+                  value: Mohamed
+              - column:
+                  name: last_name
+                  value: Salah
+              - column:
+                  name: email
+                  value: salah@email.com
+              - column:
+                  name: password
+                  value: $2a$10$vEjGON2nXfnHAlxWEH4bKunFzAPNNj80A2XPpQsenfF8MicVa9vH6 # 1234yaroslav56
+        - insert:
+            tableName: users #19
+            columns:
+              - column:
+                  name: first_name
+                  value: Phil
+              - column:
+                  name: last_name
+                  value: Foden
+              - column:
+                  name: email
+                  value: foden@email.com
+              - column:
+                  name: password
+                  value: $2a$10$vEjGON2nXfnHAlxWEH4bKunFzAPNNj80A2XPpQsenfF8MicVa9vH6 # 1234yaroslav56
+        - insert:
+            tableName: users #20
+            columns:
+              - column:
+                  name: first_name
+                  value: Harry
+              - column:
+                  name: last_name
+                  value: Maguire
+              - column:
+                  name: email
+                  value: maguire@email.com
+              - column:
+                  name: password
+                  value: $2a$10$vEjGON2nXfnHAlxWEH4bKunFzAPNNj80A2XPpQsenfF8MicVa9vH6 # 1234yaroslav56
+        - insert:
+            tableName: users #21
+            columns:
+              - column:
+                  name: first_name
+                  value: Kyle
+              - column:
+                  name: last_name
+                  value: Walker
+              - column:
+                  name: email
+                  value: walker@email.com
+              - column:
+                  name: password
+                  value: $2a$10$vEjGON2nXfnHAlxWEH4bKunFzAPNNj80A2XPpQsenfF8MicVa9vH6 # 1234yaroslav56
+        - insert:
+            tableName: users #22
+            columns:
+              - column:
+                  name: first_name
+                  value: Alex
+              - column:
+                  name: last_name
+                  value: Scott
+              - column:
+                  name: email
+                  value: scott@email.com
+              - column:
+                  name: password
+                  value: $2a$10$vEjGON2nXfnHAlxWEH4bKunFzAPNNj80A2XPpQsenfF8MicVa9vH6 # 1234yaroslav56
+        - insert:
+            tableName: users #23
+            columns:
+              - column:
+                  name: first_name
+                  value: Angelina
+              - column:
+                  name: last_name
+                  value: Jolie
+              - column:
+                  name: email
+                  value: jolie@email.com
+              - column:
+                  name: password
+                  value: $2a$10$vEjGON2nXfnHAlxWEH4bKunFzAPNNj80A2XPpQsenfF8MicVa9vH6 # 1234yaroslav56
+        - insert:
+            tableName: users #24
+            columns:
+              - column:
+                  name: first_name
+                  value: Marilyn
+              - column:
+                  name: last_name
+                  value: Monroe
+              - column:
+                  name: email
+                  value: monroe@email.com
+              - column:
+                  name: password
+                  value: $2a$10$vEjGON2nXfnHAlxWEH4bKunFzAPNNj80A2XPpQsenfF8MicVa9vH6 # 1234yaroslav56
+        - insert:
+            tableName: users #25
+            columns:
+              - column:
+                  name: first_name
+                  value: Erling
+              - column:
+                  name: last_name
+                  value: Haaland
+              - column:
+                  name: email
+                  value: haaland@email.com
+              - column:
+                  name: password
+                  value: $2a$10$vEjGON2nXfnHAlxWEH4bKunFzAPNNj80A2XPpQsenfF8MicVa9vH6 # 1234yaroslav56
+        - insert:
+            tableName: users #26
+            columns:
+              - column:
+                  name: first_name
+                  value: Kylian
+              - column:
+                  name: last_name
+                  value: Mbappe
+              - column:
+                  name: email
+                  value: mbappe@email.com
+              - column:
+                  name: password
+                  value: $2a$10$vEjGON2nXfnHAlxWEH4bKunFzAPNNj80A2XPpQsenfF8MicVa9vH6 # 1234yaroslav56
+        - insert:
+            tableName: users #27
+            columns:
+              - column:
+                  name: first_name
+                  value: Vinicius
+              - column:
+                  name: last_name
+                  value: Junior
+              - column:
+                  name: email
+                  value: junior@email.com
+              - column:
+                  name: password
+                  value: $2a$10$vEjGON2nXfnHAlxWEH4bKunFzAPNNj80A2XPpQsenfF8MicVa9vH6 # 1234yaroslav56
+        - insert:
+            tableName: users #28
+            columns:
+              - column:
+                  name: first_name
+                  value: Bernardo
+              - column:
+                  name: last_name
+                  value: Silva
+              - column:
+                  name: email
+                  value: bsilva@email.com
+              - column:
+                  name: password
+                  value: $2a$10$vEjGON2nXfnHAlxWEH4bKunFzAPNNj80A2XPpQsenfF8MicVa9vH6 # 1234yaroslav56
+        - insert:
+            tableName: users #29
+            columns:
+              - column:
+                  name: first_name
+                  value: Antoine
+              - column:
+                  name: last_name
+                  value: Griezmann
+              - column:
+                  name: email
+                  value: griezmann@email.com
+              - column:
+                  name: password
+                  value: $2a$10$vEjGON2nXfnHAlxWEH4bKunFzAPNNj80A2XPpQsenfF8MicVa9vH6 # 1234yaroslav56
+        - insert:
+            tableName: users #30
+            columns:
+              - column:
+                  name: first_name
+                  value: Derrick
+              - column:
+                  name: last_name
+                  value: McShow
+              - column:
+                  name: email
+                  value: mcshow@email.com
+              - column:
+                  name: password
+                  value: $2a$10$vEjGON2nXfnHAlxWEH4bKunFzAPNNj80A2XPpQsenfF8MicVa9vH6 # 1234yaroslav56
+        - insert:
+            tableName: users #31
+            columns:
+              - column:
+                  name: first_name
+                  value: Julian
+              - column:
+                  name: last_name
+                  value: Alvarez
+              - column:
+                  name: email
+                  value: alvarez@email.com
+              - column:
+                  name: password
+                  value: $2a$10$vEjGON2nXfnHAlxWEH4bKunFzAPNNj80A2XPpQsenfF8MicVa9vH6 # 1234yaroslav56
+        - insert:
+            tableName: users #32
+            columns:
+              - column:
+                  name: first_name
+                  value: Wiz
+              - column:
+                  name: last_name
+                  value: Khalifa
+              - column:
+                  name: email
+                  value: khalifa@email.com
+              - column:
+                  name: password
+                  value: $2a$10$vEjGON2nXfnHAlxWEH4bKunFzAPNNj80A2XPpQsenfF8MicVa9vH6 # 1234yaroslav56
+        - insert:
+            tableName: users #33
+            columns:
+              - column:
+                  name: first_name
+                  value: Luka
+              - column:
+                  name: last_name
+                  value: Modric
+              - column:
+                  name: email
+                  value: modric@email.com
+              - column:
+                  name: password
+                  value: $2a$10$vEjGON2nXfnHAlxWEH4bKunFzAPNNj80A2XPpQsenfF8MicVa9vH6 # 1234yaroslav56
+        - insert:
+            tableName: users #34
+            columns:
+              - column:
+                  name: first_name
+                  value: John
+              - column:
+                  name: last_name
+                  value: Stones
+              - column:
+                  name: email
+                  value: stones@email.com
+              - column:
+                  name: password
+                  value: $2a$10$vEjGON2nXfnHAlxWEH4bKunFzAPNNj80A2XPpQsenfF8MicVa9vH6 # 1234yaroslav56
+        - insert:
+            tableName: users #35
+            columns:
+              - column:
+                  name: first_name
+                  value: Leroy
+              - column:
+                  name: last_name
+                  value: Sane
+              - column:
+                  name: email
+                  value: sane@email.com
+              - column:
+                  name: password
+                  value: $2a$10$vEjGON2nXfnHAlxWEH4bKunFzAPNNj80A2XPpQsenfF8MicVa9vH6 # 1234yaroslav56
+        - insert:
+            tableName: users #36
+            columns:
+              - column:
+                  name: first_name
+                  value: Jimmy
+              - column:
+                  name: last_name
+                  value: Health
+              - column:
+                  name: email
+                  value: jhealth@email.com
+              - column:
+                  name: password
+                  value: $2a$10$vEjGON2nXfnHAlxWEH4bKunFzAPNNj80A2XPpQsenfF8MicVa9vH6 # 1234yaroslav56
+        - insert:
+            tableName: users #37
+            columns:
+              - column:
+                  name: first_name
+                  value: Alexandra
+              - column:
+                  name: last_name
+                  value: Sims
+              - column:
+                  name: email
+                  value: asims@email.com
+              - column:
+                  name: password
+                  value: $2a$10$vEjGON2nXfnHAlxWEH4bKunFzAPNNj80A2XPpQsenfF8MicVa9vH6 # 1234yaroslav56
+        - insert:
+            tableName: users #38
+            columns:
+              - column:
+                  name: first_name
+                  value: Eleri
+              - column:
+                  name: last_name
+                  value: Ryan
+              - column:
+                  name: email
+                  value: eryan@email.com
+              - column:
+                  name: password
+                  value: $2a$10$vEjGON2nXfnHAlxWEH4bKunFzAPNNj80A2XPpQsenfF8MicVa9vH6 # 1234yaroslav56
+        - insert:
+            tableName: users #39
+            columns:
+              - column:
+                  name: first_name
+                  value: Zaid
+              - column:
+                  name: last_name
+                  value: Wang
+              - column:
+                  name: email
+                  value: zwang@email.com
+              - column:
+                  name: password
+                  value: $2a$10$vEjGON2nXfnHAlxWEH4bKunFzAPNNj80A2XPpQsenfF8MicVa9vH6 # 1234yaroslav56
+        - insert:
+            tableName: users #40
+            columns:
+              - column:
+                  name: first_name
+                  value: Mauro
+              - column:
+                  name: last_name
+                  value: Malone
+              - column:
+                  name: email
+                  value: malone@email.com
+              - column:
+                  name: password
+                  value: $2a$10$vEjGON2nXfnHAlxWEH4bKunFzAPNNj80A2XPpQsenfF8MicVa9vH6 # 1234yaroslav56
+        - insert:
+            tableName: users #41
+            columns:
+              - column:
+                  name: first_name
+                  value: Johny
+              - column:
+                  name: last_name
+                  value: Depp
+              - column:
+                  name: email
+                  value: jdepp@email.com
+              - column:
+                  name: password
+                  value: $2a$10$vEjGON2nXfnHAlxWEH4bKunFzAPNNj80A2XPpQsenfF8MicVa9vH6 # 1234yaroslav56
+        - insert:
+            tableName: users #42
+            columns:
+              - column:
+                  name: first_name
+                  value: Jenifer
+              - column:
+                  name: last_name
+                  value: Lopez
+              - column:
+                  name: email
+                  value: jlopez@email.com
+              - column:
+                  name: password
+                  value: $2a$10$vEjGON2nXfnHAlxWEH4bKunFzAPNNj80A2XPpQsenfF8MicVa9vH6 # 1234yaroslav56
+        - insert:
+            tableName: users #43
+            columns:
+              - column:
+                  name: first_name
+                  value: Donald
+              - column:
+                  name: last_name
+                  value: Trump
+              - column:
+                  name: email
+                  value: trump@email.com
+              - column:
+                  name: password
+                  value: $2a$10$vEjGON2nXfnHAlxWEH4bKunFzAPNNj80A2XPpQsenfF8MicVa9vH6 # 1234yaroslav56
+        - insert:
+            tableName: users #44
+            columns:
+              - column:
+                  name: first_name
+                  value: Barack
+              - column:
+                  name: last_name
+                  value: Obama
+              - column:
+                  name: email
+                  value: bobama@email.com
+              - column:
+                  name: password
+                  value: $2a$10$vEjGON2nXfnHAlxWEH4bKunFzAPNNj80A2XPpQsenfF8MicVa9vH6 # 1234yaroslav56
+        - insert:
+            tableName: users #45
+            columns:
+              - column:
+                  name: first_name
+                  value: Jim
+              - column:
+                  name: last_name
+                  value: Carrey
+              - column:
+                  name: email
+                  value: jcarrey@email.com
+              - column:
+                  name: password
+                  value: $2a$10$vEjGON2nXfnHAlxWEH4bKunFzAPNNj80A2XPpQsenfF8MicVa9vH6 # 1234yaroslav56
+        - insert:
+            tableName: users #46
+            columns:
+              - column:
+                  name: first_name
+                  value: Win
+              - column:
+                  name: last_name
+                  value: Diesel
+              - column:
+                  name: email
+                  value: wdiesel@email.com
+              - column:
+                  name: password
+                  value: $2a$10$vEjGON2nXfnHAlxWEH4bKunFzAPNNj80A2XPpQsenfF8MicVa9vH6 # 1234yaroslav56
+        - insert:
+            tableName: users #47
+            columns:
+              - column:
+                  name: first_name
+                  value: Tom
+              - column:
+                  name: last_name
+                  value: Cruise
+              - column:
+                  name: email
+                  value: tcruise@email.com
+              - column:
+                  name: password
+                  value: $2a$10$vEjGON2nXfnHAlxWEH4bKunFzAPNNj80A2XPpQsenfF8MicVa9vH6 # 1234yaroslav56
+        - insert:
+            tableName: users #48
+            columns:
+              - column:
+                  name: first_name
+                  value: Taylor
+              - column:
+                  name: last_name
+                  value: Swift
+              - column:
+                  name: email
+                  value: tswift@email.com
+              - column:
+                  name: password
+                  value: $2a$10$vEjGON2nXfnHAlxWEH4bKunFzAPNNj80A2XPpQsenfF8MicVa9vH6 # 1234yaroslav56
+        - insert:
+            tableName: users #49
+            columns:
+              - column:
+                  name: first_name
+                  value: Bill
+              - column:
+                  name: last_name
+                  value: Clinton
+              - column:
+                  name: email
+                  value: bclinton@email.com
+              - column:
+                  name: password
+                  value: $2a$10$vEjGON2nXfnHAlxWEH4bKunFzAPNNj80A2XPpQsenfF8MicVa9vH6 # 1234yaroslav56
+        - insert:
+            tableName: users #50
+            columns:
+              - column:
+                  name: first_name
+                  value: Britney
+              - column:
+                  name: last_name
+                  value: Spears
+              - column:
+                  name: email
+                  value: bspears@email.com
+              - column:
+                  name: password
+                  value: $2a$10$vEjGON2nXfnHAlxWEH4bKunFzAPNNj80A2XPpQsenfF8MicVa9vH6 # 1234yaroslav56
+        - insert:
+            tableName: users #51
+            columns:
+              - column:
+                  name: first_name
+                  value: Lady
+              - column:
+                  name: last_name
+                  value: Gaga
+              - column:
+                  name: email
+                  value: lgaga@email.com
+              - column:
+                  name: password
+                  value: $2a$10$vEjGON2nXfnHAlxWEH4bKunFzAPNNj80A2XPpQsenfF8MicVa9vH6 # 1234yaroslav56
+        - insert:
+            tableName: users #52
+            columns:
+              - column:
+                  name: first_name
+                  value: Kim
+              - column:
+                  name: last_name
+                  value: Kardashian
+              - column:
+                  name: email
+                  value: kkardashian@email.com
+              - column:
+                  name: password
+                  value: $2a$10$vEjGON2nXfnHAlxWEH4bKunFzAPNNj80A2XPpQsenfF8MicVa9vH6 # 1234yaroslav56
+        - insert:
+            tableName: users #53
+            columns:
+              - column:
+                  name: first_name
+                  value: Justin
+              - column:
+                  name: last_name
+                  value: Bieber
+              - column:
+                  name: email
+                  value: jbieber@email.com
+              - column:
+                  name: password
+                  value: $2a$10$vEjGON2nXfnHAlxWEH4bKunFzAPNNj80A2XPpQsenfF8MicVa9vH6 # 1234yaroslav56
+        - insert:
+            tableName: users #54
+            columns:
+              - column:
+                  name: first_name
+                  value: Joe
+              - column:
+                  name: last_name
+                  value: Biden
+              - column:
+                  name: email
+                  value: jbiden@email.com
+              - column:
+                  name: password
+                  value: $2a$10$vEjGON2nXfnHAlxWEH4bKunFzAPNNj80A2XPpQsenfF8MicVa9vH6 # 1234yaroslav56
+        - insert:
+            tableName: users #55
+            columns:
+              - column:
+                  name: first_name
+                  value: Dwayne
+              - column:
+                  name: last_name
+                  value: Johnson
+              - column:
+                  name: email
+                  value: djohnson@email.com
+              - column:
+                  name: password
+                  value: $2a$10$vEjGON2nXfnHAlxWEH4bKunFzAPNNj80A2XPpQsenfF8MicVa9vH6 # 1234yaroslav56
+        - insert:
+            tableName: users #56
+            columns:
+              - column:
+                  name: first_name
+                  value: Brad
+              - column:
+                  name: last_name
+                  value: Pitt
+              - column:
+                  name: email
+                  value: bpitt@email.com
+              - column:
+                  name: password
+                  value: $2a$10$vEjGON2nXfnHAlxWEH4bKunFzAPNNj80A2XPpQsenfF8MicVa9vH6 # 1234yaroslav56
+        - insert:
+            tableName: users #57
+            columns:
+              - column:
+                  name: first_name
+                  value: Elton
+              - column:
+                  name: last_name
+                  value: John
+              - column:
+                  name: email
+                  value: ejohn@email.com
+              - column:
+                  name: password
+                  value: $2a$10$vEjGON2nXfnHAlxWEH4bKunFzAPNNj80A2XPpQsenfF8MicVa9vH6 # 1234yaroslav56
+        - insert:
+            tableName: users #58
+            columns:
+              - column:
+                  name: first_name
+                  value: George
+              - column:
+                  name: last_name
+                  value: Clooney
+              - column:
+                  name: email
+                  value: gclooney@email.com
+              - column:
+                  name: password
+                  value: $2a$10$vEjGON2nXfnHAlxWEH4bKunFzAPNNj80A2XPpQsenfF8MicVa9vH6 # 1234yaroslav56
+        - insert:
+            tableName: users #59
+            columns:
+              - column:
+                  name: first_name
+                  value: Ben
+              - column:
+                  name: last_name
+                  value: Stiller
+              - column:
+                  name: email
+                  value: bstiller@email.com
+              - column:
+                  name: password
+                  value: $2a$10$vEjGON2nXfnHAlxWEH4bKunFzAPNNj80A2XPpQsenfF8MicVa9vH6 # 1234yaroslav56
+        - insert:
+            tableName: users #60
+            columns:
+              - column:
+                  name: first_name
+                  value: Elon
+              - column:
+                  name: last_name
+                  value: Musk
+              - column:
+                  name: email
+                  value: emusk@email.com
+              - column:
+                  name: password
+                  value: $2a$10$vEjGON2nXfnHAlxWEH4bKunFzAPNNj80A2XPpQsenfF8MicVa9vH6 # 1234yaroslav56
+        - insert:
+            tableName: users #61
+            columns:
+              - column:
+                  name: first_name
+                  value: Jimmy
+              - column:
+                  name: last_name
+                  value: Falon
+              - column:
+                  name: email
+                  value: falon@email.com
+              - column:
+                  name: password
+                  value: $2a$10$vEjGON2nXfnHAlxWEH4bKunFzAPNNj80A2XPpQsenfF8MicVa9vH6 # 1234yaroslav56
+        - insert:
+            tableName: users #62
+            columns:
+              - column:
+                  name: first_name
+                  value: Tom
+              - column:
+                  name: last_name
+                  value: Hanks
+              - column:
+                  name: email
+                  value: thanks@email.com
+              - column:
+                  name: password
+                  value: $2a$10$vEjGON2nXfnHAlxWEH4bKunFzAPNNj80A2XPpQsenfF8MicVa9vH6 # 1234yaroslav56
+        - insert:
+            tableName: users #63
+            columns:
+              - column:
+                  name: first_name
+                  value: Jamie
+              - column:
+                  name: last_name
+                  value: Foxx
+              - column:
+                  name: email
+                  value: jfoxx@email.com
+              - column:
+                  name: password
+                  value: $2a$10$vEjGON2nXfnHAlxWEH4bKunFzAPNNj80A2XPpQsenfF8MicVa9vH6 # 1234yaroslav56
+        - insert:
+            tableName: users #64
+            columns:
+              - column:
+                  name: first_name
+                  value: Lidsay
+              - column:
+                  name: last_name
+                  value: Lohan
+              - column:
+                  name: email
+                  value: llohan@email.com
+              - column:
+                  name: password
+                  value: $2a$10$vEjGON2nXfnHAlxWEH4bKunFzAPNNj80A2XPpQsenfF8MicVa9vH6 # 1234yaroslav56
+        - insert:
+            tableName: users #65
+            columns:
+              - column:
+                  name: first_name
+                  value: Katy
+              - column:
+                  name: last_name
+                  value: Perry
+              - column:
+                  name: email
+                  value: kperry@email.com
+              - column:
+                  name: password
+                  value: $2a$10$vEjGON2nXfnHAlxWEH4bKunFzAPNNj80A2XPpQsenfF8MicVa9vH6 # 1234yaroslav56
+        - insert:
+            tableName: users #66
+            columns:
+              - column:
+                  name: first_name
+                  value: Julia
+              - column:
+                  name: last_name
+                  value: Roberts
+              - column:
+                  name: email
+                  value: jroberts@email.com
+              - column:
+                  name: password
+                  value: $2a$10$vEjGON2nXfnHAlxWEH4bKunFzAPNNj80A2XPpQsenfF8MicVa9vH6 # 1234yaroslav56
+        - insert:
+            tableName: users #67
+            columns:
+              - column:
+                  name: first_name
+                  value: Chris
+              - column:
+                  name: last_name
+                  value: Rock
+              - column:
+                  name: email
+                  value: crock@email.com
+              - column:
+                  name: password
+                  value: $2a$10$vEjGON2nXfnHAlxWEH4bKunFzAPNNj80A2XPpQsenfF8MicVa9vH6 # 1234yaroslav56
+        - insert:
+            tableName: users #68
+            columns:
+              - column:
+                  name: first_name
+                  value: Dolly
+              - column:
+                  name: last_name
+                  value: Parton
+              - column:
+                  name: email
+                  value: dparton@email.com
+              - column:
+                  name: password
+                  value: $2a$10$vEjGON2nXfnHAlxWEH4bKunFzAPNNj80A2XPpQsenfF8MicVa9vH6 # 1234yaroslav56
+        - insert:
+            tableName: users #69
+            columns:
+              - column:
+                  name: first_name
+                  value: Adam
+              - column:
+                  name: last_name
+                  value: Sandler
+              - column:
+                  name: email
+                  value: asandler@email.com
+              - column:
+                  name: password
+                  value: $2a$10$vEjGON2nXfnHAlxWEH4bKunFzAPNNj80A2XPpQsenfF8MicVa9vH6 # 1234yaroslav56
+        - insert:
+            tableName: users #70
+            columns:
+              - column:
+                  name: first_name
+                  value: Kevin
+              - column:
+                  name: last_name
+                  value: Bacon
+              - column:
+                  name: email
+                  value: kbacon@email.com
               - column:
                   name: password
                   value: $2a$10$vEjGON2nXfnHAlxWEH4bKunFzAPNNj80A2XPpQsenfF8MicVa9vH6 # 1234yaroslav56
